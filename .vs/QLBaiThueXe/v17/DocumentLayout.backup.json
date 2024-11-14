@@ -1,0 +1,187 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\parking-lot\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E0E3E2DB-A8B4-4791-955E-A2DE9F70584F}|QLBaiThueXe\\QLBaiThueXe.csproj|C:\\Users\\Huan\\source\\repos\\ParkingLot\\parking-lot\\qlbaithuexe\\controller\\ctrl_registrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0E3E2DB-A8B4-4791-955E-A2DE9F70584F}|QLBaiThueXe\\QLBaiThueXe.csproj|solutionrelative:qlbaithuexe\\controller\\ctrl_registrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0E3E2DB-A8B4-4791-955E-A2DE9F70584F}|QLBaiThueXe\\QLBaiThueXe.csproj|C:\\Users\\Huan\\source\\repos\\ParkingLot\\parking-lot\\qlbaithuexe\\model\\caccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0E3E2DB-A8B4-4791-955E-A2DE9F70584F}|QLBaiThueXe\\QLBaiThueXe.csproj|solutionrelative:qlbaithuexe\\model\\caccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0E3E2DB-A8B4-4791-955E-A2DE9F70584F}|QLBaiThueXe\\QLBaiThueXe.csproj|c:\\users\\huan\\source\\repos\\parkinglot\\parking-lot\\qlbaithuexe\\fregister.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0E3E2DB-A8B4-4791-955E-A2DE9F70584F}|QLBaiThueXe\\QLBaiThueXe.csproj|solutionrelative:qlbaithuexe\\fregister.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0E3E2DB-A8B4-4791-955E-A2DE9F70584F}|QLBaiThueXe\\QLBaiThueXe.csproj|C:\\Users\\Huan\\source\\repos\\ParkingLot\\parking-lot\\qlbaithuexe\\fregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0E3E2DB-A8B4-4791-955E-A2DE9F70584F}|QLBaiThueXe\\QLBaiThueXe.csproj|solutionrelative:qlbaithuexe\\fregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0E3E2DB-A8B4-4791-955E-A2DE9F70584F}|QLBaiThueXe\\QLBaiThueXe.csproj|C:\\Users\\Huan\\source\\repos\\ParkingLot\\parking-lot\\qlbaithuexe\\btxmodel.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{E0E3E2DB-A8B4-4791-955E-A2DE9F70584F}|QLBaiThueXe\\QLBaiThueXe.csproj|solutionrelative:qlbaithuexe\\btxmodel.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0E3E2DB-A8B4-4791-955E-A2DE9F70584F}|QLBaiThueXe\\QLBaiThueXe.csproj|C:\\Users\\Huan\\source\\repos\\ParkingLot\\parking-lot\\qlbaithuexe\\cultils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0E3E2DB-A8B4-4791-955E-A2DE9F70584F}|QLBaiThueXe\\QLBaiThueXe.csproj|solutionrelative:qlbaithuexe\\cultils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0E3E2DB-A8B4-4791-955E-A2DE9F70584F}|QLBaiThueXe\\QLBaiThueXe.csproj|c:\\users\\huan\\source\\repos\\parkinglot\\parking-lot\\qlbaithuexe\\btxmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0E3E2DB-A8B4-4791-955E-A2DE9F70584F}|QLBaiThueXe\\QLBaiThueXe.csproj|solutionrelative:qlbaithuexe\\btxmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0E3E2DB-A8B4-4791-955E-A2DE9F70584F}|QLBaiThueXe\\QLBaiThueXe.csproj|C:\\Users\\Huan\\source\\repos\\ParkingLot\\parking-lot\\qlbaithuexe\\fregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E0E3E2DB-A8B4-4791-955E-A2DE9F70584F}|QLBaiThueXe\\QLBaiThueXe.csproj|solutionrelative:qlbaithuexe\\fregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0E3E2DB-A8B4-4791-955E-A2DE9F70584F}|QLBaiThueXe\\QLBaiThueXe.csproj|C:\\Users\\Huan\\source\\repos\\ParkingLot\\parking-lot\\qlbaithuexe\\flogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E0E3E2DB-A8B4-4791-955E-A2DE9F70584F}|QLBaiThueXe\\QLBaiThueXe.csproj|solutionrelative:qlbaithuexe\\flogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0E3E2DB-A8B4-4791-955E-A2DE9F70584F}|QLBaiThueXe\\QLBaiThueXe.csproj|C:\\Users\\Huan\\source\\repos\\ParkingLot\\parking-lot\\qlbaithuexe\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0E3E2DB-A8B4-4791-955E-A2DE9F70584F}|QLBaiThueXe\\QLBaiThueXe.csproj|solutionrelative:qlbaithuexe\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FRegister.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\parking-lot\\QLBaiThueXe\\FRegister.Designer.cs",
+              "RelativeDocumentMoniker": "QLBaiThueXe\\FRegister.Designer.cs",
+              "ToolTip": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\parking-lot\\QLBaiThueXe\\FRegister.Designer.cs",
+              "RelativeToolTip": "QLBaiThueXe\\FRegister.Designer.cs",
+              "ViewState": "AgIAAMoAAAAAAAAAAAApwN8AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T13:45:05.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BTXModel.cs",
+              "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\parking-lot\\QLBaiThueXe\\BTXModel.cs",
+              "RelativeDocumentMoniker": "QLBaiThueXe\\BTXModel.cs",
+              "ToolTip": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\parking-lot\\QLBaiThueXe\\BTXModel.cs",
+              "RelativeToolTip": "QLBaiThueXe\\BTXModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T12:59:10.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CUltils.cs",
+              "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\parking-lot\\QLBaiThueXe\\CUltils.cs",
+              "RelativeDocumentMoniker": "QLBaiThueXe\\CUltils.cs",
+              "ToolTip": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\parking-lot\\QLBaiThueXe\\CUltils.cs",
+              "RelativeToolTip": "QLBaiThueXe\\CUltils.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T12:52:11.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Ctrl_RegistrationController.cs",
+              "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\parking-lot\\QLBaiThueXe\\Controller\\Ctrl_RegistrationController.cs",
+              "RelativeDocumentMoniker": "QLBaiThueXe\\Controller\\Ctrl_RegistrationController.cs",
+              "ToolTip": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\parking-lot\\QLBaiThueXe\\Controller\\Ctrl_RegistrationController.cs",
+              "RelativeToolTip": "QLBaiThueXe\\Controller\\Ctrl_RegistrationController.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAQwEEAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T12:51:17.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CAccount.cs",
+              "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\parking-lot\\QLBaiThueXe\\Model\\CAccount.cs",
+              "RelativeDocumentMoniker": "QLBaiThueXe\\Model\\CAccount.cs",
+              "ToolTip": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\parking-lot\\QLBaiThueXe\\Model\\CAccount.cs",
+              "RelativeToolTip": "QLBaiThueXe\\Model\\CAccount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T12:39:38.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FRegister.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\parking-lot\\QLBaiThueXe\\FRegister.cs",
+              "RelativeDocumentMoniker": "QLBaiThueXe\\FRegister.cs",
+              "ToolTip": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\parking-lot\\QLBaiThueXe\\FRegister.cs [Design]",
+              "RelativeToolTip": "QLBaiThueXe\\FRegister.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T12:36:39.058Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FRegister.cs",
+              "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\parking-lot\\QLBaiThueXe\\FRegister.cs",
+              "RelativeDocumentMoniker": "QLBaiThueXe\\FRegister.cs",
+              "ToolTip": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\parking-lot\\QLBaiThueXe\\FRegister.cs",
+              "RelativeToolTip": "QLBaiThueXe\\FRegister.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T12:22:41.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BTXModel.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\parking-lot\\QLBaiThueXe\\BTXModel.edmx",
+              "RelativeDocumentMoniker": "QLBaiThueXe\\BTXModel.edmx",
+              "ToolTip": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\parking-lot\\QLBaiThueXe\\BTXModel.edmx [Diagram1]",
+              "RelativeToolTip": "QLBaiThueXe\\BTXModel.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-11-14T11:50:01.669Z",
+              "EditorCaption": " [Diagram1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FLogin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\parking-lot\\QLBaiThueXe\\FLogin.cs",
+              "RelativeDocumentMoniker": "QLBaiThueXe\\FLogin.cs",
+              "ToolTip": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\parking-lot\\QLBaiThueXe\\FLogin.cs [Design]",
+              "RelativeToolTip": "QLBaiThueXe\\FLogin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T12:29:54.089Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\parking-lot\\QLBaiThueXe\\Program.cs",
+              "RelativeDocumentMoniker": "QLBaiThueXe\\Program.cs",
+              "ToolTip": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\parking-lot\\QLBaiThueXe\\Program.cs",
+              "RelativeToolTip": "QLBaiThueXe\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T12:18:31.55Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
