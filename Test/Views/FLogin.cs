@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Test.Views
 {
@@ -49,7 +50,10 @@ namespace Test.Views
                 MessageBox.Show("Tài khoản của bạn chưa được kích hoạt.");
                 return;
             }
-            MessageBox.Show("Đăng nhập thành công!");
+            FMain fMain = new FMain(username);
+            fMain.Show();
+            this.Hide();
+
         }
 
         private void FLogin_Load(object sender, EventArgs e)
@@ -80,6 +84,13 @@ namespace Test.Views
         {
             txtPassLog.Text = "";
             txtUserLog.Text = "";
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            FForgotPassword f = new FForgotPassword();
+            f.Show();
+            this.Hide();
         }
     }
 }

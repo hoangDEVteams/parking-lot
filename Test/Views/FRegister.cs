@@ -94,6 +94,14 @@ namespace Test
             this.Hide();
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            txtUser.Text = "";
+            txtEmail.Text = "";
+            txtPass.Text = "";
+            txtCFPass.Text = "";
+        }
     }
 }
         

@@ -35,8 +35,6 @@ namespace Test.Views
                     {
                         string result = Ctrl_Account.UpdateAccountStatusToActive(username);
 
-                        MessageBox.Show(result);
-
                         if (result == "Cập nhật trạng thái thành công!")
                         {
                             this.Close(); 
