@@ -3,19 +3,31 @@
   "WorkspaceRootPath": "C:\\Users\\Huan\\source\\repos\\Test\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|C:\\Users\\Huan\\source\\repos\\Test\\test\\views\\flogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|C:\\Users\\Huan\\source\\repos\\Test\\test\\views\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|C:\\Users\\Huan\\source\\repos\\Test\\test\\controller\\ctrl_account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\controller\\ctrl_account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|c:\\users\\huan\\source\\repos\\test\\test\\resource\\cpass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\resource\\cpass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|c:\\users\\huan\\source\\repos\\test\\test\\views\\flogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\flogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|c:\\users\\huan\\source\\repos\\test\\test\\views\\fverify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|C:\\Users\\Huan\\source\\repos\\Test\\test\\views\\fverify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fverify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|c:\\users\\huan\\source\\repos\\test\\test\\views\\fresetpass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|C:\\Users\\Huan\\source\\repos\\Test\\test\\views\\fresetpass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fresetpass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|c:\\users\\huan\\source\\repos\\test\\test\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|C:\\Users\\Huan\\source\\repos\\Test\\test\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
@@ -23,11 +35,7 @@
       "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|C:\\Users\\Huan\\source\\repos\\Test\\test\\views\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|c:\\users\\huan\\source\\repos\\test\\test\\views\\fforgotpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|C:\\Users\\Huan\\source\\repos\\Test\\test\\views\\fforgotpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fforgotpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -35,7 +43,7 @@
       "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|c:\\users\\huan\\source\\repos\\test\\test\\views\\fverify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|C:\\Users\\Huan\\source\\repos\\Test\\test\\views\\fverify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fverify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -47,11 +55,7 @@
       "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\cultils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|C:\\Users\\Huan\\source\\repos\\Test\\test\\controller\\ctrl_account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\controller\\ctrl_account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|c:\\users\\huan\\source\\repos\\test\\test\\views\\fresetpass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|C:\\Users\\Huan\\source\\repos\\Test\\test\\views\\fresetpass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fresetpass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -59,7 +63,7 @@
       "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|c:\\users\\huan\\source\\repos\\test\\test\\views\\fforgotpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|C:\\Users\\Huan\\source\\repos\\Test\\test\\views\\fforgotpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fforgotpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -74,19 +78,12 @@
       "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fverify.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|C:\\Users\\Huan\\source\\repos\\Test\\test\\cpass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\cpass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|C:\\Users\\Huan\\source\\repos\\Test\\test\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|C:\\Users\\Huan\\source\\repos\\Test\\test\\btx.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
       "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\btx.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|c:\\users\\huan\\source\\repos\\test\\test\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
     }
   ],
   "DocumentGroupContainers": [
@@ -96,11 +93,141 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FVerify.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Views\\FVerify.cs",
+              "RelativeDocumentMoniker": "Test\\Views\\FVerify.cs",
+              "ToolTip": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Views\\FVerify.cs [Design]",
+              "RelativeToolTip": "Test\\Views\\FVerify.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T11:51:37.336Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Program.cs",
+              "RelativeDocumentMoniker": "Test\\Program.cs",
+              "ToolTip": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Program.cs",
+              "RelativeToolTip": "Test\\Program.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAADgvwUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T16:09:46.709Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FRegister.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Views\\FRegister.cs",
+              "RelativeDocumentMoniker": "Test\\Views\\FRegister.cs",
+              "ToolTip": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Views\\FRegister.cs [Design]",
+              "RelativeToolTip": "Test\\Views\\FRegister.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T13:49:12.48Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "FLogin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Views\\FLogin.cs",
+              "RelativeDocumentMoniker": "Test\\Views\\FLogin.cs",
+              "ToolTip": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Views\\FLogin.cs [Design]",
+              "RelativeToolTip": "Test\\Views\\FLogin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T15:35:13.909Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FVerify.cs",
+              "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Views\\FVerify.cs",
+              "RelativeDocumentMoniker": "Test\\Views\\FVerify.cs",
+              "ToolTip": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Views\\FVerify.cs",
+              "RelativeToolTip": "Test\\Views\\FVerify.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T14:21:14.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FRegister.cs",
+              "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Views\\FRegister.cs",
+              "RelativeDocumentMoniker": "Test\\Views\\FRegister.cs",
+              "ToolTip": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Views\\FRegister.cs",
+              "RelativeToolTip": "Test\\Views\\FRegister.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAUwCMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T13:52:39.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FResetPass.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Views\\FResetPass.cs",
+              "RelativeDocumentMoniker": "Test\\Views\\FResetPass.cs",
+              "ToolTip": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Views\\FResetPass.cs [Design]",
+              "RelativeToolTip": "Test\\Views\\FResetPass.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T12:42:23.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CPass.cs",
+              "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Resource\\CPass.cs",
+              "RelativeDocumentMoniker": "Test\\Resource\\CPass.cs",
+              "ToolTip": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Resource\\CPass.cs",
+              "RelativeToolTip": "Test\\Resource\\CPass.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T13:54:04.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Ctrl_Account.cs",
+              "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Controller\\Ctrl_Account.cs",
+              "RelativeDocumentMoniker": "Test\\Controller\\Ctrl_Account.cs",
+              "ToolTip": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Controller\\Ctrl_Account.cs",
+              "RelativeToolTip": "Test\\Controller\\Ctrl_Account.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T14:25:54.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FMain.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Views\\FMain.cs",
+              "RelativeDocumentMoniker": "Test\\Views\\FMain.cs",
+              "ToolTip": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Views\\FMain.cs [Design]*",
+              "RelativeToolTip": "Test\\Views\\FMain.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T19:07:33.214Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FForgotPassword.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Views\\FForgotPassword.cs",
+              "RelativeDocumentMoniker": "Test\\Views\\FForgotPassword.cs",
+              "ToolTip": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Views\\FForgotPassword.cs [Design]",
+              "RelativeToolTip": "Test\\Views\\FForgotPassword.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T12:32:38.816Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "App.config",
               "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\App.config",
               "RelativeDocumentMoniker": "Test\\App.config",
@@ -113,131 +240,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FForgotPassword.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Views\\FForgotPassword.cs",
-              "RelativeDocumentMoniker": "Test\\Views\\FForgotPassword.cs",
-              "ToolTip": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Views\\FForgotPassword.cs [Design]",
-              "RelativeToolTip": "Test\\Views\\FForgotPassword.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T12:32:38.816Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FVerify.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Views\\FVerify.cs",
-              "RelativeDocumentMoniker": "Test\\Views\\FVerify.cs",
-              "ToolTip": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Views\\FVerify.cs [Design]",
-              "RelativeToolTip": "Test\\Views\\FVerify.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T11:51:37.336Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Program.cs",
-              "RelativeDocumentMoniker": "Test\\Program.cs",
-              "ToolTip": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Program.cs",
-              "RelativeToolTip": "Test\\Program.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAADgvwUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T16:09:46.709Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FRegister.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Views\\FRegister.cs",
-              "RelativeDocumentMoniker": "Test\\Views\\FRegister.cs",
-              "ToolTip": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Views\\FRegister.cs [Design]",
-              "RelativeToolTip": "Test\\Views\\FRegister.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T13:49:12.48Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FLogin.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Views\\FLogin.cs",
-              "RelativeDocumentMoniker": "Test\\Views\\FLogin.cs",
-              "ToolTip": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Views\\FLogin.cs [Design]*",
-              "RelativeToolTip": "Test\\Views\\FLogin.cs [Design]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T15:35:13.909Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FVerify.cs",
-              "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Views\\FVerify.cs",
-              "RelativeDocumentMoniker": "Test\\Views\\FVerify.cs",
-              "ToolTip": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Views\\FVerify.cs",
-              "RelativeToolTip": "Test\\Views\\FVerify.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T14:21:14.981Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "FRegister.cs",
-              "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Views\\FRegister.cs",
-              "RelativeDocumentMoniker": "Test\\Views\\FRegister.cs",
-              "ToolTip": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Views\\FRegister.cs",
-              "RelativeToolTip": "Test\\Views\\FRegister.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAUwCMAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T13:52:39.44Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FResetPass.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Views\\FResetPass.cs",
-              "RelativeDocumentMoniker": "Test\\Views\\FResetPass.cs",
-              "ToolTip": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Views\\FResetPass.cs [Design]",
-              "RelativeToolTip": "Test\\Views\\FResetPass.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T12:42:23.015Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FMain.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Views\\FMain.cs",
-              "RelativeDocumentMoniker": "Test\\Views\\FMain.cs",
-              "ToolTip": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Views\\FMain.cs [Design]",
-              "RelativeToolTip": "Test\\Views\\FMain.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T19:07:33.214Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "FLogin.cs",
               "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Views\\FLogin.cs",
               "RelativeDocumentMoniker": "Test\\Views\\FLogin.cs",
-              "ToolTip": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Views\\FLogin.cs*",
-              "RelativeToolTip": "Test\\Views\\FLogin.cs*",
+              "ToolTip": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Views\\FLogin.cs",
+              "RelativeToolTip": "Test\\Views\\FLogin.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T15:54:20.019Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T15:54:20.019Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "CUltils.cs",
               "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\CUltils.cs",
               "RelativeDocumentMoniker": "Test\\CUltils.cs",
@@ -245,25 +260,11 @@
               "RelativeToolTip": "Test\\CUltils.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T13:51:59.755Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T13:51:59.755Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Ctrl_Account.cs",
-              "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Controller\\Ctrl_Account.cs",
-              "RelativeDocumentMoniker": "Test\\Controller\\Ctrl_Account.cs",
-              "ToolTip": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Controller\\Ctrl_Account.cs",
-              "RelativeToolTip": "Test\\Controller\\Ctrl_Account.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAgwBYAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T14:25:54.964Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "FResetPass.cs",
               "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Views\\FResetPass.cs",
               "RelativeDocumentMoniker": "Test\\Views\\FResetPass.cs",
@@ -271,17 +272,16 @@
               "RelativeToolTip": "Test\\Views\\FResetPass.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T12:44:05.959Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-15T12:44:05.959Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "FMain.cs",
               "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Views\\FMain.cs",
               "RelativeDocumentMoniker": "Test\\Views\\FMain.cs",
-              "ToolTip": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Views\\FMain.cs",
-              "RelativeToolTip": "Test\\Views\\FMain.cs",
+              "ToolTip": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Views\\FMain.cs*",
+              "RelativeToolTip": "Test\\Views\\FMain.cs*",
               "ViewState": "AgIAAAcAAAAAAAAAAAAkwBYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-14T19:08:15.244Z",
@@ -289,7 +289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "FForgotPassword.cs",
               "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Views\\FForgotPassword.cs",
               "RelativeDocumentMoniker": "Test\\Views\\FForgotPassword.cs",
@@ -297,8 +297,7 @@
               "RelativeToolTip": "Test\\Views\\FForgotPassword.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAIgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T12:34:06.29Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-15T12:34:06.29Z"
             },
             {
               "$type": "Document",
@@ -310,33 +309,18 @@
               "RelativeToolTip": "Test\\Account.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAowBMAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T14:18:31.873Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T14:18:31.873Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Test",
               "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Test.csproj",
               "RelativeDocumentMoniker": "Test\\Test.csproj",
               "ToolTip": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Test.csproj",
               "RelativeToolTip": "Test\\Test.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-11-15T11:30:23.062Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "CPass.cs",
-              "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\CPass.cs",
-              "RelativeDocumentMoniker": "Test\\CPass.cs",
-              "ToolTip": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\CPass.cs",
-              "RelativeToolTip": "Test\\CPass.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T13:54:04.248Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-15T11:30:23.062Z"
             },
             {
               "$type": "Document",
@@ -347,12 +331,11 @@
               "ToolTip": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\BTX.edmx [Diagram1]",
               "RelativeToolTip": "Test\\BTX.edmx [Diagram1]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
-              "WhenOpened": "2024-11-14T14:07:46.833Z",
-              "EditorCaption": " [Diagram1]"
+              "WhenOpened": "2024-11-14T14:07:46.833Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "FVerify.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Views\\FVerify.Designer.cs",
               "RelativeDocumentMoniker": "Test\\Views\\FVerify.Designer.cs",
@@ -360,8 +343,7 @@
               "RelativeToolTip": "Test\\Views\\FVerify.Designer.cs",
               "ViewState": "AgIAAE4AAAAAAAAAAAAEwFgAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T15:01:38.274Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T15:01:38.274Z"
             }
           ]
         }

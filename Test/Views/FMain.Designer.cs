@@ -35,7 +35,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(965, 9);
+            this.label1.Location = new System.Drawing.Point(1775, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 25);
             this.label1.TabIndex = 0;
@@ -46,7 +46,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1180, 682);
+            this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.label1);
             this.Name = "FMain";
             this.Text = "FMain";
