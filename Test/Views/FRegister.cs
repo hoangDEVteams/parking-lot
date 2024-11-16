@@ -18,6 +18,8 @@ namespace Test
         public FRegister()
         {
             InitializeComponent();
+            button2.MouseEnter += button2_MouseEnter;
+            button2.MouseLeave += button2_MouseLeave;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -75,8 +77,6 @@ namespace Test
                 string verificationCode = Ctrl_Account.GenerateVerificationCode();
                 Ctrl_Account.SendVerificationEmail(email, verificationCode);
                 Ctrl_Account.SaveVerificationCodeToDatabase(username, verificationCode);
-
-                MessageBox.Show("Đăng ký thành công! Mã xác nhận đã được gửi tới email của bạn.");
                 var verifyForm = new FVerify(username);
                 verifyForm.ShowDialog();
 
@@ -102,6 +102,22 @@ namespace Test
             txtPass.Text = "";
             txtCFPass.Text = "";
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+
+        }
+        private void button2_MouseEnter(object sender, EventArgs e)
+        {
+            button2.BackColor = Color.Red;
+        }
+
+        private void button2_MouseLeave(object sender, EventArgs e)
+        {
+            button2.BackColor = Color.Transparent;
+        }
+
     }
 }
         

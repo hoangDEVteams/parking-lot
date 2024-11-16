@@ -60,3 +60,4 @@ C:\Users\Huan\source\repos\Test\Test\bin\Debug\zh-cn\ZedGraph.resources.dll
 C:\Users\Huan\source\repos\Test\Test\bin\Debug\zh-tw\ZedGraph.resources.dll
 C:\Users\Huan\source\repos\Test\Test\obj\Debug\Test.Views.FForgotPassword.resources
 C:\Users\Huan\source\repos\Test\Test\obj\Debug\Test.Views.FResetPass.resources
+C:\Users\Huan\source\repos\Test\Test\bin\Debug\FontAwesome.Sharp.dll

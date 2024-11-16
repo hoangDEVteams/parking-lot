@@ -23,6 +23,8 @@ namespace Test.Views
             button1.Visible = false;
             label2.Visible = false;
             comboBox1.Visible = false;
+            button2.MouseEnter += button2_MouseEnter;
+            button2.MouseLeave += button2_MouseLeave;
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -135,6 +137,27 @@ namespace Test.Views
         private void FForgotPassword_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            FLogin fLogin = new FLogin();
+            fLogin.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        private void button2_MouseEnter(object sender, EventArgs e)
+        {
+            button2.BackColor = Color.Red;
+        }
+
+        private void button2_MouseLeave(object sender, EventArgs e)
+        {
+            button2.BackColor = Color.Transparent;
         }
     }
 }

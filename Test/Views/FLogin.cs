@@ -16,6 +16,8 @@ namespace Test.Views
         public FLogin()
         {
             InitializeComponent();
+            button2.MouseEnter += button2_MouseEnter;
+            button2.MouseLeave += button2_MouseLeave;
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -91,6 +93,20 @@ namespace Test.Views
             FForgotPassword f = new FForgotPassword();
             f.Show();
             this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        private void button2_MouseEnter(object sender, EventArgs e)
+        {
+            button2.BackColor = Color.Red;
+        }
+
+        private void button2_MouseLeave(object sender, EventArgs e)
+        {
+            button2.BackColor = Color.Transparent;
         }
     }
 }
