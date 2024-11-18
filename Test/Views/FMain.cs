@@ -42,54 +42,28 @@ namespace Test.Views
             panel3.MouseMove += panel2_MouseMove;
             panel3.MouseUp += panel2_MouseUp;
             panel3.DoubleClick += panel2_DoubleClick;
-
-            this.LocationChanged += FMain_LocationChanged;
-            this.SizeChanged += FMain_SizeChanged;
-
         }
 
         private void FMain_SizeChanged(object sender, EventArgs e)
         {
-            // Kiểm tra nếu form nhỏ hơn một kích thước nhất định
             if (this.Width < 800)
             {
-                panelMenu.Width = 80; // Thu nhỏ panel menu
+                panelMenu.Width = 80; 
                 foreach (Button menuButton in panelMenu.Controls.OfType<Button>())
                 {
-                    menuButton.Text = ""; // Ẩn text nút
+                    menuButton.Text = ""; 
                 }
             }
             else
             {
-                panelMenu.Width = 252; // Trở lại kích thước ban đầu
+                panelMenu.Width = 252;
                 foreach (Button menuButton in panelMenu.Controls.OfType<Button>())
                 {
-                    menuButton.Text = "    " + menuButton.Tag; // Hiển thị text
+                    menuButton.Text = "    " + menuButton.Tag; 
                 }
             }
         }
-        private void FMain_LocationChanged(object sender, EventArgs e)
-        {
-            var workingArea = Screen.PrimaryScreen.WorkingArea;
-
-            if (this.Left <= workingArea.Left)
-            {
-                this.Width = workingArea.Width / 2;
-                this.Height = workingArea.Height;
-                this.Location = new Point(workingArea.Left, workingArea.Top);
-            }
-            else if (this.Right >= workingArea.Right)
-            {
-                this.Width = workingArea.Width / 2;
-                this.Height = workingArea.Height;
-                this.Location = new Point(workingArea.Right - this.Width, workingArea.Top);
-                iconButton1.Tag = "Home";
-                iconButton2.Tag = "Settings";
-                iconButton3.Tag = "Profile";
-                iconButton6.Tag = "Sign Out";
-
-            }
-        }
+        
 
         private void FMain_Load(object sender, EventArgs e)
         {
@@ -247,14 +221,14 @@ namespace Test.Views
             else
             {
 
-                panelMenu.Width = 252;
+                panelMenu.Width = 205;
                 label1.Visible = true;
                 iconButton1.Width = 212;
                 iconButton2.Width = 212;
                 iconButton3.Width = 212;
                 iconButton6.Width = 252;
                 iconButton4.Width = 212;
-                cCirclePB1.Size = new Size(131, 131);
+                cCirclePB1.Size = new Size(100, 100);
                 cCirclePB1.Location = new Point(
                     16, 54
                 );
