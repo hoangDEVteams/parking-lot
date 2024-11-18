@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace Test.Views
 {
@@ -16,9 +17,12 @@ namespace Test.Views
         private bool dragging = false;
         private Point dragCursorPoint;
         private Point dragFormPoint;
-
+        private int maxWidth;
+        private int maxHeight;
         public FMain(string username)
         {
+            maxWidth = Screen.PrimaryScreen.Bounds.Width;
+            maxHeight = Screen.PrimaryScreen.Bounds.Height;
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
             this.username = username;
@@ -32,6 +36,7 @@ namespace Test.Views
             iconButton1.Tag = "Home";
             iconButton2.Tag = "Settings";
             iconButton3.Tag = "Profile";
+            iconButton4.Tag = "Dashboard";
             iconButton6.Tag = "Sign Out";
             panel3.MouseDown += panel2_MouseDown;
             panel3.MouseMove += panel2_MouseMove;
@@ -39,7 +44,29 @@ namespace Test.Views
             panel3.DoubleClick += panel2_DoubleClick;
 
             this.LocationChanged += FMain_LocationChanged;
+            this.SizeChanged += FMain_SizeChanged;
 
+        }
+
+        private void FMain_SizeChanged(object sender, EventArgs e)
+        {
+            // Kiểm tra nếu form nhỏ hơn một kích thước nhất định
+            if (this.Width < 800)
+            {
+                panelMenu.Width = 80; // Thu nhỏ panel menu
+                foreach (Button menuButton in panelMenu.Controls.OfType<Button>())
+                {
+                    menuButton.Text = ""; // Ẩn text nút
+                }
+            }
+            else
+            {
+                panelMenu.Width = 252; // Trở lại kích thước ban đầu
+                foreach (Button menuButton in panelMenu.Controls.OfType<Button>())
+                {
+                    menuButton.Text = "    " + menuButton.Tag; // Hiển thị text
+                }
+            }
         }
         private void FMain_LocationChanged(object sender, EventArgs e)
         {
@@ -69,6 +96,7 @@ namespace Test.Views
             label1.Text = "Hello, " + username;
             this.FormBorderStyle = FormBorderStyle.None;
             this.StartPosition = FormStartPosition.CenterScreen;
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -107,57 +135,24 @@ namespace Test.Views
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (this.Width == 1920 && this.Height == 1080)
-            {
-                this.Width = 960;
-                this.Height = 540;
-                this.StartPosition = FormStartPosition.CenterScreen;
-                this.Location = new Point(
-                    (Screen.PrimaryScreen.WorkingArea.Width - this.Width) / 2,
-                    (Screen.PrimaryScreen.WorkingArea.Height - this.Height) / 2
-                );
-            }
-            else
-            {
-                this.Width = 1920;
-                this.Height = 1080;
-                this.StartPosition = FormStartPosition.CenterScreen;
-                this.Location = new Point(
-                    (Screen.PrimaryScreen.WorkingArea.Width - this.Width) / 2,
-                    (Screen.PrimaryScreen.WorkingArea.Height - this.Height) / 2 + 20
-                );
-            }
+            ToggleFormSize();
         }
+
         private void panel2_DoubleClick(object sender, EventArgs e)
         {
-            if (this.Width == 1920 && this.Height == 1080)
-            {
-                this.Width = 960;
-                this.Height = 540;
-                this.StartPosition = FormStartPosition.CenterScreen;
-                this.Location = new Point(
-                    (Screen.PrimaryScreen.WorkingArea.Width - this.Width) / 2,
-                    (Screen.PrimaryScreen.WorkingArea.Height - this.Height) / 2
-                );
-            }
-            else
-            {
-                this.Width = 1920;
-                this.Height = 1080;
-                this.StartPosition = FormStartPosition.CenterScreen;
-                this.Location = new Point(
-                    (Screen.PrimaryScreen.WorkingArea.Width - this.Width) / 2,
-                    (Screen.PrimaryScreen.WorkingArea.Height - this.Height) / 2 + 20
-                );
-            }
+            ToggleFormSize();
         }
+
         private void panel3_DoubleClick(object sender, EventArgs e)
         {
-            if (this.Width == 1920 && this.Height == 1080)
+            ToggleFormSize();
+        }
+        private void ToggleFormSize()
+        {
+            if (this.WindowState == FormWindowState.Maximized)
             {
-                this.Width = 960;
-                this.Height = 540;
-                this.StartPosition = FormStartPosition.CenterScreen;
+                this.WindowState = FormWindowState.Normal;
+                this.Size = new Size(maxWidth / 2, maxHeight / 2);
                 this.Location = new Point(
                     (Screen.PrimaryScreen.WorkingArea.Width - this.Width) / 2,
                     (Screen.PrimaryScreen.WorkingArea.Height - this.Height) / 2
@@ -165,15 +160,10 @@ namespace Test.Views
             }
             else
             {
-                this.Width = 1920;
-                this.Height = 1080;
-                this.StartPosition = FormStartPosition.CenterScreen;
-                this.Location = new Point(
-                    (Screen.PrimaryScreen.WorkingArea.Width - this.Width) / 2,
-                    (Screen.PrimaryScreen.WorkingArea.Height - this.Height) / 2 + 20
-                );
+                this.WindowState = FormWindowState.Maximized;
             }
         }
+
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -239,32 +229,34 @@ namespace Test.Views
                 label1.Visible = false;
                 cCirclePB1.Size = new Size(45, 45);
                 cCirclePB1.Location = new Point(
-                    (panelMenu.Width - cCirclePB1.Width) / 2, 
-                    btnMenu.Bottom + 10 
+                    (panelMenu.Width - cCirclePB1.Width) / 2,
+                    btnMenu.Bottom + 10
                 );
                 iconButton1.Width = 60;
                 iconButton2.Width = 60;
                 iconButton3.Width = 60;
+                iconButton4.Width = 60;
                 btnMenu.Dock = DockStyle.Top;
                 foreach (Button menuButton in panelMenu.Controls.OfType<Button>())
                 {
-                    menuButton.Text = ""; 
-                    menuButton.ImageAlign = ContentAlignment.MiddleCenter; 
+                    menuButton.Text = "";
+                    menuButton.ImageAlign = ContentAlignment.MiddleCenter;
                     menuButton.Padding = new Padding(0);
                 }
             }
             else
             {
+
                 panelMenu.Width = 252;
                 label1.Visible = true;
                 iconButton1.Width = 212;
                 iconButton2.Width = 212;
                 iconButton3.Width = 212;
                 iconButton6.Width = 252;
+                iconButton4.Width = 212;
                 cCirclePB1.Size = new Size(131, 131);
                 cCirclePB1.Location = new Point(
-                    (panelMenu.Width - cCirclePB1.Width) / 2, 
-                    btnMenu.Bottom + 20 
+                    16, 54
                 );
 
                 btnMenu.Dock = DockStyle.None;
@@ -272,19 +264,27 @@ namespace Test.Views
                 {
                     if (menuButton.Tag != null)
                     {
-                        menuButton.Text = "    " + menuButton.Tag.ToString(); 
+                        menuButton.Text = "    " + menuButton.Tag.ToString();
                     }
                     else
                     {
-                        menuButton.Text = ""; 
+                        menuButton.Text = "";
                     }
-                    menuButton.ImageAlign = ContentAlignment.MiddleLeft; 
+                    menuButton.ImageAlign = ContentAlignment.MiddleLeft;
                     menuButton.Padding = new Padding(10, 0, 0, 0);
                 }
             }
         }
 
+        private void cCirclePB2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconButton4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }
-
