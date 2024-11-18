@@ -19,6 +19,7 @@ namespace Test.Views
         private Point dragFormPoint;
         private int maxWidth;
         private int maxHeight;
+        private int maxMenu;
         public FMain(string username)
         {
             maxWidth = Screen.PrimaryScreen.Bounds.Width;
@@ -70,6 +71,7 @@ namespace Test.Views
             label1.Text = "Hello, " + username;
             this.FormBorderStyle = FormBorderStyle.None;
             this.StartPosition = FormStartPosition.CenterScreen;
+            maxMenu = panelMenu.Width;
 
         }
 
@@ -221,7 +223,7 @@ namespace Test.Views
             else
             {
 
-                panelMenu.Width = 205;
+                panelMenu.Width = maxMenu;
                 label1.Visible = true;
                 iconButton1.Width = 212;
                 iconButton2.Width = 212;
