@@ -1,0 +1,76 @@
+[33mcommit 7c36014b297ecaf562cd045dd1a0923ce9df4968[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/hoang[m[33m, [m[1;32mhoang[m[33m)[m
+Author: Phạm Hoàng Huân <89542925+Hazhaz1412@users.noreply.github.com>
+Date:   Sat Nov 16 22:41:42 2024 +0700
+
+    Done MainMenu With Few Test Option
+    
+    Làm xong responsive cho main menu(Responsive, thanh thu nhỏ kéo thả và đóng chương trình) Có vài option để test dù chưa hoạt động.
+
+[33mcommit c660b01a2b9e459efcd95fcdf9edf5bee6edc3ec[m
+Author: Phạm Hoàng Huân <89542925+Hazhaz1412@users.noreply.github.com>
+Date:   Sat Nov 16 00:20:39 2024 +0700
+
+    Check again
+
+[33mcommit 26da1861e307907b0cd2b1495a7f4b6fa87ecae6[m
+Merge: 1037fd2 613c88b
+Author: Phạm Hoàng Huân <89542925+Hazhaz1412@users.noreply.github.com>
+Date:   Fri Nov 15 21:41:31 2024 +0700
+
+    Merge branch 'master' of https://github.com/hoangDEVteams/parking-lot
+
+[33mcommit 1037fd2913506f596b8b7a463d416ddace88784b[m
+Author: Phạm Hoàng Huân <89542925+Hazhaz1412@users.noreply.github.com>
+Date:   Fri Nov 15 21:41:23 2024 +0700
+
+    Done Forgot Password
+    
+    1
+
+[33mcommit 613c88bb59990b5112ab4d621209d422c3164b92[m
+Author: Phạm Hoàng Huân <89542925+Hazhaz1412@users.noreply.github.com>
+Date:   Thu Nov 14 23:30:13 2024 +0700
+
+    Delete .vs/QLBaiThueXe/copilot-chat/edd43cab/sessions directory
+
+[33mcommit d8968ea324b51a6506164bd30a5dc5bd911d991b[m
+Author: Phạm Hoàng Huân <89542925+Hazhaz1412@users.noreply.github.com>
+Date:   Thu Nov 14 23:29:47 2024 +0700
+
+    Delete .vs/QLBaiThueXe/CopilotIndices/0.2.1657.32929 directory
+
+[33mcommit b48d07efe35ab2af2234055ab14bf3fec67e2e6a[m
+Author: Phạm Hoàng Huân <89542925+Hazhaz1412@users.noreply.github.com>
+Date:   Thu Nov 14 23:28:53 2024 +0700
+
+    LoginCompleteWithHashingAlgorithm
+    
+    Xử lý xong đăng nhập, đăng ký đã mã hóa thông tin mật khẩu
+
+[33mcommit b013126321bf52836f6cf135b73f1f4c210c1e7f[m
+Author: Phạm Hoàng Huân <89542925+Hazhaz1412@users.noreply.github.com>
+Date:   Sun Nov 10 20:53:38 2024 +0700
+
+    Test login form
+    
+    1.0
+
+[33mcommit 285538df8a719a8d73a464c227a2e5ab657942f8[m
+Author: Hazhaz1412 <hoanghuanpham3@gmail.com>
+Date:   Thu Nov 7 08:48:03 2024 +0700
+
+    1.0
+    
+    Test
+
+[33mcommit 0508dbca5fbbcf64a7a980a43bcec9dfc3d76e1f[m
+Author: hoangDEVteams <giahoang21205@gmail.com>
+Date:   Tue Nov 5 21:19:44 2024 +0700
+
+    Add project files.
+
+[33mcommit 9e89c2f1cc98fed9562fdc5592b3202b543cd88c[m
+Author: hoangDEVteams <giahoang21205@gmail.com>
+Date:   Tue Nov 5 21:19:42 2024 +0700
+
+    Add .gitattributes and .gitignore.
