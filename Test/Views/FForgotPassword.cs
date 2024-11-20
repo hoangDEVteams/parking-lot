@@ -29,7 +29,7 @@ namespace Test.Views
 
         private void button3_Click(object sender, EventArgs e)
         {
-            string input = comboBox1.Text.Trim();
+            string input = txtEmailOrUser.Text.Trim();
 
             if (string.IsNullOrWhiteSpace(input))
             {
@@ -37,22 +37,43 @@ namespace Test.Views
                 return;
             }
 
-            var account = CUltils.db.Accounts.SingleOrDefault(a => a.Email == input || a.Username == input);
-
-            if (account != null)
+            if (input.Contains("@"))
             {
-                string verificationCode = Ctrl_Account.GenerateVerificationCode();
-                Ctrl_Account.SendVerificationEmail(account.Email, verificationCode);
-                Ctrl_Account.SaveVerificationCodeToDatabase(account.Username, verificationCode);
-                label1.Visible = true; 
-                textBox1.Visible = true; 
-                button1.Visible = true;
-                label2.Visible = true;
-                MessageBox.Show("Mã xác nhận đã được gửi đến email của bạn.");
+                // Input is an email
+                var accounts = CUltils.db.Accounts.Where(a => a.Email == input).ToList();
+                if (accounts.Any())
+                {
+                    comboBox1.Items.Clear();
+                    foreach (var account in accounts)
+                    {
+                        comboBox1.Items.Add(account.Username);
+                    }
+                    comboBox1.Visible = true;
+                }
+                else
+                {
+                    MessageBox.Show("Không tìm thấy tài khoản với email này.");
+                }
             }
             else
             {
-                MessageBox.Show("Tài khoản không tồn tại. Vui lòng kiểm tra lại thông tin.");
+                // Input is a username
+                var account = CUltils.db.Accounts.SingleOrDefault(a => a.Username == input);
+                if (account != null)
+                {
+                    string verificationCode = Ctrl_Account.GenerateVerificationCode();
+                    Ctrl_Account.SendVerificationEmail(account.Email, verificationCode);
+                    Ctrl_Account.SaveVerificationCodeToDatabase(account.Username, verificationCode);
+                    label1.Visible = true;
+                    textBox1.Visible = true;
+                    button1.Visible = true;
+                    label2.Visible = true;
+                    MessageBox.Show("Mã xác nhận đã được gửi đến email của bạn.");
+                }
+                else
+                {
+                    MessageBox.Show("Tài khoản không tồn tại. Vui lòng kiểm tra lại thông tin.");
+                }
             }
         }
 
@@ -66,20 +87,28 @@ namespace Test.Views
                 comboBox1.Visible = false;
                 return;
             }
-            var accounts = CUltils.db.Accounts.Where(a => a.Email == input).ToList();
 
-            if (accounts.Any())
+            if (input.Contains("@"))
             {
-                comboBox1.Items.Clear();
-                foreach (var account in accounts)
+                // Input is an email
+                var accounts = CUltils.db.Accounts.Where(a => a.Email == input).ToList();
+                if (accounts.Any())
                 {
-                    comboBox1.Items.Add(account.Username);
+                    comboBox1.Items.Clear();
+                    foreach (var account in accounts)
+                    {
+                        comboBox1.Items.Add(account.Username);
+                    }
+                    comboBox1.Visible = true;
                 }
-                comboBox1.Visible = true; 
+                else
+                {
+                    comboBox1.Visible = false;
+                }
             }
             else
             {
-                comboBox1.Visible = false; 
+                comboBox1.Visible = false;
             }
         }
 

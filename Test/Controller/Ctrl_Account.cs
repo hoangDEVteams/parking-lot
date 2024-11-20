@@ -36,10 +36,6 @@ namespace Test.Controller
 
                 string verificationCode = GenerateVerificationCode();
 
-                SaveVerificationCodeToDatabase(username, verificationCode);
-
-                SendVerificationEmail(email, verificationCode);
-
                 return "Đăng ký thành công!";
             }
             catch (Exception ex)
