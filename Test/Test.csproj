@@ -35,6 +35,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
@@ -189,6 +192,12 @@
     <Compile Include="Views\FResetPass.Designer.cs">
       <DependentUpon>FResetPass.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\FTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FTest.Designer.cs">
+      <DependentUpon>FTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\FVerify.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -219,6 +228,9 @@
     <EmbeddedResource Include="Views\FResetPass.resx">
       <DependentUpon>FResetPass.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\FTest.resx">
+      <DependentUpon>FTest.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\FVerify.resx">
       <DependentUpon>FVerify.cs</DependentUpon>
     </EmbeddedResource>
@@ -226,6 +238,7 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>BTX.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="app.manifest" />
     <None Include="BTX.edmx.diagram">
       <DependentUpon>BTX.edmx</DependentUpon>
     </None>
@@ -259,6 +272,8 @@
       <LastGenOutput>BTX.cs</LastGenOutput>
     </Content>
     <Content Include="cvextern.dll" />
+    <Content Include="minus.png" />
+    <Content Include="Resource\z6046076668735_c3e2a53255dcc115b1048efa2b4dca4f.ico" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />

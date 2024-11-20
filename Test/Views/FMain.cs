@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace Test.Views
 {
@@ -16,9 +17,14 @@ namespace Test.Views
         private bool dragging = false;
         private Point dragCursorPoint;
         private Point dragFormPoint;
-
+        private int maxWidth;
+        private int maxHeight;
+        private int maxMenu;
         public FMain(string username)
         {
+            this.FormBorderStyle = FormBorderStyle.Sizable;
+            maxWidth = Screen.PrimaryScreen.Bounds.Width;
+            maxHeight = Screen.PrimaryScreen.Bounds.Height;
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
             this.username = username;
@@ -32,43 +38,42 @@ namespace Test.Views
             iconButton1.Tag = "Home";
             iconButton2.Tag = "Settings";
             iconButton3.Tag = "Profile";
+            iconButton4.Tag = "Dashboard";
             iconButton6.Tag = "Sign Out";
             panel3.MouseDown += panel2_MouseDown;
             panel3.MouseMove += panel2_MouseMove;
             panel3.MouseUp += panel2_MouseUp;
             panel3.DoubleClick += panel2_DoubleClick;
-
-            this.LocationChanged += FMain_LocationChanged;
-
         }
-        private void FMain_LocationChanged(object sender, EventArgs e)
+
+        private void FMain_SizeChanged(object sender, EventArgs e)
         {
-            var workingArea = Screen.PrimaryScreen.WorkingArea;
-
-            if (this.Left <= workingArea.Left)
+            if (this.Width < 800)
             {
-                this.Width = workingArea.Width / 2;
-                this.Height = workingArea.Height;
-                this.Location = new Point(workingArea.Left, workingArea.Top);
+                panelMenu.Width = 80; 
+                foreach (Button menuButton in panelMenu.Controls.OfType<Button>())
+                {
+                    menuButton.Text = ""; 
+                }
             }
-            else if (this.Right >= workingArea.Right)
+            else
             {
-                this.Width = workingArea.Width / 2;
-                this.Height = workingArea.Height;
-                this.Location = new Point(workingArea.Right - this.Width, workingArea.Top);
-                iconButton1.Tag = "Home";
-                iconButton2.Tag = "Settings";
-                iconButton3.Tag = "Profile";
-                iconButton6.Tag = "Sign Out";
-
+                panelMenu.Width = 252;
+                foreach (Button menuButton in panelMenu.Controls.OfType<Button>())
+                {
+                    menuButton.Text = "    " + menuButton.Tag; 
+                }
             }
         }
+        
 
         private void FMain_Load(object sender, EventArgs e)
         {
             label1.Text = "Hello, " + username;
             this.FormBorderStyle = FormBorderStyle.None;
             this.StartPosition = FormStartPosition.CenterScreen;
+            maxMenu = panelMenu.Width;
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -87,7 +92,8 @@ namespace Test.Views
 
         private void iconButton2_Click(object sender, EventArgs e)
         {
-
+            FLogin form = new FLogin();
+            LoadFormIntoPanel(form);
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -107,73 +113,35 @@ namespace Test.Views
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (this.Width == 1920 && this.Height == 1080)
-            {
-                this.Width = 960;
-                this.Height = 540;
-                this.StartPosition = FormStartPosition.CenterScreen;
-                this.Location = new Point(
-                    (Screen.PrimaryScreen.WorkingArea.Width - this.Width) / 2,
-                    (Screen.PrimaryScreen.WorkingArea.Height - this.Height) / 2
-                );
-            }
-            else
-            {
-                this.Width = 1920;
-                this.Height = 1080;
-                this.StartPosition = FormStartPosition.CenterScreen;
-                this.Location = new Point(
-                    (Screen.PrimaryScreen.WorkingArea.Width - this.Width) / 2,
-                    (Screen.PrimaryScreen.WorkingArea.Height - this.Height) / 2 + 20
-                );
-            }
+            ToggleFormSize();
         }
+
         private void panel2_DoubleClick(object sender, EventArgs e)
         {
-            if (this.Width == 1920 && this.Height == 1080)
-            {
-                this.Width = 960;
-                this.Height = 540;
-                this.StartPosition = FormStartPosition.CenterScreen;
-                this.Location = new Point(
-                    (Screen.PrimaryScreen.WorkingArea.Width - this.Width) / 2,
-                    (Screen.PrimaryScreen.WorkingArea.Height - this.Height) / 2
-                );
-            }
-            else
-            {
-                this.Width = 1920;
-                this.Height = 1080;
-                this.StartPosition = FormStartPosition.CenterScreen;
-                this.Location = new Point(
-                    (Screen.PrimaryScreen.WorkingArea.Width - this.Width) / 2,
-                    (Screen.PrimaryScreen.WorkingArea.Height - this.Height) / 2 + 20
-                );
-            }
+            ToggleFormSize();
         }
+
         private void panel3_DoubleClick(object sender, EventArgs e)
         {
-            if (this.Width == 1920 && this.Height == 1080)
+            ToggleFormSize();
+        }
+        private void ToggleFormSize()
+        {
+            if (this.WindowState == FormWindowState.Maximized)
             {
-                this.Width = 960;
-                this.Height = 540;
-                this.StartPosition = FormStartPosition.CenterScreen;
+                this.WindowState = FormWindowState.Normal;
+                this.Size = new Size((maxWidth / 2) + 100, (maxHeight / 2) + 100) ;
                 this.Location = new Point(
-                    (Screen.PrimaryScreen.WorkingArea.Width - this.Width) / 2,
+                    (Screen.PrimaryScreen.WorkingArea.Width - this.Width) / 2 ,
                     (Screen.PrimaryScreen.WorkingArea.Height - this.Height) / 2
                 );
             }
             else
             {
-                this.Width = 1920;
-                this.Height = 1080;
-                this.StartPosition = FormStartPosition.CenterScreen;
-                this.Location = new Point(
-                    (Screen.PrimaryScreen.WorkingArea.Width - this.Width) / 2,
-                    (Screen.PrimaryScreen.WorkingArea.Height - this.Height) / 2 + 20
-                );
+                this.WindowState = FormWindowState.Maximized;
             }
         }
+
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -239,32 +207,34 @@ namespace Test.Views
                 label1.Visible = false;
                 cCirclePB1.Size = new Size(45, 45);
                 cCirclePB1.Location = new Point(
-                    (panelMenu.Width - cCirclePB1.Width) / 2, 
-                    btnMenu.Bottom + 10 
+                    (panelMenu.Width - cCirclePB1.Width) / 2,
+                    btnMenu.Bottom + 10
                 );
                 iconButton1.Width = 60;
                 iconButton2.Width = 60;
                 iconButton3.Width = 60;
+                iconButton4.Width = 60;
                 btnMenu.Dock = DockStyle.Top;
                 foreach (Button menuButton in panelMenu.Controls.OfType<Button>())
                 {
-                    menuButton.Text = ""; 
-                    menuButton.ImageAlign = ContentAlignment.MiddleCenter; 
+                    menuButton.Text = "";
+                    menuButton.ImageAlign = ContentAlignment.MiddleCenter;
                     menuButton.Padding = new Padding(0);
                 }
             }
             else
             {
-                panelMenu.Width = 252;
+
+                panelMenu.Width = maxMenu;
                 label1.Visible = true;
                 iconButton1.Width = 212;
                 iconButton2.Width = 212;
                 iconButton3.Width = 212;
                 iconButton6.Width = 252;
-                cCirclePB1.Size = new Size(131, 131);
+                iconButton4.Width = 212;
+                cCirclePB1.Size = new Size(100, 100);
                 cCirclePB1.Location = new Point(
-                    (panelMenu.Width - cCirclePB1.Width) / 2, 
-                    btnMenu.Bottom + 20 
+                    16, 54
                 );
 
                 btnMenu.Dock = DockStyle.None;
@@ -272,19 +242,51 @@ namespace Test.Views
                 {
                     if (menuButton.Tag != null)
                     {
-                        menuButton.Text = "    " + menuButton.Tag.ToString(); 
+                        menuButton.Text = "    " + menuButton.Tag.ToString();
                     }
                     else
                     {
-                        menuButton.Text = ""; 
+                        menuButton.Text = "";
                     }
-                    menuButton.ImageAlign = ContentAlignment.MiddleLeft; 
+                    menuButton.ImageAlign = ContentAlignment.MiddleLeft;
                     menuButton.Padding = new Padding(10, 0, 0, 0);
                 }
             }
         }
 
+        private void cCirclePB2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconButton4_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void LoadFormIntoPanel(Form form) //LOad Form Ở đây, Giải thích thôi chứ không cần đụng vào đây !
+        {
+            if (panelContainer.Controls.Count > 0)
+                panelContainer.Controls[0].Dispose(); // Câu lệnh này chỉ để cấm việc load quá nhiều form 1 lúc 
+
+            form.TopLevel = false;
+            form.FormBorderStyle = FormBorderStyle.None;
+            form.Dock = DockStyle.Fill;  
+
+            panelContainer.Controls.Add(form);  // tham chiếu
+            panelContainer.Tag = form;
+            form.Show(); 
+        }
+
+        private void panel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void iconButton1_Click_1(object sender, EventArgs e) // Ơr đây là nút nhảy qua form của mấy ông
+        {
+            FTest form = new FTest(); // Gọi form mấy ông muốn nhảy qua 
+            LoadFormIntoPanel(form);
+        }
     }
 
 }
-
