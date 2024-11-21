@@ -14,6 +14,13 @@ namespace Test
     
     public partial class Account
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Account()
+        {
+            this.Wallets = new HashSet<Wallet>();
+            this.Users = new HashSet<User>();
+        }
+    
         public int IDAcc { get; set; }
         public string Username { get; set; }
         public string Password { get; set; }
@@ -23,5 +30,12 @@ namespace Test
         public string Salt { get; set; }
         public string VerificationCode { get; set; }
         public Nullable<System.DateTime> VerificationCodeExpiration { get; set; }
+        public string IDUser { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Wallet> Wallets { get; set; }
+        public virtual User User { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<User> Users { get; set; }
     }
 }

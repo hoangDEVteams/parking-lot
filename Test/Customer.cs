@@ -14,13 +14,22 @@ namespace Test
     
     public partial class Customer
     {
-        public int MaKH { get; set; }
-        public string HoTenKH { get; set; }
-        public string GioiTinh { get; set; }
-        public string Sdt { get; set; }
-        public string DiaChi { get; set; }
-        public string CCCD { get; set; }
-        public string SoHoChieu { get; set; }
-        public string SoTaiKhoan { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Customer()
+        {
+            this.Penalties = new HashSet<Penalty>();
+            this.Rentals = new HashSet<Rental>();
+        }
+    
+        public string IDCustomer { get; set; }
+        public string IDUser { get; set; }
+        public string MembershipLevel { get; set; }
+        public Nullable<int> Points { get; set; }
+    
+        public virtual User User { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Penalty> Penalties { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Rental> Rentals { get; set; }
     }
 }
