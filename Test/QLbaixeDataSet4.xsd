@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="QLbaixeDataSet" targetNamespace="http://tempuri.org/QLbaixeDataSet4.xsd" xmlns:mstns="http://tempuri.org/QLbaixeDataSet4.xsd" xmlns="http://tempuri.org/QLbaixeDataSet4.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QLbaixeConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QLbaixeConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Test.Properties.Settings.GlobalReference.Default.QLbaixeConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="V_VehicleDataTableAdapter" GeneratorDataComponentClassName="V_VehicleDataTableAdapter" Name="V_VehicleData" UserDataComponentName="V_VehicleDataTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QLbaixeConnectionString (Settings)" DbObjectName="QLbaixe.dbo.V_VehicleData" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT LicensePlate, Color, Status, Description, VehicleTypeName, Manufacturer, ManufactureYear FROM dbo.V_VehicleData</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="LicensePlate" DataSetColumn="LicensePlate" />
+              <Mapping SourceColumn="Color" DataSetColumn="Color" />
+              <Mapping SourceColumn="Status" DataSetColumn="Status" />
+              <Mapping SourceColumn="Description" DataSetColumn="Description" />
+              <Mapping SourceColumn="VehicleTypeName" DataSetColumn="VehicleTypeName" />
+              <Mapping SourceColumn="Manufacturer" DataSetColumn="Manufacturer" />
+              <Mapping SourceColumn="ManufactureYear" DataSetColumn="ManufactureYear" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="QLbaixeDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="QLbaixeDataSet" msprop:Generator_DataSetName="QLbaixeDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="V_VehicleData" msprop:Generator_RowEvHandlerName="V_VehicleDataRowChangeEventHandler" msprop:Generator_RowDeletedName="V_VehicleDataRowDeleted" msprop:Generator_RowDeletingName="V_VehicleDataRowDeleting" msprop:Generator_RowEvArgName="V_VehicleDataRowChangeEvent" msprop:Generator_TablePropName="V_VehicleData" msprop:Generator_RowChangedName="V_VehicleDataRowChanged" msprop:Generator_RowChangingName="V_VehicleDataRowChanging" msprop:Generator_TableClassName="V_VehicleDataDataTable" msprop:Generator_RowClassName="V_VehicleDataRow" msprop:Generator_TableVarName="tableV_VehicleData" msprop:Generator_UserTableName="V_VehicleData">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LicensePlate" msprop:Generator_ColumnPropNameInRow="LicensePlate" msprop:Generator_ColumnPropNameInTable="LicensePlateColumn" msprop:Generator_ColumnVarNameInTable="columnLicensePlate" msprop:Generator_UserColumnName="LicensePlate">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Color" msprop:Generator_ColumnPropNameInRow="Color" msprop:Generator_ColumnPropNameInTable="ColorColumn" msprop:Generator_ColumnVarNameInTable="columnColor" msprop:Generator_UserColumnName="Color">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Status" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_UserColumnName="Status">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Description" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_UserColumnName="Description" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VehicleTypeName" msprop:Generator_ColumnPropNameInRow="VehicleTypeName" msprop:Generator_ColumnPropNameInTable="VehicleTypeNameColumn" msprop:Generator_ColumnVarNameInTable="columnVehicleTypeName" msprop:Generator_UserColumnName="VehicleTypeName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Manufacturer" msprop:Generator_ColumnPropNameInRow="Manufacturer" msprop:Generator_ColumnPropNameInTable="ManufacturerColumn" msprop:Generator_ColumnVarNameInTable="columnManufacturer" msprop:Generator_UserColumnName="Manufacturer">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ManufactureYear" msprop:Generator_ColumnPropNameInRow="ManufactureYear" msprop:Generator_ColumnPropNameInTable="ManufactureYearColumn" msprop:Generator_ColumnVarNameInTable="columnManufactureYear" msprop:Generator_UserColumnName="ManufactureYear" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:V_VehicleData" />
+      <xs:field xpath="mstns:LicensePlate" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

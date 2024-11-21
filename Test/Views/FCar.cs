@@ -13,52 +13,31 @@ namespace Test.Views
 {
     public partial class FCar : Form
     {
-        Ctrl_Vehivles ctrVehicles = new Ctrl_Vehivles();
-        Ctrl_VehiclesType ctrvehicleType = new Ctrl_VehiclesType();
+        CTrl_Vehicles ctrVehicles = new CTrl_Vehicles();
+        Ctrl_VehicleTypes ctrvehicleType = new Ctrl_VehicleTypes();
+        V_VehicleData viewVehicle = new V_VehicleData();   
         public FCar()
         {
             InitializeComponent();
         }
-
-        private void FCar_Load(object sender, EventArgs e)
-        {
-            // TODO: This line of code loads data into the 'qLbaixeDataSet3.Vehicles' table. You can move, or remove it, as needed.
-            this.vehiclesTableAdapter1.Fill(this.qLbaixeDataSet3.Vehicles);
-
-        }
-        private void fillByToolStripButton_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                this.vehiclesTableAdapter.FillBy(this.qLbaixeDataSet.Vehicles);
-            }
-            catch (System.Exception ex)
-            {
-                System.Windows.Forms.MessageBox.Show(ex.Message);
-            }
-
-        }
-        #region
-        private void CBStatus_SelectedIndexChanged(object sender, EventArgs e)
+        private void cbColor_SelectedIndexChanged(object sender, EventArgs e)
         {
             FilterVehicles();
         }
-        private void CBColor_SelectedIndexChanged(object sender, EventArgs e)
+        private void UpdateVehicleList(List<V_VehicleData> viewVehicle)
         {
-            FilterVehicles();
-        }
-        private void UpdateVehicleList(List<Vehicle> vehicles)
-        {
-            dtgridVehicles.DataSource = null; 
-            dtgridVehicles.DataSource = vehicles;
-        }
+            dtgridVehicles.DataSource = viewVehicle;
+            if (viewVehicle == null) {
+                dtgridVehicles.Refresh();
+            }
 
+        }
         private void FilterVehicles()
         {
-            string selectedStatus = CBStatus.SelectedItem?.ToString();
-            string selectedColor = CBColor.SelectedItem?.ToString();
+            string selectedStatus = cbStatus.SelectedItem?.ToString();
+            string selectedColor = cbColor.SelectedItem?.ToString();
 
-            List<Vehicle> filteredVehicles = CUltils.db.Vehicles.ToList();
+            List<V_VehicleData> filteredVehicles = CUltils.db.V_VehicleData.ToList();
 
             if (!string.IsNullOrEmpty(selectedStatus))
             {
@@ -72,16 +51,13 @@ namespace Test.Views
 
             UpdateVehicleList(filteredVehicles);
         }
-
-        #endregion
-
-        private void txtFind_TextChanged(object sender, EventArgs e)
+        private void FCar_Load(object sender, EventArgs e)
         {
-            string s = txtFind.Text;
-            List<Vehicle> findVehicles = !string.IsNullOrEmpty(s) 
-                ? ctrVehicles.findByName(s)
-                : CUltils.db.Vehicles.ToList();
-            UpdateVehicleList(findVehicles);
+            // TODO: This line of code loads data into the 'qLbaixeDataSet1.V_VehicleData' table. You can move, or remove it, as needed.
+            this.v_VehicleDataTableAdapter1.Fill(this.qLbaixeDataSet1.V_VehicleData);
+            // TODO: This line of code loads data into the 'qLbaixeDataSet.V_VehicleData' table. You can move, or remove it, as needed.
+            this.v_VehicleDataTableAdapter.Fill(this.qLbaixeDataSet.V_VehicleData);
+
         }
 
         private void dtgridVehicles_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -89,15 +65,37 @@ namespace Test.Views
             DataGridViewRow row = dtgridVehicles.Rows[e.RowIndex];
             int vehicleID = Convert.ToInt32(row.Cells[0].Value);
             VehicleType vehicle = ctrvehicleType.GetVehiclesbyCategory(vehicleID);
-            txtIDVehicle.DataBindings.Clear();
-            txtIDVehicle.DataBindings.Add(new Binding("Text", vehicle, "IDVehicleType"));
-            txtVehicleName.DataBindings.Clear();
-            txtVehicleName.DataBindings.Add(new Binding("Text", vehicle, "VehicleTypeName"));
-            txtManufacturer.DataBindings.Clear();
-            txtManufacturer.DataBindings.Add(new Binding("Text", vehicle, "Manufacturer"));
-            txtManufactureYear.DataBindings.Clear();
-            txtManufactureYear.DataBindings.Add(new Binding("Text", vehicle, "ManufactureYear"));
+            lblCode.DataBindings.Clear();
+            lblCode.DataBindings.Add(new Binding("Text", vehicle, "IDVehicleType"));
+            lblName.DataBindings.Clear();
+            lblName.DataBindings.Add(new Binding("Text", vehicle, "VehicleTypeName"));
+            lblFacturer.DataBindings.Clear();
+            lblFacturer.DataBindings.Add(new Binding("Text", vehicle, "Manufacturer"));
+            lblYear.DataBindings.Clear();
+            lblYear.DataBindings.Add(new Binding("Text", vehicle, "ManufactureYear"));
         }
-     
+
+        private void txtFind_TextChanged(object sender, EventArgs e)
+        {
+            string s = txtFind.Text;
+            if (string.IsNullOrEmpty(s))
+            {
+                FilterVehicles();
+            }
+            else
+    {
+                // Nếu ô tìm kiếm có chữ, lọc dữ liệu theo tìm kiếm
+                List<V_VehicleData> filteredVehicles = CUltils.db.V_VehicleData
+                    .Where(v => v.VehicleTypeName.ToLower().Contains(s.ToLower()))
+                    .ToList();
+
+                UpdateVehicleList(filteredVehicles);
+            }
+        }
+
+        private void cbStatus_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            FilterVehicles();
+        }
     }
 }

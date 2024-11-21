@@ -13,22 +13,598 @@
     <Property Name="Salt" Type="nvarchar" MaxLength="300" />
     <Property Name="VerificationCode" Type="nvarchar" MaxLength="6" />
     <Property Name="VerificationCodeExpiration" Type="datetime" />
+    <Property Name="IDUser" Type="varchar" MaxLength="50" />
   </EntityType>
-  <EntityType Name="Customer">
+  <EntityType Name="Customers">
     <Key>
-      <PropertyRef Name="MaKH" />
+      <PropertyRef Name="IDCustomer" />
     </Key>
-    <Property Name="MaKH" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="HoTenKH" Type="nvarchar" MaxLength="100" Nullable="false" />
-    <Property Name="GioiTinh" Type="varchar" MaxLength="5" Nullable="false" />
-    <Property Name="Sdt" Type="varchar" MaxLength="12" Nullable="false" />
-    <Property Name="DiaChi" Type="nvarchar" MaxLength="150" Nullable="false" />
-    <Property Name="CCCD" Type="nvarchar" MaxLength="15" />
-    <Property Name="SoHoChieu" Type="nvarchar" MaxLength="25" />
-    <Property Name="SoTaiKhoan" Type="nvarchar" MaxLength="50" />
+    <Property Name="IDCustomer" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="MembershipLevel" Type="nvarchar" MaxLength="20" />
+    <Property Name="Points" Type="int" />
   </EntityType>
+  <EntityType Name="Employees">
+    <Key>
+      <PropertyRef Name="IDEmployee" />
+    </Key>
+    <Property Name="IDEmployee" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Position" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DateHired" Type="date" Nullable="false" />
+    <Property Name="salary" Type="decimal" Precision="10" Scale="2" />
+  </EntityType>
+  <EntityType Name="Parking">
+    <Key>
+      <PropertyRef Name="CodeParking" />
+    </Key>
+    <Property Name="CodeParking" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Quantity" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="CodeCar" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDEmployee" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Penalties">
+    <Key>
+      <PropertyRef Name="IDPenalty" />
+    </Key>
+    <Property Name="IDPenalty" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PenaltyDate" Type="date" Nullable="false" />
+    <Property Name="IDCustomer" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDEmployee" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PenaltyDetails">
+    <Key>
+      <PropertyRef Name="IDPenaltyDetail" />
+    </Key>
+    <Property Name="IDPenaltyDetail" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDPenalty" Type="int" Nullable="false" />
+    <Property Name="Reason" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Amount" Type="money" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RentalDetails">
+    <Key>
+      <PropertyRef Name="IDRentalDetail" />
+    </Key>
+    <Property Name="IDRentalDetail" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDRental" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LicensePlate" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="RentalDays" Type="int" Nullable="false" />
+    <Property Name="RentPrice" Type="money" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Rentals">
+    <Key>
+      <PropertyRef Name="IDRental" />
+    </Key>
+    <Property Name="IDRental" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="RentalDate" Type="date" Nullable="false" />
+    <Property Name="IDCustomer" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IDEmployee" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="IDUser" />
+    </Key>
+    <Property Name="IDUser" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Gender" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="PhoneNumber" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="Address" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="IdentityCard" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="BankNumber" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="UserType" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="IDAcc" Type="int" />
+  </EntityType>
+  <EntityType Name="Vehicles">
+    <Key>
+      <PropertyRef Name="LicensePlate" />
+    </Key>
+    <Property Name="LicensePlate" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="IDVehicleType" Type="int" Nullable="false" />
+    <Property Name="Color" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="Status" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="255" />
+    <Property Name="IDEmployee" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VehicleTypes">
+    <Key>
+      <PropertyRef Name="IDVehicleType" />
+    </Key>
+    <Property Name="IDVehicleType" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="VehicleTypeName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Manufacturer" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ManufactureYear" Type="int" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Wallet">
+    <Key>
+      <PropertyRef Name="IDWallet" />
+    </Key>
+    <Property Name="IDWallet" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDAcc" Type="int" Nullable="false" />
+    <Property Name="Money" Type="money" Nullable="false" />
+    <Property Name="TradingDay" Type="date" />
+    <Property Name="TransactionType" Type="nvarchar" MaxLength="20" />
+    <Property Name="TransactionAmount" Type="money" />
+    <Property Name="Balance" Type="money" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="255" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="UpdatedDate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'QLbaixe.dbo.V_VehicleData' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="V_VehicleData">
+    <Key>
+      <PropertyRef Name="IDVehicleType" />
+      <PropertyRef Name="VehicleTypeName" />
+      <PropertyRef Name="Color" />
+      <PropertyRef Name="Status" />
+      <PropertyRef Name="Manufacturer" />
+      <PropertyRef Name="ManufactureYear" />
+      <PropertyRef Name="LicensePlate" />
+    </Key>
+    <Property Name="IDVehicleType" Type="int" Nullable="false" />
+    <Property Name="VehicleTypeName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Color" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="Status" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Manufacturer" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ManufactureYear" Type="int" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="255" />
+    <Property Name="LicensePlate" Type="nvarchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Customers__IDUse__4222D4EF">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Customers" Type="Self.Customers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="IDUser" />
+      </Principal>
+      <Dependent Role="Customers">
+        <PropertyRef Name="IDUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Employees__IDUse__3F466844">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Employees" Type="Self.Employees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="IDUser" />
+      </Principal>
+      <Dependent Role="Employees">
+        <PropertyRef Name="IDUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Penalties__IDCus__571DF1D5">
+    <End Role="Customers" Type="Self.Customers" Multiplicity="1" />
+    <End Role="Penalties" Type="Self.Penalties" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customers">
+        <PropertyRef Name="IDCustomer" />
+      </Principal>
+      <Dependent Role="Penalties">
+        <PropertyRef Name="IDCustomer" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Penalties__IDEmp__5812160E">
+    <End Role="Employees" Type="Self.Employees" Multiplicity="1" />
+    <End Role="Penalties" Type="Self.Penalties" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employees">
+        <PropertyRef Name="IDEmployee" />
+      </Principal>
+      <Dependent Role="Penalties">
+        <PropertyRef Name="IDEmployee" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PenaltyDe__IDPen__5AEE82B9">
+    <End Role="Penalties" Type="Self.Penalties" Multiplicity="1" />
+    <End Role="PenaltyDetails" Type="Self.PenaltyDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Penalties">
+        <PropertyRef Name="IDPenalty" />
+      </Principal>
+      <Dependent Role="PenaltyDetails">
+        <PropertyRef Name="IDPenalty" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__RentalDet__IDRen__778AC167">
+    <End Role="Rentals" Type="Self.Rentals" Multiplicity="1" />
+    <End Role="RentalDetails" Type="Self.RentalDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rentals">
+        <PropertyRef Name="IDRental" />
+      </Principal>
+      <Dependent Role="RentalDetails">
+        <PropertyRef Name="IDRental" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__RentalDet__Licen__787EE5A0">
+    <End Role="Vehicles" Type="Self.Vehicles" Multiplicity="1" />
+    <End Role="RentalDetails" Type="Self.RentalDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vehicles">
+        <PropertyRef Name="LicensePlate" />
+      </Principal>
+      <Dependent Role="RentalDetails">
+        <PropertyRef Name="LicensePlate" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Rentals__IDCusto__73BA3083">
+    <End Role="Customers" Type="Self.Customers" Multiplicity="1" />
+    <End Role="Rentals" Type="Self.Rentals" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customers">
+        <PropertyRef Name="IDCustomer" />
+      </Principal>
+      <Dependent Role="Rentals">
+        <PropertyRef Name="IDCustomer" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Rentals__IDEmplo__74AE54BC">
+    <End Role="Employees" Type="Self.Employees" Multiplicity="1" />
+    <End Role="Rentals" Type="Self.Rentals" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employees">
+        <PropertyRef Name="IDEmployee" />
+      </Principal>
+      <Dependent Role="Rentals">
+        <PropertyRef Name="IDEmployee" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Vehicles__IDEmpl__4CA06362">
+    <End Role="Employees" Type="Self.Employees" Multiplicity="1" />
+    <End Role="Vehicles" Type="Self.Vehicles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employees">
+        <PropertyRef Name="IDEmployee" />
+      </Principal>
+      <Dependent Role="Vehicles">
+        <PropertyRef Name="IDEmployee" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Vehicles__IDVehi__4BAC3F29">
+    <End Role="VehicleTypes" Type="Self.VehicleTypes" Multiplicity="1" />
+    <End Role="Vehicles" Type="Self.Vehicles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VehicleTypes">
+        <PropertyRef Name="IDVehicleType" />
+      </Principal>
+      <Dependent Role="Vehicles">
+        <PropertyRef Name="IDVehicleType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Wallet__IDAcc__02FC7413">
+    <End Role="Account" Type="Self.Account" Multiplicity="1" />
+    <End Role="Wallet" Type="Self.Wallet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Account">
+        <PropertyRef Name="IDAcc" />
+      </Principal>
+      <Dependent Role="Wallet">
+        <PropertyRef Name="IDAcc" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Account_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="Account" Type="Self.Account" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="IDUser" />
+      </Principal>
+      <Dependent Role="Account">
+        <PropertyRef Name="IDUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Parking_Employee">
+    <End Role="Employees" Type="Self.Employees" Multiplicity="1" />
+    <End Role="Parking" Type="Self.Parking" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employees">
+        <PropertyRef Name="IDEmployee" />
+      </Principal>
+      <Dependent Role="Parking">
+        <PropertyRef Name="IDEmployee" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_Account">
+    <End Role="Account" Type="Self.Account" Multiplicity="0..1" />
+    <End Role="Users" Type="Self.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Account">
+        <PropertyRef Name="IDAcc" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="IDAcc" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="F_ShowAcc" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Top" Type="int" Mode="In" />
+    <ReturnType>
+      <CollectionType>
+        <RowType>
+          <Property Name="IDAcc" Type="int" Nullable="false" />
+          <Property Name="Username" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Password" Type="nvarchar" MaxLength="300" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" MaxLength="100" />
+          <Property Name="Role" Type="nvarchar" MaxLength="25" Nullable="false" />
+          <Property Name="Status" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="Salt" Type="nvarchar" MaxLength="300" />
+          <Property Name="VerificationCode" Type="nvarchar" MaxLength="6" />
+          <Property Name="VerificationCodeExpiration" Type="datetime" />
+          <Property Name="IDUser" Type="varchar" MaxLength="50" />
+        </RowType>
+      </CollectionType>
+    </ReturnType>
+  </Function>
+  <Function Name="F_ShowCustomer" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Top" Type="int" Mode="In" />
+    <ReturnType>
+      <CollectionType>
+        <RowType>
+          <Property Name="IDCustomer" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="IDUser" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="MembershipLevel" Type="nvarchar" MaxLength="20" />
+          <Property Name="Points" Type="int" />
+        </RowType>
+      </CollectionType>
+    </ReturnType>
+  </Function>
+  <Function Name="F_ShowPenalties" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Top" Type="int" Mode="In" />
+    <ReturnType>
+      <CollectionType>
+        <RowType>
+          <Property Name="IDPenalty" Type="int" Nullable="false" />
+          <Property Name="PenaltyDate" Type="date" Nullable="false" />
+          <Property Name="IDCustomer" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="IDEmployee" Type="varchar" MaxLength="50" Nullable="false" />
+        </RowType>
+      </CollectionType>
+    </ReturnType>
+  </Function>
+  <Function Name="F_ShowRentals" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Top" Type="int" Mode="In" />
+    <ReturnType>
+      <CollectionType>
+        <RowType>
+          <Property Name="IDRental" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="RentalDate" Type="date" Nullable="false" />
+          <Property Name="IDCustomer" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="IDEmployee" Type="varchar" MaxLength="50" Nullable="false" />
+        </RowType>
+      </CollectionType>
+    </ReturnType>
+  </Function>
+  <Function Name="F_ShowUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Top" Type="int" Mode="In" />
+    <ReturnType>
+      <CollectionType>
+        <RowType>
+          <Property Name="IDUser" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Gender" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="PhoneNumber" Type="varchar" MaxLength="15" Nullable="false" />
+          <Property Name="Address" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="IdentityCard" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="BankNumber" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="UserType" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="IDAcc" Type="int" />
+        </RowType>
+      </CollectionType>
+    </ReturnType>
+  </Function>
+  <Function Name="F_ShowVehicles" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Top" Type="int" Mode="In" />
+    <ReturnType>
+      <CollectionType>
+        <RowType>
+          <Property Name="LicensePlate" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="IDVehicleType" Type="int" Nullable="false" />
+          <Property Name="Color" Type="nvarchar" MaxLength="30" Nullable="false" />
+          <Property Name="Status" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" MaxLength="255" />
+          <Property Name="IDEmployee" Type="varchar" MaxLength="50" Nullable="false" />
+        </RowType>
+      </CollectionType>
+    </ReturnType>
+  </Function>
+  <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+  <Function Name="PRO_AddPenalty" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PenaltyDate" Type="date" Mode="In" />
+    <Parameter Name="IDCustomer" Type="int" Mode="In" />
+    <Parameter Name="IDEmployee" Type="int" Mode="In" />
+  </Function>
+  <Function Name="PRO_AddUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Name" Type="nvarchar" Mode="In" />
+    <Parameter Name="Gender" Type="nvarchar" Mode="In" />
+    <Parameter Name="PhoneNumber" Type="nvarchar" Mode="In" />
+    <Parameter Name="Address" Type="nvarchar" Mode="In" />
+    <Parameter Name="IdentityCard" Type="nvarchar" Mode="In" />
+    <Parameter Name="BankNumber" Type="nvarchar" Mode="In" />
+    <Parameter Name="UserType" Type="nvarchar" Mode="In" />
+    <Parameter Name="IDAcc" Type="int" Mode="In" />
+  </Function>
+  <Function Name="PRO_AddVehicle" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="LicensePlate" Type="varchar" Mode="In" />
+    <Parameter Name="Color" Type="nvarchar" Mode="In" />
+    <Parameter Name="Status" Type="nvarchar" Mode="In" />
+    <Parameter Name="Description" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="PRO_AddVehicleType" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="VehicleTypeName" Type="nvarchar" Mode="In" />
+    <Parameter Name="Manufacturer" Type="nvarchar" Mode="In" />
+    <Parameter Name="Description" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="PRO_DeleteVehicle" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="LicensePlate" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="PRO_DeleteVehicleType" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDVehicleType" Type="int" Mode="In" />
+  </Function>
+  <Function Name="PRO_DUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDUser" Type="int" Mode="In" />
+  </Function>
+  <Function Name="PRO_UpdateVehicleType" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDVehicleType" Type="int" Mode="In" />
+    <Parameter Name="VehicleTypeName" Type="nvarchar" Mode="In" />
+    <Parameter Name="Manufacturer" Type="nvarchar" Mode="In" />
+    <Parameter Name="Description" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="PRO_UUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDUser" Type="int" Mode="In" />
+    <Parameter Name="Name" Type="nvarchar" Mode="In" />
+    <Parameter Name="Gender" Type="nvarchar" Mode="In" />
+    <Parameter Name="PhoneNumber" Type="nvarchar" Mode="In" />
+    <Parameter Name="Address" Type="nvarchar" Mode="In" />
+    <Parameter Name="IdentityCard" Type="nvarchar" Mode="In" />
+    <Parameter Name="BankNumber" Type="nvarchar" Mode="In" />
+    <Parameter Name="UserType" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="PRO_UVehicles" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="licenseplate" Type="varchar" Mode="In" />
+    <Parameter Name="Color" Type="nvarchar" Mode="In" />
+    <Parameter Name="status" Type="nvarchar" Mode="In" />
+    <Parameter Name="Description" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
   <EntityContainer Name="BTXModelStoreContainer">
     <EntitySet Name="Account" EntityType="Self.Account" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="Customer" EntityType="Self.Customer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Customers" EntityType="Self.Customers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Employees" EntityType="Self.Employees" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Parking" EntityType="Self.Parking" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Penalties" EntityType="Self.Penalties" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PenaltyDetails" EntityType="Self.PenaltyDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RentalDetails" EntityType="Self.RentalDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Rentals" EntityType="Self.Rentals" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Vehicles" EntityType="Self.Vehicles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VehicleTypes" EntityType="Self.VehicleTypes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Wallet" EntityType="Self.Wallet" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="V_VehicleData" EntityType="Self.V_VehicleData" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [V_VehicleData].[IDVehicleType] AS [IDVehicleType], 
+    [V_VehicleData].[VehicleTypeName] AS [VehicleTypeName], 
+    [V_VehicleData].[Color] AS [Color], 
+    [V_VehicleData].[Status] AS [Status], 
+    [V_VehicleData].[Manufacturer] AS [Manufacturer], 
+    [V_VehicleData].[ManufactureYear] AS [ManufactureYear], 
+    [V_VehicleData].[Description] AS [Description], 
+    [V_VehicleData].[LicensePlate] AS [LicensePlate]
+    FROM [dbo].[V_VehicleData] AS [V_VehicleData]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK__Customers__IDUse__4222D4EF" Association="Self.FK__Customers__IDUse__4222D4EF">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Customers" EntitySet="Customers" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Employees__IDUse__3F466844" Association="Self.FK__Employees__IDUse__3F466844">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Employees" EntitySet="Employees" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Penalties__IDCus__571DF1D5" Association="Self.FK__Penalties__IDCus__571DF1D5">
+      <End Role="Customers" EntitySet="Customers" />
+      <End Role="Penalties" EntitySet="Penalties" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Penalties__IDEmp__5812160E" Association="Self.FK__Penalties__IDEmp__5812160E">
+      <End Role="Employees" EntitySet="Employees" />
+      <End Role="Penalties" EntitySet="Penalties" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PenaltyDe__IDPen__5AEE82B9" Association="Self.FK__PenaltyDe__IDPen__5AEE82B9">
+      <End Role="Penalties" EntitySet="Penalties" />
+      <End Role="PenaltyDetails" EntitySet="PenaltyDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__RentalDet__IDRen__778AC167" Association="Self.FK__RentalDet__IDRen__778AC167">
+      <End Role="Rentals" EntitySet="Rentals" />
+      <End Role="RentalDetails" EntitySet="RentalDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__RentalDet__Licen__787EE5A0" Association="Self.FK__RentalDet__Licen__787EE5A0">
+      <End Role="Vehicles" EntitySet="Vehicles" />
+      <End Role="RentalDetails" EntitySet="RentalDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Rentals__IDCusto__73BA3083" Association="Self.FK__Rentals__IDCusto__73BA3083">
+      <End Role="Customers" EntitySet="Customers" />
+      <End Role="Rentals" EntitySet="Rentals" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Rentals__IDEmplo__74AE54BC" Association="Self.FK__Rentals__IDEmplo__74AE54BC">
+      <End Role="Employees" EntitySet="Employees" />
+      <End Role="Rentals" EntitySet="Rentals" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Vehicles__IDEmpl__4CA06362" Association="Self.FK__Vehicles__IDEmpl__4CA06362">
+      <End Role="Employees" EntitySet="Employees" />
+      <End Role="Vehicles" EntitySet="Vehicles" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Vehicles__IDVehi__4BAC3F29" Association="Self.FK__Vehicles__IDVehi__4BAC3F29">
+      <End Role="VehicleTypes" EntitySet="VehicleTypes" />
+      <End Role="Vehicles" EntitySet="Vehicles" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Wallet__IDAcc__02FC7413" Association="Self.FK__Wallet__IDAcc__02FC7413">
+      <End Role="Account" EntitySet="Account" />
+      <End Role="Wallet" EntitySet="Wallet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Account_Users" Association="Self.FK_Account_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Account" EntitySet="Account" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Parking_Employee" Association="Self.FK_Parking_Employee">
+      <End Role="Employees" EntitySet="Employees" />
+      <End Role="Parking" EntitySet="Parking" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_Account" Association="Self.FK_Users_Account">
+      <End Role="Account" EntitySet="Account" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
   </EntityContainer>
 </Schema>

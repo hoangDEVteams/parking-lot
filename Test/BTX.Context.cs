@@ -12,6 +12,8 @@ namespace Test
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    using System.Data.Entity.Core.Objects;
+    using System.Linq;
     
     public partial class BTXEntities1 : DbContext
     {
@@ -27,5 +29,378 @@ namespace Test
     
         public virtual DbSet<Account> Accounts { get; set; }
         public virtual DbSet<Customer> Customers { get; set; }
+        public virtual DbSet<Employee> Employees { get; set; }
+        public virtual DbSet<Parking> Parkings { get; set; }
+        public virtual DbSet<Penalty> Penalties { get; set; }
+        public virtual DbSet<PenaltyDetail> PenaltyDetails { get; set; }
+        public virtual DbSet<RentalDetail> RentalDetails { get; set; }
+        public virtual DbSet<Rental> Rentals { get; set; }
+        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
+        public virtual DbSet<User> Users { get; set; }
+        public virtual DbSet<Vehicle> Vehicles { get; set; }
+        public virtual DbSet<VehicleType> VehicleTypes { get; set; }
+        public virtual DbSet<Wallet> Wallets { get; set; }
+        public virtual DbSet<V_VehicleData> V_VehicleData { get; set; }
+    
+        [DbFunction("BTXEntities1", "F_ShowAcc")]
+        public virtual IQueryable<F_ShowAcc_Result> F_ShowAcc(Nullable<int> top)
+        {
+            var topParameter = top.HasValue ?
+                new ObjectParameter("Top", top) :
+                new ObjectParameter("Top", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<F_ShowAcc_Result>("[BTXEntities1].[F_ShowAcc](@Top)", topParameter);
+        }
+    
+        [DbFunction("BTXEntities1", "F_ShowCustomer")]
+        public virtual IQueryable<F_ShowCustomer_Result> F_ShowCustomer(Nullable<int> top)
+        {
+            var topParameter = top.HasValue ?
+                new ObjectParameter("Top", top) :
+                new ObjectParameter("Top", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<F_ShowCustomer_Result>("[BTXEntities1].[F_ShowCustomer](@Top)", topParameter);
+        }
+    
+        [DbFunction("BTXEntities1", "F_ShowPenalties")]
+        public virtual IQueryable<F_ShowPenalties_Result> F_ShowPenalties(Nullable<int> top)
+        {
+            var topParameter = top.HasValue ?
+                new ObjectParameter("Top", top) :
+                new ObjectParameter("Top", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<F_ShowPenalties_Result>("[BTXEntities1].[F_ShowPenalties](@Top)", topParameter);
+        }
+    
+        [DbFunction("BTXEntities1", "F_ShowRentals")]
+        public virtual IQueryable<F_ShowRentals_Result> F_ShowRentals(Nullable<int> top)
+        {
+            var topParameter = top.HasValue ?
+                new ObjectParameter("Top", top) :
+                new ObjectParameter("Top", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<F_ShowRentals_Result>("[BTXEntities1].[F_ShowRentals](@Top)", topParameter);
+        }
+    
+        [DbFunction("BTXEntities1", "F_ShowUser")]
+        public virtual IQueryable<F_ShowUser_Result> F_ShowUser(Nullable<int> top)
+        {
+            var topParameter = top.HasValue ?
+                new ObjectParameter("Top", top) :
+                new ObjectParameter("Top", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<F_ShowUser_Result>("[BTXEntities1].[F_ShowUser](@Top)", topParameter);
+        }
+    
+        [DbFunction("BTXEntities1", "F_ShowVehicles")]
+        public virtual IQueryable<F_ShowVehicles_Result> F_ShowVehicles(Nullable<int> top)
+        {
+            var topParameter = top.HasValue ?
+                new ObjectParameter("Top", top) :
+                new ObjectParameter("Top", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<F_ShowVehicles_Result>("[BTXEntities1].[F_ShowVehicles](@Top)", topParameter);
+        }
+    
+        public virtual int PRO_AddPenalty(Nullable<System.DateTime> penaltyDate, Nullable<int> iDCustomer, Nullable<int> iDEmployee)
+        {
+            var penaltyDateParameter = penaltyDate.HasValue ?
+                new ObjectParameter("PenaltyDate", penaltyDate) :
+                new ObjectParameter("PenaltyDate", typeof(System.DateTime));
+    
+            var iDCustomerParameter = iDCustomer.HasValue ?
+                new ObjectParameter("IDCustomer", iDCustomer) :
+                new ObjectParameter("IDCustomer", typeof(int));
+    
+            var iDEmployeeParameter = iDEmployee.HasValue ?
+                new ObjectParameter("IDEmployee", iDEmployee) :
+                new ObjectParameter("IDEmployee", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("PRO_AddPenalty", penaltyDateParameter, iDCustomerParameter, iDEmployeeParameter);
+        }
+    
+        public virtual int PRO_AddUser(string name, string gender, string phoneNumber, string address, string identityCard, string bankNumber, string userType, Nullable<int> iDAcc)
+        {
+            var nameParameter = name != null ?
+                new ObjectParameter("Name", name) :
+                new ObjectParameter("Name", typeof(string));
+    
+            var genderParameter = gender != null ?
+                new ObjectParameter("Gender", gender) :
+                new ObjectParameter("Gender", typeof(string));
+    
+            var phoneNumberParameter = phoneNumber != null ?
+                new ObjectParameter("PhoneNumber", phoneNumber) :
+                new ObjectParameter("PhoneNumber", typeof(string));
+    
+            var addressParameter = address != null ?
+                new ObjectParameter("Address", address) :
+                new ObjectParameter("Address", typeof(string));
+    
+            var identityCardParameter = identityCard != null ?
+                new ObjectParameter("IdentityCard", identityCard) :
+                new ObjectParameter("IdentityCard", typeof(string));
+    
+            var bankNumberParameter = bankNumber != null ?
+                new ObjectParameter("BankNumber", bankNumber) :
+                new ObjectParameter("BankNumber", typeof(string));
+    
+            var userTypeParameter = userType != null ?
+                new ObjectParameter("UserType", userType) :
+                new ObjectParameter("UserType", typeof(string));
+    
+            var iDAccParameter = iDAcc.HasValue ?
+                new ObjectParameter("IDAcc", iDAcc) :
+                new ObjectParameter("IDAcc", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("PRO_AddUser", nameParameter, genderParameter, phoneNumberParameter, addressParameter, identityCardParameter, bankNumberParameter, userTypeParameter, iDAccParameter);
+        }
+    
+        public virtual int PRO_AddVehicle(string licensePlate, string color, string status, string description)
+        {
+            var licensePlateParameter = licensePlate != null ?
+                new ObjectParameter("LicensePlate", licensePlate) :
+                new ObjectParameter("LicensePlate", typeof(string));
+    
+            var colorParameter = color != null ?
+                new ObjectParameter("Color", color) :
+                new ObjectParameter("Color", typeof(string));
+    
+            var statusParameter = status != null ?
+                new ObjectParameter("Status", status) :
+                new ObjectParameter("Status", typeof(string));
+    
+            var descriptionParameter = description != null ?
+                new ObjectParameter("Description", description) :
+                new ObjectParameter("Description", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("PRO_AddVehicle", licensePlateParameter, colorParameter, statusParameter, descriptionParameter);
+        }
+    
+        public virtual int PRO_AddVehicleType(string vehicleTypeName, string manufacturer, string description)
+        {
+            var vehicleTypeNameParameter = vehicleTypeName != null ?
+                new ObjectParameter("VehicleTypeName", vehicleTypeName) :
+                new ObjectParameter("VehicleTypeName", typeof(string));
+    
+            var manufacturerParameter = manufacturer != null ?
+                new ObjectParameter("Manufacturer", manufacturer) :
+                new ObjectParameter("Manufacturer", typeof(string));
+    
+            var descriptionParameter = description != null ?
+                new ObjectParameter("Description", description) :
+                new ObjectParameter("Description", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("PRO_AddVehicleType", vehicleTypeNameParameter, manufacturerParameter, descriptionParameter);
+        }
+    
+        public virtual int PRO_DeleteVehicle(string licensePlate)
+        {
+            var licensePlateParameter = licensePlate != null ?
+                new ObjectParameter("LicensePlate", licensePlate) :
+                new ObjectParameter("LicensePlate", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("PRO_DeleteVehicle", licensePlateParameter);
+        }
+    
+        public virtual int PRO_DeleteVehicleType(Nullable<int> iDVehicleType)
+        {
+            var iDVehicleTypeParameter = iDVehicleType.HasValue ?
+                new ObjectParameter("IDVehicleType", iDVehicleType) :
+                new ObjectParameter("IDVehicleType", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("PRO_DeleteVehicleType", iDVehicleTypeParameter);
+        }
+    
+        public virtual int PRO_DUser(Nullable<int> iDUser)
+        {
+            var iDUserParameter = iDUser.HasValue ?
+                new ObjectParameter("IDUser", iDUser) :
+                new ObjectParameter("IDUser", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("PRO_DUser", iDUserParameter);
+        }
+    
+        public virtual int PRO_UpdateVehicleType(Nullable<int> iDVehicleType, string vehicleTypeName, string manufacturer, string description)
+        {
+            var iDVehicleTypeParameter = iDVehicleType.HasValue ?
+                new ObjectParameter("IDVehicleType", iDVehicleType) :
+                new ObjectParameter("IDVehicleType", typeof(int));
+    
+            var vehicleTypeNameParameter = vehicleTypeName != null ?
+                new ObjectParameter("VehicleTypeName", vehicleTypeName) :
+                new ObjectParameter("VehicleTypeName", typeof(string));
+    
+            var manufacturerParameter = manufacturer != null ?
+                new ObjectParameter("Manufacturer", manufacturer) :
+                new ObjectParameter("Manufacturer", typeof(string));
+    
+            var descriptionParameter = description != null ?
+                new ObjectParameter("Description", description) :
+                new ObjectParameter("Description", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("PRO_UpdateVehicleType", iDVehicleTypeParameter, vehicleTypeNameParameter, manufacturerParameter, descriptionParameter);
+        }
+    
+        public virtual int PRO_UUser(Nullable<int> iDUser, string name, string gender, string phoneNumber, string address, string identityCard, string bankNumber, string userType)
+        {
+            var iDUserParameter = iDUser.HasValue ?
+                new ObjectParameter("IDUser", iDUser) :
+                new ObjectParameter("IDUser", typeof(int));
+    
+            var nameParameter = name != null ?
+                new ObjectParameter("Name", name) :
+                new ObjectParameter("Name", typeof(string));
+    
+            var genderParameter = gender != null ?
+                new ObjectParameter("Gender", gender) :
+                new ObjectParameter("Gender", typeof(string));
+    
+            var phoneNumberParameter = phoneNumber != null ?
+                new ObjectParameter("PhoneNumber", phoneNumber) :
+                new ObjectParameter("PhoneNumber", typeof(string));
+    
+            var addressParameter = address != null ?
+                new ObjectParameter("Address", address) :
+                new ObjectParameter("Address", typeof(string));
+    
+            var identityCardParameter = identityCard != null ?
+                new ObjectParameter("IdentityCard", identityCard) :
+                new ObjectParameter("IdentityCard", typeof(string));
+    
+            var bankNumberParameter = bankNumber != null ?
+                new ObjectParameter("BankNumber", bankNumber) :
+                new ObjectParameter("BankNumber", typeof(string));
+    
+            var userTypeParameter = userType != null ?
+                new ObjectParameter("UserType", userType) :
+                new ObjectParameter("UserType", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("PRO_UUser", iDUserParameter, nameParameter, genderParameter, phoneNumberParameter, addressParameter, identityCardParameter, bankNumberParameter, userTypeParameter);
+        }
+    
+        public virtual int PRO_UVehicles(string licenseplate, string color, string status, string description)
+        {
+            var licenseplateParameter = licenseplate != null ?
+                new ObjectParameter("licenseplate", licenseplate) :
+                new ObjectParameter("licenseplate", typeof(string));
+    
+            var colorParameter = color != null ?
+                new ObjectParameter("Color", color) :
+                new ObjectParameter("Color", typeof(string));
+    
+            var statusParameter = status != null ?
+                new ObjectParameter("status", status) :
+                new ObjectParameter("status", typeof(string));
+    
+            var descriptionParameter = description != null ?
+                new ObjectParameter("Description", description) :
+                new ObjectParameter("Description", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("PRO_UVehicles", licenseplateParameter, colorParameter, statusParameter, descriptionParameter);
+        }
+    
+        public virtual int sp_alterdiagram(string diagramname, Nullable<int> owner_id, Nullable<int> version, byte[] definition)
+        {
+            var diagramnameParameter = diagramname != null ?
+                new ObjectParameter("diagramname", diagramname) :
+                new ObjectParameter("diagramname", typeof(string));
+    
+            var owner_idParameter = owner_id.HasValue ?
+                new ObjectParameter("owner_id", owner_id) :
+                new ObjectParameter("owner_id", typeof(int));
+    
+            var versionParameter = version.HasValue ?
+                new ObjectParameter("version", version) :
+                new ObjectParameter("version", typeof(int));
+    
+            var definitionParameter = definition != null ?
+                new ObjectParameter("definition", definition) :
+                new ObjectParameter("definition", typeof(byte[]));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_alterdiagram", diagramnameParameter, owner_idParameter, versionParameter, definitionParameter);
+        }
+    
+        public virtual int sp_creatediagram(string diagramname, Nullable<int> owner_id, Nullable<int> version, byte[] definition)
+        {
+            var diagramnameParameter = diagramname != null ?
+                new ObjectParameter("diagramname", diagramname) :
+                new ObjectParameter("diagramname", typeof(string));
+    
+            var owner_idParameter = owner_id.HasValue ?
+                new ObjectParameter("owner_id", owner_id) :
+                new ObjectParameter("owner_id", typeof(int));
+    
+            var versionParameter = version.HasValue ?
+                new ObjectParameter("version", version) :
+                new ObjectParameter("version", typeof(int));
+    
+            var definitionParameter = definition != null ?
+                new ObjectParameter("definition", definition) :
+                new ObjectParameter("definition", typeof(byte[]));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_creatediagram", diagramnameParameter, owner_idParameter, versionParameter, definitionParameter);
+        }
+    
+        public virtual int sp_dropdiagram(string diagramname, Nullable<int> owner_id)
+        {
+            var diagramnameParameter = diagramname != null ?
+                new ObjectParameter("diagramname", diagramname) :
+                new ObjectParameter("diagramname", typeof(string));
+    
+            var owner_idParameter = owner_id.HasValue ?
+                new ObjectParameter("owner_id", owner_id) :
+                new ObjectParameter("owner_id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_dropdiagram", diagramnameParameter, owner_idParameter);
+        }
+    
+        public virtual ObjectResult<sp_helpdiagramdefinition_Result> sp_helpdiagramdefinition(string diagramname, Nullable<int> owner_id)
+        {
+            var diagramnameParameter = diagramname != null ?
+                new ObjectParameter("diagramname", diagramname) :
+                new ObjectParameter("diagramname", typeof(string));
+    
+            var owner_idParameter = owner_id.HasValue ?
+                new ObjectParameter("owner_id", owner_id) :
+                new ObjectParameter("owner_id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_helpdiagramdefinition_Result>("sp_helpdiagramdefinition", diagramnameParameter, owner_idParameter);
+        }
+    
+        public virtual ObjectResult<sp_helpdiagrams_Result> sp_helpdiagrams(string diagramname, Nullable<int> owner_id)
+        {
+            var diagramnameParameter = diagramname != null ?
+                new ObjectParameter("diagramname", diagramname) :
+                new ObjectParameter("diagramname", typeof(string));
+    
+            var owner_idParameter = owner_id.HasValue ?
+                new ObjectParameter("owner_id", owner_id) :
+                new ObjectParameter("owner_id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_helpdiagrams_Result>("sp_helpdiagrams", diagramnameParameter, owner_idParameter);
+        }
+    
+        public virtual int sp_renamediagram(string diagramname, Nullable<int> owner_id, string new_diagramname)
+        {
+            var diagramnameParameter = diagramname != null ?
+                new ObjectParameter("diagramname", diagramname) :
+                new ObjectParameter("diagramname", typeof(string));
+    
+            var owner_idParameter = owner_id.HasValue ?
+                new ObjectParameter("owner_id", owner_id) :
+                new ObjectParameter("owner_id", typeof(int));
+    
+            var new_diagramnameParameter = new_diagramname != null ?
+                new ObjectParameter("new_diagramname", new_diagramname) :
+                new ObjectParameter("new_diagramname", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_renamediagram", diagramnameParameter, owner_idParameter, new_diagramnameParameter);
+        }
+    
+        public virtual int sp_upgraddiagrams()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_upgraddiagrams");
+        }
     }
 }

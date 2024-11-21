@@ -1,34 +1,613 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="BTXModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="BTXEntities1" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="F_ShowAcc" IsComposable="true" ReturnType="Collection(BTXModel.F_ShowAcc_Result)">
+      <Parameter Name="Top" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="F_ShowCustomer" IsComposable="true" ReturnType="Collection(BTXModel.F_ShowCustomer_Result)">
+      <Parameter Name="Top" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="F_ShowPenalties" IsComposable="true" ReturnType="Collection(BTXModel.F_ShowPenalties_Result)">
+      <Parameter Name="Top" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="F_ShowRentals" IsComposable="true" ReturnType="Collection(BTXModel.F_ShowRentals_Result)">
+      <Parameter Name="Top" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="F_ShowUser" IsComposable="true" ReturnType="Collection(BTXModel.F_ShowUser_Result)">
+      <Parameter Name="Top" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="F_ShowVehicles" IsComposable="true" ReturnType="Collection(BTXModel.F_ShowVehicles_Result)">
+      <Parameter Name="Top" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="PRO_AddPenalty">
+      <Parameter Name="PenaltyDate" Mode="In" Type="DateTime" />
+      <Parameter Name="IDCustomer" Mode="In" Type="Int32" />
+      <Parameter Name="IDEmployee" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="PRO_AddUser">
+      <Parameter Name="Name" Mode="In" Type="String" />
+      <Parameter Name="Gender" Mode="In" Type="String" />
+      <Parameter Name="PhoneNumber" Mode="In" Type="String" />
+      <Parameter Name="Address" Mode="In" Type="String" />
+      <Parameter Name="IdentityCard" Mode="In" Type="String" />
+      <Parameter Name="BankNumber" Mode="In" Type="String" />
+      <Parameter Name="UserType" Mode="In" Type="String" />
+      <Parameter Name="IDAcc" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="PRO_AddVehicle">
+      <Parameter Name="LicensePlate" Mode="In" Type="String" />
+      <Parameter Name="Color" Mode="In" Type="String" />
+      <Parameter Name="Status" Mode="In" Type="String" />
+      <Parameter Name="Description" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="PRO_AddVehicleType">
+      <Parameter Name="VehicleTypeName" Mode="In" Type="String" />
+      <Parameter Name="Manufacturer" Mode="In" Type="String" />
+      <Parameter Name="Description" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="PRO_DeleteVehicle">
+      <Parameter Name="LicensePlate" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="PRO_DeleteVehicleType">
+      <Parameter Name="IDVehicleType" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="PRO_DUser">
+      <Parameter Name="IDUser" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="PRO_UpdateVehicleType">
+      <Parameter Name="IDVehicleType" Mode="In" Type="Int32" />
+      <Parameter Name="VehicleTypeName" Mode="In" Type="String" />
+      <Parameter Name="Manufacturer" Mode="In" Type="String" />
+      <Parameter Name="Description" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="PRO_UUser">
+      <Parameter Name="IDUser" Mode="In" Type="Int32" />
+      <Parameter Name="Name" Mode="In" Type="String" />
+      <Parameter Name="Gender" Mode="In" Type="String" />
+      <Parameter Name="PhoneNumber" Mode="In" Type="String" />
+      <Parameter Name="Address" Mode="In" Type="String" />
+      <Parameter Name="IdentityCard" Mode="In" Type="String" />
+      <Parameter Name="BankNumber" Mode="In" Type="String" />
+      <Parameter Name="UserType" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="PRO_UVehicles">
+      <Parameter Name="licenseplate" Mode="In" Type="String" />
+      <Parameter Name="Color" Mode="In" Type="String" />
+      <Parameter Name="status" Mode="In" Type="String" />
+      <Parameter Name="Description" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(BTXModel.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(BTXModel.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+    <EntitySet Name="Accounts" EntityType="BTXModel.Account" />
+    <EntitySet Name="Customers" EntityType="BTXModel.Customer" />
+    <EntitySet Name="Employees" EntityType="BTXModel.Employee" />
+    <EntitySet Name="Parkings" EntityType="BTXModel.Parking" />
+    <EntitySet Name="Penalties" EntityType="BTXModel.Penalty" />
+    <EntitySet Name="PenaltyDetails" EntityType="BTXModel.PenaltyDetail" />
+    <EntitySet Name="RentalDetails" EntityType="BTXModel.RentalDetail" />
+    <EntitySet Name="Rentals" EntityType="BTXModel.Rental" />
+    <EntitySet Name="sysdiagrams" EntityType="BTXModel.sysdiagram" />
+    <EntitySet Name="Users" EntityType="BTXModel.User" />
+    <EntitySet Name="Vehicles" EntityType="BTXModel.Vehicle" />
+    <EntitySet Name="VehicleTypes" EntityType="BTXModel.VehicleType" />
+    <EntitySet Name="Wallets" EntityType="BTXModel.Wallet" />
+    <AssociationSet Name="FK__Wallet__IDAcc__02FC7413" Association="BTXModel.FK__Wallet__IDAcc__02FC7413">
+      <End Role="Account" EntitySet="Accounts" />
+      <End Role="Wallet" EntitySet="Wallets" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Account_Users" Association="BTXModel.FK_Account_Users">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Account" EntitySet="Accounts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_Account" Association="BTXModel.FK_Users_Account">
+      <End Role="Account" EntitySet="Accounts" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Customers__IDUse__4222D4EF" Association="BTXModel.FK__Customers__IDUse__4222D4EF">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Customer" EntitySet="Customers" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Penalties__IDCus__571DF1D5" Association="BTXModel.FK__Penalties__IDCus__571DF1D5">
+      <End Role="Customer" EntitySet="Customers" />
+      <End Role="Penalty" EntitySet="Penalties" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Rentals__IDCusto__73BA3083" Association="BTXModel.FK__Rentals__IDCusto__73BA3083">
+      <End Role="Customer" EntitySet="Customers" />
+      <End Role="Rental" EntitySet="Rentals" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Employees__IDUse__3F466844" Association="BTXModel.FK__Employees__IDUse__3F466844">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Employee" EntitySet="Employees" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Penalties__IDEmp__5812160E" Association="BTXModel.FK__Penalties__IDEmp__5812160E">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="Penalty" EntitySet="Penalties" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Rentals__IDEmplo__74AE54BC" Association="BTXModel.FK__Rentals__IDEmplo__74AE54BC">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="Rental" EntitySet="Rentals" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Vehicles__IDEmpl__4CA06362" Association="BTXModel.FK__Vehicles__IDEmpl__4CA06362">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="Vehicle" EntitySet="Vehicles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Parking_Employee" Association="BTXModel.FK_Parking_Employee">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="Parking" EntitySet="Parkings" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PenaltyDe__IDPen__5AEE82B9" Association="BTXModel.FK__PenaltyDe__IDPen__5AEE82B9">
+      <End Role="Penalty" EntitySet="Penalties" />
+      <End Role="PenaltyDetail" EntitySet="PenaltyDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__RentalDet__IDRen__778AC167" Association="BTXModel.FK__RentalDet__IDRen__778AC167">
+      <End Role="Rental" EntitySet="Rentals" />
+      <End Role="RentalDetail" EntitySet="RentalDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__RentalDet__Licen__787EE5A0" Association="BTXModel.FK__RentalDet__Licen__787EE5A0">
+      <End Role="Vehicle" EntitySet="Vehicles" />
+      <End Role="RentalDetail" EntitySet="RentalDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Vehicles__IDVehi__4BAC3F29" Association="BTXModel.FK__Vehicles__IDVehi__4BAC3F29">
+      <End Role="VehicleType" EntitySet="VehicleTypes" />
+      <End Role="Vehicle" EntitySet="Vehicles" />
+    </AssociationSet>
+    <EntitySet Name="V_VehicleData" EntityType="BTXModel.V_VehicleData" />
+  </EntityContainer>
+  <ComplexType Name="F_ShowAcc_Result">
+    <Property Type="Int32" Name="IDAcc" Nullable="false" />
+    <Property Type="String" Name="Username" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Password" Nullable="false" MaxLength="300" />
+    <Property Type="String" Name="Email" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Role" Nullable="false" MaxLength="25" />
+    <Property Type="String" Name="Status" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="Salt" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="VerificationCode" Nullable="true" MaxLength="6" />
+    <Property Type="DateTime" Name="VerificationCodeExpiration" Nullable="true" Precision="23" />
+    <Property Type="String" Name="IDUser" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="F_ShowCustomer_Result">
+    <Property Type="String" Name="IDCustomer" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="IDUser" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="MembershipLevel" Nullable="true" MaxLength="20" />
+    <Property Type="Int32" Name="Points" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="F_ShowPenalties_Result">
+    <Property Type="Int32" Name="IDPenalty" Nullable="false" />
+    <Property Type="DateTime" Name="PenaltyDate" Nullable="false" Precision="10" />
+    <Property Type="String" Name="IDCustomer" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="IDEmployee" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="F_ShowRentals_Result">
+    <Property Type="String" Name="IDRental" Nullable="false" MaxLength="50" />
+    <Property Type="DateTime" Name="RentalDate" Nullable="false" Precision="10" />
+    <Property Type="String" Name="IDCustomer" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="IDEmployee" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="F_ShowUser_Result">
+    <Property Type="String" Name="IDUser" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Gender" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="PhoneNumber" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="Address" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="IdentityCard" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="BankNumber" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="UserType" Nullable="false" MaxLength="20" />
+    <Property Type="Int32" Name="IDAcc" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="F_ShowVehicles_Result">
+    <Property Type="String" Name="LicensePlate" Nullable="false" MaxLength="20" />
+    <Property Type="Int32" Name="IDVehicleType" Nullable="false" />
+    <Property Type="String" Name="Color" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Status" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Description" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="IDEmployee" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
   <EntityType Name="Account">
     <Key>
       <PropertyRef Name="IDAcc" />
     </Key>
     <Property Name="IDAcc" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="Password" Type="String" MaxLength="300" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Username" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="300" FixedLength="false" Unicode="true" />
     <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
-    <Property Name="Role" Type="String" MaxLength="25" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="Status" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Role" Type="String" Nullable="false" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
     <Property Name="Salt" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
     <Property Name="VerificationCode" Type="String" MaxLength="6" FixedLength="false" Unicode="true" />
     <Property Name="VerificationCodeExpiration" Type="DateTime" Precision="3" />
+    <Property Name="IDUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Wallets" Relationship="BTXModel.FK__Wallet__IDAcc__02FC7413" FromRole="Account" ToRole="Wallet" />
+    <NavigationProperty Name="User" Relationship="BTXModel.FK_Account_Users" FromRole="Account" ToRole="User" />
+    <NavigationProperty Name="Users" Relationship="BTXModel.FK_Users_Account" FromRole="Account" ToRole="User" />
   </EntityType>
   <EntityType Name="Customer">
     <Key>
-      <PropertyRef Name="MaKH" />
+      <PropertyRef Name="IDCustomer" />
     </Key>
-    <Property Name="MaKH" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="HoTenKH" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="GioiTinh" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="Sdt" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="DiaChi" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="CCCD" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
-    <Property Name="SoHoChieu" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
-    <Property Name="SoTaiKhoan" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IDCustomer" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MembershipLevel" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Points" Type="Int32" />
+    <NavigationProperty Name="User" Relationship="BTXModel.FK__Customers__IDUse__4222D4EF" FromRole="Customer" ToRole="User" />
+    <NavigationProperty Name="Penalties" Relationship="BTXModel.FK__Penalties__IDCus__571DF1D5" FromRole="Customer" ToRole="Penalty" />
+    <NavigationProperty Name="Rentals" Relationship="BTXModel.FK__Rentals__IDCusto__73BA3083" FromRole="Customer" ToRole="Rental" />
   </EntityType>
-  <EntityContainer Name="BTXEntities1" annotation:LazyLoadingEnabled="true">
-    <EntitySet Name="Accounts" EntityType="Self.Account" />
-    <EntitySet Name="Customers" EntityType="Self.Customer" />
-  </EntityContainer>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="IDEmployee" />
+    </Key>
+    <Property Name="IDEmployee" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Position" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DateHired" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="salary" Type="Decimal" Precision="10" Scale="2" />
+    <NavigationProperty Name="User" Relationship="BTXModel.FK__Employees__IDUse__3F466844" FromRole="Employee" ToRole="User" />
+    <NavigationProperty Name="Penalties" Relationship="BTXModel.FK__Penalties__IDEmp__5812160E" FromRole="Employee" ToRole="Penalty" />
+    <NavigationProperty Name="Rentals" Relationship="BTXModel.FK__Rentals__IDEmplo__74AE54BC" FromRole="Employee" ToRole="Rental" />
+    <NavigationProperty Name="Vehicles" Relationship="BTXModel.FK__Vehicles__IDEmpl__4CA06362" FromRole="Employee" ToRole="Vehicle" />
+    <NavigationProperty Name="Parkings" Relationship="BTXModel.FK_Parking_Employee" FromRole="Employee" ToRole="Parking" />
+  </EntityType>
+  <EntityType Name="Parking">
+    <Key>
+      <PropertyRef Name="CodeParking" />
+    </Key>
+    <Property Name="CodeParking" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Quantity" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="CodeCar" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IDEmployee" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Employee" Relationship="BTXModel.FK_Parking_Employee" FromRole="Parking" ToRole="Employee" />
+  </EntityType>
+  <EntityType Name="Penalty">
+    <Key>
+      <PropertyRef Name="IDPenalty" />
+    </Key>
+    <Property Name="IDPenalty" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PenaltyDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="IDCustomer" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDEmployee" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Customer" Relationship="BTXModel.FK__Penalties__IDCus__571DF1D5" FromRole="Penalty" ToRole="Customer" />
+    <NavigationProperty Name="Employee" Relationship="BTXModel.FK__Penalties__IDEmp__5812160E" FromRole="Penalty" ToRole="Employee" />
+    <NavigationProperty Name="PenaltyDetails" Relationship="BTXModel.FK__PenaltyDe__IDPen__5AEE82B9" FromRole="Penalty" ToRole="PenaltyDetail" />
+  </EntityType>
+  <EntityType Name="PenaltyDetail">
+    <Key>
+      <PropertyRef Name="IDPenaltyDetail" />
+    </Key>
+    <Property Name="IDPenaltyDetail" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDPenalty" Type="Int32" Nullable="false" />
+    <Property Name="Reason" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Amount" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <NavigationProperty Name="Penalty" Relationship="BTXModel.FK__PenaltyDe__IDPen__5AEE82B9" FromRole="PenaltyDetail" ToRole="Penalty" />
+  </EntityType>
+  <EntityType Name="RentalDetail">
+    <Key>
+      <PropertyRef Name="IDRentalDetail" />
+    </Key>
+    <Property Name="IDRentalDetail" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDRental" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LicensePlate" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="RentalDays" Type="Int32" Nullable="false" />
+    <Property Name="RentPrice" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <NavigationProperty Name="Rental" Relationship="BTXModel.FK__RentalDet__IDRen__778AC167" FromRole="RentalDetail" ToRole="Rental" />
+    <NavigationProperty Name="Vehicle" Relationship="BTXModel.FK__RentalDet__Licen__787EE5A0" FromRole="RentalDetail" ToRole="Vehicle" />
+  </EntityType>
+  <EntityType Name="Rental">
+    <Key>
+      <PropertyRef Name="IDRental" />
+    </Key>
+    <Property Name="IDRental" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="RentalDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="IDCustomer" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDEmployee" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Customer" Relationship="BTXModel.FK__Rentals__IDCusto__73BA3083" FromRole="Rental" ToRole="Customer" />
+    <NavigationProperty Name="Employee" Relationship="BTXModel.FK__Rentals__IDEmplo__74AE54BC" FromRole="Rental" ToRole="Employee" />
+    <NavigationProperty Name="RentalDetails" Relationship="BTXModel.FK__RentalDet__IDRen__778AC167" FromRole="Rental" ToRole="RentalDetail" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="IDUser" />
+    </Key>
+    <Property Name="IDUser" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Gender" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumber" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Address" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="IdentityCard" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="BankNumber" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="UserType" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="IDAcc" Type="Int32" />
+    <NavigationProperty Name="Accounts" Relationship="BTXModel.FK_Account_Users" FromRole="User" ToRole="Account" />
+    <NavigationProperty Name="Account" Relationship="BTXModel.FK_Users_Account" FromRole="User" ToRole="Account" />
+    <NavigationProperty Name="Customers" Relationship="BTXModel.FK__Customers__IDUse__4222D4EF" FromRole="User" ToRole="Customer" />
+    <NavigationProperty Name="Employees" Relationship="BTXModel.FK__Employees__IDUse__3F466844" FromRole="User" ToRole="Employee" />
+  </EntityType>
+  <EntityType Name="Vehicle">
+    <Key>
+      <PropertyRef Name="LicensePlate" />
+    </Key>
+    <Property Name="LicensePlate" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="IDVehicleType" Type="Int32" Nullable="false" />
+    <Property Name="Color" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="IDEmployee" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Employee" Relationship="BTXModel.FK__Vehicles__IDEmpl__4CA06362" FromRole="Vehicle" ToRole="Employee" />
+    <NavigationProperty Name="RentalDetails" Relationship="BTXModel.FK__RentalDet__Licen__787EE5A0" FromRole="Vehicle" ToRole="RentalDetail" />
+    <NavigationProperty Name="VehicleType" Relationship="BTXModel.FK__Vehicles__IDVehi__4BAC3F29" FromRole="Vehicle" ToRole="VehicleType" />
+  </EntityType>
+  <EntityType Name="VehicleType">
+    <Key>
+      <PropertyRef Name="IDVehicleType" />
+    </Key>
+    <Property Name="IDVehicleType" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="VehicleTypeName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Manufacturer" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ManufactureYear" Type="Int32" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Vehicles" Relationship="BTXModel.FK__Vehicles__IDVehi__4BAC3F29" FromRole="VehicleType" ToRole="Vehicle" />
+  </EntityType>
+  <EntityType Name="Wallet">
+    <Key>
+      <PropertyRef Name="IDWallet" />
+    </Key>
+    <Property Name="IDWallet" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDAcc" Type="Int32" Nullable="false" />
+    <Property Name="Money" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="TradingDay" Type="DateTime" Precision="0" />
+    <Property Name="TransactionType" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="TransactionAmount" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Balance" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Description" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Account" Relationship="BTXModel.FK__Wallet__IDAcc__02FC7413" FromRole="Wallet" ToRole="Account" />
+  </EntityType>
+  <Association Name="FK__Wallet__IDAcc__02FC7413">
+    <End Type="BTXModel.Account" Role="Account" Multiplicity="1" />
+    <End Type="BTXModel.Wallet" Role="Wallet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Account">
+        <PropertyRef Name="IDAcc" />
+      </Principal>
+      <Dependent Role="Wallet">
+        <PropertyRef Name="IDAcc" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Account_Users">
+    <End Type="BTXModel.User" Role="User" Multiplicity="0..1" />
+    <End Type="BTXModel.Account" Role="Account" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="IDUser" />
+      </Principal>
+      <Dependent Role="Account">
+        <PropertyRef Name="IDUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_Account">
+    <End Type="BTXModel.Account" Role="Account" Multiplicity="0..1" />
+    <End Type="BTXModel.User" Role="User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Account">
+        <PropertyRef Name="IDAcc" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="IDAcc" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Customers__IDUse__4222D4EF">
+    <End Type="BTXModel.User" Role="User" Multiplicity="1" />
+    <End Type="BTXModel.Customer" Role="Customer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="IDUser" />
+      </Principal>
+      <Dependent Role="Customer">
+        <PropertyRef Name="IDUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Penalties__IDCus__571DF1D5">
+    <End Type="BTXModel.Customer" Role="Customer" Multiplicity="1" />
+    <End Type="BTXModel.Penalty" Role="Penalty" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="IDCustomer" />
+      </Principal>
+      <Dependent Role="Penalty">
+        <PropertyRef Name="IDCustomer" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Rentals__IDCusto__73BA3083">
+    <End Type="BTXModel.Customer" Role="Customer" Multiplicity="1" />
+    <End Type="BTXModel.Rental" Role="Rental" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="IDCustomer" />
+      </Principal>
+      <Dependent Role="Rental">
+        <PropertyRef Name="IDCustomer" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Employees__IDUse__3F466844">
+    <End Type="BTXModel.User" Role="User" Multiplicity="1" />
+    <End Type="BTXModel.Employee" Role="Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="IDUser" />
+      </Principal>
+      <Dependent Role="Employee">
+        <PropertyRef Name="IDUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Penalties__IDEmp__5812160E">
+    <End Type="BTXModel.Employee" Role="Employee" Multiplicity="1" />
+    <End Type="BTXModel.Penalty" Role="Penalty" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="IDEmployee" />
+      </Principal>
+      <Dependent Role="Penalty">
+        <PropertyRef Name="IDEmployee" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Rentals__IDEmplo__74AE54BC">
+    <End Type="BTXModel.Employee" Role="Employee" Multiplicity="1" />
+    <End Type="BTXModel.Rental" Role="Rental" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="IDEmployee" />
+      </Principal>
+      <Dependent Role="Rental">
+        <PropertyRef Name="IDEmployee" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Vehicles__IDEmpl__4CA06362">
+    <End Type="BTXModel.Employee" Role="Employee" Multiplicity="1" />
+    <End Type="BTXModel.Vehicle" Role="Vehicle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="IDEmployee" />
+      </Principal>
+      <Dependent Role="Vehicle">
+        <PropertyRef Name="IDEmployee" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Parking_Employee">
+    <End Type="BTXModel.Employee" Role="Employee" Multiplicity="1" />
+    <End Type="BTXModel.Parking" Role="Parking" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="IDEmployee" />
+      </Principal>
+      <Dependent Role="Parking">
+        <PropertyRef Name="IDEmployee" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PenaltyDe__IDPen__5AEE82B9">
+    <End Type="BTXModel.Penalty" Role="Penalty" Multiplicity="1" />
+    <End Type="BTXModel.PenaltyDetail" Role="PenaltyDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Penalty">
+        <PropertyRef Name="IDPenalty" />
+      </Principal>
+      <Dependent Role="PenaltyDetail">
+        <PropertyRef Name="IDPenalty" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__RentalDet__IDRen__778AC167">
+    <End Type="BTXModel.Rental" Role="Rental" Multiplicity="1" />
+    <End Type="BTXModel.RentalDetail" Role="RentalDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rental">
+        <PropertyRef Name="IDRental" />
+      </Principal>
+      <Dependent Role="RentalDetail">
+        <PropertyRef Name="IDRental" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__RentalDet__Licen__787EE5A0">
+    <End Type="BTXModel.Vehicle" Role="Vehicle" Multiplicity="1" />
+    <End Type="BTXModel.RentalDetail" Role="RentalDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vehicle">
+        <PropertyRef Name="LicensePlate" />
+      </Principal>
+      <Dependent Role="RentalDetail">
+        <PropertyRef Name="LicensePlate" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Vehicles__IDVehi__4BAC3F29">
+    <End Type="BTXModel.VehicleType" Role="VehicleType" Multiplicity="1" />
+    <End Type="BTXModel.Vehicle" Role="Vehicle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VehicleType">
+        <PropertyRef Name="IDVehicleType" />
+      </Principal>
+      <Dependent Role="Vehicle">
+        <PropertyRef Name="IDVehicleType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="V_VehicleData">
+    <Key>
+      <PropertyRef Name="IDVehicleType" />
+      <PropertyRef Name="VehicleTypeName" />
+      <PropertyRef Name="Color" />
+      <PropertyRef Name="Status" />
+      <PropertyRef Name="Manufacturer" />
+      <PropertyRef Name="ManufactureYear" />
+      <PropertyRef Name="LicensePlate" />
+    </Key>
+    <Property Name="IDVehicleType" Type="Int32" Nullable="false" />
+    <Property Name="VehicleTypeName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Color" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Manufacturer" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ManufactureYear" Type="Int32" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="LicensePlate" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+  </EntityType>
 </Schema>

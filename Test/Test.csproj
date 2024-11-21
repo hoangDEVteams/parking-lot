@@ -155,9 +155,87 @@
       <DependentUpon>BTX.edmx</DependentUpon>
     </Compile>
     <Compile Include="Controller\Ctrl_Account.cs" />
+    <Compile Include="Controller\CTrl_Vehicles.cs" />
+    <Compile Include="Controller\Ctrl_VehicleTypes.cs" />
+    <Compile Include="Employee.cs">
+      <DependentUpon>BTX.tt</DependentUpon>
+    </Compile>
+    <Compile Include="F_ShowAcc_Result.cs">
+      <DependentUpon>BTX.tt</DependentUpon>
+    </Compile>
+    <Compile Include="F_ShowCustomer_Result.cs">
+      <DependentUpon>BTX.tt</DependentUpon>
+    </Compile>
+    <Compile Include="F_ShowPenalties_Result.cs">
+      <DependentUpon>BTX.tt</DependentUpon>
+    </Compile>
+    <Compile Include="F_ShowRentals_Result.cs">
+      <DependentUpon>BTX.tt</DependentUpon>
+    </Compile>
+    <Compile Include="F_ShowUser_Result.cs">
+      <DependentUpon>BTX.tt</DependentUpon>
+    </Compile>
+    <Compile Include="F_ShowVehicles_Result.cs">
+      <DependentUpon>BTX.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Parking.cs">
+      <DependentUpon>BTX.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Penalty.cs">
+      <DependentUpon>BTX.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PenaltyDetail.cs">
+      <DependentUpon>BTX.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QLbaixeDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLbaixeDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLbaixeDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLbaixeDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Rental.cs">
+      <DependentUpon>BTX.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RentalDetail.cs">
+      <DependentUpon>BTX.tt</DependentUpon>
+    </Compile>
     <Compile Include="Resource\CUltils.cs" />
     <Compile Include="Customer.cs">
       <DependentUpon>BTX.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>BTX.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagrams_Result.cs">
+      <DependentUpon>BTX.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>BTX.tt</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs">
+      <DependentUpon>BTX.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicle.cs">
+      <DependentUpon>BTX.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleType.cs">
+      <DependentUpon>BTX.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FCar.Designer.cs">
+      <DependentUpon>FCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FCar_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FCar_Admin.Designer.cs">
+      <DependentUpon>FCar_Admin.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\FForgotPassword.cs">
       <SubType>Form</SubType>
@@ -204,6 +282,18 @@
     <Compile Include="Views\FVerify.Designer.cs">
       <DependentUpon>FVerify.cs</DependentUpon>
     </Compile>
+    <Compile Include="V_VehicleData.cs">
+      <DependentUpon>BTX.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Wallet.cs">
+      <DependentUpon>BTX.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Views\FCar.resx">
+      <DependentUpon>FCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FCar_Admin.resx">
+      <DependentUpon>FCar_Admin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\FForgotPassword.resx">
       <DependentUpon>FForgotPassword.cs</DependentUpon>
     </EmbeddedResource>
@@ -242,6 +332,7 @@
     <None Include="BTX.edmx.diagram">
       <DependentUpon>BTX.edmx</DependentUpon>
     </None>
+    <None Include="ClassDiagram1.cd" />
     <None Include="OpenTK.dll.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -253,6 +344,28 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="QLbaixeDataSet11.xsc">
+      <DependentUpon>QLbaixeDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="QLbaixeDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLbaixeDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLbaixeDataSet11.xss">
+      <DependentUpon>QLbaixeDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="QLbaixeDataSet4.xsc">
+      <DependentUpon>QLbaixeDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="QLbaixeDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLbaixeDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLbaixeDataSet4.xss">
+      <DependentUpon>QLbaixeDataSet4.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
