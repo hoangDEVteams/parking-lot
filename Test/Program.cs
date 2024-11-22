@@ -17,7 +17,7 @@ namespace Test
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FCar());
+            Application.Run(new FLogin());
         }
     }
 }

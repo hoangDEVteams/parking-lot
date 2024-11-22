@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -53,10 +54,11 @@ namespace Test.Views
         }
         private void FCar_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'qLbaixeDataSet1.V_VehicleData' table. You can move, or remove it, as needed.
-            this.v_VehicleDataTableAdapter1.Fill(this.qLbaixeDataSet1.V_VehicleData);
-            // TODO: This line of code loads data into the 'qLbaixeDataSet.V_VehicleData' table. You can move, or remove it, as needed.
-            this.v_VehicleDataTableAdapter.Fill(this.qLbaixeDataSet.V_VehicleData);
+            using (var context = new BTXEntities1())
+            {
+                var data = context.V_VehicleData.ToList(); 
+                dtgridVehicles.DataSource = data;         
+            }
 
         }
 

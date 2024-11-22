@@ -104,7 +104,7 @@ namespace Test.Controller
                 MailMessage mailMessage = new MailMessage(senderEmail, recipientEmail)
                 {
                     Subject = "Mã xác nhận tài khoản",
-                    Body = $"Mã xác nhận của bạn là: {verificationCode}"
+                    Body = $"Mã xác nhận của bạn là: {verificationCode}, \nLưu ý: Mã chỉ có hạn trong 10 phút !"
                 };
 
                 smtpClient.Send(mailMessage);

@@ -48,6 +48,10 @@ namespace Test.Views
                         if (result == "Cập nhật trạng thái thành công!")
                         {
                             this.Close(); 
+                            FLogin fLogin = new FLogin();
+                            FRegister fRegister = new FRegister();
+                            fLogin.Show();
+                            fRegister.Close();
                         }
                     }
                     else
