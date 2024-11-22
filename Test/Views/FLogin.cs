@@ -108,5 +108,10 @@ namespace Test.Views
         {
             button2.BackColor = Color.Transparent;
         }
+
+        private void txtUserLog_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

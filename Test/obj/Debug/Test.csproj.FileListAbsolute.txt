@@ -319,3 +319,4 @@ D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bi
 D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\zh-cn\ZedGraph.resources.dll
 D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\zh-tw\ZedGraph.resources.dll
 D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\obj\Debug\Test.csproj.Up2Date
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\obj\Debug\Test.Views.FFillRental.resources

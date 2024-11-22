@@ -27,62 +27,71 @@
               <Mapping SourceColumn="Manufacturer" DataSetColumn="Manufacturer" />
               <Mapping SourceColumn="ManufactureYear" DataSetColumn="ManufactureYear" />
             </Mappings>
-            <Sources />
+            <Sources>
+              <DbSource ConnectionRef="QLbaixeConnectionString (Settings)" DbObjectName="QLbaixe.dbo.V_VehicleData" DbObjectType="View" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT LicensePlate, Color, Status, Description, VehicleTypeName, Manufacturer, ManufactureYear FROM dbo.V_VehicleData</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
           </TableAdapter>
         </Tables>
         <Sources />
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="QLbaixeDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="QLbaixeDataSet" msprop:Generator_DataSetName="QLbaixeDataSet">
+  <xs:element name="QLbaixeDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="QLbaixeDataSet" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="QLbaixeDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="V_VehicleData" msprop:Generator_RowEvHandlerName="V_VehicleDataRowChangeEventHandler" msprop:Generator_RowDeletedName="V_VehicleDataRowDeleted" msprop:Generator_RowDeletingName="V_VehicleDataRowDeleting" msprop:Generator_RowEvArgName="V_VehicleDataRowChangeEvent" msprop:Generator_TablePropName="V_VehicleData" msprop:Generator_RowChangedName="V_VehicleDataRowChanged" msprop:Generator_RowChangingName="V_VehicleDataRowChanging" msprop:Generator_TableClassName="V_VehicleDataDataTable" msprop:Generator_RowClassName="V_VehicleDataRow" msprop:Generator_TableVarName="tableV_VehicleData" msprop:Generator_UserTableName="V_VehicleData">
+        <xs:element name="V_VehicleData" msprop:Generator_RowClassName="V_VehicleDataRow" msprop:Generator_RowEvHandlerName="V_VehicleDataRowChangeEventHandler" msprop:Generator_RowDeletedName="V_VehicleDataRowDeleted" msprop:Generator_RowDeletingName="V_VehicleDataRowDeleting" msprop:Generator_RowEvArgName="V_VehicleDataRowChangeEvent" msprop:Generator_TablePropName="V_VehicleData" msprop:Generator_RowChangedName="V_VehicleDataRowChanged" msprop:Generator_UserTableName="V_VehicleData" msprop:Generator_RowChangingName="V_VehicleDataRowChanging" msprop:Generator_TableClassName="V_VehicleDataDataTable" msprop:Generator_TableVarName="tableV_VehicleData">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="LicensePlate" msprop:Generator_ColumnPropNameInRow="LicensePlate" msprop:Generator_ColumnPropNameInTable="LicensePlateColumn" msprop:Generator_ColumnVarNameInTable="columnLicensePlate" msprop:Generator_UserColumnName="LicensePlate">
+              <xs:element name="LicensePlate" msprop:Generator_UserColumnName="LicensePlate" msprop:Generator_ColumnPropNameInTable="LicensePlateColumn" msprop:Generator_ColumnPropNameInRow="LicensePlate" msprop:Generator_ColumnVarNameInTable="columnLicensePlate">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="20" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Color" msprop:Generator_ColumnPropNameInRow="Color" msprop:Generator_ColumnPropNameInTable="ColorColumn" msprop:Generator_ColumnVarNameInTable="columnColor" msprop:Generator_UserColumnName="Color">
+              <xs:element name="Color" msprop:Generator_UserColumnName="Color" msprop:Generator_ColumnPropNameInTable="ColorColumn" msprop:Generator_ColumnPropNameInRow="Color" msprop:Generator_ColumnVarNameInTable="columnColor">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="30" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Status" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_UserColumnName="Status">
+              <xs:element name="Status" msprop:Generator_UserColumnName="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnVarNameInTable="columnStatus">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="20" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Description" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_UserColumnName="Description" minOccurs="0">
+              <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="VehicleTypeName" msprop:Generator_ColumnPropNameInRow="VehicleTypeName" msprop:Generator_ColumnPropNameInTable="VehicleTypeNameColumn" msprop:Generator_ColumnVarNameInTable="columnVehicleTypeName" msprop:Generator_UserColumnName="VehicleTypeName">
+              <xs:element name="VehicleTypeName" msprop:Generator_UserColumnName="VehicleTypeName" msprop:Generator_ColumnPropNameInTable="VehicleTypeNameColumn" msprop:Generator_ColumnPropNameInRow="VehicleTypeName" msprop:Generator_ColumnVarNameInTable="columnVehicleTypeName">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Manufacturer" msprop:Generator_ColumnPropNameInRow="Manufacturer" msprop:Generator_ColumnPropNameInTable="ManufacturerColumn" msprop:Generator_ColumnVarNameInTable="columnManufacturer" msprop:Generator_UserColumnName="Manufacturer">
+              <xs:element name="Manufacturer" msprop:Generator_UserColumnName="Manufacturer" msprop:Generator_ColumnPropNameInTable="ManufacturerColumn" msprop:Generator_ColumnPropNameInRow="Manufacturer" msprop:Generator_ColumnVarNameInTable="columnManufacturer">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="ManufactureYear" msprop:Generator_ColumnPropNameInRow="ManufactureYear" msprop:Generator_ColumnPropNameInTable="ManufactureYearColumn" msprop:Generator_ColumnVarNameInTable="columnManufactureYear" msprop:Generator_UserColumnName="ManufactureYear" type="xs:int" />
+              <xs:element name="ManufactureYear" msprop:Generator_UserColumnName="ManufactureYear" msprop:Generator_ColumnPropNameInTable="ManufactureYearColumn" msprop:Generator_ColumnPropNameInRow="ManufactureYear" msprop:Generator_ColumnVarNameInTable="columnManufactureYear" type="xs:int" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

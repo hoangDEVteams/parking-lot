@@ -120,11 +120,11 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="button2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAABGdBTUEAALGPC/xhBQAAALFJREFUWEft
-        ltEJwzAMRD1Uuk/y1W7Z1aorPUiEMVZkC1P04AgO6HgOOLgkSfLvPH7PO3hmL7wkb8nxXdnADGbR4WKT
-        oIixyFCCQZeLXXIu7JHREugYgkVmmgTpkZkuQVoyYRKkJhMuQbTMOWESpCYTLgGWEKlJMGEyWgLr2rup
-        tE5HmEzPEdUymBmK5T8xTcYiQYbL6GtAjwTRMu5rwFNilSCUQccQPLtxf4kkSRamlA/aTl/22cQUJAAA
-        AABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAABGdBTUEAALGPC/xhBQAAAKhJREFUWEft
+        1sEJgDAMheEMpfvoSbd0NQn4DoZQ0qaNRfJDD1YaPg+KRFmW/bxVblTkOfvqJKKLiHZ5wxCf4bM8w9Xy
+        DMKqwQCBxbNcbQ0YieAZXarBDEMgC2Y4ApUwYQikYcIRSGI+QSANE47gpoBoiHCMRPC1tje00tsRhikh
+        kMRoHz1XFgQahqlBoO4Y+RtgQSCJcf8GHA0IBAzP6JLnaTxnsyybvxvaTl/2BgGwxQAAAABJRU5ErkJg
+        gg==
 </value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

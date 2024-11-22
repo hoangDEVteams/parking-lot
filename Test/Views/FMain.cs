@@ -284,7 +284,7 @@ namespace Test.Views
 
         private void iconButton1_Click_1(object sender, EventArgs e) // Ơr đây là nút nhảy qua form của mấy ông
         {
-            FTest form = new FTest(); // Gọi form mấy ông muốn nhảy qua 
+            FCar form = new FCar(); // Gọi form mấy ông muốn nhảy qua 
             LoadFormIntoPanel(form);
         }
     }

@@ -13,8 +13,8 @@ namespace Test.Views
 {
     public partial class FCar : Form
     {
-        CTrl_Vehicles ctrVehicles = new CTrl_Vehicles();
-        Ctrl_VehicleTypes ctrvehicleType = new Ctrl_VehicleTypes();
+        CTrl_Vehicles ctrlVehicles = new CTrl_Vehicles();
+        Ctrl_VehicleTypes ctrlvehicleType = new Ctrl_VehicleTypes();
         V_VehicleData viewVehicle = new V_VehicleData();   
         public FCar()
         {
@@ -64,7 +64,7 @@ namespace Test.Views
         {
             DataGridViewRow row = dtgridVehicles.Rows[e.RowIndex];
             int vehicleID = Convert.ToInt32(row.Cells[0].Value);
-            VehicleType vehicle = ctrvehicleType.GetVehiclesbyCategory(vehicleID);
+            VehicleType vehicle = ctrlvehicleType.GetVehiclesbyCategory(vehicleID);
             lblCode.DataBindings.Clear();
             lblCode.DataBindings.Add(new Binding("Text", vehicle, "IDVehicleType"));
             lblName.DataBindings.Clear();
@@ -96,6 +96,19 @@ namespace Test.Views
         private void cbStatus_SelectedIndexChanged(object sender, EventArgs e)
         {
             FilterVehicles();
+        }
+
+        private void btnCarRental_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(lblCode.Text))
+            {
+                FFillRental form = new FFillRental(lblCode.Text);
+                form.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Please select a vehicle first.", "No Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }
