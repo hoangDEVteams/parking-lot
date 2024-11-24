@@ -9,6 +9,10 @@ namespace Test.Controller
 {
     internal class CTrl_Vehicles
     {
+        public List<V_VehicleData> VehicleData()
+        {
+            return CUltils.db.V_VehicleData.ToList();
+        }
         public void upDate(Vehicle vehicle)
         {
             CUltils.db.SaveChanges();

@@ -15,7 +15,8 @@ namespace Test.Views
     {
         CTrl_Vehicles ctrlVehicles = new CTrl_Vehicles();
         Ctrl_VehicleTypes ctrlvehicleType = new Ctrl_VehicleTypes();
-        V_VehicleData viewVehicle = new V_VehicleData();   
+        V_VehicleData viewVehicle = new V_VehicleData();
+        Vehicle vehicle;
         public FCar()
         {
             InitializeComponent();
@@ -53,26 +54,24 @@ namespace Test.Views
         }
         private void FCar_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'qLbaixeDataSet1.V_VehicleData' table. You can move, or remove it, as needed.
-            this.v_VehicleDataTableAdapter1.Fill(this.qLbaixeDataSet1.V_VehicleData);
-            // TODO: This line of code loads data into the 'qLbaixeDataSet.V_VehicleData' table. You can move, or remove it, as needed.
-            this.v_VehicleDataTableAdapter.Fill(this.qLbaixeDataSet.V_VehicleData);
-
+            dtgridVehicles.DataSource = ctrlVehicles.VehicleData().ToList();
         }
-
         private void dtgridVehicles_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             DataGridViewRow row = dtgridVehicles.Rows[e.RowIndex];
             int vehicleID = Convert.ToInt32(row.Cells[0].Value);
-            VehicleType vehicle = ctrlvehicleType.GetVehiclesbyCategory(vehicleID);
-            lblCode.DataBindings.Clear();
-            lblCode.DataBindings.Add(new Binding("Text", vehicle, "IDVehicleType"));
-            lblName.DataBindings.Clear();
-            lblName.DataBindings.Add(new Binding("Text", vehicle, "VehicleTypeName"));
-            lblFacturer.DataBindings.Clear();
-            lblFacturer.DataBindings.Add(new Binding("Text", vehicle, "Manufacturer"));
-            lblYear.DataBindings.Clear();
-            lblYear.DataBindings.Add(new Binding("Text", vehicle, "ManufactureYear"));
+            if (row.Cells[0].Value != null)
+            {
+                VehicleType vehicle = ctrlvehicleType.GetVehiclesbyCategory(vehicleID);
+                lblCode.DataBindings.Clear();
+                lblCode.DataBindings.Add(new Binding("Text", vehicle, "IDVehicleType"));
+                lblName.DataBindings.Clear();
+                lblName.DataBindings.Add(new Binding("Text", vehicle, "VehicleTypeName"));
+                lblFacturer.DataBindings.Clear();
+                lblFacturer.DataBindings.Add(new Binding("Text", vehicle, "Manufacturer"));
+                lblYear.DataBindings.Clear();
+                lblYear.DataBindings.Add(new Binding("Text", vehicle, "ManufactureYear"));
+            }
         }
 
         private void txtFind_TextChanged(object sender, EventArgs e)

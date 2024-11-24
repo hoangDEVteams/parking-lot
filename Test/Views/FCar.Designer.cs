@@ -36,6 +36,16 @@
             this.txtFind = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dtgridVehicles = new System.Windows.Forms.DataGridView();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VehicleTypeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Color = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Manufacturer = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ManufactureYear = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LicensePlate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vVehicleDataBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.qLbaixeDataSet1 = new Test.QLbaixeDataSet1();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblYear = new System.Windows.Forms.Label();
             this.lblFacturer = new System.Windows.Forms.Label();
@@ -49,25 +59,15 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.vVehicleDataBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.qLbaixeDataSet1 = new Test.QLbaixeDataSet1();
             this.v_VehicleDataTableAdapter1 = new Test.QLbaixeDataSet1TableAdapters.V_VehicleDataTableAdapter();
             this.qLbaixeDataSet = new Test.QLbaixeDataSet();
             this.v_VehicleDataTableAdapter = new Test.QLbaixeDataSetTableAdapters.V_VehicleDataTableAdapter();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.VehicleTypeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Color = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Manufacturer = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ManufactureYear = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LicensePlate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgridVehicles)).BeginInit();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vVehicleDataBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLbaixeDataSet1)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLbaixeDataSet)).BeginInit();
             this.SuspendLayout();
             // 
@@ -135,7 +135,6 @@
             // dtgridVehicles
             // 
             this.dtgridVehicles.AllowUserToAddRows = false;
-            this.dtgridVehicles.AutoGenerateColumns = false;
             this.dtgridVehicles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgridVehicles.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
@@ -146,7 +145,6 @@
             this.ManufactureYear,
             this.Description,
             this.LicensePlate});
-            this.dtgridVehicles.DataSource = this.vVehicleDataBindingSource1;
             this.dtgridVehicles.Location = new System.Drawing.Point(0, 99);
             this.dtgridVehicles.Name = "dtgridVehicles";
             this.dtgridVehicles.RowHeadersWidth = 51;
@@ -154,6 +152,88 @@
             this.dtgridVehicles.Size = new System.Drawing.Size(1184, 800);
             this.dtgridVehicles.TabIndex = 0;
             this.dtgridVehicles.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgridVehicles_CellContentClick);
+            // 
+            // ID
+            // 
+            this.ID.DataPropertyName = "IDVehicleType";
+            this.ID.HeaderText = "ID";
+            this.ID.MinimumWidth = 6;
+            this.ID.Name = "ID";
+            this.ID.ReadOnly = true;
+            this.ID.Width = 50;
+            // 
+            // VehicleTypeName
+            // 
+            this.VehicleTypeName.DataPropertyName = "VehicleTypeName";
+            this.VehicleTypeName.HeaderText = "VehicleTypeName";
+            this.VehicleTypeName.MinimumWidth = 6;
+            this.VehicleTypeName.Name = "VehicleTypeName";
+            this.VehicleTypeName.ReadOnly = true;
+            this.VehicleTypeName.Width = 125;
+            // 
+            // Color
+            // 
+            this.Color.DataPropertyName = "Color";
+            this.Color.HeaderText = "Color";
+            this.Color.MinimumWidth = 6;
+            this.Color.Name = "Color";
+            this.Color.ReadOnly = true;
+            this.Color.Width = 125;
+            // 
+            // Status
+            // 
+            this.Status.DataPropertyName = "Status";
+            this.Status.HeaderText = "Status";
+            this.Status.MinimumWidth = 6;
+            this.Status.Name = "Status";
+            this.Status.ReadOnly = true;
+            this.Status.Width = 125;
+            // 
+            // Manufacturer
+            // 
+            this.Manufacturer.DataPropertyName = "Manufacturer";
+            this.Manufacturer.HeaderText = "Manufacturer";
+            this.Manufacturer.MinimumWidth = 6;
+            this.Manufacturer.Name = "Manufacturer";
+            this.Manufacturer.ReadOnly = true;
+            this.Manufacturer.Width = 125;
+            // 
+            // ManufactureYear
+            // 
+            this.ManufactureYear.DataPropertyName = "ManufactureYear";
+            this.ManufactureYear.HeaderText = "ManufactureYear";
+            this.ManufactureYear.MinimumWidth = 6;
+            this.ManufactureYear.Name = "ManufactureYear";
+            this.ManufactureYear.ReadOnly = true;
+            this.ManufactureYear.Width = 125;
+            // 
+            // Description
+            // 
+            this.Description.DataPropertyName = "Description";
+            this.Description.HeaderText = "Description";
+            this.Description.MinimumWidth = 6;
+            this.Description.Name = "Description";
+            this.Description.ReadOnly = true;
+            this.Description.Width = 125;
+            // 
+            // LicensePlate
+            // 
+            this.LicensePlate.DataPropertyName = "LicensePlate";
+            this.LicensePlate.HeaderText = "LicensePlate";
+            this.LicensePlate.MinimumWidth = 6;
+            this.LicensePlate.Name = "LicensePlate";
+            this.LicensePlate.ReadOnly = true;
+            this.LicensePlate.Width = 125;
+            // 
+            // vVehicleDataBindingSource1
+            // 
+            this.vVehicleDataBindingSource1.DataMember = "V_VehicleData";
+            this.vVehicleDataBindingSource1.DataSource = this.qLbaixeDataSet1;
+            // 
+            // qLbaixeDataSet1
+            // 
+            this.qLbaixeDataSet1.DataSetName = "QLbaixeDataSet1";
+            this.qLbaixeDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // panel2
             // 
@@ -294,16 +374,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // vVehicleDataBindingSource1
-            // 
-            this.vVehicleDataBindingSource1.DataMember = "V_VehicleData";
-            this.vVehicleDataBindingSource1.DataSource = this.qLbaixeDataSet1;
-            // 
-            // qLbaixeDataSet1
-            // 
-            this.qLbaixeDataSet1.DataSetName = "QLbaixeDataSet1";
-            this.qLbaixeDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // v_VehicleDataTableAdapter1
             // 
             this.v_VehicleDataTableAdapter1.ClearBeforeFill = true;
@@ -316,78 +386,6 @@
             // v_VehicleDataTableAdapter
             // 
             this.v_VehicleDataTableAdapter.ClearBeforeFill = true;
-            // 
-            // ID
-            // 
-            this.ID.DataPropertyName = "IDVehicleType";
-            this.ID.HeaderText = "ID";
-            this.ID.MinimumWidth = 6;
-            this.ID.Name = "ID";
-            this.ID.ReadOnly = true;
-            this.ID.Width = 50;
-            // 
-            // VehicleTypeName
-            // 
-            this.VehicleTypeName.DataPropertyName = "VehicleTypeName";
-            this.VehicleTypeName.HeaderText = "VehicleTypeName";
-            this.VehicleTypeName.MinimumWidth = 6;
-            this.VehicleTypeName.Name = "VehicleTypeName";
-            this.VehicleTypeName.ReadOnly = true;
-            this.VehicleTypeName.Width = 125;
-            // 
-            // Color
-            // 
-            this.Color.DataPropertyName = "Color";
-            this.Color.HeaderText = "Color";
-            this.Color.MinimumWidth = 6;
-            this.Color.Name = "Color";
-            this.Color.ReadOnly = true;
-            this.Color.Width = 125;
-            // 
-            // Status
-            // 
-            this.Status.DataPropertyName = "Status";
-            this.Status.HeaderText = "Status";
-            this.Status.MinimumWidth = 6;
-            this.Status.Name = "Status";
-            this.Status.ReadOnly = true;
-            this.Status.Width = 125;
-            // 
-            // Manufacturer
-            // 
-            this.Manufacturer.DataPropertyName = "Manufacturer";
-            this.Manufacturer.HeaderText = "Manufacturer";
-            this.Manufacturer.MinimumWidth = 6;
-            this.Manufacturer.Name = "Manufacturer";
-            this.Manufacturer.ReadOnly = true;
-            this.Manufacturer.Width = 125;
-            // 
-            // ManufactureYear
-            // 
-            this.ManufactureYear.DataPropertyName = "ManufactureYear";
-            this.ManufactureYear.HeaderText = "ManufactureYear";
-            this.ManufactureYear.MinimumWidth = 6;
-            this.ManufactureYear.Name = "ManufactureYear";
-            this.ManufactureYear.ReadOnly = true;
-            this.ManufactureYear.Width = 125;
-            // 
-            // Description
-            // 
-            this.Description.DataPropertyName = "Description";
-            this.Description.HeaderText = "Description";
-            this.Description.MinimumWidth = 6;
-            this.Description.Name = "Description";
-            this.Description.ReadOnly = true;
-            this.Description.Width = 125;
-            // 
-            // LicensePlate
-            // 
-            this.LicensePlate.DataPropertyName = "LicensePlate";
-            this.LicensePlate.HeaderText = "LicensePlate";
-            this.LicensePlate.MinimumWidth = 6;
-            this.LicensePlate.Name = "LicensePlate";
-            this.LicensePlate.ReadOnly = true;
-            this.LicensePlate.Width = 125;
             // 
             // FCar
             // 
@@ -405,11 +403,11 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgridVehicles)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vVehicleDataBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLbaixeDataSet1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vVehicleDataBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qLbaixeDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLbaixeDataSet)).EndInit();
             this.ResumeLayout(false);
 

@@ -118,8 +118,7 @@ namespace Test.Views
 
         private void FCar_Admin_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'qLbaixeDataSet2.V_VehicleData' table. You can move, or remove it, as needed.
-            this.v_VehicleDataTableAdapter2.Fill(this.qLbaixeDataSet2.V_VehicleData);
+            dtgridVehicles.DataSource = ctrlVehicles.VehicleData().ToList();
         }
 
         private void dtgridVehicles_CellContentClick(object sender, DataGridViewCellEventArgs e)
