@@ -12,5 +12,10 @@ namespace Test.Controller
         {
             return CUltils.db.VehicleTypes.FirstOrDefault(id => id.IDVehicleType == ID);
         }
+        public void AddVehicleType(VehicleType vehicletype)
+        {
+            CUltils.db.VehicleTypes.Add(vehicletype);
+            CUltils.db.SaveChanges();
+        }
     }
 }

@@ -243,11 +243,19 @@
     <Compile Include="Views\FCar_Admin.Designer.cs">
       <DependentUpon>FCar_Admin.cs</DependentUpon>
     </Compile>
+<<<<<<< Updated upstream
     <Compile Include="Views\FFillRental.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\FFillRental.Designer.cs">
       <DependentUpon>FFillRental.cs</DependentUpon>
+=======
+    <Compile Include="Views\FFillInforVehicle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FFillInforVehicle.Designer.cs">
+      <DependentUpon>FFillInforVehicle.cs</DependentUpon>
+>>>>>>> Stashed changes
     </Compile>
     <Compile Include="Views\FForgotPassword.cs">
       <SubType>Form</SubType>
@@ -306,8 +314,13 @@
     <EmbeddedResource Include="Views\FCar_Admin.resx">
       <DependentUpon>FCar_Admin.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< Updated upstream
     <EmbeddedResource Include="Views\FFillRental.resx">
       <DependentUpon>FFillRental.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="Views\FFillInforVehicle.resx">
+      <DependentUpon>FFillInforVehicle.cs</DependentUpon>
+>>>>>>> Stashed changes
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FForgotPassword.resx">
       <DependentUpon>FForgotPassword.cs</DependentUpon>
