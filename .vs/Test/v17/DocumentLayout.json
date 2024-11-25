@@ -1,66 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\Park\\",
+  "WorkspaceRootPath": "C:\\VanLangUniversity\\parking-lot\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|c:\\users\\huan\\source\\repos\\parkinglot\\park\\test\\views\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\VanLangUniversity\\parking-lot\\Test\\Views\\FCustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Test\\Views\\FCustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|C:\\Users\\Huan\\source\\repos\\ParkingLot\\Park\\test\\views\\fregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\VanLangUniversity\\parking-lot\\Test\\BTX.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Test\\BTX.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|C:\\Users\\Huan\\source\\repos\\ParkingLot\\Park\\test\\views\\ftest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\ftest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\VanLangUniversity\\parking-lot\\test\\views\\fcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:test\\views\\fcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|C:\\Users\\Huan\\source\\repos\\ParkingLot\\Park\\test\\views\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\VanLangUniversity\\parking-lot\\Test\\Controller\\Ctrl_Customers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Test\\Controller\\Ctrl_Customers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|C:\\Users\\Huan\\source\\repos\\ParkingLot\\Park\\test\\views\\fresetpass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fresetpass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|C:\\Users\\Huan\\source\\repos\\ParkingLot\\Park\\test\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|C:\\Users\\Huan\\source\\repos\\ParkingLot\\Park\\test\\app.manifest||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\app.manifest||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|C:\\Users\\Huan\\source\\repos\\ParkingLot\\Park\\test\\views\\fverify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fverify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|C:\\Users\\Huan\\source\\repos\\ParkingLot\\Park\\test\\controller\\ctrl_account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\controller\\ctrl_account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|C:\\Users\\Huan\\source\\repos\\ParkingLot\\Park\\test\\views\\fregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|C:\\Users\\Huan\\source\\repos\\ParkingLot\\Park\\test\\views\\fverify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fverify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|C:\\Users\\Huan\\source\\repos\\ParkingLot\\Park\\test\\resource\\cultils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\resource\\cultils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|C:\\Users\\Huan\\source\\repos\\ParkingLot\\Park\\test\\resource\\cpass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\resource\\cpass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|C:\\Users\\Huan\\source\\repos\\ParkingLot\\Park\\test\\views\\fmain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fmain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|C:\\Users\\Huan\\source\\repos\\ParkingLot\\Park\\test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\VanLangUniversity\\parking-lot\\Test\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Test\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,184 +30,105 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 11,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "FVerify.cs",
-              "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\Park\\Test\\Views\\FVerify.cs",
-              "RelativeDocumentMoniker": "Test\\Views\\FVerify.cs",
-              "ToolTip": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\Park\\Test\\Views\\FVerify.cs",
-              "RelativeToolTip": "Test\\Views\\FVerify.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAIwGMAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T16:39:31.007Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "FVerify.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\Park\\Test\\Views\\FVerify.cs",
-              "RelativeDocumentMoniker": "Test\\Views\\FVerify.cs",
-              "ToolTip": "C:\\Users\\Huan\\source\\repos\\Test\\Test\\Views\\FVerify.cs [Design]",
-              "RelativeToolTip": "..\\..\\Test\\Test\\Views\\FVerify.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T16:39:29.925Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "FRegister.cs",
-              "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\Park\\Test\\Views\\FRegister.cs",
-              "RelativeDocumentMoniker": "Test\\Views\\FRegister.cs",
-              "ToolTip": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\Park\\Test\\Views\\FRegister.cs",
-              "RelativeToolTip": "Test\\Views\\FRegister.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAUwE4AAABYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T16:39:06.256Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FRegister.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\Park\\Test\\Views\\FRegister.cs",
-              "RelativeDocumentMoniker": "Test\\Views\\FRegister.cs",
-              "ToolTip": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\Park\\Test\\Views\\FRegister.cs [Design]",
-              "RelativeToolTip": "Test\\Views\\FRegister.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T16:39:04.276Z"
+              "Title": "BTX.edmx",
+              "DocumentMoniker": "C:\\VanLangUniversity\\parking-lot\\Test\\BTX.edmx",
+              "RelativeDocumentMoniker": "Test\\BTX.edmx",
+              "ToolTip": "C:\\VanLangUniversity\\parking-lot\\Test\\BTX.edmx",
+              "RelativeToolTip": "Test\\BTX.edmx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-11-23T14:43:17.501Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "app.manifest",
-              "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\Park\\Test\\app.manifest",
-              "RelativeDocumentMoniker": "Test\\app.manifest",
-              "ToolTip": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\Park\\Test\\app.manifest",
-              "RelativeToolTip": "Test\\app.manifest",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABQAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001203|",
-              "WhenOpened": "2024-11-16T16:23:23.156Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FMain.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\Park\\Test\\Views\\FMain.cs",
-              "RelativeDocumentMoniker": "Test\\Views\\FMain.cs",
-              "ToolTip": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\Park\\Test\\Views\\FMain.cs [Design]",
-              "RelativeToolTip": "Test\\Views\\FMain.cs [Design]",
+              "DocumentIndex": 2,
+              "Title": "FCustomer.cs [Design]",
+              "DocumentMoniker": "C:\\VanLangUniversity\\parking-lot\\Test\\Views\\FCustomer.cs",
+              "RelativeDocumentMoniker": "Test\\Views\\FCustomer.cs",
+              "ToolTip": "C:\\VanLangUniversity\\parking-lot\\Test\\Views\\FCustomer.cs [Design]",
+              "RelativeToolTip": "Test\\Views\\FCustomer.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T16:03:18.522Z",
+              "WhenOpened": "2024-11-23T05:45:53.858Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FMain.cs",
-              "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\Park\\Test\\Views\\FMain.cs",
-              "RelativeDocumentMoniker": "Test\\Views\\FMain.cs",
-              "ToolTip": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\Park\\Test\\Views\\FMain.cs",
-              "RelativeToolTip": "Test\\Views\\FMain.cs",
-              "ViewState": "AgIAAPoAAAAAAAAAAAAAwCIBAAAAAAAAAAAAAA==",
+              "Title": "FCustomer.cs",
+              "DocumentMoniker": "C:\\VanLangUniversity\\parking-lot\\Test\\Views\\FCustomer.cs",
+              "RelativeDocumentMoniker": "Test\\Views\\FCustomer.cs",
+              "ToolTip": "C:\\VanLangUniversity\\parking-lot\\Test\\Views\\FCustomer.cs",
+              "RelativeToolTip": "Test\\Views\\FCustomer.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwA4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T16:05:54.46Z",
+              "WhenOpened": "2024-11-23T05:46:05.912Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FTest.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\Park\\Test\\Views\\FTest.cs",
-              "RelativeDocumentMoniker": "Test\\Views\\FTest.cs",
-              "ToolTip": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\Park\\Test\\Views\\FTest.cs [Design]",
-              "RelativeToolTip": "Test\\Views\\FTest.cs [Design]",
+              "DocumentIndex": 3,
+              "Title": "Ctrl_Customers.cs",
+              "DocumentMoniker": "C:\\VanLangUniversity\\parking-lot\\Test\\Controller\\Ctrl_Customers.cs",
+              "RelativeDocumentMoniker": "Test\\Controller\\Ctrl_Customers.cs",
+              "ToolTip": "C:\\VanLangUniversity\\parking-lot\\Test\\Controller\\Ctrl_Customers.cs",
+              "RelativeToolTip": "Test\\Controller\\Ctrl_Customers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T15:19:58.325Z"
+              "WhenOpened": "2024-11-23T05:45:05.734Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "FResetPass.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\Park\\Test\\Views\\FResetPass.cs",
-              "RelativeDocumentMoniker": "Test\\Views\\FResetPass.cs",
-              "ToolTip": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\Park\\Test\\Views\\FResetPass.cs [Design]",
-              "RelativeToolTip": "Test\\Views\\FResetPass.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T16:39:42.118Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\Park\\Test\\App.config",
-              "RelativeDocumentMoniker": "Test\\App.config",
-              "ToolTip": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\Park\\Test\\App.config",
-              "RelativeToolTip": "Test\\App.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-11-18T16:17:42.632Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Ctrl_Account.cs",
-              "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\Park\\Test\\Controller\\Ctrl_Account.cs",
-              "RelativeDocumentMoniker": "Test\\Controller\\Ctrl_Account.cs",
-              "ToolTip": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\Park\\Test\\Controller\\Ctrl_Account.cs",
-              "RelativeToolTip": "Test\\Controller\\Ctrl_Account.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAADEAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T16:39:47.91Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "CPass.cs",
-              "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\Park\\Test\\Resource\\CPass.cs",
-              "RelativeDocumentMoniker": "Test\\Resource\\CPass.cs",
-              "ToolTip": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\Park\\Test\\Resource\\CPass.cs",
-              "RelativeToolTip": "Test\\Resource\\CPass.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T16:40:01.555Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "CUltils.cs",
-              "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\Park\\Test\\Resource\\CUltils.cs",
-              "RelativeDocumentMoniker": "Test\\Resource\\CUltils.cs",
-              "ToolTip": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\Park\\Test\\Resource\\CUltils.cs",
-              "RelativeToolTip": "Test\\Resource\\CUltils.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T16:40:03.359Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "FMain.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\Park\\Test\\Views\\FMain.Designer.cs",
-              "RelativeDocumentMoniker": "Test\\Views\\FMain.Designer.cs",
-              "ToolTip": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\Park\\Test\\Views\\FMain.Designer.cs",
-              "RelativeToolTip": "Test\\Views\\FMain.Designer.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAmwEABAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T13:56:02.49Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\Park\\Test\\Program.cs",
+              "DocumentMoniker": "C:\\VanLangUniversity\\parking-lot\\Test\\Program.cs",
               "RelativeDocumentMoniker": "Test\\Program.cs",
-              "ToolTip": "C:\\Users\\Huan\\source\\repos\\ParkingLot\\Park\\Test\\Program.cs",
+              "ToolTip": "C:\\VanLangUniversity\\parking-lot\\Test\\Program.cs",
               "RelativeToolTip": "Test\\Program.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAswBQAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T16:10:54.741Z"
+              "WhenOpened": "2024-11-16T16:10:54.741Z",
+              "EditorCaption": ""
             }
           ]
         }

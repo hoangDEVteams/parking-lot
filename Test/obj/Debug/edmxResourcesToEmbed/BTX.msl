@@ -1,6 +1,92 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="BTXModelStoreContainer" CdmEntityContainer="BTXEntities1">
+<<<<<<< Updated upstream
+=======
+    <FunctionImportMapping FunctionImportName="F_ShowAcc" FunctionName="BTXModel.Store.F_ShowAcc">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BTXModel.F_ShowAcc_Result">
+          <ScalarProperty Name="IDAcc" ColumnName="IDAcc" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Salt" ColumnName="Salt" />
+          <ScalarProperty Name="VerificationCode" ColumnName="VerificationCode" />
+          <ScalarProperty Name="VerificationCodeExpiration" ColumnName="VerificationCodeExpiration" />
+          <ScalarProperty Name="IDUser" ColumnName="IDUser" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="F_ShowCustomer" FunctionName="BTXModel.Store.F_ShowCustomer">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BTXModel.F_ShowCustomer_Result">
+          <ScalarProperty Name="IDCustomer" ColumnName="IDCustomer" />
+          <ScalarProperty Name="IDUser" ColumnName="IDUser" />
+          <ScalarProperty Name="MembershipLevel" ColumnName="MembershipLevel" />
+          <ScalarProperty Name="Points" ColumnName="Points" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="F_ShowPenalties" FunctionName="BTXModel.Store.F_ShowPenalties">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BTXModel.F_ShowPenalties_Result">
+          <ScalarProperty Name="IDPenalty" ColumnName="IDPenalty" />
+          <ScalarProperty Name="PenaltyDate" ColumnName="PenaltyDate" />
+          <ScalarProperty Name="IDCustomer" ColumnName="IDCustomer" />
+          <ScalarProperty Name="IDEmployee" ColumnName="IDEmployee" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="F_ShowRentals" FunctionName="BTXModel.Store.F_ShowRentals">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BTXModel.F_ShowRentals_Result">
+          <ScalarProperty Name="IDRental" ColumnName="IDRental" />
+          <ScalarProperty Name="RentalDate" ColumnName="RentalDate" />
+          <ScalarProperty Name="IDCustomer" ColumnName="IDCustomer" />
+          <ScalarProperty Name="IDEmployee" ColumnName="IDEmployee" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="F_ShowUser" FunctionName="BTXModel.Store.F_ShowUser">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BTXModel.F_ShowUser_Result">
+          <ScalarProperty Name="IDUser" ColumnName="IDUser" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="IdentityCard" ColumnName="IdentityCard" />
+          <ScalarProperty Name="BankNumber" ColumnName="BankNumber" />
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+          <ScalarProperty Name="IDAcc" ColumnName="IDAcc" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="F_ShowVehicles" FunctionName="BTXModel.Store.F_ShowVehicles">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="BTXModel.F_ShowVehicles_Result">
+          <ScalarProperty Name="LicensePlate" ColumnName="LicensePlate" />
+          <ScalarProperty Name="IDVehicleType" ColumnName="IDVehicleType" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IDEmployee" ColumnName="IDEmployee" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="PRO_AddPenalty" FunctionName="BTXModel.Store.PRO_AddPenalty" />
+    <FunctionImportMapping FunctionImportName="PRO_AddUser" FunctionName="BTXModel.Store.PRO_AddUser" />
+    <FunctionImportMapping FunctionImportName="PRO_AddVehicle" FunctionName="BTXModel.Store.PRO_AddVehicle" />
+    <FunctionImportMapping FunctionImportName="PRO_AddVehicleType" FunctionName="BTXModel.Store.PRO_AddVehicleType" />
+    <FunctionImportMapping FunctionImportName="PRO_DeleteVehicle" FunctionName="BTXModel.Store.PRO_DeleteVehicle" />
+    <FunctionImportMapping FunctionImportName="PRO_DeleteVehicleType" FunctionName="BTXModel.Store.PRO_DeleteVehicleType" />
+    <FunctionImportMapping FunctionImportName="PRO_DUser" FunctionName="BTXModel.Store.PRO_DUser" />
+    <FunctionImportMapping FunctionImportName="PRO_UpdateVehicleType" FunctionName="BTXModel.Store.PRO_UpdateVehicleType" />
+    <FunctionImportMapping FunctionImportName="PRO_UUser" FunctionName="BTXModel.Store.PRO_UUser" />
+    <FunctionImportMapping FunctionImportName="PRO_UVehicles" FunctionName="BTXModel.Store.PRO_UVehicles" />
+>>>>>>> Stashed changes
     <EntitySetMapping Name="Accounts">
       <EntityTypeMapping TypeName="BTXModel.Account">
         <MappingFragment StoreEntitySet="Account">
@@ -18,6 +104,7 @@
     </EntitySetMapping>
     <EntitySetMapping Name="Customers">
       <EntityTypeMapping TypeName="BTXModel.Customer">
+<<<<<<< Updated upstream
         <MappingFragment StoreEntitySet="Customer">
           <ScalarProperty Name="MaKH" ColumnName="MaKH" />
           <ScalarProperty Name="HoTenKH" ColumnName="HoTenKH" />
@@ -27,6 +114,143 @@
           <ScalarProperty Name="CCCD" ColumnName="CCCD" />
           <ScalarProperty Name="SoHoChieu" ColumnName="SoHoChieu" />
           <ScalarProperty Name="SoTaiKhoan" ColumnName="SoTaiKhoan" />
+=======
+        <MappingFragment StoreEntitySet="Customers">
+          <ScalarProperty Name="Points" ColumnName="Points" />
+          <ScalarProperty Name="MembershipLevel" ColumnName="MembershipLevel" />
+          <ScalarProperty Name="IDUser" ColumnName="IDUser" />
+          <ScalarProperty Name="IDCustomer" ColumnName="IDCustomer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employees">
+      <EntityTypeMapping TypeName="BTXModel.Employee">
+        <MappingFragment StoreEntitySet="Employees">
+          <ScalarProperty Name="salary" ColumnName="salary" />
+          <ScalarProperty Name="DateHired" ColumnName="DateHired" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="IDUser" ColumnName="IDUser" />
+          <ScalarProperty Name="IDEmployee" ColumnName="IDEmployee" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Parkings">
+      <EntityTypeMapping TypeName="BTXModel.Parking">
+        <MappingFragment StoreEntitySet="Parking">
+          <ScalarProperty Name="IDEmployee" ColumnName="IDEmployee" />
+          <ScalarProperty Name="CodeCar" ColumnName="CodeCar" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="CodeParking" ColumnName="CodeParking" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Penalties">
+      <EntityTypeMapping TypeName="BTXModel.Penalty">
+        <MappingFragment StoreEntitySet="Penalties">
+          <ScalarProperty Name="IDEmployee" ColumnName="IDEmployee" />
+          <ScalarProperty Name="IDCustomer" ColumnName="IDCustomer" />
+          <ScalarProperty Name="PenaltyDate" ColumnName="PenaltyDate" />
+          <ScalarProperty Name="IDPenalty" ColumnName="IDPenalty" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PenaltyDetails">
+      <EntityTypeMapping TypeName="BTXModel.PenaltyDetail">
+        <MappingFragment StoreEntitySet="PenaltyDetails">
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+          <ScalarProperty Name="IDPenalty" ColumnName="IDPenalty" />
+          <ScalarProperty Name="IDPenaltyDetail" ColumnName="IDPenaltyDetail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RentalDetails">
+      <EntityTypeMapping TypeName="BTXModel.RentalDetail">
+        <MappingFragment StoreEntitySet="RentalDetails">
+          <ScalarProperty Name="RentPrice" ColumnName="RentPrice" />
+          <ScalarProperty Name="RentalDays" ColumnName="RentalDays" />
+          <ScalarProperty Name="LicensePlate" ColumnName="LicensePlate" />
+          <ScalarProperty Name="IDRental" ColumnName="IDRental" />
+          <ScalarProperty Name="IDRentalDetail" ColumnName="IDRentalDetail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rentals">
+      <EntityTypeMapping TypeName="BTXModel.Rental">
+        <MappingFragment StoreEntitySet="Rentals">
+          <ScalarProperty Name="IDEmployee" ColumnName="IDEmployee" />
+          <ScalarProperty Name="IDCustomer" ColumnName="IDCustomer" />
+          <ScalarProperty Name="RentalDate" ColumnName="RentalDate" />
+          <ScalarProperty Name="IDRental" ColumnName="IDRental" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="BTXModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="IDAcc" ColumnName="IDAcc" />
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+          <ScalarProperty Name="BankNumber" ColumnName="BankNumber" />
+          <ScalarProperty Name="IdentityCard" ColumnName="IdentityCard" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IDUser" ColumnName="IDUser" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vehicles">
+      <EntityTypeMapping TypeName="BTXModel.Vehicle">
+        <MappingFragment StoreEntitySet="Vehicles">
+          <ScalarProperty Name="IDEmployee" ColumnName="IDEmployee" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="IDVehicleType" ColumnName="IDVehicleType" />
+          <ScalarProperty Name="LicensePlate" ColumnName="LicensePlate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VehicleTypes">
+      <EntityTypeMapping TypeName="BTXModel.VehicleType">
+        <MappingFragment StoreEntitySet="VehicleTypes">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ManufactureYear" ColumnName="ManufactureYear" />
+          <ScalarProperty Name="Manufacturer" ColumnName="Manufacturer" />
+          <ScalarProperty Name="VehicleTypeName" ColumnName="VehicleTypeName" />
+          <ScalarProperty Name="IDVehicleType" ColumnName="IDVehicleType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Wallets">
+      <EntityTypeMapping TypeName="BTXModel.Wallet">
+        <MappingFragment StoreEntitySet="Wallet">
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Balance" ColumnName="Balance" />
+          <ScalarProperty Name="TransactionAmount" ColumnName="TransactionAmount" />
+          <ScalarProperty Name="TransactionType" ColumnName="TransactionType" />
+          <ScalarProperty Name="TradingDay" ColumnName="TradingDay" />
+          <ScalarProperty Name="Money" ColumnName="Money" />
+          <ScalarProperty Name="IDAcc" ColumnName="IDAcc" />
+          <ScalarProperty Name="IDWallet" ColumnName="IDWallet" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_VehicleData">
+      <EntityTypeMapping TypeName="BTXModel.V_VehicleData">
+        <MappingFragment StoreEntitySet="V_VehicleData">
+          <ScalarProperty Name="LicensePlate" ColumnName="LicensePlate" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ManufactureYear" ColumnName="ManufactureYear" />
+          <ScalarProperty Name="Manufacturer" ColumnName="Manufacturer" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="VehicleTypeName" ColumnName="VehicleTypeName" />
+          <ScalarProperty Name="IDVehicleType" ColumnName="IDVehicleType" />
+>>>>>>> Stashed changes
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

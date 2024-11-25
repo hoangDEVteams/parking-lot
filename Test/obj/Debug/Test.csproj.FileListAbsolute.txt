@@ -253,3 +253,205 @@ C:\Users\Huan\source\repos\ParkingLot\Park\Test\obj\Debug\Test.csproj.CoreCompil
 C:\Users\Huan\source\repos\ParkingLot\Park\Test\obj\Debug\Test.csproj.Up2Date
 C:\Users\Huan\source\repos\ParkingLot\Park\Test\obj\Debug\Test.exe
 C:\Users\Huan\source\repos\ParkingLot\Park\Test\obj\Debug\Test.pdb
+<<<<<<< Updated upstream
+=======
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\obj\Debug\Test.csproj.AssemblyReference.cache
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\obj\Debug\Test.Views.FCar.resources
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\obj\Debug\Test.Views.FForgotPassword.resources
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\obj\Debug\Test.Views.FLogin.resources
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\obj\Debug\Test.Views.FMain.resources
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\obj\Debug\Test.FRegister.resources
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\obj\Debug\Test.Properties.Resources.resources
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\obj\Debug\Test.Views.FResetPass.resources
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\obj\Debug\Test.Views.FTest.resources
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\obj\Debug\Test.Views.FVerify.resources
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\obj\Debug\Test.csproj.GenerateResource.cache
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\obj\Debug\Test.exe
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\obj\Debug\Test.pdb
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\obj\Debug\Test.Views.FCar_Admin.resources
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\Test.exe.config
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\Test.exe
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\Test.pdb
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\EntityFramework.dll
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\EntityFramework.SqlServer.dll
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\FontAwesome.Sharp.dll
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\OpenTK.dll
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\OpenTK.GLControl.dll
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\System.Buffers.dll
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\System.Drawing.Common.dll
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\System.Memory.dll
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\System.Numerics.Vectors.dll
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\System.Text.Encodings.Web.dll
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\System.Text.Json.dll
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\System.ValueTuple.dll
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\ZedGraph.dll
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\Emgu.CV.World.dll
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\EntityFramework.xml
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\EntityFramework.SqlServer.xml
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\OpenTK.xml
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\OpenTK.GLControl.xml
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\System.Buffers.xml
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\System.Drawing.Common.pdb
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\System.Drawing.Common.xml
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\System.Memory.xml
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\System.Numerics.Vectors.xml
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\System.Text.Encodings.Web.xml
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\System.Text.Json.xml
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\System.ValueTuple.xml
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\ZedGraph.xml
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\Emgu.CV.World.xml
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\de\ZedGraph.resources.dll
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\es\ZedGraph.resources.dll
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\fr\ZedGraph.resources.dll
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\hu\ZedGraph.resources.dll
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\it\ZedGraph.resources.dll
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\ja\ZedGraph.resources.dll
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\pt\ZedGraph.resources.dll
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\ru\ZedGraph.resources.dll
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\sk\ZedGraph.resources.dll
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\sv\ZedGraph.resources.dll
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\tr\ZedGraph.resources.dll
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\zh-cn\ZedGraph.resources.dll
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\zh-tw\ZedGraph.resources.dll
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\obj\Debug\Test.csproj.Up2Date
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\Test.exe.config
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\Test.exe
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\Test.pdb
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\EntityFramework.dll
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\OpenTK.dll
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\OpenTK.GLControl.dll
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\System.Buffers.dll
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\System.Drawing.Common.dll
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\System.Memory.dll
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\System.Text.Json.dll
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\System.ValueTuple.dll
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\ZedGraph.dll
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\Emgu.CV.World.dll
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\EntityFramework.xml
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\OpenTK.xml
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\OpenTK.GLControl.xml
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\System.Buffers.xml
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\System.Drawing.Common.pdb
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\System.Drawing.Common.xml
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\System.Memory.xml
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\System.Text.Json.xml
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\System.ValueTuple.xml
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\ZedGraph.xml
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\Emgu.CV.World.xml
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\de\ZedGraph.resources.dll
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\es\ZedGraph.resources.dll
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\fr\ZedGraph.resources.dll
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\hu\ZedGraph.resources.dll
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\it\ZedGraph.resources.dll
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\ja\ZedGraph.resources.dll
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\pt\ZedGraph.resources.dll
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\ru\ZedGraph.resources.dll
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\sk\ZedGraph.resources.dll
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\sv\ZedGraph.resources.dll
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\tr\ZedGraph.resources.dll
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\zh-cn\ZedGraph.resources.dll
+C:\Users\Huan\Desktop\test\parking-lot\Test\bin\Debug\zh-tw\ZedGraph.resources.dll
+C:\Users\Huan\Desktop\test\parking-lot\Test\obj\Debug\Test.csproj.AssemblyReference.cache
+C:\Users\Huan\Desktop\test\parking-lot\Test\obj\Debug\Test.Views.FCar.resources
+C:\Users\Huan\Desktop\test\parking-lot\Test\obj\Debug\Test.Views.FCar_Admin.resources
+C:\Users\Huan\Desktop\test\parking-lot\Test\obj\Debug\Test.Views.FForgotPassword.resources
+C:\Users\Huan\Desktop\test\parking-lot\Test\obj\Debug\Test.Views.FLogin.resources
+C:\Users\Huan\Desktop\test\parking-lot\Test\obj\Debug\Test.Views.FMain.resources
+C:\Users\Huan\Desktop\test\parking-lot\Test\obj\Debug\Test.FRegister.resources
+C:\Users\Huan\Desktop\test\parking-lot\Test\obj\Debug\Test.Properties.Resources.resources
+C:\Users\Huan\Desktop\test\parking-lot\Test\obj\Debug\Test.Views.FResetPass.resources
+C:\Users\Huan\Desktop\test\parking-lot\Test\obj\Debug\Test.Views.FTest.resources
+C:\Users\Huan\Desktop\test\parking-lot\Test\obj\Debug\Test.Views.FVerify.resources
+C:\Users\Huan\Desktop\test\parking-lot\Test\obj\Debug\Test.csproj.GenerateResource.cache
+C:\Users\Huan\Desktop\test\parking-lot\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+C:\Users\Huan\Desktop\test\parking-lot\Test\obj\Debug\Test.csproj.Up2Date
+C:\Users\Huan\Desktop\test\parking-lot\Test\obj\Debug\Test.exe
+C:\Users\Huan\Desktop\test\parking-lot\Test\obj\Debug\Test.pdb
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\Test.exe.config
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\Test.exe
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\Test.pdb
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\EntityFramework.dll
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\EntityFramework.SqlServer.dll
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\FontAwesome.Sharp.dll
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\OpenTK.dll
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\OpenTK.GLControl.dll
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\System.Buffers.dll
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\System.Drawing.Common.dll
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\System.Memory.dll
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\System.Numerics.Vectors.dll
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\System.Text.Encodings.Web.dll
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\System.Text.Json.dll
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\System.ValueTuple.dll
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\ZedGraph.dll
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\Emgu.CV.World.dll
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\EntityFramework.xml
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\EntityFramework.SqlServer.xml
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\OpenTK.xml
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\OpenTK.GLControl.xml
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\System.Buffers.xml
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\System.Drawing.Common.pdb
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\System.Drawing.Common.xml
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\System.Memory.xml
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\System.Numerics.Vectors.xml
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\System.Text.Encodings.Web.xml
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\System.Text.Json.xml
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\System.ValueTuple.xml
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\ZedGraph.xml
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\Emgu.CV.World.xml
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\de\ZedGraph.resources.dll
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\es\ZedGraph.resources.dll
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\fr\ZedGraph.resources.dll
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\hu\ZedGraph.resources.dll
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\it\ZedGraph.resources.dll
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\ja\ZedGraph.resources.dll
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\pt\ZedGraph.resources.dll
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\ru\ZedGraph.resources.dll
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\sk\ZedGraph.resources.dll
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\sv\ZedGraph.resources.dll
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\tr\ZedGraph.resources.dll
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\zh-cn\ZedGraph.resources.dll
+C:\VanLangUniversity\parking-lot\Test\bin\Debug\zh-tw\ZedGraph.resources.dll
+C:\VanLangUniversity\parking-lot\Test\obj\Debug\Test.csproj.AssemblyReference.cache
+C:\VanLangUniversity\parking-lot\Test\obj\Debug\Test.Views.FCar.resources
+C:\VanLangUniversity\parking-lot\Test\obj\Debug\Test.Views.FCar_Admin.resources
+C:\VanLangUniversity\parking-lot\Test\obj\Debug\Test.Views.FForgotPassword.resources
+C:\VanLangUniversity\parking-lot\Test\obj\Debug\Test.Views.FLogin.resources
+C:\VanLangUniversity\parking-lot\Test\obj\Debug\Test.Views.FMain.resources
+C:\VanLangUniversity\parking-lot\Test\obj\Debug\Test.FRegister.resources
+C:\VanLangUniversity\parking-lot\Test\obj\Debug\Test.Properties.Resources.resources
+C:\VanLangUniversity\parking-lot\Test\obj\Debug\Test.Views.FResetPass.resources
+C:\VanLangUniversity\parking-lot\Test\obj\Debug\Test.Views.FTest.resources
+C:\VanLangUniversity\parking-lot\Test\obj\Debug\Test.Views.FVerify.resources
+C:\VanLangUniversity\parking-lot\Test\obj\Debug\Test.csproj.GenerateResource.cache
+C:\VanLangUniversity\parking-lot\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+C:\VanLangUniversity\parking-lot\Test\obj\Debug\Test.csproj.Up2Date
+C:\VanLangUniversity\parking-lot\Test\obj\Debug\Test.exe
+C:\VanLangUniversity\parking-lot\Test\obj\Debug\Test.pdb
+C:\VanLangUniversity\parking-lot\Test\obj\Debug\Test.Views.FCustomer.resources
+>>>>>>> Stashed changes
