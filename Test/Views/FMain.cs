@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using System.Runtime.Remoting.Contexts;
+using Test.ZaloPay;
 
 namespace Test.Views
 {
@@ -73,7 +75,8 @@ namespace Test.Views
             this.FormBorderStyle = FormBorderStyle.None;
             this.StartPosition = FormStartPosition.CenterScreen;
             maxMenu = panelMenu.Width;
-
+            decimal balance = GetUserBalance(username);
+            label2.Text = "Balance: " + balance.ToString() + "VND";
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -92,7 +95,7 @@ namespace Test.Views
 
         private void iconButton2_Click(object sender, EventArgs e)
         {
-            FLogin form = new FLogin();
+            FCar_Admin form = new FCar_Admin();
             LoadFormIntoPanel(form);
         }
 
@@ -202,9 +205,14 @@ namespace Test.Views
         {
             if (this.panelMenu.Width > 200)
             {
+                groupBox1.Visible = false;
                 panelMenu.Width = 80;
+                btnTopUp.Visible = false;
+                btnWithDraw.Visible = false;
                 iconButton6.Width = 80;
                 label1.Visible = false;
+                decimal balance = GetUserBalance(username);
+                label2.Text = balance.ToString();
                 cCirclePB1.Size = new Size(45, 45);
                 cCirclePB1.Location = new Point(
                     (panelMenu.Width - cCirclePB1.Width) / 2,
@@ -224,7 +232,7 @@ namespace Test.Views
             }
             else
             {
-
+                groupBox1.Visible = true;
                 panelMenu.Width = maxMenu;
                 label1.Visible = true;
                 iconButton1.Width = 212;
@@ -232,11 +240,17 @@ namespace Test.Views
                 iconButton3.Width = 212;
                 iconButton6.Width = 252;
                 iconButton4.Width = 212;
+                btnTopUp.Visible = true;
+                btnWithDraw.Visible = true;
+                btnTopUp.Text = "Top Up";
+                btnWithDraw.Text = "Withdraw";
                 cCirclePB1.Size = new Size(100, 100);
                 cCirclePB1.Location = new Point(
                     16, 54
                 );
-
+                decimal balance = GetUserBalance(username);
+                label2.Text = "Balance: " + balance.ToString() + "VND";
+                label2.Location = new Point(10, 214);
                 btnMenu.Dock = DockStyle.None;
                 foreach (Button menuButton in panelMenu.Controls.OfType<Button>())
                 {
@@ -252,6 +266,8 @@ namespace Test.Views
                     menuButton.Padding = new Padding(10, 0, 0, 0);
                 }
             }
+
+            this.Refresh();
         }
 
         private void cCirclePB2_Click(object sender, EventArgs e)
@@ -286,6 +302,27 @@ namespace Test.Views
         {
             FCar form = new FCar(); // Gọi form mấy ông muốn nhảy qua 
             LoadFormIntoPanel(form);
+        }
+        private decimal GetUserBalance(string username)
+        {
+            var balance = (from acc in CUltils.db.Accounts
+                           join wal in CUltils.db.Wallets on acc.IDAcc equals wal.IDAcc
+                           where acc.Username == username
+                           select wal.Balance).FirstOrDefault();
+
+            return balance;
+
+        }
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private async void button4_Click_1(object sender, EventArgs e)
+        {
+            var paymentService = new CZLPayAPI();
+            var result = await paymentService.CreateOrder();
+            MessageBox.Show(result ?? "Payment failed.");
         }
     }
 

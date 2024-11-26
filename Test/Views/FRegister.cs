@@ -10,11 +10,20 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Test.Controller;
 using Test.Views;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Test
 {
     public partial class FRegister : Form
     {
+        private void FVerify_OnVerificationSuccess()
+        {
+            this.Close();
+            this.Invoke((MethodInvoker)delegate {
+                this.Close();
+            });
+        }
+        
         public FRegister()
         {
             InitializeComponent();
