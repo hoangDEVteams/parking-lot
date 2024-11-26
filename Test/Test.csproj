@@ -59,6 +59,9 @@
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.8.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="OpenTK, Version=1.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
       <HintPath>..\packages\OpenTK.1.1.2225.0\lib\net20\OpenTK.dll</HintPath>
     </Reference>
@@ -139,6 +142,7 @@
     <Compile Include="AddOn\CCirclePB.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="AddOn\CDTEPicker.cs" />
     <Compile Include="BTX.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -288,6 +292,8 @@
     <Compile Include="Wallet.cs">
       <DependentUpon>BTX.tt</DependentUpon>
     </Compile>
+    <Compile Include="ZaloPay\CZLPayAPI.cs" />
+    <Compile Include="ZaloPay\HMac256CPT.cs" />
     <EmbeddedResource Include="Views\FCar.resx">
       <DependentUpon>FCar.cs</DependentUpon>
     </EmbeddedResource>
@@ -384,12 +390,12 @@
       <DependentUpon>BTX.edmx</DependentUpon>
       <LastGenOutput>BTX.cs</LastGenOutput>
     </Content>
-    <Content Include="cvextern.dll" />
-    <Content Include="minus.png" />
     <Content Include="Resource\z6046076668735_c3e2a53255dcc115b1048efa2b4dca4f.ico" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
+    <Folder Include="Momo\" />
+    <Folder Include="Resource\img\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

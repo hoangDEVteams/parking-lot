@@ -4,7 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Test.Views;
-
 namespace Test
 {
     internal static class Program
@@ -18,6 +17,7 @@ namespace Test
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FLogin());
+
         }
     }
 }

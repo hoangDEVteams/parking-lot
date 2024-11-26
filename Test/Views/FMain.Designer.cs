@@ -31,6 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FMain));
             this.label1 = new System.Windows.Forms.Label();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.btnWithDraw = new System.Windows.Forms.Button();
+            this.btnTopUp = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.iconButton4 = new FontAwesome.Sharp.IconButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.iconButton6 = new FontAwesome.Sharp.IconButton();
@@ -43,9 +46,11 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
             this.panelContainer = new System.Windows.Forms.Panel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cCirclePB1 = new Test.AddOn.CCirclePB();
             this.panelMenu.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cCirclePB1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,6 +68,8 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.White;
+            this.panelMenu.Controls.Add(this.groupBox1);
+            this.panelMenu.Controls.Add(this.label2);
             this.panelMenu.Controls.Add(this.iconButton4);
             this.panelMenu.Controls.Add(this.panel3);
             this.panelMenu.Controls.Add(this.iconButton6);
@@ -79,6 +86,42 @@
             this.panelMenu.TabIndex = 1;
             this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // btnWithDraw
+            // 
+            this.btnWithDraw.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnWithDraw.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnWithDraw.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnWithDraw.Location = new System.Drawing.Point(88, 13);
+            this.btnWithDraw.Name = "btnWithDraw";
+            this.btnWithDraw.Size = new System.Drawing.Size(77, 26);
+            this.btnWithDraw.TabIndex = 10;
+            this.btnWithDraw.Text = "Withdraw";
+            this.btnWithDraw.UseVisualStyleBackColor = false;
+            // 
+            // btnTopUp
+            // 
+            this.btnTopUp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnTopUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTopUp.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTopUp.Location = new System.Drawing.Point(0, 13);
+            this.btnTopUp.Name = "btnTopUp";
+            this.btnTopUp.Size = new System.Drawing.Size(77, 26);
+            this.btnTopUp.TabIndex = 9;
+            this.btnTopUp.Text = "Top Up";
+            this.btnTopUp.UseVisualStyleBackColor = false;
+            this.btnTopUp.Click += new System.EventHandler(this.button4_Click_1);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(12, 211);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(61, 22);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "label2";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
             // iconButton4
             // 
             this.iconButton4.FlatAppearance.BorderSize = 0;
@@ -89,7 +132,7 @@
             this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton4.IconSize = 30;
             this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton4.Location = new System.Drawing.Point(12, 345);
+            this.iconButton4.Location = new System.Drawing.Point(12, 410);
             this.iconButton4.Name = "iconButton4";
             this.iconButton4.Size = new System.Drawing.Size(174, 34);
             this.iconButton4.TabIndex = 6;
@@ -141,7 +184,7 @@
             this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton3.IconSize = 30;
             this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.Location = new System.Drawing.Point(12, 305);
+            this.iconButton3.Location = new System.Drawing.Point(12, 370);
             this.iconButton3.Name = "iconButton3";
             this.iconButton3.Size = new System.Drawing.Size(174, 34);
             this.iconButton3.TabIndex = 5;
@@ -160,7 +203,7 @@
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton2.IconSize = 30;
             this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.Location = new System.Drawing.Point(12, 264);
+            this.iconButton2.Location = new System.Drawing.Point(12, 329);
             this.iconButton2.Name = "iconButton2";
             this.iconButton2.Size = new System.Drawing.Size(174, 34);
             this.iconButton2.TabIndex = 4;
@@ -180,7 +223,7 @@
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 30;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.iconButton1.Location = new System.Drawing.Point(12, 224);
+            this.iconButton1.Location = new System.Drawing.Point(12, 289);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Size = new System.Drawing.Size(174, 34);
             this.iconButton1.TabIndex = 3;
@@ -275,6 +318,18 @@
             this.panelContainer.TabIndex = 3;
             this.panelContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint_1);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.btnWithDraw);
+            this.groupBox1.Controls.Add(this.btnTopUp);
+            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox1.Location = new System.Drawing.Point(14, 237);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(165, 46);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            // 
             // cCirclePB1
             // 
             this.cCirclePB1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -311,6 +366,7 @@
             this.panelMenu.ResumeLayout(false);
             this.panelMenu.PerformLayout();
             this.panel2.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.cCirclePB1)).EndInit();
             this.ResumeLayout(false);
 
@@ -333,5 +389,9 @@
         private System.Windows.Forms.Panel panel3;
         private FontAwesome.Sharp.IconButton iconButton4;
         private System.Windows.Forms.Panel panelContainer;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnTopUp;
+        private System.Windows.Forms.Button btnWithDraw;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

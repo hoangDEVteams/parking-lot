@@ -18,7 +18,8 @@ namespace Test.Views
         private DateTime lastResendTime;
         private Timer resendTimer;
         private int remainingSeconds;
-        
+        public event Action OnVerificationSuccess;
+
 
 
         public FVerify(string username)
@@ -47,11 +48,9 @@ namespace Test.Views
 
                         if (result == "Cập nhật trạng thái thành công!")
                         {
+                            OnVerificationSuccess?.Invoke();
                             this.Close(); 
-                            FLogin fLogin = new FLogin();
-                            FRegister fRegister = new FRegister();
-                            fLogin.Show();
-                            fRegister.Close();
+                        
                         }
                     }
                     else

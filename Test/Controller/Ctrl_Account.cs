@@ -35,13 +35,27 @@ namespace Test.Controller
                 CUltils.db.SaveChanges();
 
                 string verificationCode = GenerateVerificationCode();
-
+                CreateWalletForAccount(newAccount.IDAcc);
                 return "Đăng ký thành công!";
             }
             catch (Exception ex)
             {
                 return $"Lỗi khi lưu vào cơ sở dữ liệu: {ex.Message}";
             }
+        }
+        private static void CreateWalletForAccount(int accountId)
+        {
+            var wallet = new Wallet
+            {
+                IDAcc = accountId,
+                Money = 0,
+                Balance = 0,
+                CreatedDate = DateTime.Now,
+                UpdatedDate = DateTime.Now
+            };
+
+            CUltils.db.Wallets.Add(wallet);
+            CUltils.db.SaveChanges();
         }
 
         public static void SaveVerificationCodeToDatabase(string username, string verificationCode)

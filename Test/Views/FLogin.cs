@@ -52,6 +52,18 @@ namespace Test.Views
                 MessageBox.Show("Tài khoản của bạn chưa được kích hoạt.");
                 return;
             }
+            if (checkBox2.Checked)
+            {
+                Properties.Settings.Default.Username = username;
+                Properties.Settings.Default.Password = password; // Lưu mật khẩu đã mã hóa
+                Properties.Settings.Default.RememberMe = true;
+                Properties.Settings.Default.Save();
+            }
+            else
+            {
+                Properties.Settings.Default.RememberMe = false;
+                Properties.Settings.Default.Save();
+            }
             FMain fMain = new FMain(username);
             fMain.Show();
             this.Hide();
@@ -61,6 +73,13 @@ namespace Test.Views
         private void FLogin_Load(object sender, EventArgs e)
         {
             txtPassLog.PasswordChar = '*';
+            if (Properties.Settings.Default.RememberMe)
+            {
+                txtUserLog.Text = Properties.Settings.Default.Username;
+                txtPassLog.Text = Properties.Settings.Default.Password;
+
+                checkBox2.Checked = true;
+            }
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -107,6 +126,11 @@ namespace Test.Views
         private void button2_MouseLeave(object sender, EventArgs e)
         {
             button2.BackColor = Color.Transparent;
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
