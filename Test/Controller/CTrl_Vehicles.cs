@@ -9,18 +9,22 @@ namespace Test.Controller
 {
     internal class CTrl_Vehicles
     {
-        public void upDate(Vehicle loaiSach)
+        public List<V_VehicleData> VehicleData()
+        {
+            return CUltils.db.V_VehicleData.ToList();
+        }
+        public void upDate(Vehicle vehicle)
         {
             CUltils.db.SaveChanges();
         }
-        public void remove(Vehicle loaiSach)
+        public void remove(Vehicle vehicle)
         {
-            CUltils.db.Vehicles.Remove(loaiSach);
+            CUltils.db.Vehicles.Remove(vehicle);
             CUltils.db.SaveChanges();
         }
-        public void add(Vehicle loaiSach)
+        public void add(Vehicle vehicle)
         {
-            CUltils.db.Vehicles.Add(loaiSach);
+            CUltils.db.Vehicles.Add(vehicle);
             CUltils.db.SaveChanges();
         }
     }

@@ -237,6 +237,12 @@
     <Compile Include="Views\FCar_Admin.Designer.cs">
       <DependentUpon>FCar_Admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\FFillInforVehicle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FFillInforVehicle.Designer.cs">
+      <DependentUpon>FFillInforVehicle.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\FForgotPassword.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -293,6 +299,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FCar_Admin.resx">
       <DependentUpon>FCar_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FFillInforVehicle.resx">
+      <DependentUpon>FFillInforVehicle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FForgotPassword.resx">
       <DependentUpon>FForgotPassword.cs</DependentUpon>
