@@ -1,14 +1,132 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Huan\\Desktop\\test\\parking-lot\\",
+<<<<<<< HEAD
+  "WorkspaceRootPath": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|C:\\Users\\Huan\\Desktop\\test\\parking-lot\\test\\views\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|d:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\qlbaithuexe\\parking-lot\\test\\views\\ffillinforvehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\ffillinforvehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\views\\fcar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fcar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\views\\fcar_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fcar_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|d:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\qlbaithuexe\\parking-lot\\test\\views\\ffillinforvehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\ffillinforvehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|d:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\qlbaithuexe\\parking-lot\\test\\views\\ffillinforvehicle.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\ffillinforvehicle.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\views\\fcar_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fcar_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\controller\\ctrl_vehicletypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\controller\\ctrl_vehicletypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\controller\\ctrl_vehicles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\controller\\ctrl_vehicles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|d:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\qlbaithuexe\\parking-lot\\test\\views\\fcar_admin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fcar_admin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|d:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\qlbaithuexe\\parking-lot\\test\\views\\fcar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fcar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\btx.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\btx.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\btx.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\btx.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\resource\\cultils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\resource\\cultils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\controller\\ctrl_account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\controller\\ctrl_account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\views\\fcar.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fcar.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
+      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\views\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\views\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\views\\fregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\views\\ftest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\ftest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\views\\fresetpass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fresetpass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\app.manifest||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\app.manifest||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\views\\fverify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fverify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\views\\fregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\views\\fverify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fverify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\resource\\cpass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\resource\\cpass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\views\\fmain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+=======
+  "WorkspaceRootPath": "C:\\Users\\Huan\\Desktop\\test\\parking-lot\\",
+  "Documents": [
+    {
       "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|C:\\Users\\Huan\\Desktop\\test\\parking-lot\\test\\views\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|C:\\Users\\Huan\\Desktop\\test\\parking-lot\\test\\views\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|c:\\users\\huan\\desktop\\test\\parking-lot\\test\\views\\fcar_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -96,6 +214,7 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|C:\\Users\\Huan\\Desktop\\test\\parking-lot\\test\\views\\fmain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+>>>>>>> b7d2c3d3db28c03e14b1e2b6c92b28315ea84070
       "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fmain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -107,19 +226,19 @@
         {
           "DockedWidth": 200,
 <<<<<<< HEAD
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 12,
 =======
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 0,
 >>>>>>> b7d2c3d3db28c03e14b1e2b6c92b28315ea84070
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "FMain.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Huan\\Desktop\\test\\parking-lot\\Test\\Views\\FMain.cs",
               "RelativeDocumentMoniker": "Test\\Views\\FMain.cs",
-              "ToolTip": "C:\\Users\\Huan\\Desktop\\test\\parking-lot\\Test\\Views\\FMain.cs [Design]",
-              "RelativeToolTip": "Test\\Views\\FMain.cs [Design]",
+              "ToolTip": "C:\\Users\\Huan\\Desktop\\test\\parking-lot\\Test\\Views\\FMain.cs [Design]*",
+              "RelativeToolTip": "Test\\Views\\FMain.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-16T16:03:18.522Z",
               "IsPinned": true,
@@ -143,10 +262,6 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
@@ -155,11 +270,46 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+<<<<<<< HEAD
+              "Title": "FFillInforVehicle.Designer.cs",
+              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FFillInforVehicle.Designer.cs",
+              "RelativeDocumentMoniker": "Test\\Views\\FFillInforVehicle.Designer.cs",
+              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FFillInforVehicle.Designer.cs",
+              "RelativeToolTip": "Test\\Views\\FFillInforVehicle.Designer.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAApwHwAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T10:12:55.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FFillInforVehicle.cs",
+              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FFillInforVehicle.cs",
+              "RelativeDocumentMoniker": "Test\\Views\\FFillInforVehicle.cs",
+              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FFillInforVehicle.cs",
+              "RelativeToolTip": "Test\\Views\\FFillInforVehicle.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T10:12:13.255Z",
+=======
               "Title": "FCar_Admin.cs",
               "DocumentMoniker": "C:\\Users\\Huan\\Desktop\\test\\parking-lot\\Test\\Views\\FCar_Admin.cs",
               "RelativeDocumentMoniker": "Test\\Views\\FCar_Admin.cs",
@@ -168,16 +318,64 @@
               "ViewState": "AgIAAB4BAAAAAAAAAAAIwDIBAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-21T06:56:59.595Z",
+>>>>>>> b7d2c3d3db28c03e14b1e2b6c92b28315ea84070
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
+              "DocumentIndex": 0,
+              "Title": "FFillInforVehicle.cs [Design]",
+              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FFillInforVehicle.cs",
+              "RelativeDocumentMoniker": "Test\\Views\\FFillInforVehicle.cs",
+              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FFillInforVehicle.cs [Design]",
+              "RelativeToolTip": "Test\\Views\\FFillInforVehicle.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T09:52:04.381Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FCar_Admin.Designer.cs",
+              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FCar_Admin.Designer.cs",
+              "RelativeDocumentMoniker": "Test\\Views\\FCar_Admin.Designer.cs",
+              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FCar_Admin.Designer.cs",
+              "RelativeToolTip": "Test\\Views\\FCar_Admin.Designer.cs",
+              "ViewState": "AgIAAMsAAAAAAAAAAAApwNsAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T09:32:11.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BTX.Context.cs",
+              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\BTX.Context.cs",
+              "RelativeDocumentMoniker": "Test\\BTX.Context.cs",
+              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\BTX.Context.cs",
+              "RelativeToolTip": "Test\\BTX.Context.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAIA5wCoAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T08:14:29.853Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FCar.cs",
+              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FCar.cs",
+              "RelativeDocumentMoniker": "Test\\Views\\FCar.cs",
+              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FCar.cs",
+              "RelativeToolTip": "Test\\Views\\FCar.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAowFAAAAAAAAAAAAAAAA==",
+=======
               "DocumentIndex": 3,
               "Title": "FLogin.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Huan\\Desktop\\test\\parking-lot\\Test\\Views\\FLogin.cs",
               "RelativeDocumentMoniker": "Test\\Views\\FLogin.cs",
               "ToolTip": "C:\\Users\\Huan\\Desktop\\test\\parking-lot\\Test\\Views\\FLogin.cs [Design]",
               "RelativeToolTip": "Test\\Views\\FLogin.cs [Design]",
+>>>>>>> b7d2c3d3db28c03e14b1e2b6c92b28315ea84070
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-25T17:32:52.342Z",
               "EditorCaption": " [Design]"
@@ -197,6 +395,13 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
+              "DocumentIndex": 15,
+              "Title": "ClassDiagram1.cd",
+              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\ClassDiagram1.cd",
+              "RelativeDocumentMoniker": "Test\\ClassDiagram1.cd",
+              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\ClassDiagram1.cd",
+=======
               "DocumentIndex": 6,
               "Title": "CTrl_Vehicles.cs",
               "DocumentMoniker": "C:\\Users\\Huan\\Desktop\\test\\parking-lot\\Test\\Controller\\CTrl_Vehicles.cs",
@@ -209,22 +414,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-<<<<<<< HEAD
-              "Title": "FCar.cs",
-              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\hoangDEVteams\\parking-lot\\Test\\Views\\FCar.cs",
-              "RelativeDocumentMoniker": "Test\\Views\\FCar.cs",
-              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\hoangDEVteams\\parking-lot\\Test\\Views\\FCar.cs",
-              "RelativeToolTip": "Test\\Views\\FCar.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAowFAAAAAAAAAAAAAAAA==",
-=======
+              "DocumentIndex": 1,
               "Title": "FMain.cs",
               "DocumentMoniker": "C:\\Users\\Huan\\Desktop\\test\\parking-lot\\Test\\Views\\FMain.cs",
               "RelativeDocumentMoniker": "Test\\Views\\FMain.cs",
-              "ToolTip": "C:\\Users\\Huan\\Desktop\\test\\parking-lot\\Test\\Views\\FMain.cs",
-              "RelativeToolTip": "Test\\Views\\FMain.cs",
+              "ToolTip": "C:\\Users\\Huan\\Desktop\\test\\parking-lot\\Test\\Views\\FMain.cs*",
+              "RelativeToolTip": "Test\\Views\\FMain.cs*",
               "ViewState": "AgIAAN0AAAAAAAAAAAAEwOkAAAANAAAAAAAAAA==",
->>>>>>> b7d2c3d3db28c03e14b1e2b6c92b28315ea84070
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-16T16:05:54.46Z",
               "EditorCaption": ""
@@ -282,12 +478,84 @@
               "DocumentMoniker": "C:\\Users\\Huan\\Desktop\\test\\parking-lot\\Test\\ClassDiagram1.cd",
               "RelativeDocumentMoniker": "Test\\ClassDiagram1.cd",
               "ToolTip": "C:\\Users\\Huan\\Desktop\\test\\parking-lot\\Test\\ClassDiagram1.cd",
+>>>>>>> b7d2c3d3db28c03e14b1e2b6c92b28315ea84070
               "RelativeToolTip": "Test\\ClassDiagram1.cd",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
               "WhenOpened": "2024-11-21T07:19:28.45Z"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
+              "DocumentIndex": 5,
+              "Title": "FCar_Admin.cs",
+              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FCar_Admin.cs",
+              "RelativeDocumentMoniker": "Test\\Views\\FCar_Admin.cs",
+              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FCar_Admin.cs",
+              "RelativeToolTip": "Test\\Views\\FCar_Admin.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAAwFIAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T06:56:59.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FCar_Admin.cs [Design]",
+              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FCar_Admin.cs",
+              "RelativeDocumentMoniker": "Test\\Views\\FCar_Admin.cs",
+              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FCar_Admin.cs [Design]",
+              "RelativeToolTip": "Test\\Views\\FCar_Admin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T06:52:13.573Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CTrl_Vehicles.cs",
+              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Controller\\CTrl_Vehicles.cs",
+              "RelativeDocumentMoniker": "Test\\Controller\\CTrl_Vehicles.cs",
+              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Controller\\CTrl_Vehicles.cs",
+              "RelativeToolTip": "Test\\Controller\\CTrl_Vehicles.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAQwBwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T05:36:31.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FCar.cs [Design]",
+              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FCar.cs",
+              "RelativeDocumentMoniker": "Test\\Views\\FCar.cs",
+              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FCar.cs [Design]",
+              "RelativeToolTip": "Test\\Views\\FCar.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T06:10:01.008Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FCar.Designer.cs",
+              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FCar.Designer.cs",
+              "RelativeDocumentMoniker": "Test\\Views\\FCar.Designer.cs",
+              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FCar.Designer.cs",
+              "RelativeToolTip": "Test\\Views\\FCar.Designer.cs",
+              "ViewState": "AgIAAKIBAAAAAAAAAAAkwK4BAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T06:11:51.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BTX.edmx [Diagram1]",
+              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\BTX.edmx",
+              "RelativeDocumentMoniker": "Test\\BTX.edmx",
+              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\hoangDEVteams\\parking-lot\\Test\\BTX.edmx [Diagram1]",
+              "RelativeToolTip": "..\\hoangDEVteams\\parking-lot\\Test\\BTX.edmx [Diagram1]",
+=======
               "DocumentIndex": 11,
               "Title": "BTX.Context.cs",
               "DocumentMoniker": "C:\\Users\\Huan\\Desktop\\test\\parking-lot\\Test\\BTX.Context.cs",
@@ -305,16 +573,50 @@
               "DocumentMoniker": "C:\\Users\\Huan\\Desktop\\test\\parking-lot\\Test\\BTX.edmx",
               "RelativeDocumentMoniker": "Test\\BTX.edmx",
               "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\hoangDEVteams\\parking-lot\\Test\\BTX.edmx [Diagram1]",
+>>>>>>> b7d2c3d3db28c03e14b1e2b6c92b28315ea84070
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
               "WhenOpened": "2024-11-21T05:37:35.566Z"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
+              "DocumentIndex": 6,
+              "Title": "Ctrl_VehicleTypes.cs",
+              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Controller\\Ctrl_VehicleTypes.cs",
+              "RelativeDocumentMoniker": "Test\\Controller\\Ctrl_VehicleTypes.cs",
+              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Controller\\Ctrl_VehicleTypes.cs",
+              "RelativeToolTip": "Test\\Controller\\Ctrl_VehicleTypes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T05:36:45.459Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "FMain.cs",
+              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FMain.cs",
+              "RelativeDocumentMoniker": "Test\\Views\\FMain.cs",
+              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FMain.cs",
+              "RelativeToolTip": "Test\\Views\\FMain.cs",
+              "ViewState": "AgIAAAkBAAAAAAAAAAA3wBkBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T16:05:54.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "FVerify.cs",
+              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FVerify.cs",
+              "RelativeDocumentMoniker": "Test\\Views\\FVerify.cs",
+              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FVerify.cs",
+=======
               "DocumentIndex": 19,
               "Title": "FVerify.cs",
               "DocumentMoniker": "C:\\Users\\Huan\\Desktop\\test\\parking-lot\\Test\\Views\\FVerify.cs",
               "RelativeDocumentMoniker": "Test\\Views\\FVerify.cs",
               "ToolTip": "C:\\Users\\Huan\\Desktop\\test\\parking-lot\\Test\\Views\\FVerify.cs",
+>>>>>>> b7d2c3d3db28c03e14b1e2b6c92b28315ea84070
               "RelativeToolTip": "Test\\Views\\FVerify.cs",
               "ViewState": "AgIAAFAAAAAAAAAAAAAIwGMAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -322,21 +624,38 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
+              "DocumentIndex": 26,
+              "Title": "FVerify.cs [Design]",
+              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FVerify.cs",
+              "RelativeDocumentMoniker": "Test\\Views\\FVerify.cs",
+              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\hoangDEVteams\\parking-lot\\Test\\Views\\FVerify.cs [Design]",
+              "RelativeToolTip": "..\\hoangDEVteams\\parking-lot\\Test\\Views\\FVerify.cs [Design]",
+=======
               "DocumentIndex": 21,
               "Title": "FVerify.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Huan\\Desktop\\test\\parking-lot\\Test\\Views\\FVerify.cs",
               "RelativeDocumentMoniker": "Test\\Views\\FVerify.cs",
               "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\hoangDEVteams\\parking-lot\\Test\\Views\\FVerify.cs [Design]",
+>>>>>>> b7d2c3d3db28c03e14b1e2b6c92b28315ea84070
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-18T16:39:29.925Z"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
+              "DocumentIndex": 25,
+              "Title": "FRegister.cs",
+              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FRegister.cs",
+              "RelativeDocumentMoniker": "Test\\Views\\FRegister.cs",
+              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FRegister.cs",
+=======
               "DocumentIndex": 20,
               "Title": "FRegister.cs",
               "DocumentMoniker": "C:\\Users\\Huan\\Desktop\\test\\parking-lot\\Test\\Views\\FRegister.cs",
               "RelativeDocumentMoniker": "Test\\Views\\FRegister.cs",
               "ToolTip": "C:\\Users\\Huan\\Desktop\\test\\parking-lot\\Test\\Views\\FRegister.cs",
+>>>>>>> b7d2c3d3db28c03e14b1e2b6c92b28315ea84070
               "RelativeToolTip": "Test\\Views\\FRegister.cs",
               "ViewState": "AgIAACsAAAAAAAAAAAAUwE4AAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -344,11 +663,30 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
+              "DocumentIndex": 20,
+              "Title": "FRegister.cs [Design]",
+              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FRegister.cs",
+              "RelativeDocumentMoniker": "Test\\Views\\FRegister.cs",
+              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\hoangDEVteams\\parking-lot\\Test\\Views\\FRegister.cs [Design]",
+              "RelativeToolTip": "..\\hoangDEVteams\\parking-lot\\Test\\Views\\FRegister.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T16:39:04.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "app.manifest",
+              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\app.manifest",
+              "RelativeDocumentMoniker": "Test\\app.manifest",
+              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\app.manifest",
+=======
               "DocumentIndex": 18,
               "Title": "app.manifest",
               "DocumentMoniker": "C:\\Users\\Huan\\Desktop\\test\\parking-lot\\Test\\app.manifest",
               "RelativeDocumentMoniker": "Test\\app.manifest",
               "ToolTip": "C:\\Users\\Huan\\Desktop\\test\\parking-lot\\Test\\app.manifest",
+>>>>>>> b7d2c3d3db28c03e14b1e2b6c92b28315ea84070
               "RelativeToolTip": "Test\\app.manifest",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAABQAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001203|",
@@ -356,31 +694,66 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
+              "DocumentIndex": 17,
+              "Title": "FMain.cs [Design]",
+              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FMain.cs",
+              "RelativeDocumentMoniker": "Test\\Views\\FMain.cs",
+              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\hoangDEVteams\\parking-lot\\Test\\Views\\FMain.cs [Design]",
+              "RelativeToolTip": "..\\hoangDEVteams\\parking-lot\\Test\\Views\\FMain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T16:03:18.522Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "FTest.cs [Design]",
+              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FTest.cs",
+              "RelativeDocumentMoniker": "Test\\Views\\FTest.cs",
+              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\hoangDEVteams\\parking-lot\\Test\\Views\\FTest.cs [Design]",
+              "RelativeToolTip": "..\\hoangDEVteams\\parking-lot\\Test\\Views\\FTest.cs [Design]",
+=======
               "DocumentIndex": 16,
               "Title": "FTest.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Huan\\Desktop\\test\\parking-lot\\Test\\Views\\FTest.cs",
               "RelativeDocumentMoniker": "Test\\Views\\FTest.cs",
               "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\hoangDEVteams\\parking-lot\\Test\\Views\\FTest.cs [Design]",
+>>>>>>> b7d2c3d3db28c03e14b1e2b6c92b28315ea84070
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-20T15:19:58.325Z"
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
+              "DocumentIndex": 22,
+              "Title": "FResetPass.cs [Design]",
+              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FResetPass.cs",
+              "RelativeDocumentMoniker": "Test\\Views\\FResetPass.cs",
+              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\hoangDEVteams\\parking-lot\\Test\\Views\\FResetPass.cs [Design]",
+              "RelativeToolTip": "..\\hoangDEVteams\\parking-lot\\Test\\Views\\FResetPass.cs [Design]",
+=======
               "DocumentIndex": 17,
               "Title": "FResetPass.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Huan\\Desktop\\test\\parking-lot\\Test\\Views\\FResetPass.cs",
               "RelativeDocumentMoniker": "Test\\Views\\FResetPass.cs",
               "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\hoangDEVteams\\parking-lot\\Test\\Views\\FResetPass.cs [Design]",
+>>>>>>> b7d2c3d3db28c03e14b1e2b6c92b28315ea84070
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-18T16:39:42.118Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "App.config",
+<<<<<<< HEAD
+              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\App.config",
+              "RelativeDocumentMoniker": "Test\\App.config",
+              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\App.config",
+=======
               "DocumentMoniker": "C:\\Users\\Huan\\Desktop\\test\\parking-lot\\Test\\App.config",
               "RelativeDocumentMoniker": "Test\\App.config",
               "ToolTip": "C:\\Users\\Huan\\Desktop\\test\\parking-lot\\Test\\App.config",
+>>>>>>> b7d2c3d3db28c03e14b1e2b6c92b28315ea84070
               "RelativeToolTip": "Test\\App.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
@@ -389,11 +762,31 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
+              "DocumentIndex": 13,
+              "Title": "Ctrl_Account.cs",
+              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Controller\\Ctrl_Account.cs",
+              "RelativeDocumentMoniker": "Test\\Controller\\Ctrl_Account.cs",
+              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Controller\\Ctrl_Account.cs",
+              "RelativeToolTip": "Test\\Controller\\Ctrl_Account.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAADEAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T16:39:47.91Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "CPass.cs",
+              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Resource\\CPass.cs",
+              "RelativeDocumentMoniker": "Test\\Resource\\CPass.cs",
+              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Resource\\CPass.cs",
+=======
               "DocumentIndex": 22,
               "Title": "CPass.cs",
               "DocumentMoniker": "C:\\Users\\Huan\\Desktop\\test\\parking-lot\\Test\\Resource\\CPass.cs",
               "RelativeDocumentMoniker": "Test\\Resource\\CPass.cs",
               "ToolTip": "C:\\Users\\Huan\\Desktop\\test\\parking-lot\\Test\\Resource\\CPass.cs",
+>>>>>>> b7d2c3d3db28c03e14b1e2b6c92b28315ea84070
               "RelativeToolTip": "Test\\Resource\\CPass.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -403,13 +796,41 @@
               "$type": "Document",
               "DocumentIndex": 12,
               "Title": "CUltils.cs",
+<<<<<<< HEAD
+              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Resource\\CUltils.cs",
+              "RelativeDocumentMoniker": "Test\\Resource\\CUltils.cs",
+              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Resource\\CUltils.cs",
+=======
               "DocumentMoniker": "C:\\Users\\Huan\\Desktop\\test\\parking-lot\\Test\\Resource\\CUltils.cs",
               "RelativeDocumentMoniker": "Test\\Resource\\CUltils.cs",
               "ToolTip": "C:\\Users\\Huan\\Desktop\\test\\parking-lot\\Test\\Resource\\CUltils.cs",
+>>>>>>> b7d2c3d3db28c03e14b1e2b6c92b28315ea84070
               "RelativeToolTip": "Test\\Resource\\CUltils.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-18T16:40:03.359Z"
+<<<<<<< HEAD
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "FMain.Designer.cs",
+              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FMain.Designer.cs",
+              "RelativeDocumentMoniker": "Test\\Views\\FMain.Designer.cs",
+              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FMain.Designer.cs",
+              "RelativeToolTip": "Test\\Views\\FMain.Designer.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAmwEABAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T13:56:02.49Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Program.cs",
+              "RelativeDocumentMoniker": "Test\\Program.cs",
+              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Program.cs",
+=======
             },
             {
               "$type": "Document",
@@ -417,8 +838,8 @@
               "Title": "FMain.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Huan\\Desktop\\test\\parking-lot\\Test\\Views\\FMain.Designer.cs",
               "RelativeDocumentMoniker": "Test\\Views\\FMain.Designer.cs",
-              "ToolTip": "C:\\Users\\Huan\\Desktop\\test\\parking-lot\\Test\\Views\\FMain.Designer.cs",
-              "RelativeToolTip": "Test\\Views\\FMain.Designer.cs",
+              "ToolTip": "C:\\Users\\Huan\\Desktop\\test\\parking-lot\\Test\\Views\\FMain.Designer.cs*",
+              "RelativeToolTip": "Test\\Views\\FMain.Designer.cs*",
               "ViewState": "AgIAAAgAAAAAAAAAAAAmwEABAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-17T13:56:02.49Z",
@@ -431,6 +852,7 @@
               "DocumentMoniker": "C:\\Users\\Huan\\Desktop\\test\\parking-lot\\Test\\Program.cs",
               "RelativeDocumentMoniker": "Test\\Program.cs",
               "ToolTip": "C:\\Users\\Huan\\Desktop\\test\\parking-lot\\Test\\Program.cs",
+>>>>>>> b7d2c3d3db28c03e14b1e2b6c92b28315ea84070
               "RelativeToolTip": "Test\\Program.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAswBMAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
