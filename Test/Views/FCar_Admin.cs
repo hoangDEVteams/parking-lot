@@ -24,10 +24,11 @@ namespace Test.Views
         {
             InitializeComponent();
         }
-<<<<<<< HEAD
         private void FCar_Admin_Load(object sender, EventArgs e)
-=======
-
+        {
+            LoadVehicleData();
+            LoadColumnsToComboBox();
+        }
         private void LoadVehicleData()
         {
             CTrl_Vehicles vehicleService = new CTrl_Vehicles();
@@ -47,13 +48,6 @@ namespace Test.Views
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.DataSource = vehicleData;
             dataGridView1.ScrollBars = ScrollBars.Horizontal;
-        }
-
-        private void FCar_Admin_Load(object sender, EventArgs e)
-        {
-            LoadVehicleData();
-            LoadColumnsToComboBox();
-
         }
 
         private Bitmap StretchImage(Bitmap sourceImage, int targetWidth, int targetHeight)
@@ -175,70 +169,6 @@ namespace Test.Views
             {
                 MessageBox.Show($"Lỗi khi lưu ảnh hoặc thêm phương tiện: {ex.Message}");
             }
-        }
-
-        private void groupBox6_Enter(object sender, EventArgs e)
->>>>>>> b7d2c3d3db28c03e14b1e2b6c92b28315ea84070
-        {
-            dtgridVehicles.DataSource = ctrlVehicles.VehicleData().ToList();
-        }
-     
-        private void dtgridVehicles_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= 0)
-            {
-                DataGridViewRow row = dtgridVehicles.Rows[e.RowIndex];
-                int vehicleID = Convert.ToInt32(row.Cells[0].Value);
-                VehicleType vehicle = ctrlVehicleType.GetVehiclesbyCategory(vehicleID);
-                if (vehicle != null)
-                {
-                    txtCode.DataBindings.Clear();
-                    txtCode.Text = vehicle.IDVehicleType.ToString();
-
-                    txtName.DataBindings.Clear();
-                    txtName.Text = vehicle.VehicleTypeName.ToString();
-
-                    txtManu.DataBindings.Clear();
-                    txtManu.Text = vehicle.Manufacturer;
-
-                    txtYear.DataBindings.Clear();
-                    txtYear.Text = vehicle.ManufactureYear.ToString();
-                }
-                else
-                {
-                    MessageBox.Show("Vehicle not found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-        }
-
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-            int index = dtgridVehicles.SelectedCells[0].RowIndex;
-            if (index == -1)
-            {
-                ctrlVehicles.remove(vehicle);
-            }
-            else
-            {
-                MessageBox.Show("vui lòng chọn loại phương tiện", "thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void btnEdit_Click(object sender, EventArgs e)
-        {
-            if (dtgridVehicles.CurrentRow == null)
-            {
-                MessageBox.Show("Please select a vehicle to edit.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            DataGridViewRow row = dtgridVehicles.CurrentRow;
-            if (row.Cells[0].Value == null || !int.TryParse(row.Cells[0].Value.ToString(), out int vehicleID))
-            {
-                MessageBox.Show("Invalid Vehicle ID.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            FFillInforVehicle form = new FFillInforVehicle(vehicleID);
-            form.ShowDialog();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)

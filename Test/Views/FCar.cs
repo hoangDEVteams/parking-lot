@@ -99,5 +99,20 @@ namespace Test.Views
         {
             FilterVehicles();
         }
+
+        private void btnCarRental_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnInfor_Click(object sender, EventArgs e)
+        {
+            if(lblCode.Text != null && lblCode.Text != "")
+            {
+                int idvehicle = Int32.Parse(lblCode.Text);
+                FInforVehicle form = new FInforVehicle(idvehicle);
+                form.ShowDialog();
+            }
+        }
     }
 }
