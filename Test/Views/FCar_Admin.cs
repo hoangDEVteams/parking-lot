@@ -369,7 +369,6 @@ namespace Test.Views
             string selectedColumn = cbxFilter.SelectedItem.ToString(); 
             string filterValue = txtSearch.Text.Trim(); 
 
-            // Kiểm tra xem người dùng đã chọn cột và nhập giá trị hay chưa
             if (string.IsNullOrEmpty(selectedColumn) || string.IsNullOrEmpty(filterValue))
             {
                 MessageBox.Show("Vui lòng chọn cột và nhập giá trị lọc.");
@@ -400,10 +399,9 @@ namespace Test.Views
 
         private void btxCancel_Click(object sender, EventArgs e)
         {
-            cbxFilter.SelectedIndex = -1;  // Hủy bỏ lựa chọn trong ComboBox (nếu có)
-            txtSearch.Clear();  // Xóa giá trị trong TextBox tìm kiếm
+            cbxFilter.SelectedIndex = -1; 
+            txtSearch.Clear();  
 
-            // Tải lại tất cả dữ liệu vào DataGridView
             LoadVehicleData();
         }
     }

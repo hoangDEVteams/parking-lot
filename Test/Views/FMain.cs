@@ -267,7 +267,6 @@ namespace Test.Views
                 }
             }
 
-            // Cập nhật giao diện sau khi thay đổi
             this.Refresh();
         }
 
