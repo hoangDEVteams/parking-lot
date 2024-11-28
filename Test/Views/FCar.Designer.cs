@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FCar));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cbPrice = new System.Windows.Forms.ComboBox();
             this.cbStatus = new System.Windows.Forms.ComboBox();
             this.cbColor = new System.Windows.Forms.ComboBox();
             this.txtFind = new System.Windows.Forms.RichTextBox();
@@ -61,6 +62,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnIncrese = new FontAwesome.Sharp.IconButton();
+            this.btnDecrese = new FontAwesome.Sharp.IconButton();
+            this.btnReset = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgridVehicles)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLbaixeDataSet1)).BeginInit();
@@ -73,6 +77,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.btnReset);
+            this.panel1.Controls.Add(this.btnDecrese);
+            this.panel1.Controls.Add(this.btnIncrese);
+            this.panel1.Controls.Add(this.cbPrice);
             this.panel1.Controls.Add(this.cbStatus);
             this.panel1.Controls.Add(this.cbColor);
             this.panel1.Controls.Add(this.txtFind);
@@ -84,6 +92,20 @@
             this.panel1.Size = new System.Drawing.Size(2287, 175);
             this.panel1.TabIndex = 0;
             // 
+            // cbPrice
+            // 
+            this.cbPrice.FormattingEnabled = true;
+            this.cbPrice.Items.AddRange(new object[] {
+            "",
+            "0-200k",
+            "200k-500k",
+            "trên 500k"});
+            this.cbPrice.Location = new System.Drawing.Point(611, 69);
+            this.cbPrice.Name = "cbPrice";
+            this.cbPrice.Size = new System.Drawing.Size(121, 24);
+            this.cbPrice.TabIndex = 5;
+            this.cbPrice.SelectedIndexChanged += new System.EventHandler(this.cbPrice_SelectedIndexChanged_1);
+            // 
             // cbStatus
             // 
             this.cbStatus.FormattingEnabled = true;
@@ -91,7 +113,7 @@
             "",
             "Available",
             "Unavailable"});
-            this.cbStatus.Location = new System.Drawing.Point(507, 69);
+            this.cbStatus.Location = new System.Drawing.Point(372, 69);
             this.cbStatus.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbStatus.Name = "cbStatus";
             this.cbStatus.Size = new System.Drawing.Size(141, 24);
@@ -108,7 +130,7 @@
             "White",
             "Yellow",
             "Black"});
-            this.cbColor.Location = new System.Drawing.Point(159, 69);
+            this.cbColor.Location = new System.Drawing.Point(124, 69);
             this.cbColor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbColor.Name = "cbColor";
             this.cbColor.Size = new System.Drawing.Size(141, 24);
@@ -120,7 +142,7 @@
             this.txtFind.Location = new System.Drawing.Point(124, 17);
             this.txtFind.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtFind.Name = "txtFind";
-            this.txtFind.Size = new System.Drawing.Size(608, 30);
+            this.txtFind.Size = new System.Drawing.Size(941, 30);
             this.txtFind.TabIndex = 2;
             this.txtFind.Text = "";
             this.txtFind.TextChanged += new System.EventHandler(this.txtFind_TextChanged);
@@ -147,12 +169,12 @@
             this.ManufactureYear,
             this.Description,
             this.LicensePlate});
-            this.dtgridVehicles.Location = new System.Drawing.Point(4, 19);
+            this.dtgridVehicles.Location = new System.Drawing.Point(75, 4);
             this.dtgridVehicles.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtgridVehicles.Name = "dtgridVehicles";
             this.dtgridVehicles.RowHeadersWidth = 51;
             this.dtgridVehicles.RowTemplate.Height = 24;
-            this.dtgridVehicles.Size = new System.Drawing.Size(978, 1040);
+            this.dtgridVehicles.Size = new System.Drawing.Size(1061, 1040);
             this.dtgridVehicles.TabIndex = 0;
             this.dtgridVehicles.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgridVehicles_CellContentClick);
             // 
@@ -255,7 +277,7 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(2287, 1063);
+            this.groupBox1.Size = new System.Drawing.Size(2287, 1032);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             // 
@@ -274,7 +296,7 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Location = new System.Drawing.Point(988, 19);
+            this.panel2.Location = new System.Drawing.Point(1142, 4);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(461, 1063);
@@ -321,7 +343,7 @@
             this.btnCarRental.BackColor = System.Drawing.Color.LimeGreen;
             this.btnCarRental.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCarRental.ForeColor = System.Drawing.Color.White;
-            this.btnCarRental.Location = new System.Drawing.Point(260, 588);
+            this.btnCarRental.Location = new System.Drawing.Point(261, 661);
             this.btnCarRental.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCarRental.Name = "btnCarRental";
             this.btnCarRental.Size = new System.Drawing.Size(153, 48);
@@ -333,7 +355,7 @@
             // 
             this.btnInfor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnInfor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInfor.Location = new System.Drawing.Point(37, 588);
+            this.btnInfor.Location = new System.Drawing.Point(35, 661);
             this.btnInfor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnInfor.Name = "btnInfor";
             this.btnInfor.Size = new System.Drawing.Size(153, 48);
@@ -403,12 +425,50 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // btnIncrese
+            // 
+            this.btnIncrese.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnIncrese.BackgroundImage")));
+            this.btnIncrese.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnIncrese.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnIncrese.IconColor = System.Drawing.Color.Black;
+            this.btnIncrese.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnIncrese.Location = new System.Drawing.Point(785, 53);
+            this.btnIncrese.Name = "btnIncrese";
+            this.btnIncrese.Size = new System.Drawing.Size(53, 54);
+            this.btnIncrese.TabIndex = 6;
+            this.btnIncrese.UseVisualStyleBackColor = true;
+            this.btnIncrese.Click += new System.EventHandler(this.btnIncrese_Click);
+            // 
+            // btnDecrese
+            // 
+            this.btnDecrese.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDecrese.BackgroundImage")));
+            this.btnDecrese.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDecrese.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnDecrese.IconColor = System.Drawing.Color.Black;
+            this.btnDecrese.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnDecrese.Location = new System.Drawing.Point(874, 54);
+            this.btnDecrese.Name = "btnDecrese";
+            this.btnDecrese.Size = new System.Drawing.Size(53, 54);
+            this.btnDecrese.TabIndex = 6;
+            this.btnDecrese.UseVisualStyleBackColor = true;
+            this.btnDecrese.Click += new System.EventHandler(this.btnDecrese_Click);
+            // 
+            // btnReset
+            // 
+            this.btnReset.Location = new System.Drawing.Point(965, 70);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(75, 23);
+            this.btnReset.TabIndex = 7;
+            this.btnReset.Text = "Reset";
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
             // FCar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(2287, 1238);
+            this.ClientSize = new System.Drawing.Size(2287, 1207);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -464,5 +524,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ComboBox cbPrice;
+        private FontAwesome.Sharp.IconButton btnDecrese;
+        private FontAwesome.Sharp.IconButton btnIncrese;
+        private System.Windows.Forms.Button btnReset;
     }
 }

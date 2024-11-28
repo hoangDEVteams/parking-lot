@@ -528,3 +528,8 @@ C:\Users\User\Desktop\vvv\12\parking-lot\Test\obj\Debug\Test.csproj.Up2Date
 C:\Users\User\Desktop\vvv\12\parking-lot\Test\obj\Debug\Test.exe
 C:\Users\User\Desktop\vvv\12\parking-lot\Test\obj\Debug\Test.pdb
 C:\Users\User\Desktop\vvv\12\parking-lot\Test\obj\Debug\Test.Views.FRentals.resources
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\Newtonsoft.Json.dll
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\bin\Debug\Newtonsoft.Json.xml
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\obj\Debug\Test.Views.FFillInforVehicle.resources
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\obj\Debug\Test.Views.FInforVehicle.resources
+D:\school\hướng đối tượng\QLBaiThueXe\hoangDEVteams\parking-lot\Test\obj\Debug\Test.Views.FRentals.resources

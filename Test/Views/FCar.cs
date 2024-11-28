@@ -16,7 +16,7 @@ namespace Test.Views
     {
         CTrl_Vehicles ctrVehicles = new CTrl_Vehicles();
         Ctrl_VehicleTypes ctrvehicleType = new Ctrl_VehicleTypes();
-        V_VehicleData viewVehicle = new V_VehicleData();   
+        V_VehicleData viewVehicle = new V_VehicleData();
         public FCar()
         {
             InitializeComponent();
@@ -32,6 +32,36 @@ namespace Test.Views
                 dtgridVehicles.Refresh();
             }
 
+        }
+        private void cbPrice_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            FilterPrice();
+        }
+        public void FilterPrice() {
+            decimal minPrice = 0, maxPrice = decimal.MaxValue;
+            string selectedPrice = cbPrice.SelectedItem?.ToString();
+            List<V_VehicleData> filteredVehicles;
+            if (selectedPrice != null) {
+                switch (selectedPrice) {
+                    case "0-200k":
+                        maxPrice = 200;
+                        break;
+                    case "200k-500k":
+                        minPrice = 200; 
+                        maxPrice = 500;
+                        break;
+                    case "trên 500k":
+                        minPrice = 500;
+                        maxPrice = 10000000;
+                        break;
+                }
+                filteredVehicles = CUltils.db.V_VehicleData.Where(v => v.price >= minPrice && v.price <= maxPrice).ToList();
+                UpdateVehicleList(filteredVehicles);
+            }
+            else
+            {
+                MessageBox.Show("no suitable vehicle","EROR",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
         }
         private void FilterVehicles()
         {
@@ -49,17 +79,11 @@ namespace Test.Views
             {
                 filteredVehicles = filteredVehicles.Where(t => t.Color.Contains(selectedColor)).ToList();
             }
-
             UpdateVehicleList(filteredVehicles);
         }
         private void FCar_Load(object sender, EventArgs e)
         {
-            using (var context = new BTXEntities1())
-            {
-                var data = context.V_VehicleData.ToList(); 
-                dtgridVehicles.DataSource = data;         
-            }
-
+            dtgridVehicles.DataSource = ctrVehicles.VehicleData();
         }
 
         private void dtgridVehicles_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -99,6 +123,10 @@ namespace Test.Views
         {
             FilterVehicles();
         }
+        private void cbPrice_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            FilterVehicles();
+        }
 
         private void btnCarRental_Click(object sender, EventArgs e)
         {
@@ -113,6 +141,22 @@ namespace Test.Views
                 FInforVehicle form = new FInforVehicle(idvehicle);
                 form.ShowDialog();
             }
+        }
+
+        private void btnIncrese_Click(object sender, EventArgs e)
+        {
+            UpdateVehicleList(ctrVehicles.priceIncrese());
+        }
+
+        private void btnDecrese_Click(object sender, EventArgs e)
+        {
+            UpdateVehicleList(ctrVehicles.priceDerese());
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            var data = ctrVehicles.VehicleData();
+            UpdateVehicleList(data);
         }
     }
 }

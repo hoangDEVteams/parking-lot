@@ -308,7 +308,7 @@ namespace Test.Views
             var balance = (from acc in CUltils.db.Accounts
                            join wal in CUltils.db.Wallets on acc.IDAcc equals wal.IDAcc
                            where acc.Username == username
-                           select wal.Balance).FirstOrDefault();
+                           select wal.Money).FirstOrDefault();
 
             return balance;
 

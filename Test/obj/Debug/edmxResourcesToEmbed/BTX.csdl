@@ -315,8 +315,8 @@
     <Property Name="IDPenaltyDetail" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="IDPenalty" Type="Int32" Nullable="false" />
     <Property Name="Reason" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
-    <Property Name="Amount" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
     <NavigationProperty Name="Penalty" Relationship="BTXModel.FK__PenaltyDe__IDPen__5AEE82B9" FromRole="PenaltyDetail" ToRole="Penalty" />
+    <Property Name="price" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
   </EntityType>
   <EntityType Name="RentalDetail">
     <Key>
@@ -369,6 +369,7 @@
     <NavigationProperty Name="Account" Relationship="BTXModel.FK_Users_Account" FromRole="User" ToRole="Account" />
     <NavigationProperty Name="Customers" Relationship="BTXModel.FK__Customers__IDUse__4222D4EF" FromRole="User" ToRole="Customer" />
     <NavigationProperty Name="Employees" Relationship="BTXModel.FK__Employees__IDUse__3F466844" FromRole="User" ToRole="Employee" />
+    <Property Name="birth" Type="DateTime" Precision="0" />
   </EntityType>
   <EntityType Name="Vehicle">
     <Key>
@@ -383,6 +384,7 @@
     <NavigationProperty Name="Employee" Relationship="BTXModel.FK__Vehicles__IDEmpl__4CA06362" FromRole="Vehicle" ToRole="Employee" />
     <NavigationProperty Name="RentalDetails" Relationship="BTXModel.FK__RentalDet__Licen__787EE5A0" FromRole="Vehicle" ToRole="RentalDetail" />
     <NavigationProperty Name="VehicleType" Relationship="BTXModel.FK__Vehicles__IDVehi__4BAC3F29" FromRole="Vehicle" ToRole="VehicleType" />
+    <Property Name="price" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
   </EntityType>
   <EntityType Name="VehicleType">
     <Key>
@@ -405,7 +407,6 @@
     <Property Name="TradingDay" Type="DateTime" Precision="0" />
     <Property Name="TransactionType" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
     <Property Name="TransactionAmount" Type="Decimal" Precision="19" Scale="4" />
-    <Property Name="Balance" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
     <Property Name="Description" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
     <Property Name="CreatedDate" Type="DateTime" Precision="3" />
     <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
@@ -600,6 +601,7 @@
       <PropertyRef Name="Manufacturer" />
       <PropertyRef Name="ManufactureYear" />
       <PropertyRef Name="LicensePlate" />
+      <PropertyRef Name="price" />
     </Key>
     <Property Name="IDVehicleType" Type="Int32" Nullable="false" />
     <Property Name="VehicleTypeName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
@@ -609,5 +611,6 @@
     <Property Name="ManufactureYear" Type="Int32" Nullable="false" />
     <Property Name="Description" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
     <Property Name="LicensePlate" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="price" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
   </EntityType>
 </Schema>

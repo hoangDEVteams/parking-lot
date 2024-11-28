@@ -22,5 +22,6 @@ namespace Test
         public int ManufactureYear { get; set; }
         public string Description { get; set; }
         public string LicensePlate { get; set; }
+        public decimal price { get; set; }
     }
 }

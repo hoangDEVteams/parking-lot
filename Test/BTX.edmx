@@ -64,7 +64,7 @@
           <Property Name="IDPenaltyDetail" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="IDPenalty" Type="int" Nullable="false" />
           <Property Name="Reason" Type="nvarchar" MaxLength="255" Nullable="false" />
-          <Property Name="Amount" Type="money" Nullable="false" />
+          <Property Name="price" Type="decimal" Precision="10" Scale="2" Nullable="false" />
         </EntityType>
         <EntityType Name="RentalDetails">
           <Key>
@@ -108,6 +108,7 @@
           <Property Name="BankNumber" Type="varchar" MaxLength="20" Nullable="false" />
           <Property Name="UserType" Type="nvarchar" MaxLength="20" Nullable="false" />
           <Property Name="IDAcc" Type="int" />
+          <Property Name="birth" Type="date" />
         </EntityType>
         <EntityType Name="Vehicles">
           <Key>
@@ -119,6 +120,7 @@
           <Property Name="Status" Type="nvarchar" MaxLength="20" Nullable="false" />
           <Property Name="Description" Type="nvarchar" MaxLength="255" />
           <Property Name="IDEmployee" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="price" Type="decimal" Precision="10" Scale="2" Nullable="false" />
         </EntityType>
         <EntityType Name="VehicleTypes">
           <Key>
@@ -140,7 +142,6 @@
           <Property Name="TradingDay" Type="date" />
           <Property Name="TransactionType" Type="nvarchar" MaxLength="20" />
           <Property Name="TransactionAmount" Type="money" />
-          <Property Name="Balance" Type="money" Nullable="false" />
           <Property Name="Description" Type="nvarchar" MaxLength="255" />
           <Property Name="CreatedDate" Type="datetime" />
           <Property Name="UpdatedDate" Type="datetime" />
@@ -153,6 +154,7 @@ warning 6002: The table/view 'QLbaixe.dbo.V_VehicleData' does not have a primary
             <PropertyRef Name="VehicleTypeName" />
             <PropertyRef Name="Color" />
             <PropertyRef Name="Status" />
+            <PropertyRef Name="price" />
             <PropertyRef Name="Manufacturer" />
             <PropertyRef Name="ManufactureYear" />
             <PropertyRef Name="LicensePlate" />
@@ -161,6 +163,7 @@ warning 6002: The table/view 'QLbaixe.dbo.V_VehicleData' does not have a primary
           <Property Name="VehicleTypeName" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="Color" Type="nvarchar" MaxLength="30" Nullable="false" />
           <Property Name="Status" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="price" Type="decimal" Precision="10" Scale="2" Nullable="false" />
           <Property Name="Manufacturer" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="ManufactureYear" Type="int" Nullable="false" />
           <Property Name="Description" Type="nvarchar" MaxLength="255" />
@@ -545,6 +548,7 @@ warning 6002: The table/view 'QLbaixe.dbo.V_VehicleData' does not have a primary
     [V_VehicleData].[VehicleTypeName] AS [VehicleTypeName], 
     [V_VehicleData].[Color] AS [Color], 
     [V_VehicleData].[Status] AS [Status], 
+    [V_VehicleData].[price] AS [price], 
     [V_VehicleData].[Manufacturer] AS [Manufacturer], 
     [V_VehicleData].[ManufactureYear] AS [ManufactureYear], 
     [V_VehicleData].[Description] AS [Description], 
@@ -931,8 +935,8 @@ warning 6002: The table/view 'QLbaixe.dbo.V_VehicleData' does not have a primary
           <Property Name="IDPenaltyDetail" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="IDPenalty" Type="Int32" Nullable="false" />
           <Property Name="Reason" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
-          <Property Name="Amount" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
           <NavigationProperty Name="Penalty" Relationship="BTXModel.FK__PenaltyDe__IDPen__5AEE82B9" FromRole="PenaltyDetail" ToRole="Penalty" />
+          <Property Name="price" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
         </EntityType>
         <EntityType Name="RentalDetail">
           <Key>
@@ -985,6 +989,7 @@ warning 6002: The table/view 'QLbaixe.dbo.V_VehicleData' does not have a primary
           <NavigationProperty Name="Account" Relationship="BTXModel.FK_Users_Account" FromRole="User" ToRole="Account" />
           <NavigationProperty Name="Customers" Relationship="BTXModel.FK__Customers__IDUse__4222D4EF" FromRole="User" ToRole="Customer" />
           <NavigationProperty Name="Employees" Relationship="BTXModel.FK__Employees__IDUse__3F466844" FromRole="User" ToRole="Employee" />
+          <Property Name="birth" Type="DateTime" Precision="0" />
         </EntityType>
         <EntityType Name="Vehicle">
           <Key>
@@ -999,6 +1004,7 @@ warning 6002: The table/view 'QLbaixe.dbo.V_VehicleData' does not have a primary
           <NavigationProperty Name="Employee" Relationship="BTXModel.FK__Vehicles__IDEmpl__4CA06362" FromRole="Vehicle" ToRole="Employee" />
           <NavigationProperty Name="RentalDetails" Relationship="BTXModel.FK__RentalDet__Licen__787EE5A0" FromRole="Vehicle" ToRole="RentalDetail" />
           <NavigationProperty Name="VehicleType" Relationship="BTXModel.FK__Vehicles__IDVehi__4BAC3F29" FromRole="Vehicle" ToRole="VehicleType" />
+          <Property Name="price" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
         </EntityType>
         <EntityType Name="VehicleType">
           <Key>
@@ -1021,7 +1027,6 @@ warning 6002: The table/view 'QLbaixe.dbo.V_VehicleData' does not have a primary
           <Property Name="TradingDay" Type="DateTime" Precision="0" />
           <Property Name="TransactionType" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
           <Property Name="TransactionAmount" Type="Decimal" Precision="19" Scale="4" />
-          <Property Name="Balance" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
           <Property Name="Description" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
           <Property Name="CreatedDate" Type="DateTime" Precision="3" />
           <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
@@ -1216,6 +1221,7 @@ warning 6002: The table/view 'QLbaixe.dbo.V_VehicleData' does not have a primary
             <PropertyRef Name="Manufacturer" />
             <PropertyRef Name="ManufactureYear" />
             <PropertyRef Name="LicensePlate" />
+            <PropertyRef Name="price" />
           </Key>
           <Property Name="IDVehicleType" Type="Int32" Nullable="false" />
           <Property Name="VehicleTypeName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
@@ -1225,6 +1231,7 @@ warning 6002: The table/view 'QLbaixe.dbo.V_VehicleData' does not have a primary
           <Property Name="ManufactureYear" Type="Int32" Nullable="false" />
           <Property Name="Description" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
           <Property Name="LicensePlate" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="price" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
         </EntityType>
         </Schema>
     </edmx:ConceptualModels>
@@ -1399,7 +1406,7 @@ warning 6002: The table/view 'QLbaixe.dbo.V_VehicleData' does not have a primary
           <EntitySetMapping Name="PenaltyDetails">
             <EntityTypeMapping TypeName="BTXModel.PenaltyDetail">
               <MappingFragment StoreEntitySet="PenaltyDetails">
-                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="price" ColumnName="price" />
                 <ScalarProperty Name="Reason" ColumnName="Reason" />
                 <ScalarProperty Name="IDPenalty" ColumnName="IDPenalty" />
                 <ScalarProperty Name="IDPenaltyDetail" ColumnName="IDPenaltyDetail" />
@@ -1441,6 +1448,7 @@ warning 6002: The table/view 'QLbaixe.dbo.V_VehicleData' does not have a primary
           <EntitySetMapping Name="Users">
             <EntityTypeMapping TypeName="BTXModel.User">
               <MappingFragment StoreEntitySet="Users">
+                <ScalarProperty Name="birth" ColumnName="birth" />
                 <ScalarProperty Name="IDAcc" ColumnName="IDAcc" />
                 <ScalarProperty Name="UserType" ColumnName="UserType" />
                 <ScalarProperty Name="BankNumber" ColumnName="BankNumber" />
@@ -1456,6 +1464,7 @@ warning 6002: The table/view 'QLbaixe.dbo.V_VehicleData' does not have a primary
           <EntitySetMapping Name="Vehicles">
             <EntityTypeMapping TypeName="BTXModel.Vehicle">
               <MappingFragment StoreEntitySet="Vehicles">
+                <ScalarProperty Name="price" ColumnName="price" />
                 <ScalarProperty Name="IDEmployee" ColumnName="IDEmployee" />
                 <ScalarProperty Name="Description" ColumnName="Description" />
                 <ScalarProperty Name="Status" ColumnName="Status" />
@@ -1482,7 +1491,6 @@ warning 6002: The table/view 'QLbaixe.dbo.V_VehicleData' does not have a primary
                 <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
                 <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
                 <ScalarProperty Name="Description" ColumnName="Description" />
-                <ScalarProperty Name="Balance" ColumnName="Balance" />
                 <ScalarProperty Name="TransactionAmount" ColumnName="TransactionAmount" />
                 <ScalarProperty Name="TransactionType" ColumnName="TransactionType" />
                 <ScalarProperty Name="TradingDay" ColumnName="TradingDay" />
@@ -1495,6 +1503,7 @@ warning 6002: The table/view 'QLbaixe.dbo.V_VehicleData' does not have a primary
           <EntitySetMapping Name="V_VehicleData">
             <EntityTypeMapping TypeName="BTXModel.V_VehicleData">
               <MappingFragment StoreEntitySet="V_VehicleData">
+                <ScalarProperty Name="price" ColumnName="price" />
                 <ScalarProperty Name="LicensePlate" ColumnName="LicensePlate" />
                 <ScalarProperty Name="Description" ColumnName="Description" />
                 <ScalarProperty Name="ManufactureYear" ColumnName="ManufactureYear" />

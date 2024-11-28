@@ -49,7 +49,6 @@ namespace Test.Controller
             {
                 IDAcc = accountId,
                 Money = 0,
-                Balance = 0,
                 CreatedDate = DateTime.Now,
                 UpdatedDate = DateTime.Now
             };

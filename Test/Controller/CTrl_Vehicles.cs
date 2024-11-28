@@ -9,24 +9,20 @@ namespace Test.Controller
 {
     internal class CTrl_Vehicles
     {
-        public List<V_VehicleData> VehicleData()
-        {
-            return CUltils.db.V_VehicleData.ToList();
-        }
-     
         public List<object> getList()
         {
             var veh = CUltils.db.Vehicles.Include("VehicleType").Select(v => new
-                {
+            {
                 v.LicensePlate,
                 VehicleTypeName = v.VehicleType.VehicleTypeName,
                 v.Color,
                 v.Status,
-                v.Description,
-                v.IDEmployee,
+                v.price,
                 Manufacture = v.VehicleType.Manufacturer,
                 ManufactureYear = v.VehicleType.ManufactureYear,
-            })
+                v.Description,
+                v.IDEmployee,
+            }).OrderBy(v => v.price)
                 .ToList();
 
             return veh.Cast<object>().ToList();
@@ -69,6 +65,22 @@ namespace Test.Controller
         public Vehicle GetVehicleByID(int id)
         {
             return CUltils.db.Vehicles.FirstOrDefault(v => v.IDVehicleType == id);
+        }
+
+        public List<V_VehicleData> VehicleData()
+        {
+            using (var context = new BTXEntities1() ) {
+                var data = context.V_VehicleData.ToList();
+                return data;
+            }
+        }
+        public List<V_VehicleData> priceIncrese()
+        {
+            return VehicleData().OrderBy(v => v.price).ToList();
+        }
+        public List<V_VehicleData> priceDerese()
+        {
+            return VehicleData().OrderByDescending(v => v.price).ToList();
         }
     }
 }

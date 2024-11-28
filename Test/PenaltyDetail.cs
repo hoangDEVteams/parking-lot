@@ -17,7 +17,7 @@ namespace Test
         public int IDPenaltyDetail { get; set; }
         public int IDPenalty { get; set; }
         public string Reason { get; set; }
-        public decimal Amount { get; set; }
+        public decimal price { get; set; }
     
         public virtual Penalty Penalty { get; set; }
     }

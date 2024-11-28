@@ -20,7 +20,6 @@ namespace Test
         public Nullable<System.DateTime> TradingDay { get; set; }
         public string TransactionType { get; set; }
         public Nullable<decimal> TransactionAmount { get; set; }
-        public decimal Balance { get; set; }
         public string Description { get; set; }
         public Nullable<System.DateTime> CreatedDate { get; set; }
         public Nullable<System.DateTime> UpdatedDate { get; set; }

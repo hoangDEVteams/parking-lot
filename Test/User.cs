@@ -31,6 +31,7 @@ namespace Test
         public string BankNumber { get; set; }
         public string UserType { get; set; }
         public Nullable<int> IDAcc { get; set; }
+        public Nullable<System.DateTime> birth { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Account> Accounts { get; set; }

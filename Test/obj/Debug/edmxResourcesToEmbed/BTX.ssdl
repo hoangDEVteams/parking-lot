@@ -59,7 +59,7 @@
     <Property Name="IDPenaltyDetail" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="IDPenalty" Type="int" Nullable="false" />
     <Property Name="Reason" Type="nvarchar" MaxLength="255" Nullable="false" />
-    <Property Name="Amount" Type="money" Nullable="false" />
+    <Property Name="price" Type="decimal" Precision="10" Scale="2" Nullable="false" />
   </EntityType>
   <EntityType Name="RentalDetails">
     <Key>
@@ -103,6 +103,7 @@
     <Property Name="BankNumber" Type="varchar" MaxLength="20" Nullable="false" />
     <Property Name="UserType" Type="nvarchar" MaxLength="20" Nullable="false" />
     <Property Name="IDAcc" Type="int" />
+    <Property Name="birth" Type="date" />
   </EntityType>
   <EntityType Name="Vehicles">
     <Key>
@@ -114,6 +115,7 @@
     <Property Name="Status" Type="nvarchar" MaxLength="20" Nullable="false" />
     <Property Name="Description" Type="nvarchar" MaxLength="255" />
     <Property Name="IDEmployee" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="price" Type="decimal" Precision="10" Scale="2" Nullable="false" />
   </EntityType>
   <EntityType Name="VehicleTypes">
     <Key>
@@ -135,7 +137,6 @@
     <Property Name="TradingDay" Type="date" />
     <Property Name="TransactionType" Type="nvarchar" MaxLength="20" />
     <Property Name="TransactionAmount" Type="money" />
-    <Property Name="Balance" Type="money" Nullable="false" />
     <Property Name="Description" Type="nvarchar" MaxLength="255" />
     <Property Name="CreatedDate" Type="datetime" />
     <Property Name="UpdatedDate" Type="datetime" />
@@ -148,6 +149,7 @@ warning 6002: The table/view 'QLbaixe.dbo.V_VehicleData' does not have a primary
       <PropertyRef Name="VehicleTypeName" />
       <PropertyRef Name="Color" />
       <PropertyRef Name="Status" />
+      <PropertyRef Name="price" />
       <PropertyRef Name="Manufacturer" />
       <PropertyRef Name="ManufactureYear" />
       <PropertyRef Name="LicensePlate" />
@@ -156,6 +158,7 @@ warning 6002: The table/view 'QLbaixe.dbo.V_VehicleData' does not have a primary
     <Property Name="VehicleTypeName" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="Color" Type="nvarchar" MaxLength="30" Nullable="false" />
     <Property Name="Status" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="price" Type="decimal" Precision="10" Scale="2" Nullable="false" />
     <Property Name="Manufacturer" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="ManufactureYear" Type="int" Nullable="false" />
     <Property Name="Description" Type="nvarchar" MaxLength="255" />
@@ -540,6 +543,7 @@ warning 6002: The table/view 'QLbaixe.dbo.V_VehicleData' does not have a primary
     [V_VehicleData].[VehicleTypeName] AS [VehicleTypeName], 
     [V_VehicleData].[Color] AS [Color], 
     [V_VehicleData].[Status] AS [Status], 
+    [V_VehicleData].[price] AS [price], 
     [V_VehicleData].[Manufacturer] AS [Manufacturer], 
     [V_VehicleData].[ManufactureYear] AS [ManufactureYear], 
     [V_VehicleData].[Description] AS [Description], 
