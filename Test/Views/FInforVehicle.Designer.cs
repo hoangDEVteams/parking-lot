@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FInforVehicle));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lble = new System.Windows.Forms.Label();
             this.label = new System.Windows.Forms.Label();
@@ -48,9 +49,11 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(871, 69);
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(768, 69);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(350, 337);
+            this.pictureBox1.Size = new System.Drawing.Size(507, 337);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 

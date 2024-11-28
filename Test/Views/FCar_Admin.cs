@@ -31,19 +31,8 @@ namespace Test.Views
         }
         private void LoadVehicleData()
         {
-            CTrl_Vehicles vehicleService = new CTrl_Vehicles();
-            List<Vehicle> vehicles = vehicleService.getList();
-            var vehicleData = vehicles.Select(v => new
-            {
-                v.LicensePlate,
-                VehicleTypeName = v.VehicleType.VehicleTypeName,
-                v.Color,
-                v.Status,
-                v.Description,
-                v.IDEmployee,
-                Manufacture = v.VehicleType.Manufacturer,
-                ManufactureYear = v.VehicleType.ManufactureYear,
-            }).ToList();
+            CTrl_Vehicles vhc = new CTrl_Vehicles();
+            var vehicleData = vhc.getList();
 
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.DataSource = vehicleData;
@@ -71,8 +60,8 @@ namespace Test.Views
                 string filePath = openFileDialog.FileName;
                 Bitmap sourceImage = new Bitmap(filePath);
 
-                int targetWidth = 390;
-                int targetHeight = 240;
+                int targetWidth = 300;
+                int targetHeight = 200;
                 Bitmap stretchedImage = StretchImage(sourceImage, targetWidth, targetHeight);
 
                 pictureBoxCar.Image = stretchedImage;
@@ -171,12 +160,6 @@ namespace Test.Views
             }
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-            FFillInforVehicle form = new FFillInforVehicle();
-            form.ShowDialog();
-        }
-
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
@@ -220,34 +203,35 @@ namespace Test.Views
 
                     if (vehicleToDelete != null)
                     {
-                        pictureBox1.Image = null;
+                        VehicleType vehicleTypeToDelete = vehicleToDelete.VehicleType;
+
                         CUltils.db.Vehicles.Remove(vehicleToDelete);
                         CUltils.db.SaveChanges();
-                        string projectDirectory = Directory.GetParent(Directory.GetParent(Application.StartupPath).FullName).FullName;
-                        string imgPath = Path.Combine(projectDirectory, "Resource", "img", licensePlate);
 
-                        if (File.Exists(imgPath))
+                        bool isVehicleTypeUsed = CUltils.db.Vehicles.Any(v => v.IDVehicleType == vehicleTypeToDelete.IDVehicleType);
+
+                        if (!isVehicleTypeUsed)
                         {
-                            File.Delete(imgPath); 
+                            CUltils.db.VehicleTypes.Remove(vehicleTypeToDelete);
+                            CUltils.db.SaveChanges();
                         }
-
+                        pictureBox1.Image = null;
                         LoadVehicleData();
-
-                        MessageBox.Show("Phương tiện đã được xóa thành công!");
+                        MessageBox.Show("Xóa Thành Công!");
                     }
                     else
                     {
-                        MessageBox.Show("Không tìm thấy phương tiện để xóa.");
+                        MessageBox.Show("Không tìm thấy phương tiện.");
                     }
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"Lỗi khi xóa phương tiện: {ex.Message}");
+                    MessageBox.Show($"Lỗi: {ex.Message}");
                 }
             }
             else
             {
-                MessageBox.Show("Vui lòng chọn phương tiện để xóa.");
+                MessageBox.Show("Vui lòng chọn phương tiện.");
             }
         }
 
@@ -405,6 +389,176 @@ namespace Test.Views
             txtSearch.Clear();  
 
             LoadVehicleData();
+        }
+
+        private void groupBox5_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBoxCar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox6_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbxVTypes_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbxColor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbxStatus_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconButton6_Click_1(object sender, EventArgs e)
+        {
+            System.Windows.Forms.OpenFileDialog openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp";
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string filePath = openFileDialog.FileName;
+                Bitmap sourceImage = new Bitmap(filePath);
+
+                int targetWidth = 390;
+                int targetHeight = 240;
+                Bitmap stretchedImage = StretchImage(sourceImage, targetWidth, targetHeight);
+
+                pictureBoxCar.Image = stretchedImage;
+                selectedImagePath = filePath;
+            }
+        }
+
+        private void iconButton3_Click_1(object sender, EventArgs e)
+        {
+            if (pictureBoxCar.Image == null)
+            {
+                MessageBox.Show("Vui lòng tải ảnh lên trước.");
+                return;
+            }
+
+            if (string.IsNullOrEmpty(txtLicense.Text))
+            {
+                MessageBox.Show("Vui lòng nhập biển số xe.");
+                return;
+            }
+
+            try
+            {
+                string licensePlate = txtLicense.Text.Trim();
+                string fileExtension = Path.GetExtension(openFileDialog1.FileName);
+                string imageName = licensePlate + fileExtension;
+
+                string projectDirectory = Directory.GetParent(Directory.GetParent(Application.StartupPath).FullName).FullName;
+                string imgDirectory = Path.Combine(projectDirectory, "Resource", "img");
+
+                if (!Directory.Exists(imgDirectory))
+                {
+                    Directory.CreateDirectory(imgDirectory);
+                }
+                string imgPath = Path.Combine(imgDirectory, imageName);
+
+                ImageFormat imageFormat;
+                switch (fileExtension.ToLower())
+                {
+                    case ".jpg":
+                    case ".jpeg":
+                        imageFormat = ImageFormat.Jpeg;
+                        break;
+                    case ".png":
+                        imageFormat = ImageFormat.Png;
+                        break;
+                    case ".bmp":
+                        imageFormat = ImageFormat.Bmp;
+                        break;
+                    default:
+                        imageFormat = ImageFormat.Jpeg;
+                        break;
+                }
+                pictureBoxCar.Image.Save(imgPath, imageFormat);
+
+                CTrl_Vehicles vehicleService = new CTrl_Vehicles();
+                VehicleType vehicleType = new VehicleType
+                {
+                    VehicleTypeName = cbxVTypes.Text,
+                    Manufacturer = cbxManufac.Text,
+                    ManufactureYear = dteManu.Value.Year
+                };
+
+                var existingVehicleType = CUltils.db.VehicleTypes
+                    .FirstOrDefault(vt => vt.VehicleTypeName == vehicleType.VehicleTypeName &&
+                                           vt.Manufacturer == vehicleType.Manufacturer &&
+                                           vt.ManufactureYear == vehicleType.ManufactureYear);
+
+                if (existingVehicleType == null)
+                {
+                    CUltils.db.VehicleTypes.Add(vehicleType);
+                    CUltils.db.SaveChanges();
+                }
+                else
+                {
+                    vehicleType = existingVehicleType;
+                }
+
+                Vehicle newVehicle = new Vehicle
+                {
+                    LicensePlate = licensePlate,
+                    VehicleType = vehicleType,
+                    Color = cbxColor.Text,
+                    Status = cbxStatus.Text,
+                    Description = txtDescription.Text,
+                    IDEmployee = cbxEmployee.Text
+                };
+
+                vehicleService.add(newVehicle);
+
+                LoadVehicleData();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi lưu ảnh hoặc thêm phương tiện: {ex.Message}");
+            }
         }
     }
 }

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FCar));
             this.panel1 = new System.Windows.Forms.Panel();
             this.cbStatus = new System.Windows.Forms.ComboBox();
@@ -44,15 +43,6 @@
             this.ManufactureYear = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LicensePlate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDVehicleTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vehicleTypeNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.manufacturerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.manufactureYearDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.licensePlateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vVehicleDataBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.qLbaixeDataSet1 = new Test.QLbaixeDataSet1();
             this.qLbaixeDataSet = new Test.QLbaixeDataSet();
             this.v_VehicleDataTableAdapter = new Test.QLbaixeDataSetTableAdapters.V_VehicleDataTableAdapter();
@@ -73,7 +63,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgridVehicles)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vVehicleDataBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLbaixeDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLbaixeDataSet)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -148,7 +137,6 @@
             // 
             // dtgridVehicles
             // 
-            this.dtgridVehicles.AutoGenerateColumns = false;
             this.dtgridVehicles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgridVehicles.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
@@ -158,16 +146,7 @@
             this.Manufacturer,
             this.ManufactureYear,
             this.Description,
-            this.LicensePlate,
-            this.iDVehicleTypeDataGridViewTextBoxColumn,
-            this.vehicleTypeNameDataGridViewTextBoxColumn,
-            this.colorDataGridViewTextBoxColumn,
-            this.statusDataGridViewTextBoxColumn,
-            this.manufacturerDataGridViewTextBoxColumn,
-            this.manufactureYearDataGridViewTextBoxColumn,
-            this.descriptionDataGridViewTextBoxColumn,
-            this.licensePlateDataGridViewTextBoxColumn});
-            this.dtgridVehicles.DataSource = this.vVehicleDataBindingSource1;
+            this.LicensePlate});
             this.dtgridVehicles.Location = new System.Drawing.Point(4, 19);
             this.dtgridVehicles.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtgridVehicles.Name = "dtgridVehicles";
@@ -248,75 +227,6 @@
             this.LicensePlate.Name = "LicensePlate";
             this.LicensePlate.ReadOnly = true;
             this.LicensePlate.Width = 125;
-            // 
-            // iDVehicleTypeDataGridViewTextBoxColumn
-            // 
-            this.iDVehicleTypeDataGridViewTextBoxColumn.DataPropertyName = "IDVehicleType";
-            this.iDVehicleTypeDataGridViewTextBoxColumn.HeaderText = "IDVehicleType";
-            this.iDVehicleTypeDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.iDVehicleTypeDataGridViewTextBoxColumn.Name = "iDVehicleTypeDataGridViewTextBoxColumn";
-            this.iDVehicleTypeDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // vehicleTypeNameDataGridViewTextBoxColumn
-            // 
-            this.vehicleTypeNameDataGridViewTextBoxColumn.DataPropertyName = "VehicleTypeName";
-            this.vehicleTypeNameDataGridViewTextBoxColumn.HeaderText = "VehicleTypeName";
-            this.vehicleTypeNameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.vehicleTypeNameDataGridViewTextBoxColumn.Name = "vehicleTypeNameDataGridViewTextBoxColumn";
-            this.vehicleTypeNameDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // colorDataGridViewTextBoxColumn
-            // 
-            this.colorDataGridViewTextBoxColumn.DataPropertyName = "Color";
-            this.colorDataGridViewTextBoxColumn.HeaderText = "Color";
-            this.colorDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.colorDataGridViewTextBoxColumn.Name = "colorDataGridViewTextBoxColumn";
-            this.colorDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // statusDataGridViewTextBoxColumn
-            // 
-            this.statusDataGridViewTextBoxColumn.DataPropertyName = "Status";
-            this.statusDataGridViewTextBoxColumn.HeaderText = "Status";
-            this.statusDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
-            this.statusDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // manufacturerDataGridViewTextBoxColumn
-            // 
-            this.manufacturerDataGridViewTextBoxColumn.DataPropertyName = "Manufacturer";
-            this.manufacturerDataGridViewTextBoxColumn.HeaderText = "Manufacturer";
-            this.manufacturerDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.manufacturerDataGridViewTextBoxColumn.Name = "manufacturerDataGridViewTextBoxColumn";
-            this.manufacturerDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // manufactureYearDataGridViewTextBoxColumn
-            // 
-            this.manufactureYearDataGridViewTextBoxColumn.DataPropertyName = "ManufactureYear";
-            this.manufactureYearDataGridViewTextBoxColumn.HeaderText = "ManufactureYear";
-            this.manufactureYearDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.manufactureYearDataGridViewTextBoxColumn.Name = "manufactureYearDataGridViewTextBoxColumn";
-            this.manufactureYearDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // descriptionDataGridViewTextBoxColumn
-            // 
-            this.descriptionDataGridViewTextBoxColumn.DataPropertyName = "Description";
-            this.descriptionDataGridViewTextBoxColumn.HeaderText = "Description";
-            this.descriptionDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.descriptionDataGridViewTextBoxColumn.Name = "descriptionDataGridViewTextBoxColumn";
-            this.descriptionDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // licensePlateDataGridViewTextBoxColumn
-            // 
-            this.licensePlateDataGridViewTextBoxColumn.DataPropertyName = "LicensePlate";
-            this.licensePlateDataGridViewTextBoxColumn.HeaderText = "LicensePlate";
-            this.licensePlateDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.licensePlateDataGridViewTextBoxColumn.Name = "licensePlateDataGridViewTextBoxColumn";
-            this.licensePlateDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // vVehicleDataBindingSource1
-            // 
-            this.vVehicleDataBindingSource1.DataMember = "V_VehicleData";
-            this.vVehicleDataBindingSource1.DataSource = this.qLbaixeDataSet1;
             // 
             // qLbaixeDataSet1
             // 
@@ -510,7 +420,6 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgridVehicles)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vVehicleDataBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLbaixeDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLbaixeDataSet)).EndInit();
             this.groupBox1.ResumeLayout(false);
@@ -532,7 +441,6 @@
         private QLbaixeDataSet qLbaixeDataSet;
         private QLbaixeDataSetTableAdapters.V_VehicleDataTableAdapter v_VehicleDataTableAdapter;
         private QLbaixeDataSet1 qLbaixeDataSet1;
-        private System.Windows.Forms.BindingSource vVehicleDataBindingSource1;
         private QLbaixeDataSet1TableAdapters.V_VehicleDataTableAdapter v_VehicleDataTableAdapter1;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn VehicleTypeName;
@@ -542,14 +450,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ManufactureYear;
         private System.Windows.Forms.DataGridViewTextBoxColumn Description;
         private System.Windows.Forms.DataGridViewTextBoxColumn LicensePlate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDVehicleTypeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn vehicleTypeNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colorDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn statusDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn manufacturerDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn manufactureYearDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn licensePlateDataGridViewTextBoxColumn;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lblYear;

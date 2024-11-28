@@ -13,11 +13,24 @@ namespace Test.Controller
         {
             return CUltils.db.V_VehicleData.ToList();
         }
-        public List<Vehicle> getList()
+     
+        public List<object> getList()
         {
-            return CUltils.db.Vehicles.Include("VehicleType").ToList();
-        }
+            var veh = CUltils.db.Vehicles.Include("VehicleType").Select(v => new
+                {
+                v.LicensePlate,
+                VehicleTypeName = v.VehicleType.VehicleTypeName,
+                v.Color,
+                v.Status,
+                v.Description,
+                v.IDEmployee,
+                Manufacture = v.VehicleType.Manufacturer,
+                ManufactureYear = v.VehicleType.ManufactureYear,
+            })
+                .ToList();
 
+            return veh.Cast<object>().ToList();
+        }
         public void upDate(Vehicle loaiSach)
         {
             CUltils.db.SaveChanges();

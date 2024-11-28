@@ -324,6 +324,12 @@ namespace Test.Views
             var result = await paymentService.CreateOrder();
             MessageBox.Show(result ?? "Payment failed.");
         }
+
+        private void iconButton3_Click(object sender, EventArgs e)
+        {
+            FRentals form = new FRentals(); // Gọi form mấy ông muốn nhảy qua 
+            LoadFormIntoPanel(form);
+        }
     }
 
 }

@@ -159,6 +159,8 @@
       <DependentUpon>BTX.edmx</DependentUpon>
     </Compile>
     <Compile Include="Controller\Ctrl_Account.cs" />
+    <Compile Include="Controller\Ctrl_Rental.cs" />
+    <Compile Include="Controller\Ctrl_User.cs" />
     <Compile Include="Controller\CTrl_Vehicles.cs" />
     <Compile Include="Controller\Ctrl_VehicleTypes.cs" />
     <Compile Include="Employee.cs">
@@ -280,6 +282,12 @@
     <Compile Include="Resource\CPass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\FRentals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FRentals.Designer.cs">
+      <DependentUpon>FRentals.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\FResetPass.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -339,6 +347,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\FRentals.resx">
+      <DependentUpon>FRentals.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\FResetPass.resx">
       <DependentUpon>FResetPass.cs</DependentUpon>
     </EmbeddedResource>
