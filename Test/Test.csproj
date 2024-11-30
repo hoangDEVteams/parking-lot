@@ -219,9 +219,6 @@
     <Compile Include="sp_helpdiagrams_Result.cs">
       <DependentUpon>BTX.tt</DependentUpon>
     </Compile>
-    <Compile Include="sysdiagram.cs">
-      <DependentUpon>BTX.tt</DependentUpon>
-    </Compile>
     <Compile Include="User.cs">
       <DependentUpon>BTX.tt</DependentUpon>
     </Compile>

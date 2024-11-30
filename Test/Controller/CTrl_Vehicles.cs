@@ -22,6 +22,7 @@ namespace Test.Controller
                 ManufactureYear = v.VehicleType.ManufactureYear,
                 v.Description,
                 v.IDEmployee,
+                
             }).OrderBy(v => v.price)
                 .ToList();
 

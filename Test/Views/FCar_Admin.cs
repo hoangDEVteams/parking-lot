@@ -174,7 +174,7 @@ namespace Test.Views
                 cbxEmployee.Text = row.Cells["IDEmployee"].Value.ToString();
                 cbxManufac.Text = row.Cells["Manufacture"].Value.ToString();
                 dteManu.Value = new DateTime(Convert.ToInt32(row.Cells["ManufactureYear"].Value), 1, 1);
-
+                cbxPrice.Text = row.Cells["price"].Value.ToString();
                 string licensePlate = row.Cells["LicensePlate"].Value.ToString();
                 string projectDirectory = Directory.GetParent(Directory.GetParent(Application.StartupPath).FullName).FullName;
                 string imgPath = Path.Combine(projectDirectory, "Resource", "img", licensePlate); 
@@ -289,7 +289,7 @@ namespace Test.Views
                 string newEmployee = cbxEmployee.Text;
                 string newManufacturer = cbxManufac.Text;
                 int newManufactureYear = dteManu.Value.Year;
-
+                decimal newPrice = Convert.ToDecimal(cbxPrice.Text);
                 try
                 {
                     CTrl_Vehicles vehicleService = new CTrl_Vehicles();
@@ -302,7 +302,7 @@ namespace Test.Views
                         vehicleToUpdate.Status = newStatus;
                         vehicleToUpdate.Description = newDescription;
                         vehicleToUpdate.IDEmployee = newEmployee;
-
+                        vehicleToUpdate.price = newPrice;
                         VehicleType vehicleTypeToUpdate = CUltils.db.VehicleTypes
                             .FirstOrDefault(vt => vt.VehicleTypeName == newVehicleType &&
                                                   vt.Manufacturer == newManufacturer &&
@@ -548,7 +548,8 @@ namespace Test.Views
                     Color = cbxColor.Text,
                     Status = cbxStatus.Text,
                     Description = txtDescription.Text,
-                    IDEmployee = cbxEmployee.Text
+                    IDEmployee = cbxEmployee.Text,
+                    price = Convert.ToDecimal(cbxPrice.Text)
                 };
 
                 vehicleService.add(newVehicle);

@@ -114,7 +114,6 @@
     <EntitySet Name="PenaltyDetails" EntityType="BTXModel.PenaltyDetail" />
     <EntitySet Name="RentalDetails" EntityType="BTXModel.RentalDetail" />
     <EntitySet Name="Rentals" EntityType="BTXModel.Rental" />
-    <EntitySet Name="sysdiagrams" EntityType="BTXModel.sysdiagram" />
     <EntitySet Name="Users" EntityType="BTXModel.User" />
     <EntitySet Name="Vehicles" EntityType="BTXModel.Vehicle" />
     <EntitySet Name="VehicleTypes" EntityType="BTXModel.VehicleType" />
@@ -341,16 +340,6 @@
     <NavigationProperty Name="Customer" Relationship="BTXModel.FK__Rentals__IDCusto__73BA3083" FromRole="Rental" ToRole="Customer" />
     <NavigationProperty Name="Employee" Relationship="BTXModel.FK__Rentals__IDEmplo__74AE54BC" FromRole="Rental" ToRole="Employee" />
     <NavigationProperty Name="RentalDetails" Relationship="BTXModel.FK__RentalDet__IDRen__778AC167" FromRole="Rental" ToRole="RentalDetail" />
-  </EntityType>
-  <EntityType Name="sysdiagram">
-    <Key>
-      <PropertyRef Name="diagram_id" />
-    </Key>
-    <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
-    <Property Name="principal_id" Type="Int32" Nullable="false" />
-    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="version" Type="Int32" />
-    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
   </EntityType>
   <EntityType Name="User">
     <Key>

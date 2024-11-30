@@ -35,7 +35,6 @@ namespace Test
         public virtual DbSet<PenaltyDetail> PenaltyDetails { get; set; }
         public virtual DbSet<RentalDetail> RentalDetails { get; set; }
         public virtual DbSet<Rental> Rentals { get; set; }
-        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<Vehicle> Vehicles { get; set; }
         public virtual DbSet<VehicleType> VehicleTypes { get; set; }
