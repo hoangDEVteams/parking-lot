@@ -340,6 +340,7 @@
     <NavigationProperty Name="Customer" Relationship="BTXModel.FK__Rentals__IDCusto__73BA3083" FromRole="Rental" ToRole="Customer" />
     <NavigationProperty Name="Employee" Relationship="BTXModel.FK__Rentals__IDEmplo__74AE54BC" FromRole="Rental" ToRole="Employee" />
     <NavigationProperty Name="RentalDetails" Relationship="BTXModel.FK__RentalDet__IDRen__778AC167" FromRole="Rental" ToRole="RentalDetail" />
+    <Property Name="Status" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="User">
     <Key>

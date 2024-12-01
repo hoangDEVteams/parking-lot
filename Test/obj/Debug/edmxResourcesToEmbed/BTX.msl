@@ -165,6 +165,7 @@
     <EntitySetMapping Name="Rentals">
       <EntityTypeMapping TypeName="BTXModel.Rental">
         <MappingFragment StoreEntitySet="Rentals">
+          <ScalarProperty Name="Status" ColumnName="Status" />
           <ScalarProperty Name="IDEmployee" ColumnName="IDEmployee" />
           <ScalarProperty Name="IDCustomer" ColumnName="IDCustomer" />
           <ScalarProperty Name="RentalDate" ColumnName="RentalDate" />

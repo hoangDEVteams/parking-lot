@@ -9,6 +9,37 @@ namespace Test.Controller
 {
     internal class CTrl_Vehicles
     {
+
+        public Vehicle GetVehicleByLicensePlate(string licensePlate)
+        {
+            
+                var vehicle = CUltils.db.Vehicles
+                    .FirstOrDefault(v => v.LicensePlate == licensePlate);
+                return vehicle;
+        }
+
+
+
+        public List<object> GetAvailableVehicles()
+        {
+            var veh = CUltils.db.Vehicles.Include("VehicleType").Select(v => new
+            {
+                v.LicensePlate,
+                VehicleTypeName = v.VehicleType.VehicleTypeName,
+                v.Color,
+                v.Status,
+                v.price,
+                Manufacture = v.VehicleType.Manufacturer,
+                ManufactureYear = v.VehicleType.ManufactureYear,
+                v.Description,
+                v.IDEmployee,
+
+            }).OrderBy(v => v.price)
+                .ToList();
+
+            return veh.Cast<object>().ToList();
+        }
+
         public List<object> getList()
         {
             var veh = CUltils.db.Vehicles.Include("VehicleType").Select(v => new

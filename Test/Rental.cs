@@ -24,6 +24,7 @@ namespace Test
         public System.DateTime RentalDate { get; set; }
         public string IDCustomer { get; set; }
         public string IDEmployee { get; set; }
+        public string Status { get; set; }
     
         public virtual Customer Customer { get; set; }
         public virtual Employee Employee { get; set; }

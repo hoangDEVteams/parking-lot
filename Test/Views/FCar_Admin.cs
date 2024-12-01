@@ -60,8 +60,8 @@ namespace Test.Views
                 string filePath = openFileDialog.FileName;
                 Bitmap sourceImage = new Bitmap(filePath);
 
-                int targetWidth = 300;
-                int targetHeight = 200;
+                int targetWidth = 350;
+                int targetHeight = 210;
                 Bitmap stretchedImage = StretchImage(sourceImage, targetWidth, targetHeight);
 
                 pictureBoxCar.Image = stretchedImage;
@@ -560,6 +560,11 @@ namespace Test.Views
             {
                 MessageBox.Show($"Lỗi khi lưu ảnh hoặc thêm phương tiện: {ex.Message}");
             }
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -11,9 +11,10 @@ namespace Test.Controller
     {
         public List<object> UserData()
         {
-            var users = CUltils.db.Users
+            var users = CUltils.db.Users.Include("Customers")
                 .Select(u => new
                 {
+                    IDCustomer = u.Customers.FirstOrDefault().IDCustomer,
                     u.IDUser,
                     u.Name,
                     u.Gender,

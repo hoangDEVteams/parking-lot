@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using Microsoft.VisualBasic.ApplicationServices;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,6 +10,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Test.Controller;
+
+using Test.Views;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Test.Views
 {
@@ -23,15 +28,20 @@ namespace Test.Views
             var userData = user.UserData();
             Ctrl_Rental rental = new Ctrl_Rental();
             var rentalData = rental.RentalData();
+            CTrl_Vehicles vhc = new CTrl_Vehicles();
+            var vehicleData = vhc.getList();
+            
+            dtgvRentalData.DataSource = rentalData;
 
+            dtgvUser.DataSource = userData;
 
-            dataGridView2.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridView2.DataSource = rentalData;
-            dataGridView2.ScrollBars = ScrollBars.Horizontal;
-
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridView1.DataSource = userData;
-            dataGridView1.ScrollBars = ScrollBars.Horizontal;
+            dtgvUser.CellContentClick += dtgvUser_CellContentClick;
+            dtgvRentalData.ScrollBars = ScrollBars.Both;
+            dtgvUser.ScrollBars = ScrollBars.Both;
+            dtgvUserVehicle.ScrollBars = ScrollBars.Both;
+            dtgvRentalData.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            dtgvUser.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            dtgvUserVehicle.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
         }
         private void label1_Click(object sender, EventArgs e)
         {
@@ -51,6 +61,164 @@ namespace Test.Views
         private void FRentals_Load(object sender, EventArgs e)
         {
             LoadUserData();
+            dtgvUser.CellContentClick += dtgvUser_CellContentClick;
+            dtgvRentalData.ScrollBars = ScrollBars.Both;
+            dtgvUser.ScrollBars = ScrollBars.Both;
+            dtgvRentalData.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dtgvUser.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill; 
+            dtgvUserVehicle.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill; 
+       
+        }
+
+        private void dataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dtgvUser_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0) 
+            {
+                string userId = dtgvUser.Rows[e.RowIndex].Cells["IDCustomer"].Value.ToString();
+                LoadUserVehicles(userId);
+               
+            }
+        }
+        private void LoadUserVehicles(string customerId)
+        {
+            Ctrl_Rental rental = new Ctrl_Rental();
+
+            var rentalData = rental.GetRentalDetailsByCustomer(customerId);
+
+
+            dtgvUserVehicle.DataSource = rentalData;
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            if (dtgvUser.SelectedRows.Count > 0)
+            {
+                DataGridViewRow selectedRow = dtgvUser.SelectedRows[0];
+                string customerId = selectedRow.Cells["IDCustomer"].Value.ToString();
+
+                var activeRentalsCount = CUltils.db.Rentals
+                    .Count(r => r.IDCustomer == customerId && r.Status == "Renting");
+
+                if (activeRentalsCount >= 2)
+                {
+                    MessageBox.Show("Người dùng này đã thuê tối đa lượt.");
+                    return;
+                }
+
+                CTrl_Vehicles vhc = new CTrl_Vehicles();
+                var availableVehicles = vhc.getList();
+                FChooseVehicles chooseVehiclesForm = new FChooseVehicles(availableVehicles);
+
+                if (chooseVehiclesForm.ShowDialog() == DialogResult.OK)
+                {
+                    string selectedVehiclePlate = chooseVehiclesForm.SelectedVehiclePlate;
+
+                    string inputDays = Interaction.InputBox(
+                        "Input day:",
+                        "Rent Date Information",
+                        "1" 
+                    );
+
+                    if (int.TryParse(inputDays, out int rentalDays) && rentalDays > 0)
+                    {
+                        string status = "Renting";
+                        string currentEmployeeId = "NV001";
+
+                        Ctrl_Rental rentalController = new Ctrl_Rental();
+                        bool result = rentalController.CreateRental(customerId, selectedVehiclePlate, status, currentEmployeeId, rentalDays);
+
+                        if (result)
+                        {
+                            MessageBox.Show("Rental created successfully.");
+                            
+                        }
+                        else
+                        {
+                            MessageBox.Show("Failed to create rental.");
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Invalid Day!");
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select user.");
+            }
+        }
+
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            if (dtgvUserVehicle.SelectedRows.Count > 0)
+            {
+                var selectedRow = dtgvUserVehicle.SelectedRows[0];
+
+                string rentalId = selectedRow.Cells["IDRental"].Value?.ToString();
+                string rentalDate = selectedRow.Cells["RentalDate"].Value?.ToString();
+                string licensePlate = selectedRow.Cells["LicensePlate"].Value?.ToString();
+                decimal rentPrice = (decimal)selectedRow.Cells["RentPrice"].Value;
+                int rentalDays = (int)selectedRow.Cells["RentalDays"].Value;
+                string customerID = selectedRow.Cells["IDCustomer"].Value?.ToString();
+                string info = $"Rental ID: {rentalId}\n" +
+                              $"Rental Date: {rentalDate}\n" +
+                              $"License Plate: {licensePlate}\n" +
+                              $"Rent Price: {rentPrice}\n" +
+                              $"Rental Days: {rentalDays}";
+
+                if (!string.IsNullOrEmpty(rentalId))
+                {
+                    Ctrl_Rental rentalController = new Ctrl_Rental();
+
+                    bool result = rentalController.UpdateRentalStatus(rentalId, "Complete");
+
+                    if (result)
+                    {
+
+                        MessageBox.Show("Rental status updated to Complete.");
+                        FRentalDetails fRentalDetails = new FRentalDetails(
+                            rentalId,
+                            rentalDate,
+                            licensePlate,
+                            rentPrice,
+                            rentalDays,
+                            customerID
+                        );
+                        fRentalDetails.ShowDialog();
+                        string customerId = dtgvUserVehicle.SelectedRows[0].Cells["IDCustomer"].Value.ToString();
+                        LoadUserVehicles(customerId);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Failed to update rental status.");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Invalid rental ID.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select a rental.");
+            }
+        }
+
+        private void dtgvVehicle_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dtgvUserVehicle_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

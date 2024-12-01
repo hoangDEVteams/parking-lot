@@ -89,9 +89,9 @@
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(1940, 1100);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
@@ -109,10 +109,10 @@
             this.groupBox6.Controls.Add(this.label9);
             this.groupBox6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox6.Location = new System.Drawing.Point(4, 594);
-            this.groupBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox6.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox6.Size = new System.Drawing.Size(1575, 311);
+            this.groupBox6.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox6.Size = new System.Drawing.Size(1574, 311);
             this.groupBox6.TabIndex = 6;
             this.groupBox6.TabStop = false;
             this.groupBox6.Enter += new System.EventHandler(this.groupBox6_Enter);
@@ -127,7 +127,7 @@
             "750000",
             "1000000"});
             this.cbxPrice.Location = new System.Drawing.Point(896, 190);
-            this.cbxPrice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxPrice.Margin = new System.Windows.Forms.Padding(4);
             this.cbxPrice.Name = "cbxPrice";
             this.cbxPrice.Size = new System.Drawing.Size(237, 30);
             this.cbxPrice.TabIndex = 23;
@@ -159,9 +159,9 @@
             this.pictureBoxCar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBoxCar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBoxCar.Location = new System.Drawing.Point(131, 15);
-            this.pictureBoxCar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBoxCar.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxCar.Name = "pictureBoxCar";
-            this.pictureBoxCar.Size = new System.Drawing.Size(350, 200);
+            this.pictureBoxCar.Size = new System.Drawing.Size(350, 210);
             this.pictureBoxCar.TabIndex = 13;
             this.pictureBoxCar.TabStop = false;
             this.pictureBoxCar.Click += new System.EventHandler(this.pictureBoxCar_Click);
@@ -181,7 +181,7 @@
             // 
             this.txtDescription.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescription.Location = new System.Drawing.Point(896, 143);
-            this.txtDescription.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDescription.Margin = new System.Windows.Forms.Padding(4);
             this.txtDescription.Name = "txtDescription";
             this.txtDescription.Size = new System.Drawing.Size(449, 29);
             this.txtDescription.TabIndex = 11;
@@ -196,7 +196,7 @@
             this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton6.IconSize = 30;
             this.iconButton6.Location = new System.Drawing.Point(501, 23);
-            this.iconButton6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.iconButton6.Margin = new System.Windows.Forms.Padding(4);
             this.iconButton6.Name = "iconButton6";
             this.iconButton6.Size = new System.Drawing.Size(197, 46);
             this.iconButton6.TabIndex = 15;
@@ -224,10 +224,10 @@
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox4.Location = new System.Drawing.Point(4, 19);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox4.Size = new System.Drawing.Size(1575, 575);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox4.Size = new System.Drawing.Size(1574, 575);
             this.groupBox4.TabIndex = 6;
             this.groupBox4.TabStop = false;
             // 
@@ -242,10 +242,10 @@
             this.groupBox5.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox5.Location = new System.Drawing.Point(4, 19);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox5.Size = new System.Drawing.Size(1567, 98);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox5.Size = new System.Drawing.Size(1566, 98);
             this.groupBox5.TabIndex = 11;
             this.groupBox5.TabStop = false;
             this.groupBox5.Enter += new System.EventHandler(this.groupBox5_Enter);
@@ -261,7 +261,7 @@
             this.btxCancel.IconSize = 25;
             this.btxCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btxCancel.Location = new System.Drawing.Point(948, 21);
-            this.btxCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btxCancel.Margin = new System.Windows.Forms.Padding(4);
             this.btxCancel.Name = "btxCancel";
             this.btxCancel.Size = new System.Drawing.Size(152, 47);
             this.btxCancel.TabIndex = 11;
@@ -280,7 +280,7 @@
             this.btnSearch.IconSize = 25;
             this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSearch.Location = new System.Drawing.Point(753, 21);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(4);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(152, 47);
             this.btnSearch.TabIndex = 10;
@@ -292,10 +292,11 @@
             // 
             this.txtSearch.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch.Location = new System.Drawing.Point(459, 30);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(239, 29);
             this.txtSearch.TabIndex = 6;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // label5
             // 
@@ -313,7 +314,7 @@
             this.cbxFilter.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxFilter.FormattingEnabled = true;
             this.cbxFilter.Location = new System.Drawing.Point(92, 33);
-            this.cbxFilter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxFilter.Margin = new System.Windows.Forms.Padding(4);
             this.cbxFilter.Name = "cbxFilter";
             this.cbxFilter.Size = new System.Drawing.Size(243, 30);
             this.cbxFilter.TabIndex = 7;
@@ -332,13 +333,14 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dataGridView1.Location = new System.Drawing.Point(4, 122);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(1567, 449);
+            this.dataGridView1.Size = new System.Drawing.Size(1566, 449);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -358,10 +360,10 @@
             this.groupBox3.Controls.Add(this.label1);
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.groupBox3.Location = new System.Drawing.Point(4, 905);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox3.Size = new System.Drawing.Size(1575, 191);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox3.Size = new System.Drawing.Size(1574, 191);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
@@ -375,7 +377,7 @@
             "NV002",
             "NV003"});
             this.cbxEmployee.Location = new System.Drawing.Point(132, 142);
-            this.cbxEmployee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxEmployee.Margin = new System.Windows.Forms.Padding(4);
             this.cbxEmployee.Name = "cbxEmployee";
             this.cbxEmployee.Size = new System.Drawing.Size(285, 30);
             this.cbxEmployee.TabIndex = 22;
@@ -392,7 +394,7 @@
             "Ford",
             "Porsche"});
             this.cbxManufac.Location = new System.Drawing.Point(574, 142);
-            this.cbxManufac.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxManufac.Margin = new System.Windows.Forms.Padding(4);
             this.cbxManufac.Name = "cbxManufac";
             this.cbxManufac.Size = new System.Drawing.Size(285, 30);
             this.cbxManufac.TabIndex = 19;
@@ -405,7 +407,7 @@
             "Available",
             "Unavailable"});
             this.cbxStatus.Location = new System.Drawing.Point(981, 141);
-            this.cbxStatus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxStatus.Margin = new System.Windows.Forms.Padding(4);
             this.cbxStatus.Name = "cbxStatus";
             this.cbxStatus.Size = new System.Drawing.Size(285, 30);
             this.cbxStatus.TabIndex = 18;
@@ -438,7 +440,7 @@
             "Yellow",
             "Orange"});
             this.cbxColor.Location = new System.Drawing.Point(981, 42);
-            this.cbxColor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxColor.Margin = new System.Windows.Forms.Padding(4);
             this.cbxColor.Name = "cbxColor";
             this.cbxColor.Size = new System.Drawing.Size(285, 30);
             this.cbxColor.TabIndex = 17;
@@ -458,7 +460,7 @@
             "Taxi ",
             "Jeep"});
             this.cbxVTypes.Location = new System.Drawing.Point(574, 45);
-            this.cbxVTypes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxVTypes.Margin = new System.Windows.Forms.Padding(4);
             this.cbxVTypes.Name = "cbxVTypes";
             this.cbxVTypes.Size = new System.Drawing.Size(285, 30);
             this.cbxVTypes.TabIndex = 16;
@@ -515,7 +517,7 @@
             // 
             this.txtLicense.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLicense.Location = new System.Drawing.Point(132, 45);
-            this.txtLicense.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtLicense.Margin = new System.Windows.Forms.Padding(4);
             this.txtLicense.Name = "txtLicense";
             this.txtLicense.Size = new System.Drawing.Size(285, 29);
             this.txtLicense.TabIndex = 1;
@@ -540,11 +542,11 @@
             this.groupBox2.Controls.Add(this.iconButton2);
             this.groupBox2.Controls.Add(this.pictureBox1);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.groupBox2.Location = new System.Drawing.Point(1579, 19);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Location = new System.Drawing.Point(1578, 19);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox2.Size = new System.Drawing.Size(357, 1077);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Size = new System.Drawing.Size(358, 1077);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
@@ -560,7 +562,7 @@
             this.iconButton5.IconSize = 30;
             this.iconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton5.Location = new System.Drawing.Point(203, 313);
-            this.iconButton5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.iconButton5.Margin = new System.Windows.Forms.Padding(4);
             this.iconButton5.Name = "iconButton5";
             this.iconButton5.Size = new System.Drawing.Size(133, 50);
             this.iconButton5.TabIndex = 6;
@@ -581,7 +583,7 @@
             this.iconButton4.IconSize = 30;
             this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton4.Location = new System.Drawing.Point(203, 446);
-            this.iconButton4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.iconButton4.Margin = new System.Windows.Forms.Padding(4);
             this.iconButton4.Name = "iconButton4";
             this.iconButton4.Size = new System.Drawing.Size(133, 50);
             this.iconButton4.TabIndex = 5;
@@ -602,7 +604,7 @@
             this.iconButton3.IconSize = 30;
             this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton3.Location = new System.Drawing.Point(32, 313);
-            this.iconButton3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.iconButton3.Margin = new System.Windows.Forms.Padding(4);
             this.iconButton3.Name = "iconButton3";
             this.iconButton3.Size = new System.Drawing.Size(133, 50);
             this.iconButton3.TabIndex = 4;
@@ -622,7 +624,7 @@
             this.iconButton2.IconSize = 30;
             this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton2.Location = new System.Drawing.Point(32, 446);
-            this.iconButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.iconButton2.Margin = new System.Windows.Forms.Padding(4);
             this.iconButton2.Name = "iconButton2";
             this.iconButton2.Size = new System.Drawing.Size(133, 50);
             this.iconButton2.TabIndex = 3;
@@ -639,9 +641,9 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox1.ErrorImage = null;
             this.pictureBox1.Location = new System.Drawing.Point(4, 19);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(349, 199);
+            this.pictureBox1.Size = new System.Drawing.Size(350, 210);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
