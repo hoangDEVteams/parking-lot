@@ -540,6 +540,7 @@ namespace Test.Views
                 {
                     vehicleType = existingVehicleType;
                 }
+                int maxVehicleTypeId = CUltils.db.VehicleTypes.Max(vt => vt.IDVehicleType);
 
                 Vehicle newVehicle = new Vehicle
                 {
@@ -549,7 +550,8 @@ namespace Test.Views
                     Status = cbxStatus.Text,
                     Description = txtDescription.Text,
                     IDEmployee = cbxEmployee.Text,
-                    price = Convert.ToDecimal(cbxPrice.Text)
+                    price = Convert.ToDecimal(cbxPrice.Text),
+                    IDVehicleType = maxVehicleTypeId
                 };
 
                 vehicleService.add(newVehicle);

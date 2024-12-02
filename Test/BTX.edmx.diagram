@@ -35,6 +35,8 @@
         <EntityTypeShape EntityType="BTXModel.V_VehicleData" Width="1.5" PointX="5.375" PointY="0.75" />
         <AssociationConnector Association="BTXModel.FK_User_Customer" />
         <AssociationConnector Association="BTXModel.FK_User_Employee" />
+        <AssociationConnector Association="BTXModel.FK_User_Customer1" />
+        <AssociationConnector Association="BTXModel.FK_User_Employee1" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

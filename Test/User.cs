@@ -31,7 +31,7 @@ namespace Test
         public string BankNumber { get; set; }
         public string UserType { get; set; }
         public Nullable<int> IDAcc { get; set; }
-        public Nullable<System.DateTime> birth { get; set; }
+        public System.DateTime birth { get; set; }
         public string IDCustomer { get; set; }
         public string IDEmployee { get; set; }
     
@@ -44,5 +44,7 @@ namespace Test
         public virtual ICollection<Employee> Employees { get; set; }
         public virtual Customer Customer { get; set; }
         public virtual Employee Employee { get; set; }
+        public virtual Customer Customer1 { get; set; }
+        public virtual Employee Employee1 { get; set; }
     }
 }

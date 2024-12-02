@@ -41,17 +41,19 @@
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.cCirclePB1 = new Test.AddOn.CCirclePB();
             this.btnMenu = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
             this.panelContainer = new System.Windows.Forms.Panel();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.cCirclePB1 = new Test.AddOn.CCirclePB();
             this.panelMenu.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cCirclePB1)).BeginInit();
             this.panel2.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cCirclePB1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -69,8 +71,8 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.White;
+            this.panelMenu.Controls.Add(this.groupBox2);
             this.panelMenu.Controls.Add(this.groupBox1);
-            this.panelMenu.Controls.Add(this.label2);
             this.panelMenu.Controls.Add(this.iconButton4);
             this.panelMenu.Controls.Add(this.panel3);
             this.panelMenu.Controls.Add(this.iconButton6);
@@ -82,7 +84,7 @@
             this.panelMenu.Controls.Add(this.btnMenu);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
-            this.panelMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelMenu.Margin = new System.Windows.Forms.Padding(4);
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(273, 1102);
             this.panelMenu.TabIndex = 1;
@@ -95,9 +97,9 @@
             this.groupBox1.Controls.Add(this.btnTopUp);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Location = new System.Drawing.Point(19, 292);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(220, 57);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
@@ -108,7 +110,7 @@
             this.btnWithDraw.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnWithDraw.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnWithDraw.Location = new System.Drawing.Point(117, 16);
-            this.btnWithDraw.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnWithDraw.Margin = new System.Windows.Forms.Padding(4);
             this.btnWithDraw.Name = "btnWithDraw";
             this.btnWithDraw.Size = new System.Drawing.Size(103, 32);
             this.btnWithDraw.TabIndex = 10;
@@ -121,7 +123,7 @@
             this.btnTopUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTopUp.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTopUp.Location = new System.Drawing.Point(0, 16);
-            this.btnTopUp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTopUp.Margin = new System.Windows.Forms.Padding(4);
             this.btnTopUp.Name = "btnTopUp";
             this.btnTopUp.Size = new System.Drawing.Size(103, 32);
             this.btnTopUp.TabIndex = 9;
@@ -132,11 +134,12 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(16, 260);
+            this.label2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label2.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(4, 19);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 27);
+            this.label2.Size = new System.Drawing.Size(58, 21);
             this.label2.TabIndex = 7;
             this.label2.Text = "label2";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -152,7 +155,7 @@
             this.iconButton4.IconSize = 30;
             this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton4.Location = new System.Drawing.Point(16, 505);
-            this.iconButton4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.iconButton4.Margin = new System.Windows.Forms.Padding(4);
             this.iconButton4.Name = "iconButton4";
             this.iconButton4.Size = new System.Drawing.Size(232, 42);
             this.iconButton4.TabIndex = 6;
@@ -167,7 +170,7 @@
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(273, 46);
             this.panel3.TabIndex = 3;
@@ -186,7 +189,7 @@
             this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton6.Location = new System.Drawing.Point(0, 1049);
-            this.iconButton6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.iconButton6.Margin = new System.Windows.Forms.Padding(4);
             this.iconButton6.Name = "iconButton6";
             this.iconButton6.Size = new System.Drawing.Size(273, 53);
             this.iconButton6.TabIndex = 3;
@@ -207,7 +210,7 @@
             this.iconButton3.IconSize = 30;
             this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton3.Location = new System.Drawing.Point(16, 455);
-            this.iconButton3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.iconButton3.Margin = new System.Windows.Forms.Padding(4);
             this.iconButton3.Name = "iconButton3";
             this.iconButton3.Size = new System.Drawing.Size(232, 42);
             this.iconButton3.TabIndex = 5;
@@ -228,7 +231,7 @@
             this.iconButton2.IconSize = 30;
             this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton2.Location = new System.Drawing.Point(16, 405);
-            this.iconButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.iconButton2.Margin = new System.Windows.Forms.Padding(4);
             this.iconButton2.Name = "iconButton2";
             this.iconButton2.Size = new System.Drawing.Size(232, 42);
             this.iconButton2.TabIndex = 4;
@@ -249,7 +252,7 @@
             this.iconButton1.IconSize = 30;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.iconButton1.Location = new System.Drawing.Point(16, 356);
-            this.iconButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.iconButton1.Margin = new System.Windows.Forms.Padding(4);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Size = new System.Drawing.Size(232, 42);
             this.iconButton1.TabIndex = 3;
@@ -259,25 +262,6 @@
             this.iconButton1.UseVisualStyleBackColor = true;
             this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click_1);
             // 
-            // cCirclePB1
-            // 
-            this.cCirclePB1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.cCirclePB1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.cCirclePB1.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.cCirclePB1.BorderColor2 = System.Drawing.Color.HotPink;
-            this.cCirclePB1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.cCirclePB1.BorderSize = 2;
-            this.cCirclePB1.GradientAngle = 50F;
-            this.cCirclePB1.Image = ((System.Drawing.Image)(resources.GetObject("cCirclePB1.Image")));
-            this.cCirclePB1.Location = new System.Drawing.Point(16, 54);
-            this.cCirclePB1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.cCirclePB1.Name = "cCirclePB1";
-            this.cCirclePB1.Size = new System.Drawing.Size(133, 133);
-            this.cCirclePB1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.cCirclePB1.TabIndex = 3;
-            this.cCirclePB1.TabStop = false;
-            this.cCirclePB1.Click += new System.EventHandler(this.cCirclePB1_Click);
-            // 
             // btnMenu
             // 
             this.btnMenu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMenu.BackgroundImage")));
@@ -285,7 +269,7 @@
             this.btnMenu.FlatAppearance.BorderSize = 0;
             this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMenu.Location = new System.Drawing.Point(193, 54);
-            this.btnMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnMenu.Margin = new System.Windows.Forms.Padding(4);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.Size = new System.Drawing.Size(55, 46);
             this.btnMenu.TabIndex = 3;
@@ -302,7 +286,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Elephant", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(1618, 0);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(51, 46);
             this.button2.TabIndex = 3;
@@ -318,7 +302,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(1567, 0);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(51, 46);
             this.button3.TabIndex = 4;
@@ -334,7 +318,7 @@
             this.panel2.Controls.Add(this.button2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(273, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1669, 46);
             this.panel2.TabIndex = 2;
@@ -350,7 +334,7 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Location = new System.Drawing.Point(1516, 0);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(51, 46);
             this.button5.TabIndex = 6;
@@ -363,11 +347,43 @@
             // 
             this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContainer.Location = new System.Drawing.Point(273, 46);
-            this.panelContainer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelContainer.Margin = new System.Windows.Forms.Padding(4);
             this.panelContainer.Name = "panelContainer";
             this.panelContainer.Size = new System.Drawing.Size(1669, 1056);
             this.panelContainer.TabIndex = 3;
             this.panelContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint_1);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox2.Location = new System.Drawing.Point(19, 243);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Size = new System.Drawing.Size(220, 57);
+            this.groupBox2.TabIndex = 11;
+            this.groupBox2.TabStop = false;
+            // 
+            // cCirclePB1
+            // 
+            this.cCirclePB1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.cCirclePB1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.cCirclePB1.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.cCirclePB1.BorderColor2 = System.Drawing.Color.HotPink;
+            this.cCirclePB1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.cCirclePB1.BorderSize = 2;
+            this.cCirclePB1.GradientAngle = 50F;
+            this.cCirclePB1.Image = ((System.Drawing.Image)(resources.GetObject("cCirclePB1.Image")));
+            this.cCirclePB1.Location = new System.Drawing.Point(16, 54);
+            this.cCirclePB1.Margin = new System.Windows.Forms.Padding(4);
+            this.cCirclePB1.Name = "cCirclePB1";
+            this.cCirclePB1.Size = new System.Drawing.Size(133, 133);
+            this.cCirclePB1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.cCirclePB1.TabIndex = 3;
+            this.cCirclePB1.TabStop = false;
+            this.cCirclePB1.Click += new System.EventHandler(this.cCirclePB1_Click);
             // 
             // FMain
             // 
@@ -380,7 +396,7 @@
             this.Controls.Add(this.panelMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FMain";
@@ -388,8 +404,10 @@
             this.panelMenu.ResumeLayout(false);
             this.panelMenu.PerformLayout();
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.cCirclePB1)).EndInit();
             this.panel2.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cCirclePB1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -415,5 +433,6 @@
         private System.Windows.Forms.Button btnTopUp;
         private System.Windows.Forms.Button btnWithDraw;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
     }
 }

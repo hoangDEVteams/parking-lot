@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using Test.AddOn;
 
 namespace Test.Controller
 {
@@ -47,8 +48,10 @@ namespace Test.Controller
             return rentalDetails.Cast<object>().ToList();
         }
 
-        public bool CreateRental(string customerId, string vehiclePlate, string status, string currentEmployeeId, int rentalDays)
+        public CRentalResult CreateRental(string customerId, string vehiclePlate, string status, string currentEmployeeId, int rentalDays)
         {
+            var result = new CRentalResult();
+
             try
             {
                 // Lấy IDRental lớn nhất hiện tại và tăng lên 1
@@ -108,15 +111,20 @@ namespace Test.Controller
 
                 CUltils.db.SaveChanges();
 
-                return true;
+                result.RentalId = newRentalId;
+                result.RentPrice = rentPrice;
+                result.Success = true;
             }
             catch (Exception ex)
             {
                 // Log lỗi (nếu cần)
-                MessageBox.Show($"Lỗi: {ex.Message}");
-                return false;
+                result.Success = false;
+                result.ErrorMessage = ex.Message;
             }
+
+            return result;
         }
+
 
 
         public List<object> GetRentalDetailsByEmployee(string employeeId)

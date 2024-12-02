@@ -14,7 +14,10 @@ namespace Test.Views
 {
     public partial class FChooseVehicles : Form
     {
+
         public string SelectedVehiclePlate { get; private set; }
+        public string SelectedVehicleColor { get; private set; }
+        public string SelectedVehicleDescription { get; private set; }
         public FChooseVehicles(List<object> availableVehicles)
         {
             InitializeComponent();
@@ -37,6 +40,10 @@ namespace Test.Views
             {
                 string vehiclePlate = dtgvAvailableVehicles.Rows[e.RowIndex].Cells["LicensePlate"].Value.ToString();
                 string vhStatus = dtgvAvailableVehicles.Rows[e.RowIndex].Cells["Status"].Value.ToString();
+                string color = dtgvAvailableVehicles.Rows[e.RowIndex].Cells["Color"].Value.ToString();
+                string description = dtgvAvailableVehicles.Rows[e.RowIndex].Cells["Description"].Value.ToString();
+                string vehicleTypeName = dtgvAvailableVehicles.Rows[e.RowIndex].Cells["VehicleTypeName"].Value.ToString();
+
                 if (vhStatus == "Unavailable")
                 {
                     MessageBox.Show("This vehicle is currently rented. Please select another vehicle.");
@@ -49,6 +56,8 @@ namespace Test.Views
                     if (result == DialogResult.Yes)
                     {
                         SelectedVehiclePlate = vehiclePlate;
+                        SelectedVehicleColor = color;
+                        SelectedVehicleDescription = description;
                         this.DialogResult = DialogResult.OK;
                         this.Close();
                     }

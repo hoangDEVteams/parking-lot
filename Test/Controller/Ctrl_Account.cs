@@ -5,6 +5,7 @@ using System.Net.Mail;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace Test.Controller
 {
@@ -25,7 +26,7 @@ namespace Test.Controller
                 Email = email,
                 Role = "KH", 
                 Status = "InActive", 
-                Salt = salt 
+                Salt = salt,
             };
 
             CUltils.db.Accounts.Add(newAccount);
@@ -126,6 +127,99 @@ namespace Test.Controller
             {
                 Console.WriteLine($"Lỗi khi gửi email: {ex.Message}");
             }
+        }
+        public static string CreateUser(string username)
+        {
+            try
+            {
+                // Lấy thông tin tài khoản từ username
+                var account = CUltils.db.Accounts.SingleOrDefault(a => a.Username == username);
+                if (account == null)
+                {
+                    return "Tài khoản không tồn tại.";
+                }
+
+                // Tìm UserID lớn nhất
+                var maxUserId = CUltils.db.Users
+                    .OrderByDescending(u => u.IDUser)
+                    .Select(u => u.IDUser)
+                    .FirstOrDefault();
+
+                string newUserId = GenerateNewId(maxUserId, "U");
+
+                // Tạo User mới
+                var newUser = new User
+                {
+                    IDUser = newUserId,
+                    Name = "test",
+                    Gender = "test",
+                    PhoneNumber = "123456789",
+                    Address = "POLOLOPO",
+                    IdentityCard = "123456789",
+                    BankNumber = "123456789",
+                    UserType = "KH",
+                    IDAcc = account.IDAcc,
+                    birth = DateTime.Now
+                };
+
+                CUltils.db.Users.Add(newUser);
+                CUltils.db.SaveChanges();
+                account.IDUser = newUserId;
+
+                return "Tạo User thành công!";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi chi tiết: {ex.InnerException?.Message ?? ex.Message}");
+                return $"Lỗi khi tạo User: {ex.Message}";
+            }
+        }
+        public static string CreateCustomer(string userId)
+        {
+            try
+            {
+                var user = CUltils.db.Users.SingleOrDefault(u => u.IDUser == userId);
+                if (user == null)
+                {
+                    return "User không tồn tại.";
+                }
+                var maxCustomerId = CUltils.db.Customers
+                    .OrderByDescending(c => c.IDCustomer)
+                    .Select(c => c.IDCustomer)
+                    .FirstOrDefault();
+
+                string newCustomerId = GenerateNewId(maxCustomerId, "KH");
+
+                var newCustomer = new Customer
+                {
+                    IDCustomer = newCustomerId,
+                    IDUser = userId, 
+                    MembershipLevel = "Normal",
+                    Points = 0
+                };
+
+                CUltils.db.Customers.Add(newCustomer);
+                CUltils.db.SaveChanges();
+
+                return "Tạo Customer thành công!";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi chi tiết: {ex.InnerException?.Message ?? ex.Message}");
+                return $"Lỗi khi tạo Customer: {ex.Message}";
+            }
+        }
+        private static string GenerateNewId(string currentId, string prefix)
+        {
+            if (string.IsNullOrEmpty(currentId))
+            {
+                return $"{prefix}001"; 
+            }
+
+            int numericPart = int.Parse(currentId.Substring(prefix.Length));
+            numericPart++;
+
+            return $"{prefix}{numericPart:D3}";
         }
 
     }

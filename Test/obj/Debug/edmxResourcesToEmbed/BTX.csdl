@@ -187,6 +187,14 @@
       <End Role="Employee" EntitySet="Employees" />
       <End Role="User" EntitySet="Users" />
     </AssociationSet>
+    <AssociationSet Name="FK_User_Customer1" Association="BTXModel.FK_User_Customer1">
+      <End Role="Customer" EntitySet="Customers" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Employee1" Association="BTXModel.FK_User_Employee1">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
   </EntityContainer>
   <ComplexType Name="F_ShowAcc_Result">
     <Property Type="Int32" Name="IDAcc" Nullable="false" />
@@ -278,6 +286,7 @@
     <NavigationProperty Name="Penalties" Relationship="BTXModel.FK__Penalties__IDCus__571DF1D5" FromRole="Customer" ToRole="Penalty" />
     <NavigationProperty Name="Rentals" Relationship="BTXModel.FK__Rentals__IDCusto__73BA3083" FromRole="Customer" ToRole="Rental" />
     <NavigationProperty Name="Users" Relationship="BTXModel.FK_User_Customer" FromRole="Customer" ToRole="User" />
+    <NavigationProperty Name="Users1" Relationship="BTXModel.FK_User_Customer1" FromRole="Customer" ToRole="User" />
   </EntityType>
   <EntityType Name="Employee">
     <Key>
@@ -294,6 +303,7 @@
     <NavigationProperty Name="Vehicles" Relationship="BTXModel.FK__Vehicles__IDEmpl__4CA06362" FromRole="Employee" ToRole="Vehicle" />
     <NavigationProperty Name="Parkings" Relationship="BTXModel.FK_Parking_Employee" FromRole="Employee" ToRole="Parking" />
     <NavigationProperty Name="Users" Relationship="BTXModel.FK_User_Employee" FromRole="Employee" ToRole="User" />
+    <NavigationProperty Name="Users1" Relationship="BTXModel.FK_User_Employee1" FromRole="Employee" ToRole="User" />
   </EntityType>
   <EntityType Name="Parking">
     <Key>
@@ -325,7 +335,7 @@
     <Property Name="IDPenalty" Type="Int32" Nullable="false" />
     <Property Name="Reason" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="Penalty" Relationship="BTXModel.FK__PenaltyDe__IDPen__5AEE82B9" FromRole="PenaltyDetail" ToRole="Penalty" />
-    <Property Name="price" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="price" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
   </EntityType>
   <EntityType Name="RentalDetail">
     <Key>
@@ -338,6 +348,7 @@
     <Property Name="RentPrice" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
     <NavigationProperty Name="Rental" Relationship="BTXModel.FK__RentalDet__IDRen__778AC167" FromRole="RentalDetail" ToRole="Rental" />
     <NavigationProperty Name="Vehicle" Relationship="BTXModel.FK__RentalDet__Licen__787EE5A0" FromRole="RentalDetail" ToRole="Vehicle" />
+    <Property Name="price" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
   </EntityType>
   <EntityType Name="Rental">
     <Key>
@@ -369,11 +380,13 @@
     <NavigationProperty Name="Account" Relationship="BTXModel.FK_Users_Account" FromRole="User" ToRole="Account" />
     <NavigationProperty Name="Customers" Relationship="BTXModel.FK__Customers__IDUse__4222D4EF" FromRole="User" ToRole="Customer" />
     <NavigationProperty Name="Employees" Relationship="BTXModel.FK__Employees__IDUse__3F466844" FromRole="User" ToRole="Employee" />
-    <Property Name="birth" Type="DateTime" Precision="0" />
-    <Property Name="IDCustomer" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="IDEmployee" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="birth" Type="DateTime" Precision="0" Nullable="false" />
     <NavigationProperty Name="Customer" Relationship="BTXModel.FK_User_Customer" FromRole="User" ToRole="Customer" />
     <NavigationProperty Name="Employee" Relationship="BTXModel.FK_User_Employee" FromRole="User" ToRole="Employee" />
+    <Property Name="IDCustomer" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDEmployee" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Customer1" Relationship="BTXModel.FK_User_Customer1" FromRole="User" ToRole="Customer" />
+    <NavigationProperty Name="Employee1" Relationship="BTXModel.FK_User_Employee1" FromRole="User" ToRole="Employee" />
   </EntityType>
   <EntityType Name="Vehicle">
     <Key>
@@ -630,6 +643,30 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_User_Employee">
+    <End Type="BTXModel.Employee" Role="Employee" Multiplicity="0..1" />
+    <End Type="BTXModel.User" Role="User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="IDEmployee" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="IDEmployee" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Customer1">
+    <End Type="BTXModel.Customer" Role="Customer" Multiplicity="0..1" />
+    <End Type="BTXModel.User" Role="User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="IDCustomer" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="IDCustomer" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Employee1">
     <End Type="BTXModel.Employee" Role="Employee" Multiplicity="0..1" />
     <End Type="BTXModel.User" Role="User" Multiplicity="*" />
     <ReferentialConstraint>

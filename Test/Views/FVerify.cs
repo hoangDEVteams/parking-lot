@@ -48,9 +48,30 @@ namespace Test.Views
 
                         if (result == "Cập nhật trạng thái thành công!")
                         {
-                            OnVerificationSuccess?.Invoke();
-                            this.Close(); 
-                        
+                            string createUserResult = Ctrl_Account.CreateUser(username);
+                            if (createUserResult == "Tạo User thành công!")
+                            {
+                                string userId = CUltils.db.Users
+                                    .Where(u => u.IDAcc == account.IDAcc)
+                                    .Select(u => u.IDUser)
+                                    .FirstOrDefault();
+
+                                string createCustomerResult = Ctrl_Account.CreateCustomer(userId);
+                                if (createCustomerResult == "Tạo Customer thành công!")
+                                {
+                                    OnVerificationSuccess?.Invoke();
+                                    this.Close();
+                                }
+                                else
+                                {
+                                    MessageBox.Show($"Không thể tạo Customer: {createCustomerResult}");
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show($"Không thể tạo User: {createUserResult}");
+                            }
+
                         }
                     }
                     else

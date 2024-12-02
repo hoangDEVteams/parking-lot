@@ -148,6 +148,7 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="AddOn\CDTEPicker.cs" />
+    <Compile Include="AddOn\CRentalResult.cs" />
     <Compile Include="BTX.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -172,6 +173,10 @@
     <Compile Include="Controller\Ctrl_User.cs" />
     <Compile Include="Controller\CTrl_Vehicles.cs" />
     <Compile Include="Controller\Ctrl_VehicleTypes.cs" />
+    <Compile Include="Controller\Ctrl_Wallet.cs" />
+    <Compile Include="Customer.cs">
+      <DependentUpon>BTX.tt</DependentUpon>
+    </Compile>
     <Compile Include="Employee.cs">
       <DependentUpon>BTX.tt</DependentUpon>
     </Compile>
@@ -222,9 +227,6 @@
       <DependentUpon>BTX.tt</DependentUpon>
     </Compile>
     <Compile Include="Resource\CUltils.cs" />
-    <Compile Include="Customer.cs">
-      <DependentUpon>BTX.tt</DependentUpon>
-    </Compile>
     <Compile Include="sp_helpdiagramdefinition_Result.cs">
       <DependentUpon>BTX.tt</DependentUpon>
     </Compile>
@@ -315,6 +317,12 @@
     <Compile Include="Views\FRentals.Designer.cs">
       <DependentUpon>FRentals.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\FRentingDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FRentingDetails.Designer.cs">
+      <DependentUpon>FRentingDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\FResetPass.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -397,6 +405,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FRentals.resx">
       <DependentUpon>FRentals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FRentingDetails.resx">
+      <DependentUpon>FRentingDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FResetPass.resx">
       <DependentUpon>FResetPass.cs</DependentUpon>

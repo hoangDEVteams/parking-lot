@@ -121,7 +121,6 @@ namespace Test.Views
         }
         private void groupBox1_Enter(object sender, EventArgs e)
         {
-            lblCusName.Text = customerId;
             lblRentday.Text = rentalDate;
 
         }
@@ -179,6 +178,11 @@ namespace Test.Views
         }
 
         private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lsvPenalties_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

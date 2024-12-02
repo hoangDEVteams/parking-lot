@@ -18,9 +18,11 @@ namespace Test.Views
 {
     public partial class FRentals : Form
     {
-        public FRentals()
+        private string username;
+        public FRentals(string username)
         {
             InitializeComponent();
+            this.username = username;
         }
         private void LoadUserData()
         {
@@ -100,10 +102,16 @@ namespace Test.Views
             {
                 DataGridViewRow selectedRow = dtgvUser.SelectedRows[0];
                 string customerId = selectedRow.Cells["IDCustomer"].Value.ToString();
-
+                string userID = selectedRow.Cells["IDUser"].Value.ToString();
                 var activeRentalsCount = CUltils.db.Rentals
                     .Count(r => r.IDCustomer == customerId && r.Status == "Renting");
-
+                decimal userBalance = Ctrl_Wallet.GetUserIDBalance(userID);
+                MessageBox.Show($"User balance: {userBalance}");
+                if (userBalance < 20000000)
+                {
+                    MessageBox.Show("Số dư không đủ để thuê xe. Vui lòng nạp thêm tiền.");
+                    return;
+                }
                 if (activeRentalsCount >= 2)
                 {
                     MessageBox.Show("Người dùng này đã thuê tối đa lượt.");
@@ -117,11 +125,13 @@ namespace Test.Views
                 if (chooseVehiclesForm.ShowDialog() == DialogResult.OK)
                 {
                     string selectedVehiclePlate = chooseVehiclesForm.SelectedVehiclePlate;
+                    string selectedVehicleColor = chooseVehiclesForm.SelectedVehicleColor;
+                    string selectedVehicleDescription = chooseVehiclesForm.SelectedVehicleDescription;
 
                     string inputDays = Interaction.InputBox(
                         "Input day:",
                         "Rent Date Information",
-                        "1" 
+                        "1"
                     );
 
                     if (int.TryParse(inputDays, out int rentalDays) && rentalDays > 0)
@@ -130,16 +140,33 @@ namespace Test.Views
                         string currentEmployeeId = "NV001";
 
                         Ctrl_Rental rentalController = new Ctrl_Rental();
-                        bool result = rentalController.CreateRental(customerId, selectedVehiclePlate, status, currentEmployeeId, rentalDays);
+                        var rentalResult = rentalController.CreateRental(
+                            customerId,
+                            selectedVehiclePlate,
+                            status,
+                            currentEmployeeId,
+                            rentalDays
+                        );
 
-                        if (result)
+                        if (rentalResult.Success)
                         {
-                            MessageBox.Show("Rental created successfully.");
-                            
+                            string rentDate = DateTime.Now.ToString("dd/MM/yyyy");
+
+                            MessageBox.Show($"Rental created successfully.\nVehicle Plate: {selectedVehiclePlate}\nColor: {selectedVehicleColor}\nDescription: {selectedVehicleDescription}");
+
+                            FRentingDetails frenting = new FRentingDetails(
+                                rentalResult.RentalId,
+                                rentDate,
+                                selectedVehiclePlate,
+                                rentalResult.RentPrice,
+                                rentalDays,
+                                customerId
+                            );
+                            frenting.ShowDialog();
                         }
                         else
                         {
-                            MessageBox.Show("Failed to create rental.");
+                            MessageBox.Show($"Failed to create rental. Error: {rentalResult.ErrorMessage}");
                         }
                     }
                     else

@@ -689,3 +689,5 @@ D:\school\hướng đối tượng\QLBaiThueXe\parking-lot\Test\obj\Debug\Test.V
 D:\school\hướng đối tượng\QLBaiThueXe\parking-lot\Test\obj\Debug\Test.Views.FWithDraw.resources
 D:\school\hướng đối tượng\QLBaiThueXe\parking-lot\Test\bin\Debug\RestSharp.dll
 D:\school\hướng đối tượng\QLBaiThueXe\parking-lot\Test\bin\Debug\RestSharp.xml
+C:\Users\User\Desktop\wanna\parking-lot\Test\obj\Debug\Test.Views.FPenalties.resources
+C:\Users\User\Desktop\wanna\parking-lot\Test\obj\Debug\Test.Views.FRentingDetails.resources

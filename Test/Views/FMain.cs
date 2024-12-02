@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using System.Runtime.Remoting.Contexts;
 using Test.ZaloPay;
+using Test.Controller;
 
 namespace Test.Views
 {
@@ -75,8 +76,8 @@ namespace Test.Views
             this.FormBorderStyle = FormBorderStyle.None;
             this.StartPosition = FormStartPosition.CenterScreen;
             maxMenu = panelMenu.Width;
-            decimal balance = GetUserBalance(username);
-            label2.Text = "Balance: " + balance.ToString() + "VND";
+            decimal balance = Ctrl_Wallet.GetUserBalance(username);
+            label2.Text = "🏦: " + balance.ToString() + " VND";
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -211,7 +212,7 @@ namespace Test.Views
                 btnWithDraw.Visible = false;
                 iconButton6.Width = 80;
                 label1.Visible = false;
-                decimal balance = GetUserBalance(username);
+                decimal balance = Ctrl_Wallet.GetUserBalance(username);
                 label2.Text = balance.ToString();
                 cCirclePB1.Size = new Size(45, 45);
                 cCirclePB1.Location = new Point(
@@ -248,8 +249,8 @@ namespace Test.Views
                 cCirclePB1.Location = new Point(
                     16, 54
                 );
-                decimal balance = GetUserBalance(username);
-                label2.Text = "Balance: " + balance.ToString() + "VND";
+                decimal balance = Ctrl_Wallet.GetUserBalance(username);
+                label2.Text = "🏦: " + balance.ToString() + "VND";
                 label2.Location = new Point(10, 214);
                 btnMenu.Dock = DockStyle.None;
                 foreach (Button menuButton in panelMenu.Controls.OfType<Button>())
@@ -304,16 +305,16 @@ namespace Test.Views
             FCar form = new FCar(); // Gọi form mấy ông muốn nhảy qua 
             LoadFormIntoPanel(form);
         }
-        private decimal GetUserBalance(string username)
-        {
-            var balance = (from acc in CUltils.db.Accounts
-                           join wal in CUltils.db.Wallets on acc.IDAcc equals wal.IDAcc
-                           where acc.Username == username
-                           select wal.Money).FirstOrDefault();
+        //private decimal GetUserBalance(string username)
+        //{
+        //    var balance = (from acc in CUltils.db.Accounts
+        //                   join wal in CUltils.db.Wallets on acc.IDAcc equals wal.IDAcc
+        //                   where acc.Username == username
+        //                   select wal.Money).FirstOrDefault();
 
-            return balance;
+        //    return balance;
 
-        }
+        //}
         private void label2_Click(object sender, EventArgs e)
         {
 
@@ -327,7 +328,7 @@ namespace Test.Views
 
         private void iconButton3_Click(object sender, EventArgs e)
         {
-            FRentals form = new FRentals(); // Gọi form mấy ông muốn nhảy qua 
+            FRentals form = new FRentals(username); // Gọi form mấy ông muốn nhảy qua 
             LoadFormIntoPanel(form);
         }
     }

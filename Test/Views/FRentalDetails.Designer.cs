@@ -154,6 +154,7 @@
             this.lsvPenalties.Size = new System.Drawing.Size(885, 131);
             this.lsvPenalties.TabIndex = 8;
             this.lsvPenalties.UseCompatibleStateImageBehavior = false;
+            this.lsvPenalties.SelectedIndexChanged += new System.EventHandler(this.lsvPenalties_SelectedIndexChanged);
             // 
             // lblColor
             // 
