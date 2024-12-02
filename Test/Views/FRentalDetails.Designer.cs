@@ -32,11 +32,16 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.lsvPenalties = new System.Windows.Forms.ListView();
+            this.lblColor = new System.Windows.Forms.Label();
+            this.lblCarName = new System.Windows.Forms.Label();
             this.lblRentDays = new System.Windows.Forms.Label();
             this.lblRentPrice = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.lblLicense = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
@@ -46,6 +51,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.QR = new System.Windows.Forms.PictureBox();
             this.lblChange = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.lblCusPay = new System.Windows.Forms.Label();
@@ -85,12 +91,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.lblCusName = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.lblCarName = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.lblColor = new System.Windows.Forms.Label();
-            this.lsvPenalties = new System.Windows.Forms.ListView();
-            this.QR = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -98,9 +98,9 @@
             this.groupBox3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.QR)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.QR)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -144,6 +144,36 @@
             this.groupBox4.Size = new System.Drawing.Size(964, 319);
             this.groupBox4.TabIndex = 2;
             this.groupBox4.TabStop = false;
+            // 
+            // lsvPenalties
+            // 
+            this.lsvPenalties.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lsvPenalties.HideSelection = false;
+            this.lsvPenalties.Location = new System.Drawing.Point(25, 182);
+            this.lsvPenalties.Name = "lsvPenalties";
+            this.lsvPenalties.Size = new System.Drawing.Size(885, 131);
+            this.lsvPenalties.TabIndex = 8;
+            this.lsvPenalties.UseCompatibleStateImageBehavior = false;
+            // 
+            // lblColor
+            // 
+            this.lblColor.AutoSize = true;
+            this.lblColor.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblColor.Location = new System.Drawing.Point(541, 87);
+            this.lblColor.Name = "lblColor";
+            this.lblColor.Size = new System.Drawing.Size(46, 23);
+            this.lblColor.TabIndex = 7;
+            this.lblColor.Text = "Red";
+            // 
+            // lblCarName
+            // 
+            this.lblCarName.AutoSize = true;
+            this.lblCarName.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCarName.Location = new System.Drawing.Point(194, 87);
+            this.lblCarName.Name = "lblCarName";
+            this.lblCarName.Size = new System.Drawing.Size(273, 23);
+            this.lblCarName.TabIndex = 6;
+            this.lblCarName.Text = "Aventador LP 700-4 Roadster";
             // 
             // lblRentDays
             // 
@@ -201,6 +231,28 @@
             this.panel2.Size = new System.Drawing.Size(958, 44);
             this.panel2.TabIndex = 1;
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(538, 12);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(61, 24);
+            this.label12.TabIndex = 23;
+            this.label12.Text = "Color";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(191, 10);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(102, 24);
+            this.label8.TabIndex = 22;
+            this.label8.Text = "Car Name";
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -251,7 +303,7 @@
             // 
             this.lblTotalPer.AutoSize = true;
             this.lblTotalPer.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalPer.Location = new System.Drawing.Point(67, 87);
+            this.lblTotalPer.Location = new System.Drawing.Point(68, 87);
             this.lblTotalPer.Name = "lblTotalPer";
             this.lblTotalPer.Size = new System.Drawing.Size(71, 23);
             this.lblTotalPer.TabIndex = 5;
@@ -262,7 +314,7 @@
             // 
             this.lblTotalPenalty.AutoSize = true;
             this.lblTotalPenalty.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalPenalty.Location = new System.Drawing.Point(81, 174);
+            this.lblTotalPenalty.Location = new System.Drawing.Point(97, 169);
             this.lblTotalPenalty.Name = "lblTotalPenalty";
             this.lblTotalPenalty.Size = new System.Drawing.Size(32, 23);
             this.lblTotalPenalty.TabIndex = 4;
@@ -284,7 +336,7 @@
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(64, 12);
+            this.label19.Location = new System.Drawing.Point(80, 10);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(58, 24);
             this.label19.TabIndex = 20;
@@ -312,12 +364,20 @@
             this.groupBox5.TabIndex = 3;
             this.groupBox5.TabStop = false;
             // 
+            // QR
+            // 
+            this.QR.Location = new System.Drawing.Point(368, 21);
+            this.QR.Name = "QR";
+            this.QR.Size = new System.Drawing.Size(222, 179);
+            this.QR.TabIndex = 15;
+            this.QR.TabStop = false;
+            // 
             // lblChange
             // 
             this.lblChange.AutoSize = true;
             this.lblChange.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblChange.ForeColor = System.Drawing.Color.Red;
-            this.lblChange.Location = new System.Drawing.Point(1036, 152);
+            this.lblChange.Location = new System.Drawing.Point(1028, 152);
             this.lblChange.Name = "lblChange";
             this.lblChange.Size = new System.Drawing.Size(83, 27);
             this.lblChange.TabIndex = 14;
@@ -339,7 +399,7 @@
             this.lblCusPay.AutoSize = true;
             this.lblCusPay.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCusPay.ForeColor = System.Drawing.Color.Red;
-            this.lblCusPay.Location = new System.Drawing.Point(1036, 92);
+            this.lblCusPay.Location = new System.Drawing.Point(1026, 92);
             this.lblCusPay.Name = "lblCusPay";
             this.lblCusPay.Size = new System.Drawing.Size(83, 27);
             this.lblCusPay.TabIndex = 12;
@@ -419,7 +479,7 @@
             this.lblTotalPay.AutoSize = true;
             this.lblTotalPay.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalPay.ForeColor = System.Drawing.Color.Red;
-            this.lblTotalPay.Location = new System.Drawing.Point(1036, 29);
+            this.lblTotalPay.Location = new System.Drawing.Point(1026, 29);
             this.lblTotalPay.Name = "lblTotalPay";
             this.lblTotalPay.Size = new System.Drawing.Size(83, 27);
             this.lblTotalPay.TabIndex = 4;
@@ -733,66 +793,6 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Name:";
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(191, 10);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(102, 24);
-            this.label8.TabIndex = 22;
-            this.label8.Text = "Car Name";
-            // 
-            // lblCarName
-            // 
-            this.lblCarName.AutoSize = true;
-            this.lblCarName.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCarName.Location = new System.Drawing.Point(194, 87);
-            this.lblCarName.Name = "lblCarName";
-            this.lblCarName.Size = new System.Drawing.Size(273, 23);
-            this.lblCarName.TabIndex = 6;
-            this.lblCarName.Text = "Aventador LP 700-4 Roadster";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(538, 12);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(61, 24);
-            this.label12.TabIndex = 23;
-            this.label12.Text = "Color";
-            // 
-            // lblColor
-            // 
-            this.lblColor.AutoSize = true;
-            this.lblColor.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblColor.Location = new System.Drawing.Point(541, 87);
-            this.lblColor.Name = "lblColor";
-            this.lblColor.Size = new System.Drawing.Size(46, 23);
-            this.lblColor.TabIndex = 7;
-            this.lblColor.Text = "Red";
-            // 
-            // lsvPenalties
-            // 
-            this.lsvPenalties.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lsvPenalties.HideSelection = false;
-            this.lsvPenalties.Location = new System.Drawing.Point(25, 182);
-            this.lsvPenalties.Name = "lsvPenalties";
-            this.lsvPenalties.Size = new System.Drawing.Size(885, 131);
-            this.lsvPenalties.TabIndex = 8;
-            this.lsvPenalties.UseCompatibleStateImageBehavior = false;
-            // 
-            // QR
-            // 
-            this.QR.Location = new System.Drawing.Point(368, 21);
-            this.QR.Name = "QR";
-            this.QR.Size = new System.Drawing.Size(222, 179);
-            this.QR.TabIndex = 15;
-            this.QR.TabStop = false;
-            // 
             // FRentalDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -818,10 +818,10 @@
             this.panel1.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.QR)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.QR)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -71,6 +71,9 @@
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="RestSharp, Version=112.1.0.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.112.1.0\lib\net471\RestSharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
@@ -112,8 +115,8 @@
     <Reference Include="System.Text.Encodings.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Text.Encodings.Web.8.0.0\lib\net462\System.Text.Encodings.Web.dll</HintPath>
     </Reference>
-    <Reference Include="System.Text.Json, Version=8.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Text.Json.8.0.1\lib\net462\System.Text.Json.dll</HintPath>
+    <Reference Include="System.Text.Json, Version=8.0.0.4, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.8.0.4\lib\net462\System.Text.Json.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
@@ -121,6 +124,7 @@
     <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
     </Reference>
+    <Reference Include="System.Web" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -188,6 +192,9 @@
     <Compile Include="F_ShowVehicles_Result.cs">
       <DependentUpon>BTX.tt</DependentUpon>
     </Compile>
+    <Compile Include="MomoPayment\MomoCallbackListener.cs" />
+    <Compile Include="MomoPayment\MomoConfig.cs" />
+    <Compile Include="MomoPayment\MomoPayment.cs" />
     <Compile Include="Parking.cs">
       <DependentUpon>BTX.tt</DependentUpon>
     </Compile>
@@ -313,11 +320,23 @@
     <Compile Include="Views\FTest.Designer.cs">
       <DependentUpon>FTest.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\FTopUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FTopUp.Designer.cs">
+      <DependentUpon>FTopUp.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\FVerify.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\FVerify.Designer.cs">
       <DependentUpon>FVerify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FWithDraw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FWithDraw.Designer.cs">
+      <DependentUpon>FWithDraw.cs</DependentUpon>
     </Compile>
     <Compile Include="V_VehicleData.cs">
       <DependentUpon>BTX.tt</DependentUpon>
@@ -375,8 +394,14 @@
     <EmbeddedResource Include="Views\FTest.resx">
       <DependentUpon>FTest.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\FTopUp.resx">
+      <DependentUpon>FTopUp.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\FVerify.resx">
       <DependentUpon>FVerify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FWithDraw.resx">
+      <DependentUpon>FWithDraw.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="BTX.edmx">
       <Generator>EntityModelCodeGenerator</Generator>

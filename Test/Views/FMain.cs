@@ -320,9 +320,8 @@ namespace Test.Views
 
         private async void button4_Click_1(object sender, EventArgs e)
         {
-            var paymentService = new CZLPayAPI();
-            var result = await paymentService.CreateOrder();
-            MessageBox.Show(result ?? "Payment failed.");
+            FTopUp fTopUp = new FTopUp(username);
+            fTopUp.ShowDialog();
         }
 
         private void iconButton3_Click(object sender, EventArgs e)
