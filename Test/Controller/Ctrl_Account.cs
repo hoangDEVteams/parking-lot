@@ -174,6 +174,15 @@ namespace Test.Controller
                 return $"Lỗi khi tạo User: {ex.Message}";
             }
         }
+        public static string GetUserID(string username)
+        {
+            var account = CUltils.db.Accounts.SingleOrDefault(a => a.Username == username);
+            if (account != null)
+            {
+                return account.IDUser;
+            }
+            return null;
+        }
         public static string CreateCustomer(string userId)
         {
             try

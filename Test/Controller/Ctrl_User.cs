@@ -61,5 +61,28 @@ namespace Test.Controller
                 .FirstOrDefault(c => c.Username == username);
             return CUltils.db.Users.FirstOrDefault(u => u.IDUser == user.IDUser);
         }
+        public string GenerateUserId()
+        {
+            var maxID = CUltils.db.Users
+                .Select(u => u.IDUser)
+                .OrderByDescending(id => id)
+                .FirstOrDefault();
+
+            if (string.IsNullOrEmpty(maxID))
+            {
+                return "U001";
+            }
+
+            string numericPart = maxID.StartsWith("U") ? maxID.Substring(1) : maxID;
+            int number;
+
+            if (int.TryParse(numericPart, out number))
+            {
+                number++;
+                return "U" + number.ToString("D3");
+            }
+
+            throw new Exception("Không thể tạo ID mới do định dạng không hợp lệ.");
+        }
     }
 }

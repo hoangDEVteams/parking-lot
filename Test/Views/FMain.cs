@@ -91,7 +91,9 @@ namespace Test.Views
 
         private void cCirclePB1_Click(object sender, EventArgs e)
         {
-
+            string UserID = Ctrl_Account.GetUserID(username);
+            FCustomerInfo fCustomer = new FCustomerInfo(UserID);
+            fCustomer.ShowDialog();
         }
 
         private void iconButton2_Click(object sender, EventArgs e)

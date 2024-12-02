@@ -3,11 +3,43 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|c:\\users\\user\\desktop\\wanna\\parking-lot\\test\\views\\fcustomerinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fcustomerinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|c:\\users\\user\\desktop\\wanna\\parking-lot\\test\\views\\fcustomerinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fcustomerinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|C:\\Users\\User\\Desktop\\wanna\\parking-lot\\test\\controller\\ctrl_user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\controller\\ctrl_user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|C:\\Users\\User\\Desktop\\wanna\\parking-lot\\test\\controller\\ctrl_account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\controller\\ctrl_account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|c:\\users\\user\\desktop\\wanna\\parking-lot\\test\\views\\fcar_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|c:\\users\\user\\desktop\\wanna\\parking-lot\\test\\controller\\ctrl_customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\controller\\ctrl_customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|c:\\users\\user\\desktop\\wanna\\parking-lot\\test\\views\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|C:\\Users\\User\\Desktop\\wanna\\parking-lot\\test\\views\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|c:\\users\\user\\desktop\\wanna\\parking-lot\\test\\views\\fcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|c:\\users\\user\\desktop\\wanna\\parking-lot\\test\\views\\fcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|C:\\Users\\User\\Desktop\\wanna\\parking-lot\\test\\views\\fcar_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fcar_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -21,14 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|C:\\Users\\User\\Desktop\\wanna\\parking-lot\\test\\btx.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
       "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\btx.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|C:\\Users\\User\\Desktop\\wanna\\parking-lot\\test\\controller\\ctrl_customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\controller\\ctrl_customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|C:\\Users\\User\\Desktop\\wanna\\parking-lot\\test\\controller\\ctrl_user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\controller\\ctrl_user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|C:\\Users\\User\\Desktop\\wanna\\parking-lot\\test\\views\\frentals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -49,10 +73,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|C:\\Users\\User\\Desktop\\wanna\\parking-lot\\test\\views\\fverify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fverify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|C:\\Users\\User\\Desktop\\wanna\\parking-lot\\test\\views\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|C:\\Users\\User\\Desktop\\wanna\\parking-lot\\test\\views\\frentaldetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -158,7 +178,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -194,19 +214,155 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FCustomerInfo.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FCustomerInfo.cs",
+              "RelativeDocumentMoniker": "Test\\Views\\FCustomerInfo.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FCustomerInfo.cs*",
+              "RelativeToolTip": "Test\\Views\\FCustomerInfo.cs*",
+              "ViewState": "AgIAABMAAAAAAAAAAAAewCUAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T18:00:03.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FCustomerInfo.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FCustomerInfo.cs",
+              "RelativeDocumentMoniker": "Test\\Views\\FCustomerInfo.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FCustomerInfo.cs [Design]*",
+              "RelativeToolTip": "Test\\Views\\FCustomerInfo.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T18:00:01.058Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "FMain.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FMain.cs",
+              "RelativeDocumentMoniker": "Test\\Views\\FMain.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FMain.cs",
+              "RelativeToolTip": "Test\\Views\\FMain.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAAF0AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T17:57:41.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Ctrl_Customer.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Controller\\Ctrl_Customer.cs",
               "RelativeDocumentMoniker": "Test\\Controller\\Ctrl_Customer.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Controller\\Ctrl_Customer.cs",
               "RelativeToolTip": "Test\\Controller\\Ctrl_Customer.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAQwFMAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T14:03:47.227Z"
+              "WhenOpened": "2024-12-02T14:03:47.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Ctrl_Account.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Controller\\Ctrl_Account.cs",
+              "RelativeDocumentMoniker": "Test\\Controller\\Ctrl_Account.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Controller\\Ctrl_Account.cs",
+              "RelativeToolTip": "Test\\Controller\\Ctrl_Account.cs",
+              "ViewState": "AgIAAKcAAAAAAAAAAAAuwLYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T13:22:39.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FCar_Admin.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FCar_Admin.cs",
+              "RelativeDocumentMoniker": "Test\\Views\\FCar_Admin.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FCar_Admin.cs",
+              "RelativeToolTip": "Test\\Views\\FCar_Admin.cs",
+              "ViewState": "AgIAAA8CAAAAAAAAAAD4vyoCAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T07:44:54.024Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BTX.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\BTX.edmx",
+              "RelativeDocumentMoniker": "Test\\BTX.edmx",
+              "ToolTip": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\BTX.edmx [Diagram1]",
+              "RelativeToolTip": "Test\\BTX.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-12-02T16:54:45.623Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Ctrl_User.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Controller\\Ctrl_User.cs",
+              "RelativeDocumentMoniker": "Test\\Controller\\Ctrl_User.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Controller\\Ctrl_User.cs",
+              "RelativeToolTip": "Test\\Controller\\Ctrl_User.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAA8wDgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T11:08:34.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FCar_Admin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FCar_Admin.cs",
+              "RelativeDocumentMoniker": "Test\\Views\\FCar_Admin.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FCar_Admin.cs [Design]",
+              "RelativeToolTip": "Test\\Views\\FCar_Admin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T07:44:52.743Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FCustomer.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FCustomer.cs",
+              "RelativeDocumentMoniker": "Test\\Views\\FCustomer.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FCustomer.cs",
+              "RelativeToolTip": "Test\\Views\\FCustomer.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T17:56:21.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FMain.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FMain.cs",
+              "RelativeDocumentMoniker": "Test\\Views\\FMain.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FMain.cs [Design]",
+              "RelativeToolTip": "Test\\Views\\FMain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T17:06:43.449Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FCustomer.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FCustomer.cs",
+              "RelativeDocumentMoniker": "Test\\Views\\FCustomer.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FCustomer.cs [Design]",
+              "RelativeToolTip": "Test\\Views\\FCustomer.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T17:56:19.547Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "FRentals.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FRentals.cs",
               "RelativeDocumentMoniker": "Test\\Views\\FRentals.cs",
@@ -218,56 +374,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Ctrl_Account.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Controller\\Ctrl_Account.cs",
-              "RelativeDocumentMoniker": "Test\\Controller\\Ctrl_Account.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Controller\\Ctrl_Account.cs",
-              "RelativeToolTip": "Test\\Controller\\Ctrl_Account.cs",
-              "ViewState": "AgIAAJIAAAAAAAAAAAAuwFwAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T13:22:39.049Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FCar_Admin.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FCar_Admin.cs",
-              "RelativeDocumentMoniker": "Test\\Views\\FCar_Admin.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FCar_Admin.cs",
-              "RelativeToolTip": "Test\\Views\\FCar_Admin.cs",
-              "ViewState": "AgIAAA8CAAAAAAAAAAD4vyoCAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T07:44:54.024Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BTX.edmx [Diagram1]",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\BTX.edmx",
-              "RelativeDocumentMoniker": "Test\\BTX.edmx",
-              "ToolTip": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\BTX.edmx [Diagram1]",
-              "RelativeToolTip": "Test\\BTX.edmx [Diagram1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
-              "WhenOpened": "2024-12-02T16:54:45.623Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FCar_Admin.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FCar_Admin.cs",
-              "RelativeDocumentMoniker": "Test\\Views\\FCar_Admin.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FCar_Admin.cs [Design]",
-              "RelativeToolTip": "Test\\Views\\FCar_Admin.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T07:44:52.743Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "FRentals.cs [Design]",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FRentals.cs",
               "RelativeDocumentMoniker": "Test\\Views\\FRentals.cs",
@@ -278,7 +385,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "FChooseVehicles.cs [Design]",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FChooseVehicles.cs",
               "RelativeDocumentMoniker": "Test\\Views\\FChooseVehicles.cs",
@@ -289,19 +396,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Ctrl_User.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Controller\\Ctrl_User.cs",
-              "RelativeDocumentMoniker": "Test\\Controller\\Ctrl_User.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Controller\\Ctrl_User.cs",
-              "RelativeToolTip": "Test\\Controller\\Ctrl_User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T11:08:34.13Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "CTrl_Vehicles.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Controller\\CTrl_Vehicles.cs",
               "RelativeDocumentMoniker": "Test\\Controller\\CTrl_Vehicles.cs",
@@ -313,7 +408,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
               "Title": "App.config",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\App.config",
               "RelativeDocumentMoniker": "Test\\App.config",
@@ -326,18 +421,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "FMain.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FMain.cs",
-              "RelativeDocumentMoniker": "Test\\Views\\FMain.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FMain.cs [Design]",
-              "RelativeToolTip": "Test\\Views\\FMain.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T17:06:43.449Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
               "Title": "FRentalDetails.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FRentalDetails.cs",
               "RelativeDocumentMoniker": "Test\\Views\\FRentalDetails.cs",
@@ -349,7 +433,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 17,
               "Title": "FVerify.cs [Design]",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FVerify.cs",
               "RelativeDocumentMoniker": "Test\\Views\\FVerify.cs",
@@ -360,7 +444,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 19,
               "Title": "FRentingDetails.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FRentingDetails.cs",
               "RelativeDocumentMoniker": "Test\\Views\\FRentingDetails.cs",
@@ -372,7 +456,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 20,
               "Title": "Ctrl_Rental.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Controller\\Ctrl_Rental.cs",
               "RelativeDocumentMoniker": "Test\\Controller\\Ctrl_Rental.cs",
@@ -384,7 +468,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 21,
               "Title": "FChooseVehicles.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FChooseVehicles.cs",
               "RelativeDocumentMoniker": "Test\\Views\\FChooseVehicles.cs",
@@ -396,7 +480,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 22,
               "Title": "FRentingDetails.cs [Design]",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FRentingDetails.cs",
               "RelativeDocumentMoniker": "Test\\Views\\FRentingDetails.cs",
@@ -407,7 +491,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 23,
               "Title": "FRentalDetails.cs [Design]",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FRentalDetails.cs",
               "RelativeDocumentMoniker": "Test\\Views\\FRentalDetails.cs",
@@ -418,7 +502,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 24,
               "Title": "FCar.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FCar.cs",
               "RelativeDocumentMoniker": "Test\\Views\\FCar.cs",
@@ -430,7 +514,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 25,
               "Title": "FCar.cs [Design]",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FCar.cs",
               "RelativeDocumentMoniker": "Test\\Views\\FCar.cs",
@@ -441,7 +525,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 26,
               "Title": "FTopUp.cs [Design]",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FTopUp.cs",
               "RelativeDocumentMoniker": "Test\\Views\\FTopUp.cs",
@@ -452,7 +536,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 27,
               "Title": "FPenalties.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FPenalties.cs",
               "RelativeDocumentMoniker": "Test\\Views\\FPenalties.cs",
@@ -464,7 +548,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 28,
               "Title": "FPenalties.Designer.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FPenalties.Designer.cs",
               "RelativeDocumentMoniker": "Test\\Views\\FPenalties.Designer.cs",
@@ -476,7 +560,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 34,
               "Title": "Ctrl_PenaltiesDetail.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Controller\\Ctrl_PenaltiesDetail.cs",
               "RelativeDocumentMoniker": "Test\\Controller\\Ctrl_PenaltiesDetail.cs",
@@ -488,7 +572,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 32,
               "Title": "FTopUp.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FTopUp.cs",
               "RelativeDocumentMoniker": "Test\\Views\\FTopUp.cs",
@@ -500,7 +584,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 39,
               "Title": "MomoPayment.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\MomoPayment\\MomoPayment.cs",
               "RelativeDocumentMoniker": "Test\\MomoPayment\\MomoPayment.cs",
@@ -512,7 +596,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 30,
               "Title": "MomoCallbackListener.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\MomoPayment\\MomoCallbackListener.cs",
               "RelativeDocumentMoniker": "Test\\MomoPayment\\MomoCallbackListener.cs",
@@ -524,7 +608,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 38,
               "Title": "MomoConfig.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\MomoPayment\\MomoConfig.cs",
               "RelativeDocumentMoniker": "Test\\MomoPayment\\MomoConfig.cs",
@@ -536,7 +620,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 33,
               "Title": "FTopUp.Designer.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FTopUp.Designer.cs",
               "RelativeDocumentMoniker": "Test\\Views\\FTopUp.Designer.cs",
@@ -548,7 +632,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 31,
               "Title": "FWithDraw.cs [Design]",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FWithDraw.cs",
               "RelativeDocumentMoniker": "Test\\Views\\FWithDraw.cs",
@@ -558,7 +642,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 37,
               "Title": "FWithDraw.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FWithDraw.cs",
               "RelativeDocumentMoniker": "Test\\Views\\FWithDraw.cs",
@@ -570,7 +654,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 29,
               "Title": "FFillInforVehicle.cs [Design]",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FFillInforVehicle.cs",
               "RelativeDocumentMoniker": "Test\\Views\\FFillInforVehicle.cs",
@@ -580,7 +664,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 40,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Program.cs",
               "RelativeDocumentMoniker": "Test\\Program.cs",
@@ -592,7 +676,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 36,
               "Title": "Ctrl_Penalties.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Controller\\Ctrl_Penalties.cs",
               "RelativeDocumentMoniker": "Test\\Controller\\Ctrl_Penalties.cs",
@@ -604,7 +688,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 41,
               "Title": "app.manifest",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\app.manifest",
               "RelativeDocumentMoniker": "Test\\app.manifest",
@@ -616,7 +700,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 35,
               "Title": "Ctrl_RentalDetails.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Controller\\Ctrl_RentalDetails.cs",
               "RelativeDocumentMoniker": "Test\\Controller\\Ctrl_RentalDetails.cs",

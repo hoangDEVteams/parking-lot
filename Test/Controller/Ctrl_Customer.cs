@@ -9,6 +9,96 @@ namespace Test.Controller
 {
     internal class Ctrl_Customer
     {
+        public List<Customer> getList()
+        {
+            return CUltils.db.Customers.ToList();
+        }
+
+        public string GenerateCustomerId()
+        {
+            var maxID = CUltils.db.Customers
+                .Select(c => c.IDCustomer)
+                .OrderByDescending(id => id)
+                .FirstOrDefault();
+
+            if (string.IsNullOrEmpty(maxID))
+            {
+                return "KH001";
+            }
+
+            string numericPart = maxID.StartsWith("KH") ? maxID.Substring(2) : maxID;
+            int number;
+
+            if (int.TryParse(numericPart, out number))
+            {
+                number++;
+                return "KH" + number.ToString("D3");
+            }
+
+            throw new Exception("Không thể tạo ID mới do định dạng không hợp lệ.");
+        }
+
+        public void AddCustomer(Customer customer)
+        {
+            customer.IDCustomer = GenerateCustomerId();
+
+            CUltils.db.Customers.Add(customer);
+            CUltils.db.SaveChanges();
+        }
+
+        public void RemoveCustomer(string customerId)
+        {
+            try
+            {
+                var customer = CUltils.db.Customers.SingleOrDefault(c => c.IDCustomer == customerId);
+                if (customer != null)
+                {
+                    var user = CUltils.db.Users.SingleOrDefault(u => u.IDUser == customer.IDUser);
+
+                    CUltils.db.Customers.Remove(customer);
+
+                    if (user != null)
+                    {
+                        CUltils.db.Users.Remove(user);
+                    }
+
+                    CUltils.db.SaveChanges();
+                }
+                else
+                {
+                    throw new Exception($"Không tìm thấy khách hàng với ID: {customerId}");
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception($"Lỗi khi xóa khách hàng: {ex.Message}");
+            }
+        }
+
+        public void UpdateCustomer(string idCustomer, User updatedUser)
+        {
+            var customer = CUltils.db.Customers.SingleOrDefault(c => c.IDCustomer == idCustomer);
+
+            if (customer == null)
+            {
+                throw new Exception("Không tìm thấy Customer với IDCustomer đã cung cấp.");
+            }
+
+            var user = CUltils.db.Users.SingleOrDefault(u => u.IDUser == customer.IDUser);
+
+            if (user == null)
+            {
+                throw new Exception("Không tìm thấy User liên kết với Customer.");
+            }
+
+            user.Name = updatedUser.Name;
+            user.PhoneNumber = updatedUser.PhoneNumber;
+            user.Address = updatedUser.Address;
+            user.IdentityCard = updatedUser.IdentityCard;
+
+            CUltils.db.SaveChanges();
+        }
         public (string Name, string PhoneNumber, string Address, string MembershipLevel, string Gender, string IdentityCard, string BankNumber, DateTime? BirthDay) GetCustomerDetailsById(string customerId)
         {
             try

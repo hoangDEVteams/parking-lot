@@ -260,6 +260,18 @@
     <Compile Include="Views\FChooseVehicles.Designer.cs">
       <DependentUpon>FChooseVehicles.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\FCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FCustomer.Designer.cs">
+      <DependentUpon>FCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FCustomerInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FCustomerInfo.Designer.cs">
+      <DependentUpon>FCustomerInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\FFillInforVehicle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -369,6 +381,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FChooseVehicles.resx">
       <DependentUpon>FChooseVehicles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FCustomer.resx">
+      <DependentUpon>FCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FCustomerInfo.resx">
+      <DependentUpon>FCustomerInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FFillInforVehicle.resx">
       <DependentUpon>FFillInforVehicle.cs</DependentUpon>
