@@ -55,6 +55,11 @@ namespace Test.Controller
                 CUltils.db.SaveChanges();
             }
         }
-
+        public User GetUserByUser(string username)
+        {
+            var user = CUltils.db.Accounts
+                .FirstOrDefault(c => c.Username == username);
+            return CUltils.db.Users.FirstOrDefault(u => u.IDUser == user.IDUser);
+        }
     }
 }

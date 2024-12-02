@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FCar));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnReset = new System.Windows.Forms.Button();
+            this.btnDecrese = new FontAwesome.Sharp.IconButton();
+            this.btnIncrese = new FontAwesome.Sharp.IconButton();
             this.cbPrice = new System.Windows.Forms.ComboBox();
             this.cbStatus = new System.Windows.Forms.ComboBox();
             this.cbColor = new System.Windows.Forms.ComboBox();
@@ -62,9 +65,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnIncrese = new FontAwesome.Sharp.IconButton();
-            this.btnDecrese = new FontAwesome.Sharp.IconButton();
-            this.btnReset = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgridVehicles)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLbaixeDataSet1)).BeginInit();
@@ -91,6 +91,45 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(2287, 175);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // btnReset
+            // 
+            this.btnReset.Location = new System.Drawing.Point(965, 70);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(75, 23);
+            this.btnReset.TabIndex = 7;
+            this.btnReset.Text = "Reset";
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
+            // btnDecrese
+            // 
+            this.btnDecrese.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDecrese.BackgroundImage")));
+            this.btnDecrese.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDecrese.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnDecrese.IconColor = System.Drawing.Color.Black;
+            this.btnDecrese.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnDecrese.Location = new System.Drawing.Point(874, 54);
+            this.btnDecrese.Name = "btnDecrese";
+            this.btnDecrese.Size = new System.Drawing.Size(53, 54);
+            this.btnDecrese.TabIndex = 6;
+            this.btnDecrese.UseVisualStyleBackColor = true;
+            this.btnDecrese.Click += new System.EventHandler(this.btnDecrese_Click);
+            // 
+            // btnIncrese
+            // 
+            this.btnIncrese.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnIncrese.BackgroundImage")));
+            this.btnIncrese.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnIncrese.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnIncrese.IconColor = System.Drawing.Color.Black;
+            this.btnIncrese.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnIncrese.Location = new System.Drawing.Point(785, 53);
+            this.btnIncrese.Name = "btnIncrese";
+            this.btnIncrese.Size = new System.Drawing.Size(53, 54);
+            this.btnIncrese.TabIndex = 6;
+            this.btnIncrese.UseVisualStyleBackColor = true;
+            this.btnIncrese.Click += new System.EventHandler(this.btnIncrese_Click);
             // 
             // cbPrice
             // 
@@ -156,6 +195,7 @@
             this.label1.Size = new System.Drawing.Size(85, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Tìm kiếm";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // dtgridVehicles
             // 
@@ -280,6 +320,7 @@
             this.groupBox1.Size = new System.Drawing.Size(2287, 1032);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // panel2
             // 
@@ -301,6 +342,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(461, 1063);
             this.panel2.TabIndex = 3;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // lblYear
             // 
@@ -310,6 +352,7 @@
             this.lblYear.Name = "lblYear";
             this.lblYear.Size = new System.Drawing.Size(0, 20);
             this.lblYear.TabIndex = 16;
+            this.lblYear.Click += new System.EventHandler(this.lblYear_Click);
             // 
             // lblFacturer
             // 
@@ -319,6 +362,7 @@
             this.lblFacturer.Name = "lblFacturer";
             this.lblFacturer.Size = new System.Drawing.Size(0, 20);
             this.lblFacturer.TabIndex = 15;
+            this.lblFacturer.Click += new System.EventHandler(this.lblFacturer_Click);
             // 
             // lblName
             // 
@@ -328,6 +372,7 @@
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(0, 20);
             this.lblName.TabIndex = 14;
+            this.lblName.Click += new System.EventHandler(this.lblName_Click);
             // 
             // lblCode
             // 
@@ -337,6 +382,7 @@
             this.lblCode.Name = "lblCode";
             this.lblCode.Size = new System.Drawing.Size(0, 20);
             this.lblCode.TabIndex = 13;
+            this.lblCode.Click += new System.EventHandler(this.lblCode_Click);
             // 
             // btnCarRental
             // 
@@ -350,6 +396,7 @@
             this.btnCarRental.TabIndex = 12;
             this.btnCarRental.Text = "Car Rental";
             this.btnCarRental.UseVisualStyleBackColor = false;
+            this.btnCarRental.Click += new System.EventHandler(this.btnCarRental_Click_1);
             // 
             // btnInfor
             // 
@@ -373,6 +420,7 @@
             this.button2.TabIndex = 6;
             this.button2.Text = "...";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label5
             // 
@@ -383,6 +431,7 @@
             this.label5.Size = new System.Drawing.Size(157, 20);
             this.label5.TabIndex = 10;
             this.label5.Text = "ManufactureYear:";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
@@ -393,6 +442,7 @@
             this.label4.Size = new System.Drawing.Size(126, 20);
             this.label4.TabIndex = 7;
             this.label4.Text = "Manufacturer:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
@@ -403,6 +453,7 @@
             this.label3.Size = new System.Drawing.Size(131, 20);
             this.label3.TabIndex = 5;
             this.label3.Text = "Vehicle Name:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -413,6 +464,7 @@
             this.label2.Size = new System.Drawing.Size(126, 20);
             this.label2.TabIndex = 3;
             this.label2.Text = "Vehicle Code:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // pictureBox1
             // 
@@ -424,44 +476,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(468, 245);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // btnIncrese
-            // 
-            this.btnIncrese.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnIncrese.BackgroundImage")));
-            this.btnIncrese.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnIncrese.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnIncrese.IconColor = System.Drawing.Color.Black;
-            this.btnIncrese.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnIncrese.Location = new System.Drawing.Point(785, 53);
-            this.btnIncrese.Name = "btnIncrese";
-            this.btnIncrese.Size = new System.Drawing.Size(53, 54);
-            this.btnIncrese.TabIndex = 6;
-            this.btnIncrese.UseVisualStyleBackColor = true;
-            this.btnIncrese.Click += new System.EventHandler(this.btnIncrese_Click);
-            // 
-            // btnDecrese
-            // 
-            this.btnDecrese.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDecrese.BackgroundImage")));
-            this.btnDecrese.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDecrese.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnDecrese.IconColor = System.Drawing.Color.Black;
-            this.btnDecrese.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnDecrese.Location = new System.Drawing.Point(874, 54);
-            this.btnDecrese.Name = "btnDecrese";
-            this.btnDecrese.Size = new System.Drawing.Size(53, 54);
-            this.btnDecrese.TabIndex = 6;
-            this.btnDecrese.UseVisualStyleBackColor = true;
-            this.btnDecrese.Click += new System.EventHandler(this.btnDecrese_Click);
-            // 
-            // btnReset
-            // 
-            this.btnReset.Location = new System.Drawing.Point(965, 70);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(75, 23);
-            this.btnReset.TabIndex = 7;
-            this.btnReset.Text = "Reset";
-            this.btnReset.UseVisualStyleBackColor = true;
-            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // FCar
             // 

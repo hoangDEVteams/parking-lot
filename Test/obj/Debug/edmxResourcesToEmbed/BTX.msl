@@ -176,6 +176,8 @@
     <EntitySetMapping Name="Users">
       <EntityTypeMapping TypeName="BTXModel.User">
         <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="IDEmployee" ColumnName="IDEmployee" />
+          <ScalarProperty Name="IDCustomer" ColumnName="IDCustomer" />
           <ScalarProperty Name="birth" ColumnName="birth" />
           <ScalarProperty Name="IDAcc" ColumnName="IDAcc" />
           <ScalarProperty Name="UserType" ColumnName="UserType" />

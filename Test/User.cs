@@ -32,6 +32,8 @@ namespace Test
         public string UserType { get; set; }
         public Nullable<int> IDAcc { get; set; }
         public Nullable<System.DateTime> birth { get; set; }
+        public string IDCustomer { get; set; }
+        public string IDEmployee { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Account> Accounts { get; set; }
@@ -40,5 +42,7 @@ namespace Test
         public virtual ICollection<Customer> Customers { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Employee> Employees { get; set; }
+        public virtual Customer Customer { get; set; }
+        public virtual Employee Employee { get; set; }
     }
 }

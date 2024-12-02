@@ -681,3 +681,11 @@ C:\Users\User\Desktop\wanna\parking-lot\Test\obj\Debug\Test.Views.FTopUp.resourc
 C:\Users\User\Desktop\wanna\parking-lot\Test\obj\Debug\Test.Views.FWithDraw.resources
 C:\Users\User\Desktop\wanna\parking-lot\Test\bin\Debug\RestSharp.dll
 C:\Users\User\Desktop\wanna\parking-lot\Test\bin\Debug\RestSharp.xml
+D:\school\hướng đối tượng\QLBaiThueXe\parking-lot\Test\obj\Debug\Test.Views.FChooseVehicles.resources
+D:\school\hướng đối tượng\QLBaiThueXe\parking-lot\Test\obj\Debug\Test.Views.FPenalties.resources
+D:\school\hướng đối tượng\QLBaiThueXe\parking-lot\Test\obj\Debug\Test.Views.FRentalDetails.resources
+D:\school\hướng đối tượng\QLBaiThueXe\parking-lot\Test\obj\Debug\Test.Views.FRentals.resources
+D:\school\hướng đối tượng\QLBaiThueXe\parking-lot\Test\obj\Debug\Test.Views.FTopUp.resources
+D:\school\hướng đối tượng\QLBaiThueXe\parking-lot\Test\obj\Debug\Test.Views.FWithDraw.resources
+D:\school\hướng đối tượng\QLBaiThueXe\parking-lot\Test\bin\Debug\RestSharp.dll
+D:\school\hướng đối tượng\QLBaiThueXe\parking-lot\Test\bin\Debug\RestSharp.xml

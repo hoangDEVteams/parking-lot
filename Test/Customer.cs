@@ -19,6 +19,7 @@ namespace Test
         {
             this.Penalties = new HashSet<Penalty>();
             this.Rentals = new HashSet<Rental>();
+            this.Users = new HashSet<User>();
         }
     
         public string IDCustomer { get; set; }
@@ -31,5 +32,7 @@ namespace Test
         public virtual ICollection<Penalty> Penalties { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Rental> Rentals { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<User> Users { get; set; }
     }
 }

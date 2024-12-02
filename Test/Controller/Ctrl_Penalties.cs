@@ -40,6 +40,32 @@ namespace Test.Controller
 
             return penaltyDetails;
         }
+        public List<Penalty> GetPenalties(string username)
+        {
+            var user = CUltils.db.Accounts
+                .FirstOrDefault(c => c.Username == username);
+
+            if (user == null)
+            {
+                return new List<Penalty>();
+            }
+
+            var customer = CUltils.db.Customers
+                .FirstOrDefault(c => c.IDUser == user.IDUser);
+
+            if (customer == null)
+            {
+                return new List<Penalty>();
+            }
+
+            var id = customer.IDCustomer;
+
+            var penalties = CUltils.db.Penalties
+                .Where(p => p.IDCustomer == id)
+                .ToList();
+
+            return penalties;
+        }
     }
 
 }

@@ -21,6 +21,7 @@ namespace Test
             this.Rentals = new HashSet<Rental>();
             this.Vehicles = new HashSet<Vehicle>();
             this.Parkings = new HashSet<Parking>();
+            this.Users = new HashSet<User>();
         }
     
         public string IDEmployee { get; set; }
@@ -38,5 +39,7 @@ namespace Test
         public virtual ICollection<Vehicle> Vehicles { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Parking> Parkings { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<User> Users { get; set; }
     }
 }

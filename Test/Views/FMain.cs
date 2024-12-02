@@ -277,7 +277,8 @@ namespace Test.Views
 
         private void iconButton4_Click(object sender, EventArgs e)
         {
-
+            FPenalties form = new FPenalties(username); // Gọi form mấy ông muốn nhảy qua 
+            LoadFormIntoPanel(form);
         }
         private void LoadFormIntoPanel(Form form) //LOad Form Ở đây, Giải thích thôi chứ không cần đụng vào đây !
         {
