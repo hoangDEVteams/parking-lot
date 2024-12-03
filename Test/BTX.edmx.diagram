@@ -4,39 +4,40 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="e8a06a84e8744e6d8042261263970688" Name="Diagram1" ZoomLevel="53">
-        <EntityTypeShape EntityType="BTXModel.Account" PointX="3.125" PointY="9" Width="1.5" />
-        <EntityTypeShape EntityType="BTXModel.Customer" PointX="11.5" PointY="6.5" Width="1.5" />
-        <EntityTypeShape EntityType="BTXModel.Employee" PointX="0.75" PointY="5.875" Width="1.5" />
-        <EntityTypeShape EntityType="BTXModel.Parking" PointX="5.25" PointY="10.25" Width="1.5" />
-        <EntityTypeShape EntityType="BTXModel.Penalty" PointX="6.5" PointY="4.625" Width="1.5" />
-        <EntityTypeShape EntityType="BTXModel.PenaltyDetail" PointX="4.125" PointY="6" Width="1.5" />
-        <EntityTypeShape EntityType="BTXModel.RentalDetail" PointX="9.25" PointY="0.625" Width="1.5" />
-        <EntityTypeShape EntityType="BTXModel.Rental" PointX="9.375" PointY="4" Width="1.5" />
-        <EntityTypeShape EntityType="BTXModel.User" PointX="7.125" PointY="7.5" Width="1.5" />
-        <EntityTypeShape EntityType="BTXModel.Vehicle" PointX="3" PointY="1.875" Width="1.5" />
-        <EntityTypeShape EntityType="BTXModel.VehicleType" PointX="0.75" PointY="2.25" Width="1.5" />
-        <EntityTypeShape EntityType="BTXModel.Wallet" PointX="13.5" PointY="2.375" Width="1.5" />
-        <AssociationConnector Association="BTXModel.FK__Wallet__IDAcc__02FC7413" />
+      <Diagram DiagramId="e8a06a84e8744e6d8042261263970688" Name="Diagram1" ZoomLevel="20">
+        <EntityTypeShape EntityType="BTXModel.sysdiagram" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="BTXModel.Account" Width="1.5" PointX="8.25" PointY="8.25" />
+        <EntityTypeShape EntityType="BTXModel.Customer" Width="1.5" PointX="8.25" PointY="12.5" />
+        <EntityTypeShape EntityType="BTXModel.Employee" Width="1.5" PointX="0.75" PointY="10.125" />
+        <EntityTypeShape EntityType="BTXModel.Parking" Width="1.5" PointX="3" PointY="10.75" />
+        <AssociationConnector Association="BTXModel.FK_Parking_Employee" />
+        <EntityTypeShape EntityType="BTXModel.Penalty" Width="1.5" PointX="3" PointY="7.625" />
+        <AssociationConnector Association="BTXModel.FK__Penalties__IDCus__571DF1D5" />
+        <AssociationConnector Association="BTXModel.FK__Penalties__IDEmp__5812160E" />
+        <EntityTypeShape EntityType="BTXModel.PenaltyDetail" Width="1.5" PointX="5.25" PointY="1.75" />
+        <AssociationConnector Association="BTXModel.FK__PenaltyDe__IDPen__5AEE82B9" />
+        <EntityTypeShape EntityType="BTXModel.RentalDetail" Width="1.5" PointX="11.25" PointY="12.5" />
+        <EntityTypeShape EntityType="BTXModel.Rental" Width="1.5" PointX="3" PointY="13.5" />
+        <AssociationConnector Association="BTXModel.FK__Rentals__IDCusto__73BA3083" />
+        <AssociationConnector Association="BTXModel.FK__Rentals__IDEmplo__74AE54BC" />
+        <AssociationConnector Association="BTXModel.FK__RentalDet__IDRen__778AC167" />
+        <EntityTypeShape EntityType="BTXModel.User" Width="1.5" PointX="6" PointY="9.375" />
         <AssociationConnector Association="BTXModel.FK_Account_Users" />
         <AssociationConnector Association="BTXModel.FK_Users_Account" />
         <AssociationConnector Association="BTXModel.FK__Customers__IDUse__4222D4EF" />
-        <AssociationConnector Association="BTXModel.FK__Penalties__IDCus__571DF1D5" />
-        <AssociationConnector Association="BTXModel.FK__Rentals__IDCusto__73BA3083" />
         <AssociationConnector Association="BTXModel.FK__Employees__IDUse__3F466844" />
-        <AssociationConnector Association="BTXModel.FK__Penalties__IDEmp__5812160E" />
-        <AssociationConnector Association="BTXModel.FK__Rentals__IDEmplo__74AE54BC" />
-        <AssociationConnector Association="BTXModel.FK__Vehicles__IDEmpl__4CA06362" />
-        <AssociationConnector Association="BTXModel.FK_Parking_Employee" />
-        <AssociationConnector Association="BTXModel.FK__PenaltyDe__IDPen__5AEE82B9" />
-        <AssociationConnector Association="BTXModel.FK__RentalDet__IDRen__778AC167" />
-        <AssociationConnector Association="BTXModel.FK__RentalDet__Licen__787EE5A0" />
-        <AssociationConnector Association="BTXModel.FK__Vehicles__IDVehi__4BAC3F29" />
-        <EntityTypeShape EntityType="BTXModel.V_VehicleData" Width="1.5" PointX="5.375" PointY="0.75" />
         <AssociationConnector Association="BTXModel.FK_User_Customer" />
         <AssociationConnector Association="BTXModel.FK_User_Employee" />
         <AssociationConnector Association="BTXModel.FK_User_Customer1" />
         <AssociationConnector Association="BTXModel.FK_User_Employee1" />
+        <EntityTypeShape EntityType="BTXModel.Vehicle" Width="1.5" PointX="6" PointY="5.25" />
+        <AssociationConnector Association="BTXModel.FK__Vehicles__IDEmpl__4CA06362" />
+        <AssociationConnector Association="BTXModel.FK__RentalDet__Licen__787EE5A0" />
+        <EntityTypeShape EntityType="BTXModel.VehicleType" Width="1.5" PointX="3.75" PointY="17.625" />
+        <AssociationConnector Association="BTXModel.FK__Vehicles__IDVehi__4BAC3F29" />
+        <EntityTypeShape EntityType="BTXModel.Wallet" Width="1.5" PointX="10.5" PointY="8.5" />
+        <AssociationConnector Association="BTXModel.FK__Wallet__IDAcc__02FC7413" />
+        <EntityTypeShape EntityType="BTXModel.V_VehicleData" Width="1.5" PointX="0.75" PointY="3.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

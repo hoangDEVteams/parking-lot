@@ -228,10 +228,19 @@
       <DependentUpon>BTX.tt</DependentUpon>
     </Compile>
     <Compile Include="Resource\CUltils.cs" />
+    <Compile Include="sp_helpdiagramdefinition1_Result.cs">
+      <DependentUpon>BTX.tt</DependentUpon>
+    </Compile>
     <Compile Include="sp_helpdiagramdefinition_Result.cs">
       <DependentUpon>BTX.tt</DependentUpon>
     </Compile>
+    <Compile Include="sp_helpdiagrams1_Result.cs">
+      <DependentUpon>BTX.tt</DependentUpon>
+    </Compile>
     <Compile Include="sp_helpdiagrams_Result.cs">
+      <DependentUpon>BTX.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
       <DependentUpon>BTX.tt</DependentUpon>
     </Compile>
     <Compile Include="User.cs">

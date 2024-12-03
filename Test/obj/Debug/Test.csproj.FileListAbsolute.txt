@@ -693,3 +693,6 @@ C:\Users\User\Desktop\wanna\parking-lot\Test\obj\Debug\Test.Views.FPenalties.res
 C:\Users\User\Desktop\wanna\parking-lot\Test\obj\Debug\Test.Views.FRentingDetails.resources
 C:\Users\User\Desktop\wanna\parking-lot\Test\obj\Debug\Test.Views.FCustomer.resources
 C:\Users\User\Desktop\wanna\parking-lot\Test\obj\Debug\Test.Views.FCustomerInfo.resources
+D:\school\hướng đối tượng\QLBaiThueXe\parking-lot\Test\obj\Debug\Test.Views.FCustomer.resources
+D:\school\hướng đối tượng\QLBaiThueXe\parking-lot\Test\obj\Debug\Test.Views.FCustomerInfo.resources
+D:\school\hướng đối tượng\QLBaiThueXe\parking-lot\Test\obj\Debug\Test.Views.FRentingDetails.resources

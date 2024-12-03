@@ -18,7 +18,6 @@ namespace Test
         public string IDRental { get; set; }
         public string LicensePlate { get; set; }
         public int RentalDays { get; set; }
-        public decimal RentPrice { get; set; }
         public decimal price { get; set; }
     
         public virtual Rental Rental { get; set; }
