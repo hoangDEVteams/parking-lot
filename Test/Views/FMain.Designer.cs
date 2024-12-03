@@ -435,14 +435,15 @@
             // 
             // iconButton9
             // 
+            this.iconButton9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iconButton9.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iconButton9.IconChar = FontAwesome.Sharp.IconChar.Redo;
             this.iconButton9.IconColor = System.Drawing.Color.Black;
             this.iconButton9.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton9.IconSize = 28;
+            this.iconButton9.IconSize = 25;
             this.iconButton9.Location = new System.Drawing.Point(183, 208);
             this.iconButton9.Name = "iconButton9";
-            this.iconButton9.Size = new System.Drawing.Size(39, 31);
+            this.iconButton9.Size = new System.Drawing.Size(40, 30);
             this.iconButton9.TabIndex = 0;
             this.iconButton9.UseVisualStyleBackColor = true;
             this.iconButton9.Click += new System.EventHandler(this.iconButton9_Click);

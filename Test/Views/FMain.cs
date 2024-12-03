@@ -13,6 +13,7 @@ using Test.ZaloPay;
 using Test.Controller;
 using Test.MomoPayment;
 using System.Security.Cryptography.X509Certificates;
+using System.Globalization;
 
 namespace Test.Views
 {
@@ -101,7 +102,7 @@ namespace Test.Views
         private void Moneyy()
         {
             PBalance = Ctrl_Wallet.GetUserBalance(username);
-            label2.Text = "🏦: " + PBalance.ToString();
+            label2.Text = "$: " + PBalance.ToString("#,0", CultureInfo.InvariantCulture).Replace(',', '.') + " VND";
         }
         private void FMain_Load(object sender, EventArgs e)
         {
@@ -246,6 +247,7 @@ namespace Test.Views
                 panelMenu.Width = 80;
                 btnTopUp.Visible = false;
                 btnWithDraw.Visible = false;
+                groupBox2.Visible = false;
                 iconButton6.Width = 80;
                 label1.Visible = false;
                 iconButton9.Visible = false;
@@ -273,9 +275,12 @@ namespace Test.Views
             else
             {
                 groupBox1.Visible = true;
+                groupBox2.Visible = true;
+
                 iconButton9.Visible = true;
-                iconButton9.Size = new Size(39, 31);
-                panelMenu.Width = maxMenu +10;
+                iconButton9.Size = new Size(40, 30);
+                iconButton9.ImageAlign = ContentAlignment.MiddleLeft;
+                panelMenu.Width = maxMenu;
                 label1.Visible = true;
                 iconButton1.Width = 220;
                 iconButton2.Width = 220;
@@ -293,7 +298,7 @@ namespace Test.Views
                     16, 54
                 );
                 decimal balance = Ctrl_Wallet.GetUserBalance(username);
-                label2.Text = "🏦: " + balance.ToString() + "";
+                Moneyy();
                 label2.Location = new Point(10, 214);
                 btnMenu.Dock = DockStyle.None;
                 foreach (Button menuButton in panelMenu.Controls.OfType<Button>())

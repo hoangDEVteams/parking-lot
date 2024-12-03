@@ -268,10 +268,10 @@ namespace Test.Views
                     if (cell.Value != null && cell.Value.ToString().ToLower().Contains(searchText))
                     {
                         isVisible = true;
-                        break; // Stop checking further if a match is found
+                        break; 
                     }
                 }
-                row.Visible = isVisible; // Show if any cell in the row matches
+                row.Visible = isVisible; 
             }
 
             currencyManager.ResumeBinding();
@@ -286,7 +286,12 @@ namespace Test.Views
 
             if (string.IsNullOrEmpty(searchText))
             {
-                LoadUserData();  
+                LoadUserData();
+                dtgvRentalData.ScrollBars = ScrollBars.Both;
+                dtgvUser.ScrollBars = ScrollBars.Both;
+                dtgvRentalData.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                dtgvUser.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                dtgvUserVehicle.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                 return;
             }
 

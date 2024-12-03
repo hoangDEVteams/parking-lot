@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|C:\\Users\\User\\Desktop\\wanna\\parking-lot\\test\\views\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|C:\\Users\\User\\Desktop\\wanna\\parking-lot\\test\\views\\frentals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\frentals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|C:\\Users\\User\\Desktop\\wanna\\parking-lot\\test\\views\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|C:\\Users\\User\\Desktop\\wanna\\parking-lot\\test\\views\\frentals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -178,7 +178,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -215,18 +215,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FMain.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FMain.cs",
-              "RelativeDocumentMoniker": "Test\\Views\\FMain.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FMain.cs [Design]",
-              "RelativeToolTip": "Test\\Views\\FMain.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T17:06:43.449Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "FRentals.cs [Design]",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FRentals.cs",
               "RelativeDocumentMoniker": "Test\\Views\\FRentals.cs",
@@ -242,9 +230,9 @@
               "Title": "FMain.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FMain.cs",
               "RelativeDocumentMoniker": "Test\\Views\\FMain.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FMain.cs",
-              "RelativeToolTip": "Test\\Views\\FMain.cs",
-              "ViewState": "AgIAABEBAAAAAAAAAAAqwCMBAAAwAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FMain.cs*",
+              "RelativeToolTip": "Test\\Views\\FMain.cs*",
+              "ViewState": "AgIAABIBAAAAAAAAAAAqwBwBAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-02T17:57:41.706Z",
               "EditorCaption": ""
@@ -257,10 +245,22 @@
               "RelativeDocumentMoniker": "Test\\Views\\FRentals.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FRentals.cs",
               "RelativeToolTip": "Test\\Views\\FRentals.cs",
-              "ViewState": "AgIAACQBAAAAAAAAAAAEwDEBAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAiwA4BAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-30T07:44:35.948Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FMain.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FMain.cs",
+              "RelativeDocumentMoniker": "Test\\Views\\FMain.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FMain.cs [Design]*",
+              "RelativeToolTip": "Test\\Views\\FMain.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T17:06:43.449Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
