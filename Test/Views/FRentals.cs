@@ -68,8 +68,14 @@ namespace Test.Views
             dtgvUser.ScrollBars = ScrollBars.Both;
             dtgvRentalData.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dtgvUser.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill; 
-            dtgvUserVehicle.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill; 
-       
+            dtgvUserVehicle.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            List<string> validOptions = new List<string> { "1.Users", "2.User Vehicle", "3.All Rental"};
+
+            // Gán danh sách vào ComboBox
+            comboBox1.DataSource = validOptions;
+
+            // Thiết lập DropDownStyle để người dùng chỉ chọn từ danh sách
+            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
         }
 
         private void dataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -249,5 +255,53 @@ namespace Test.Views
         {
 
         }
+        private void FilterDataGridView(DataGridView dataGridView, string searchText)
+        {
+            CurrencyManager currencyManager = (CurrencyManager)BindingContext[dataGridView.DataSource];
+            currencyManager.SuspendBinding();
+
+            foreach (DataGridViewRow row in dataGridView.Rows)
+            {
+                bool isVisible = false;
+                foreach (DataGridViewCell cell in row.Cells)
+                {
+                    if (cell.Value != null && cell.Value.ToString().ToLower().Contains(searchText))
+                    {
+                        isVisible = true;
+                        break; // Stop checking further if a match is found
+                    }
+                }
+                row.Visible = isVisible; // Show if any cell in the row matches
+            }
+
+            currencyManager.ResumeBinding();
+        }
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            string searchText = textBox1.Text.ToLower();
+
+            if (comboBox1.SelectedItem == null) return;
+
+            string selectedTable = comboBox1.SelectedItem.ToString();
+
+            if (string.IsNullOrEmpty(searchText))
+            {
+                LoadUserData();  
+                return;
+            }
+
+            switch (selectedTable)
+            {
+                case "1.Users":
+                    FilterDataGridView(dtgvUser, searchText);
+                    break;
+                case "2.User Vehicle":
+                    FilterDataGridView(dtgvUserVehicle, searchText);
+                    break;
+                case "3.All Rental":
+                    FilterDataGridView(dtgvRentalData, searchText);
+                    break;
+            }
+        }
+        }
     }
-}

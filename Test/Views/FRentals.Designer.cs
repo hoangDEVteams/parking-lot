@@ -44,6 +44,10 @@
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -62,6 +66,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.White;
             this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Controls.Add(this.groupBox7);
             this.groupBox1.Controls.Add(this.groupBox2);
@@ -110,6 +115,7 @@
             // 
             this.dtgvUserVehicle.AllowDrop = true;
             this.dtgvUserVehicle.AllowUserToResizeColumns = false;
+            this.dtgvUserVehicle.BackgroundColor = System.Drawing.Color.White;
             this.dtgvUserVehicle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvUserVehicle.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgvUserVehicle.Location = new System.Drawing.Point(3, 18);
@@ -134,6 +140,7 @@
             // 
             // dtgvRentalData
             // 
+            this.dtgvRentalData.BackgroundColor = System.Drawing.Color.White;
             this.dtgvRentalData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvRentalData.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgvRentalData.Location = new System.Drawing.Point(3, 18);
@@ -178,6 +185,7 @@
             // 
             // dtgvUser
             // 
+            this.dtgvUser.BackgroundColor = System.Drawing.Color.White;
             this.dtgvUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvUser.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgvUser.Location = new System.Drawing.Point(3, 18);
@@ -210,6 +218,10 @@
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.label6);
+            this.groupBox5.Controls.Add(this.textBox1);
+            this.groupBox5.Controls.Add(this.comboBox1);
+            this.groupBox5.Controls.Add(this.label1);
             this.groupBox5.Controls.Add(this.iconButton2);
             this.groupBox5.Controls.Add(this.iconButton1);
             this.groupBox5.Dock = System.Windows.Forms.DockStyle.Right;
@@ -228,7 +240,7 @@
             this.iconButton2.IconColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Regular;
             this.iconButton2.IconSize = 25;
-            this.iconButton2.Location = new System.Drawing.Point(183, 91);
+            this.iconButton2.Location = new System.Drawing.Point(174, 256);
             this.iconButton2.Name = "iconButton2";
             this.iconButton2.Size = new System.Drawing.Size(119, 56);
             this.iconButton2.TabIndex = 1;
@@ -246,7 +258,7 @@
             this.iconButton1.IconColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Regular;
             this.iconButton1.IconSize = 25;
-            this.iconButton1.Location = new System.Drawing.Point(22, 91);
+            this.iconButton1.Location = new System.Drawing.Point(27, 256);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Size = new System.Drawing.Size(119, 56);
             this.iconButton1.TabIndex = 0;
@@ -254,6 +266,48 @@
             this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton1.UseVisualStyleBackColor = false;
             this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 37);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(59, 21);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Table:";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "1.Users",
+            "2.User Vehicle",
+            "3.All Rental"});
+            this.comboBox1.Location = new System.Drawing.Point(16, 61);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(277, 27);
+            this.comboBox1.TabIndex = 3;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(21, 136);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(272, 30);
+            this.textBox1.TabIndex = 4;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(18, 102);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(61, 24);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Search";
             // 
             // FRentals
             // 
@@ -279,6 +333,7 @@
             this.groupBox6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -301,5 +356,9 @@
         private System.Windows.Forms.DataGridView dtgvRentalData;
         private FontAwesome.Sharp.IconButton iconButton1;
         private FontAwesome.Sharp.IconButton iconButton2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label6;
     }
 }

@@ -40,11 +40,13 @@ namespace Test.Views
             panel2.MouseMove += panel2_MouseMove;
             panel2.MouseUp += panel2_MouseUp;
             panel2.DoubleClick += panel2_DoubleClick;
-            iconButton1.Tag = "Home";
-            iconButton2.Tag = "Settings";
-            iconButton3.Tag = "Profile";
-            iconButton4.Tag = "Dashboard";
+            iconButton1.Tag = "Thuê Xe";
+            iconButton2.Tag = "Quản Lý Xe ";
+            iconButton3.Tag = "Quản Lý Hóa Đơn";
+            iconButton4.Tag = "Phiếu Phạt";
             iconButton6.Tag = "Sign Out";
+            iconButton5.Tag = "Quản Lý Nhân Viên";
+            iconButton8.Tag = "Quản Lý Khách Hàng";
             panel3.MouseDown += panel2_MouseDown;
             panel3.MouseMove += panel2_MouseMove;
             panel3.MouseUp += panel2_MouseUp;
@@ -99,7 +101,7 @@ namespace Test.Views
         private void Moneyy()
         {
             PBalance = Ctrl_Wallet.GetUserBalance(username);
-            label2.Text = PBalance.ToString();
+            label2.Text = "🏦: " + PBalance.ToString();
         }
         private void FMain_Load(object sender, EventArgs e)
         {
@@ -246,6 +248,7 @@ namespace Test.Views
                 btnWithDraw.Visible = false;
                 iconButton6.Width = 80;
                 label1.Visible = false;
+                iconButton9.Visible = false;
                 decimal balance = Ctrl_Wallet.GetUserBalance(username);
                 label2.Text = balance.ToString();
                 cCirclePB1.Size = new Size(45, 45);
@@ -257,6 +260,8 @@ namespace Test.Views
                 iconButton2.Width = 60;
                 iconButton3.Width = 60;
                 iconButton4.Width = 60;
+                iconButton5.Width = 60;
+                iconButton8.Width = 60;
                 btnMenu.Dock = DockStyle.Top;
                 foreach (Button menuButton in panelMenu.Controls.OfType<Button>())
                 {
@@ -268,13 +273,17 @@ namespace Test.Views
             else
             {
                 groupBox1.Visible = true;
-                panelMenu.Width = maxMenu;
+                iconButton9.Visible = true;
+                iconButton9.Size = new Size(39, 31);
+                panelMenu.Width = maxMenu +10;
                 label1.Visible = true;
-                iconButton1.Width = 212;
-                iconButton2.Width = 212;
-                iconButton3.Width = 212;
+                iconButton1.Width = 220;
+                iconButton2.Width = 220;
+                iconButton3.Width = 220;
                 iconButton6.Width = 252;
-                iconButton4.Width = 212;
+                iconButton4.Width = 220;
+                iconButton5.Width = 220;
+                iconButton8.Width = 220;
                 btnTopUp.Visible = true;
                 btnWithDraw.Visible = true;
                 btnTopUp.Text = "Top Up";
@@ -284,7 +293,7 @@ namespace Test.Views
                     16, 54
                 );
                 decimal balance = Ctrl_Wallet.GetUserBalance(username);
-                label2.Text = "🏦: " + balance.ToString() + "VND";
+                label2.Text = "🏦: " + balance.ToString() + "";
                 label2.Location = new Point(10, 214);
                 btnMenu.Dock = DockStyle.None;
                 foreach (Button menuButton in panelMenu.Controls.OfType<Button>())
@@ -360,6 +369,17 @@ namespace Test.Views
         private void iconButton9_Click(object sender, EventArgs e)
         {
             Moneyy();
+        }
+
+        private void iconButton5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconButton8_Click(object sender, EventArgs e)
+        {
+            FCustomer fCustomer = new FCustomer();
+            LoadFormIntoPanel(fCustomer);
         }
     }
 
