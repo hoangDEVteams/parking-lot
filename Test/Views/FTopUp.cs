@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Test.Controller;
 using Test.MomoPayment;
 
 namespace Test.Views
@@ -23,17 +24,19 @@ namespace Test.Views
             InitializeComponent();
             this.username = username;
             this.amount = amount;
+
         }
 
-        private void FTopUp_Load(object sender, EventArgs e)
+        private async void FTopUp_Load(object sender, EventArgs e)
         {
 
         }
 
         private async void iconButton1_Click(object sender, EventArgs e)
         {
-            amount = 50000;
-            string result = await MomoPayment.MomoPayment.CreatePaymentRequest(amount);
+            amount = 5000;
+            int IDAcc = Ctrl_Account.GetIDAcc(username);
+            string result = await MomoPayment.MomoPayment.CreatePaymentRequest(amount, IDAcc);
 
             MessageBox.Show(result, "Payment Result");
             try
@@ -69,44 +72,31 @@ namespace Test.Views
         private async void iconButton2_Click(object sender, EventArgs e)
         {
             amount = 100000;
-            string result = await MomoPayment.MomoPayment.CreatePaymentRequest(amount);
-            
-            // Hiển thị kết quả
-            MessageBox.Show(result, "Payment Result");
-            try
-            {
-                var json = Newtonsoft.Json.Linq.JObject.Parse(result);
-                string payUrl = json["payUrl"]?.ToString();
+            int IDAcc = Ctrl_Account.GetIDAcc(username);
 
-                if (!string.IsNullOrEmpty(payUrl))
-                {
-                    System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
-                    {
-                        FileName = payUrl,
-                        UseShellExecute = true // Đảm bảo mở trình duyệt mặc định
-                    });
-                }
-                else
-                {
-                    MessageBox.Show("Không tìm thấy payUrl trong kết quả.", "Error");
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Đã xảy ra lỗi: {ex.Message}", "Error");
-            }
+            
         }
 
-        private void iconButton3_Click(object sender, EventArgs e)
+        private async void iconButton3_Click(object sender, EventArgs e)
         {
             amount = 2000000;
+            int IDAcc = Ctrl_Account.GetIDAcc(username);
+
+            
         }
 
-        private void iconButton4_Click(object sender, EventArgs e)
+        private async void iconButton4_Click(object sender, EventArgs e)
         {
             amount = 5000000;
+            int IDAcc = Ctrl_Account.GetIDAcc(username);
+
 
         }
 
+        private void iconButton6_Click(object sender, EventArgs e)
+        {
+
+        }
+        
     }
 }

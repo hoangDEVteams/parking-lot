@@ -58,7 +58,6 @@ namespace Test.Views
             {
                 string gender = rdNam.Checked ? "Male" : "Female";
 
-                // Tìm khách hàng dựa trên IDUser
                 var userToUpdate = CUltils.db.Users.SingleOrDefault(u => u.IDUser == IDUser);
                 if (userToUpdate != null)
                 {

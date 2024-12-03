@@ -198,6 +198,7 @@
     <Compile Include="F_ShowVehicles_Result.cs">
       <DependentUpon>BTX.tt</DependentUpon>
     </Compile>
+    <Compile Include="MomoPayment\CallbackHandler.cs" />
     <Compile Include="MomoPayment\MomoCallbackListener.cs" />
     <Compile Include="MomoPayment\MomoConfig.cs" />
     <Compile Include="MomoPayment\MomoPayment.cs" />
@@ -506,7 +507,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
-    <Folder Include="Momo\" />
     <Folder Include="Resource\img\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

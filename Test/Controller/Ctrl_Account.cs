@@ -174,6 +174,24 @@ namespace Test.Controller
                 return $"Lỗi khi tạo User: {ex.Message}";
             }
         }
+        public static int GetIDAcc(string username)
+        {
+            var account = CUltils.db.Accounts.SingleOrDefault(a => a.Username == username);
+            if (account != null)
+            {
+                return account.IDAcc;
+            }
+            return 0;
+        }
+        public static int GetIDAccbyUserID(string IDUser)
+        {
+            var account = CUltils.db.Accounts.SingleOrDefault(a => a.IDUser == IDUser);
+            if (account != null)
+            {
+                return account.IDAcc;
+            }
+            return 0;
+        }
         public static string GetUserID(string username)
         {
             var account = CUltils.db.Accounts.SingleOrDefault(a => a.Username == username);

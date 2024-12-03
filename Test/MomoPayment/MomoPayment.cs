@@ -12,22 +12,19 @@ namespace Test.MomoPayment
     {
         private static readonly HttpClient httpClient = new HttpClient();
 
-        public static async Task<string> CreatePaymentRequest(decimal amount)
+        public static async Task<string> CreatePaymentRequest(decimal amount, int IDAcc)
         {
             try
             {
                 string orderId = MomoConfig.PartnerCode + DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
                 string requestId = orderId;
 
-                // Raw signature format
                 string rawSignature = $"accessKey={MomoConfig.AccessKey}&amount={amount}&extraData=&ipnUrl={MomoConfig.IpnUrl}" +
-                                      $"&orderId={orderId}&orderInfo=pay with MoMo&partnerCode={MomoConfig.PartnerCode}" +
+                                      $"&orderId={orderId}&orderInfo={IDAcc}&partnerCode={MomoConfig.PartnerCode}" +
                                       $"&redirectUrl={MomoConfig.RedirectUrl}&requestId={requestId}&requestType={MomoConfig.RequestType}";
 
-                // Generate HMAC SHA256 signature
                 string signature = GenerateSignature(rawSignature, MomoConfig.SecretKey);
 
-                // Request body
                 var requestBody = new
                 {
                     partnerCode = MomoConfig.PartnerCode,
@@ -36,7 +33,7 @@ namespace Test.MomoPayment
                     requestId = requestId,
                     amount = amount,
                     orderId = orderId,
-                    orderInfo = "pay with MoMo",
+                    orderInfo = IDAcc,
                     redirectUrl = MomoConfig.RedirectUrl,
                     ipnUrl = MomoConfig.IpnUrl,
                     lang = MomoConfig.Lang,
@@ -48,9 +45,9 @@ namespace Test.MomoPayment
 
                 string jsonBody = JsonConvert.SerializeObject(requestBody);
 
-                // Send HTTP POST request
                 var content = new StringContent(jsonBody, Encoding.UTF8, "application/json");
                 var response = await httpClient.PostAsync("https://test-payment.momo.vn/v2/gateway/api/create", content);
+
 
                 response.EnsureSuccessStatusCode();
                 string responseContent = await response.Content.ReadAsStringAsync();

@@ -11,6 +11,8 @@ using System.Runtime.InteropServices;
 using System.Runtime.Remoting.Contexts;
 using Test.ZaloPay;
 using Test.Controller;
+using Test.MomoPayment;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Test.Views
 {
@@ -68,16 +70,46 @@ namespace Test.Views
                 }
             }
         }
-        
 
+        private MomoCallbackListener _callbackListener;
+
+        private async void ActivateListerner()
+        {
+            try
+            {
+                _callbackListener = new MomoCallbackListener();
+                await Task.Run(() => _callbackListener.StartListener());
+                MessageBox.Show("Callback listener started!");
+
+            }
+            catch (Exception ex)
+            {
+            }
+        }
+        public static void Call(decimal balance)
+        {
+            LoadMoney(balance);
+        }
+        public static decimal PBalance { get; set; }
+
+        private static void LoadMoney(decimal balance2)
+        {
+            PBalance = balance2;
+        }
+        private void Moneyy()
+        {
+            PBalance = Ctrl_Wallet.GetUserBalance(username);
+            label2.Text = PBalance.ToString();
+        }
         private void FMain_Load(object sender, EventArgs e)
         {
             label1.Text = "Hello, " + username;
             this.FormBorderStyle = FormBorderStyle.None;
             this.StartPosition = FormStartPosition.CenterScreen;
             maxMenu = panelMenu.Width;
-            decimal balance = Ctrl_Wallet.GetUserBalance(username);
-            label2.Text = "🏦: " + balance.ToString() + " VND";
+            Moneyy();
+            MomoCallbackListener.GetUsername(username);
+            ActivateListerner();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -307,16 +339,7 @@ namespace Test.Views
             FCar form = new FCar(); // Gọi form mấy ông muốn nhảy qua 
             LoadFormIntoPanel(form);
         }
-        //private decimal GetUserBalance(string username)
-        //{
-        //    var balance = (from acc in CUltils.db.Accounts
-        //                   join wal in CUltils.db.Wallets on acc.IDAcc equals wal.IDAcc
-        //                   where acc.Username == username
-        //                   select wal.Money).FirstOrDefault();
 
-        //    return balance;
-
-        //}
         private void label2_Click(object sender, EventArgs e)
         {
 
@@ -332,6 +355,11 @@ namespace Test.Views
         {
             FRentals form = new FRentals(username); // Gọi form mấy ông muốn nhảy qua 
             LoadFormIntoPanel(form);
+        }
+
+        private void iconButton9_Click(object sender, EventArgs e)
+        {
+            Moneyy();
         }
     }
 

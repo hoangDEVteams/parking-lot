@@ -321,6 +321,7 @@
             this.lblTotalPenalty.TabIndex = 4;
             this.lblTotalPenalty.Text = "0$";
             this.lblTotalPenalty.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblTotalPenalty.Click += new System.EventHandler(this.lblTotalPenalty_Click);
             // 
             // panel1
             // 

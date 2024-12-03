@@ -56,6 +56,7 @@
             this.iconButton6.TabIndex = 23;
             this.iconButton6.Text = "Other Number";
             this.iconButton6.UseVisualStyleBackColor = false;
+            this.iconButton6.Click += new System.EventHandler(this.iconButton6_Click);
             // 
             // iconButton7
             // 

@@ -50,9 +50,8 @@ namespace Test.Views
 
             if (vehicle != null)
             {
-                lblCarName.Text = vehicle.Description; // Tên xe
-                lblColor.Text = vehicle.Color;     // Màu sắc
-                                                   // Bạn có thể hiển thị các thông tin khác nếu có
+                lblCarName.Text = vehicle.Description; 
+                lblColor.Text = vehicle.Color;     
             }
             else
             {
@@ -73,7 +72,6 @@ namespace Test.Views
             {
                 lblUserBirth.Text = "Unknown";
             }
-            // Gán thông tin vào các biến
             customerName = customerDetails.Name;
             customerPhone = customerDetails.PhoneNumber;
             customerAddress = customerDetails.Address;
@@ -183,6 +181,11 @@ namespace Test.Views
         }
 
         private void lsvPenalties_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblTotalPenalty_Click(object sender, EventArgs e)
         {
 
         }

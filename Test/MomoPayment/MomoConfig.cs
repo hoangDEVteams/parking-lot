@@ -12,9 +12,9 @@ namespace Test.MomoPayment
         public static string SecretKey = "K951B6PE1waDMi640xX08PD3vg6EkVlz";
         public static string PartnerCode = "MOMO";
         public static string RedirectUrl = "http://localhost:5000/views/home.html";
-        public static string IpnUrl = "https://ce2f-2405-4803-d757-1540-5d2c-a0fc-bbbd-30ea.ngrok-free.app/callback";
+        public static string IpnUrl = "https://6dba-2405-4803-d74c-9750-e51f-8449-ee6d-708c.ngrok-free.app/callback";
         public static string RequestType = "payWithMethod";
         public static string Lang = "vi";
     }
-
+    
 }

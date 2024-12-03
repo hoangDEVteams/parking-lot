@@ -106,6 +106,8 @@ namespace Test.Views
                 var activeRentalsCount = CUltils.db.Rentals
                     .Count(r => r.IDCustomer == customerId && r.Status == "Renting");
                 decimal userBalance = Ctrl_Wallet.GetUserIDBalance(userID);
+                int IDAcc = Ctrl_Account.GetIDAccbyUserID(userID);
+
                 MessageBox.Show($"User balance: {userBalance}");
                 if (userBalance < 20000000)
                 {
@@ -151,7 +153,7 @@ namespace Test.Views
                         if (rentalResult.Success)
                         {
                             string rentDate = DateTime.Now.ToString("dd/MM/yyyy");
-
+                            Ctrl_Wallet.DespoitMoney(IDAcc);
                             MessageBox.Show($"Rental created successfully.\nVehicle Plate: {selectedVehiclePlate}\nColor: {selectedVehicleColor}\nDescription: {selectedVehicleDescription}");
 
                             FRentingDetails frenting = new FRentingDetails(
