@@ -59,7 +59,7 @@
     <Property Name="IDPenaltyDetail" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="IDPenalty" Type="int" Nullable="false" />
     <Property Name="Reason" Type="nvarchar" MaxLength="255" Nullable="false" />
-    <Property Name="price" Type="money" Nullable="false" />
+    <Property Name="price" Type="decimal" Precision="10" Scale="2" Nullable="false" />
   </EntityType>
   <EntityType Name="RentalDetails">
     <Key>
@@ -70,7 +70,7 @@
     <Property Name="LicensePlate" Type="nvarchar" MaxLength="20" Nullable="false" />
     <Property Name="RentalDays" Type="int" Nullable="false" />
     <Property Name="RentPrice" Type="money" Nullable="false" />
-    <Property Name="price" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="price" Type="money" />
   </EntityType>
   <EntityType Name="Rentals">
     <Key>
@@ -95,7 +95,7 @@
     <Property Name="BankNumber" Type="varchar" MaxLength="20" Nullable="false" />
     <Property Name="UserType" Type="nvarchar" MaxLength="20" Nullable="false" />
     <Property Name="IDAcc" Type="int" />
-    <Property Name="birth" Type="date" Nullable="false" />
+    <Property Name="birth" Type="date" />
     <Property Name="IDCustomer" Type="varchar" MaxLength="50" />
     <Property Name="IDEmployee" Type="varchar" MaxLength="50" />
   </EntityType>
@@ -136,7 +136,7 @@
     <Property Name="UpdatedDate" Type="datetime" />
   </EntityType>
   <!--Errors Found During Generation:
-warning 6002: The table/view 'BTX4.dbo.V_VehicleData' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+warning 6002: The table/view 'QLbaixe.dbo.V_VehicleData' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="V_VehicleData">
     <Key>
       <PropertyRef Name="IDVehicleType" />
@@ -158,7 +158,7 @@ warning 6002: The table/view 'BTX4.dbo.V_VehicleData' does not have a primary ke
     <Property Name="Description" Type="nvarchar" MaxLength="255" />
     <Property Name="LicensePlate" Type="nvarchar" MaxLength="20" Nullable="false" />
   </EntityType>
-  <Association Name="FK__Customers__IDUse__5BE2A6F2">
+  <Association Name="FK__Customers__IDUse__4222D4EF">
     <End Role="Users" Type="Self.Users" Multiplicity="1" />
     <End Role="Customers" Type="Self.Customers" Multiplicity="*" />
     <ReferentialConstraint>
@@ -170,7 +170,7 @@ warning 6002: The table/view 'BTX4.dbo.V_VehicleData' does not have a primary ke
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Employees__IDUse__5CD6CB2B">
+  <Association Name="FK__Employees__IDUse__3F466844">
     <End Role="Users" Type="Self.Users" Multiplicity="1" />
     <End Role="Employees" Type="Self.Employees" Multiplicity="*" />
     <ReferentialConstraint>
@@ -182,7 +182,7 @@ warning 6002: The table/view 'BTX4.dbo.V_VehicleData' does not have a primary ke
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Penalties__IDCus__5EBF139D">
+  <Association Name="FK__Penalties__IDCus__571DF1D5">
     <End Role="Customers" Type="Self.Customers" Multiplicity="1" />
     <End Role="Penalties" Type="Self.Penalties" Multiplicity="*" />
     <ReferentialConstraint>
@@ -194,7 +194,7 @@ warning 6002: The table/view 'BTX4.dbo.V_VehicleData' does not have a primary ke
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Penalties__IDEmp__5FB337D6">
+  <Association Name="FK__Penalties__IDEmp__5812160E">
     <End Role="Employees" Type="Self.Employees" Multiplicity="1" />
     <End Role="Penalties" Type="Self.Penalties" Multiplicity="*" />
     <ReferentialConstraint>
@@ -206,7 +206,7 @@ warning 6002: The table/view 'BTX4.dbo.V_VehicleData' does not have a primary ke
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__PenaltyDe__IDPen__60A75C0F">
+  <Association Name="FK__PenaltyDe__IDPen__5AEE82B9">
     <End Role="Penalties" Type="Self.Penalties" Multiplicity="1" />
     <End Role="PenaltyDetails" Type="Self.PenaltyDetails" Multiplicity="*" />
     <ReferentialConstraint>
@@ -218,7 +218,7 @@ warning 6002: The table/view 'BTX4.dbo.V_VehicleData' does not have a primary ke
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__RentalDet__IDRen__619B8048">
+  <Association Name="FK__RentalDet__IDRen__778AC167">
     <End Role="Rentals" Type="Self.Rentals" Multiplicity="1" />
     <End Role="RentalDetails" Type="Self.RentalDetails" Multiplicity="*" />
     <ReferentialConstraint>
@@ -230,7 +230,7 @@ warning 6002: The table/view 'BTX4.dbo.V_VehicleData' does not have a primary ke
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__RentalDet__Licen__628FA481">
+  <Association Name="FK__RentalDet__Licen__787EE5A0">
     <End Role="Vehicles" Type="Self.Vehicles" Multiplicity="1" />
     <End Role="RentalDetails" Type="Self.RentalDetails" Multiplicity="*" />
     <ReferentialConstraint>
@@ -242,7 +242,7 @@ warning 6002: The table/view 'BTX4.dbo.V_VehicleData' does not have a primary ke
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Rentals__IDCusto__6383C8BA">
+  <Association Name="FK__Rentals__IDCusto__73BA3083">
     <End Role="Customers" Type="Self.Customers" Multiplicity="1" />
     <End Role="Rentals" Type="Self.Rentals" Multiplicity="*" />
     <ReferentialConstraint>
@@ -254,7 +254,7 @@ warning 6002: The table/view 'BTX4.dbo.V_VehicleData' does not have a primary ke
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Rentals__IDEmplo__6477ECF3">
+  <Association Name="FK__Rentals__IDEmplo__74AE54BC">
     <End Role="Employees" Type="Self.Employees" Multiplicity="1" />
     <End Role="Rentals" Type="Self.Rentals" Multiplicity="*" />
     <ReferentialConstraint>
@@ -266,7 +266,7 @@ warning 6002: The table/view 'BTX4.dbo.V_VehicleData' does not have a primary ke
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Vehicles__IDEmpl__66603565">
+  <Association Name="FK__Vehicles__IDEmpl__4CA06362">
     <End Role="Employees" Type="Self.Employees" Multiplicity="1" />
     <End Role="Vehicles" Type="Self.Vehicles" Multiplicity="*" />
     <ReferentialConstraint>
@@ -278,7 +278,7 @@ warning 6002: The table/view 'BTX4.dbo.V_VehicleData' does not have a primary ke
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Vehicles__IDVehi__6754599E">
+  <Association Name="FK__Vehicles__IDVehi__4BAC3F29">
     <End Role="VehicleTypes" Type="Self.VehicleTypes" Multiplicity="1" />
     <End Role="Vehicles" Type="Self.Vehicles" Multiplicity="*" />
     <ReferentialConstraint>
@@ -290,7 +290,7 @@ warning 6002: The table/view 'BTX4.dbo.V_VehicleData' does not have a primary ke
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__Wallet__IDAcc__68487DD7">
+  <Association Name="FK__Wallet__IDAcc__02FC7413">
     <End Role="Account" Type="Self.Account" Multiplicity="1" />
     <End Role="Wallet" Type="Self.Wallet" Multiplicity="*" />
     <ReferentialConstraint>
@@ -434,7 +434,6 @@ warning 6002: The table/view 'BTX4.dbo.V_VehicleData' does not have a primary ke
           <Property Name="BankNumber" Type="varchar" MaxLength="20" Nullable="false" />
           <Property Name="UserType" Type="nvarchar" MaxLength="20" Nullable="false" />
           <Property Name="IDAcc" Type="int" />
-          <Property Name="birth" Type="date" Nullable="false" />
         </RowType>
       </CollectionType>
     </ReturnType>
@@ -450,7 +449,6 @@ warning 6002: The table/view 'BTX4.dbo.V_VehicleData' does not have a primary ke
           <Property Name="Status" Type="nvarchar" MaxLength="20" Nullable="false" />
           <Property Name="Description" Type="nvarchar" MaxLength="255" />
           <Property Name="IDEmployee" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="price" Type="decimal" Precision="10" Scale="2" Nullable="false" />
         </RowType>
       </CollectionType>
     </ReturnType>
@@ -538,51 +536,51 @@ warning 6002: The table/view 'BTX4.dbo.V_VehicleData' does not have a primary ke
     [V_VehicleData].[LicensePlate] AS [LicensePlate]
     FROM [dbo].[V_VehicleData] AS [V_VehicleData]</DefiningQuery>
     </EntitySet>
-    <AssociationSet Name="FK__Customers__IDUse__5BE2A6F2" Association="Self.FK__Customers__IDUse__5BE2A6F2">
+    <AssociationSet Name="FK__Customers__IDUse__4222D4EF" Association="Self.FK__Customers__IDUse__4222D4EF">
       <End Role="Users" EntitySet="Users" />
       <End Role="Customers" EntitySet="Customers" />
     </AssociationSet>
-    <AssociationSet Name="FK__Employees__IDUse__5CD6CB2B" Association="Self.FK__Employees__IDUse__5CD6CB2B">
+    <AssociationSet Name="FK__Employees__IDUse__3F466844" Association="Self.FK__Employees__IDUse__3F466844">
       <End Role="Users" EntitySet="Users" />
       <End Role="Employees" EntitySet="Employees" />
     </AssociationSet>
-    <AssociationSet Name="FK__Penalties__IDCus__5EBF139D" Association="Self.FK__Penalties__IDCus__5EBF139D">
+    <AssociationSet Name="FK__Penalties__IDCus__571DF1D5" Association="Self.FK__Penalties__IDCus__571DF1D5">
       <End Role="Customers" EntitySet="Customers" />
       <End Role="Penalties" EntitySet="Penalties" />
     </AssociationSet>
-    <AssociationSet Name="FK__Penalties__IDEmp__5FB337D6" Association="Self.FK__Penalties__IDEmp__5FB337D6">
+    <AssociationSet Name="FK__Penalties__IDEmp__5812160E" Association="Self.FK__Penalties__IDEmp__5812160E">
       <End Role="Employees" EntitySet="Employees" />
       <End Role="Penalties" EntitySet="Penalties" />
     </AssociationSet>
-    <AssociationSet Name="FK__PenaltyDe__IDPen__60A75C0F" Association="Self.FK__PenaltyDe__IDPen__60A75C0F">
+    <AssociationSet Name="FK__PenaltyDe__IDPen__5AEE82B9" Association="Self.FK__PenaltyDe__IDPen__5AEE82B9">
       <End Role="Penalties" EntitySet="Penalties" />
       <End Role="PenaltyDetails" EntitySet="PenaltyDetails" />
     </AssociationSet>
-    <AssociationSet Name="FK__RentalDet__IDRen__619B8048" Association="Self.FK__RentalDet__IDRen__619B8048">
+    <AssociationSet Name="FK__RentalDet__IDRen__778AC167" Association="Self.FK__RentalDet__IDRen__778AC167">
       <End Role="Rentals" EntitySet="Rentals" />
       <End Role="RentalDetails" EntitySet="RentalDetails" />
     </AssociationSet>
-    <AssociationSet Name="FK__RentalDet__Licen__628FA481" Association="Self.FK__RentalDet__Licen__628FA481">
+    <AssociationSet Name="FK__RentalDet__Licen__787EE5A0" Association="Self.FK__RentalDet__Licen__787EE5A0">
       <End Role="Vehicles" EntitySet="Vehicles" />
       <End Role="RentalDetails" EntitySet="RentalDetails" />
     </AssociationSet>
-    <AssociationSet Name="FK__Rentals__IDCusto__6383C8BA" Association="Self.FK__Rentals__IDCusto__6383C8BA">
+    <AssociationSet Name="FK__Rentals__IDCusto__73BA3083" Association="Self.FK__Rentals__IDCusto__73BA3083">
       <End Role="Customers" EntitySet="Customers" />
       <End Role="Rentals" EntitySet="Rentals" />
     </AssociationSet>
-    <AssociationSet Name="FK__Rentals__IDEmplo__6477ECF3" Association="Self.FK__Rentals__IDEmplo__6477ECF3">
+    <AssociationSet Name="FK__Rentals__IDEmplo__74AE54BC" Association="Self.FK__Rentals__IDEmplo__74AE54BC">
       <End Role="Employees" EntitySet="Employees" />
       <End Role="Rentals" EntitySet="Rentals" />
     </AssociationSet>
-    <AssociationSet Name="FK__Vehicles__IDEmpl__66603565" Association="Self.FK__Vehicles__IDEmpl__66603565">
+    <AssociationSet Name="FK__Vehicles__IDEmpl__4CA06362" Association="Self.FK__Vehicles__IDEmpl__4CA06362">
       <End Role="Employees" EntitySet="Employees" />
       <End Role="Vehicles" EntitySet="Vehicles" />
     </AssociationSet>
-    <AssociationSet Name="FK__Vehicles__IDVehi__6754599E" Association="Self.FK__Vehicles__IDVehi__6754599E">
+    <AssociationSet Name="FK__Vehicles__IDVehi__4BAC3F29" Association="Self.FK__Vehicles__IDVehi__4BAC3F29">
       <End Role="VehicleTypes" EntitySet="VehicleTypes" />
       <End Role="Vehicles" EntitySet="Vehicles" />
     </AssociationSet>
-    <AssociationSet Name="FK__Wallet__IDAcc__68487DD7" Association="Self.FK__Wallet__IDAcc__68487DD7">
+    <AssociationSet Name="FK__Wallet__IDAcc__02FC7413" Association="Self.FK__Wallet__IDAcc__02FC7413">
       <End Role="Account" EntitySet="Account" />
       <End Role="Wallet" EntitySet="Wallet" />
     </AssociationSet>

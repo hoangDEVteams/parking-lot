@@ -698,3 +698,6 @@ D:\school\hướng đối tượng\QLBaiThueXe\parking-lot\Test\obj\Debug\Test.V
 D:\school\hướng đối tượng\QLBaiThueXe\parking-lot\Test\obj\Debug\Test.Views.FRentingDetails.resources
 C:\Users\User\Desktop\wanna\parking-lot\Test\obj\Debug\Test.Views.FAdmin.resources
 C:\Users\User\Desktop\wanna\parking-lot\Test\obj\Debug\Test.Views.FTopUpForCus.resources
+D:\school\hướng đối tượng\QLBaiThueXe\parking-lot\Test\obj\Debug\Test.Views.FAdmin.resources
+D:\school\hướng đối tượng\QLBaiThueXe\parking-lot\Test\obj\Debug\Test.Views.FTopUpForCus.resources
+D:\school\hướng đối tượng\QLBaiThueXe\parking-lot\Test\obj\Debug\Test.Views.FPen_Admin.resources

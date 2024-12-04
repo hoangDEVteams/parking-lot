@@ -66,6 +66,9 @@ namespace Test.Controller
 
             return penalties;
         }
+        public List<Penalty> getlistPen()
+        {
+            return CUltils.db.Penalties.ToList();
+        }
     }
-
 }
