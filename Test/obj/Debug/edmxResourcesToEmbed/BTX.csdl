@@ -195,7 +195,6 @@
       <End Role="Employee" EntitySet="Employees" />
       <End Role="User" EntitySet="Users" />
     </AssociationSet>
-    <EntitySet Name="sysdiagrams" EntityType="BTXModel.sysdiagram" />
     <FunctionImport Name="sp_alterdiagram1">
       <Parameter Name="diagramname" Mode="In" Type="String" />
       <Parameter Name="owner_id" Mode="In" Type="Int32" />
@@ -366,7 +365,7 @@
     <Property Name="IDPenalty" Type="Int32" Nullable="false" />
     <Property Name="Reason" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="Penalty" Relationship="BTXModel.FK__PenaltyDe__IDPen__5AEE82B9" FromRole="PenaltyDetail" ToRole="Penalty" />
-    <Property Name="price" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="price" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
   </EntityType>
   <EntityType Name="RentalDetail">
     <Key>
@@ -378,7 +377,8 @@
     <Property Name="RentalDays" Type="Int32" Nullable="false" />
     <NavigationProperty Name="Rental" Relationship="BTXModel.FK__RentalDet__IDRen__778AC167" FromRole="RentalDetail" ToRole="Rental" />
     <NavigationProperty Name="Vehicle" Relationship="BTXModel.FK__RentalDet__Licen__787EE5A0" FromRole="RentalDetail" ToRole="Vehicle" />
-    <Property Name="price" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="price" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="RentPrice" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
   </EntityType>
   <EntityType Name="Rental">
     <Key>
@@ -410,7 +410,7 @@
     <NavigationProperty Name="Account" Relationship="BTXModel.FK_Users_Account" FromRole="User" ToRole="Account" />
     <NavigationProperty Name="Customers" Relationship="BTXModel.FK__Customers__IDUse__4222D4EF" FromRole="User" ToRole="Customer" />
     <NavigationProperty Name="Employees" Relationship="BTXModel.FK__Employees__IDUse__3F466844" FromRole="User" ToRole="Employee" />
-    <Property Name="birth" Type="DateTime" Precision="0" />
+    <Property Name="birth" Type="DateTime" Precision="0" Nullable="false" />
     <NavigationProperty Name="Customer" Relationship="BTXModel.FK_User_Customer" FromRole="User" ToRole="Customer" />
     <NavigationProperty Name="Employee" Relationship="BTXModel.FK_User_Employee" FromRole="User" ToRole="Employee" />
     <Property Name="IDCustomer" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
@@ -708,16 +708,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityType Name="sysdiagram">
-    <Key>
-      <PropertyRef Name="diagram_id" />
-    </Key>
-    <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
-    <Property Name="principal_id" Type="Int32" Nullable="false" />
-    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="version" Type="Int32" />
-    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
-  </EntityType>
   <ComplexType Name="sp_helpdiagramdefinition1_Result">
     <Property Type="Int32" Name="version" Nullable="true" />
     <Property Type="Binary" Name="definition" Nullable="true" />

@@ -17,10 +17,10 @@ namespace Test.Controller
                     r.IDRental,
                     r.RentalDate,
                     LicensePlate = r.RentalDetails.Select(rd => rd.LicensePlate).FirstOrDefault(),
-                    RentPrice = r.RentalDetails.Select(rd => rd.price).FirstOrDefault(),
+                    RentPrice = r.RentalDetails.Select(rd => rd.RentPrice).FirstOrDefault(),
                     RentalDays = r.RentalDetails.Select(rd => rd.RentalDays).FirstOrDefault(),
                     RentalStatus = r.Status,
-                    Price = r.RentalDetails.Select(rd => rd.price).FirstOrDefault() * r.RentalDetails.Select(rd => rd.RentalDays).FirstOrDefault()
+                    TotalPrice = r.RentalDetails.Select(rd => rd.RentPrice).FirstOrDefault() * r.RentalDetails.Select(rd => rd.RentalDays).FirstOrDefault()
 
 
             })
@@ -38,7 +38,7 @@ namespace Test.Controller
                     r.RentalDate,
                     r.IDCustomer,
                     rd.LicensePlate,
-                    rd.price,
+                    rd.RentPrice,
                     rd.RentalDays,
                     r.Status,
                     VehicleStatus = CUltils.db.Vehicles.FirstOrDefault(v => v.LicensePlate == rd.LicensePlate).Status
@@ -103,7 +103,7 @@ namespace Test.Controller
                     IDRental = newRentalId,
                     LicensePlate = vehiclePlate,
                     RentalDays = rentalDays,
-                    price = rentPrice
+                    RentPrice = rentPrice
                 };
                 CUltils.db.RentalDetails.Add(rentalDetail);
 
@@ -137,7 +137,7 @@ namespace Test.Controller
                     r.RentalDate,
                     r.IDEmployee,
                     rd.LicensePlate,
-                    rd.price,
+                    rd.RentPrice,
                     rd.RentalDays
                 })
                 .ToList();

@@ -31,7 +31,7 @@ namespace Test.Views
                     txtDiaChi.Text = user.Address;
                     txtTKNH.Text = user.BankNumber;
                     txtCMND.Text = user.IdentityCard;
-                    dateTimePicker1.Value = user.birth.Value;
+                    dateTimePicker1.Value = user.birth.Date;
                     if (user.Gender == "Male")
                     {
                         rdNam.Checked = true;

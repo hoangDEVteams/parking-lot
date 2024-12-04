@@ -132,6 +132,7 @@
             this.iconButton5.TabIndex = 18;
             this.iconButton5.Text = "1.000.000VND";
             this.iconButton5.UseVisualStyleBackColor = false;
+            this.iconButton5.Click += new System.EventHandler(this.iconButton5_Click);
             // 
             // iconButton4
             // 

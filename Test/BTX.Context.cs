@@ -40,7 +40,6 @@ namespace Test
         public virtual DbSet<VehicleType> VehicleTypes { get; set; }
         public virtual DbSet<Wallet> Wallets { get; set; }
         public virtual DbSet<V_VehicleData> V_VehicleData { get; set; }
-        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
     
         [DbFunction("BTXEntities1", "F_ShowAcc")]
         public virtual IQueryable<F_ShowAcc_Result> F_ShowAcc(Nullable<int> top)

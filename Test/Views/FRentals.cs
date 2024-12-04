@@ -257,25 +257,30 @@ namespace Test.Views
         }
         private void FilterDataGridView(DataGridView dataGridView, string searchText)
         {
+            searchText = searchText.ToLower();
+
             CurrencyManager currencyManager = (CurrencyManager)BindingContext[dataGridView.DataSource];
             currencyManager.SuspendBinding();
 
             foreach (DataGridViewRow row in dataGridView.Rows)
             {
                 bool isVisible = false;
+
                 foreach (DataGridViewCell cell in row.Cells)
                 {
-                    if (cell.Value != null && cell.Value.ToString().ToLower().Contains(searchText))
+                    if (cell.Value != null && cell.Value != DBNull.Value && cell.Value.ToString().ToLower().Contains(searchText))
                     {
                         isVisible = true;
                         break; 
                     }
                 }
-                row.Visible = isVisible; 
+
+                row.Visible = isVisible;
             }
 
             currencyManager.ResumeBinding();
         }
+
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             string searchText = textBox1.Text.ToLower();
@@ -301,8 +306,24 @@ namespace Test.Views
                     FilterDataGridView(dtgvUser, searchText);
                     break;
                 case "2.User Vehicle":
-                    FilterDataGridView(dtgvUserVehicle, searchText);
+                    if (dtgvUserVehicle.Rows.Count > 0) 
+                    {
+                        try
+                        {
+                            FilterDataGridView(dtgvUserVehicle, searchText);
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show($"Error: {ex.Message}");
+                        }
+                    }
+                    else
+                    {
+                        // Nếu bảng trống, có thể hiển thị thông báo hoặc xử lý khác
+                        MessageBox.Show("No data available in User Vehicle table.");
+                    }
                     break;
+
                 case "3.All Rental":
                     FilterDataGridView(dtgvRentalData, searchText);
                     break;

@@ -31,6 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FMain));
             this.label1 = new System.Windows.Forms.Label();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.iconButton9 = new FontAwesome.Sharp.IconButton();
+            this.iconButton5 = new FontAwesome.Sharp.IconButton();
+            this.iconButton8 = new FontAwesome.Sharp.IconButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -40,23 +44,21 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.iconButton6 = new FontAwesome.Sharp.IconButton();
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.cCirclePB1 = new Test.AddOn.CCirclePB();
             this.btnMenu = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
             this.panelContainer = new System.Windows.Forms.Panel();
-            this.iconButton5 = new FontAwesome.Sharp.IconButton();
-            this.iconButton8 = new FontAwesome.Sharp.IconButton();
-            this.iconButton9 = new FontAwesome.Sharp.IconButton();
+            this.iconButton7 = new FontAwesome.Sharp.IconButton();
+            this.cCirclePB1 = new Test.AddOn.CCirclePB();
+            this.iconButton10 = new FontAwesome.Sharp.IconButton();
             this.panelMenu.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cCirclePB1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cCirclePB1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -74,6 +76,8 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.White;
+            this.panelMenu.Controls.Add(this.iconButton10);
+            this.panelMenu.Controls.Add(this.iconButton7);
             this.panelMenu.Controls.Add(this.iconButton2);
             this.panelMenu.Controls.Add(this.iconButton9);
             this.panelMenu.Controls.Add(this.iconButton5);
@@ -95,6 +99,85 @@
             this.panelMenu.Size = new System.Drawing.Size(273, 1102);
             this.panelMenu.TabIndex = 1;
             this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // iconButton2
+            // 
+            this.iconButton2.FlatAppearance.BorderSize = 0;
+            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton2.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.Code;
+            this.iconButton2.IconColor = System.Drawing.Color.Black;
+            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton2.IconSize = 30;
+            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton2.Location = new System.Drawing.Point(15, 456);
+            this.iconButton2.Margin = new System.Windows.Forms.Padding(4);
+            this.iconButton2.Name = "iconButton2";
+            this.iconButton2.Size = new System.Drawing.Size(232, 42);
+            this.iconButton2.TabIndex = 4;
+            this.iconButton2.Text = "Quản Lý Xe ";
+            this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton2.UseVisualStyleBackColor = true;
+            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
+            // 
+            // iconButton9
+            // 
+            this.iconButton9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton9.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton9.IconChar = FontAwesome.Sharp.IconChar.Redo;
+            this.iconButton9.IconColor = System.Drawing.Color.Black;
+            this.iconButton9.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton9.IconSize = 25;
+            this.iconButton9.Location = new System.Drawing.Point(183, 208);
+            this.iconButton9.Name = "iconButton9";
+            this.iconButton9.Size = new System.Drawing.Size(40, 30);
+            this.iconButton9.TabIndex = 0;
+            this.iconButton9.UseVisualStyleBackColor = true;
+            this.iconButton9.Click += new System.EventHandler(this.iconButton9_Click);
+            // 
+            // iconButton5
+            // 
+            this.iconButton5.FlatAppearance.BorderSize = 0;
+            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton5.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.PeopleGroup;
+            this.iconButton5.IconColor = System.Drawing.Color.Black;
+            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton5.IconSize = 30;
+            this.iconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton5.Location = new System.Drawing.Point(15, 656);
+            this.iconButton5.Margin = new System.Windows.Forms.Padding(4);
+            this.iconButton5.Name = "iconButton5";
+            this.iconButton5.Size = new System.Drawing.Size(232, 42);
+            this.iconButton5.TabIndex = 12;
+            this.iconButton5.Text = "Quản Lý Nhân Viên ";
+            this.iconButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton5.UseVisualStyleBackColor = true;
+            this.iconButton5.Click += new System.EventHandler(this.iconButton5_Click);
+            // 
+            // iconButton8
+            // 
+            this.iconButton8.FlatAppearance.BorderSize = 0;
+            this.iconButton8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton8.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton8.IconChar = FontAwesome.Sharp.IconChar.Person;
+            this.iconButton8.IconColor = System.Drawing.Color.Black;
+            this.iconButton8.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton8.IconSize = 27;
+            this.iconButton8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton8.Location = new System.Drawing.Point(15, 556);
+            this.iconButton8.Margin = new System.Windows.Forms.Padding(4);
+            this.iconButton8.Name = "iconButton8";
+            this.iconButton8.Size = new System.Drawing.Size(238, 42);
+            this.iconButton8.TabIndex = 14;
+            this.iconButton8.Tag = "Quản Lý Khách Hàng";
+            this.iconButton8.Text = "Quản Lý Khách Hàng";
+            this.iconButton8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton8.UseVisualStyleBackColor = true;
+            this.iconButton8.Click += new System.EventHandler(this.iconButton8_Click);
             // 
             // groupBox2
             // 
@@ -141,7 +224,7 @@
             this.btnWithDraw.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnWithDraw.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnWithDraw.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnWithDraw.Location = new System.Drawing.Point(117, 16);
+            this.btnWithDraw.Location = new System.Drawing.Point(129, 16);
             this.btnWithDraw.Margin = new System.Windows.Forms.Padding(4);
             this.btnWithDraw.Name = "btnWithDraw";
             this.btnWithDraw.Size = new System.Drawing.Size(103, 32);
@@ -173,7 +256,7 @@
             this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton4.IconSize = 30;
             this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton4.Location = new System.Drawing.Point(13, 406);
+            this.iconButton4.Location = new System.Drawing.Point(15, 406);
             this.iconButton4.Margin = new System.Windows.Forms.Padding(4);
             this.iconButton4.Name = "iconButton4";
             this.iconButton4.Size = new System.Drawing.Size(232, 42);
@@ -228,7 +311,7 @@
             this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton3.IconSize = 30;
             this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.Location = new System.Drawing.Point(13, 506);
+            this.iconButton3.Location = new System.Drawing.Point(15, 506);
             this.iconButton3.Margin = new System.Windows.Forms.Padding(4);
             this.iconButton3.Name = "iconButton3";
             this.iconButton3.Size = new System.Drawing.Size(238, 42);
@@ -238,27 +321,6 @@
             this.iconButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton3.UseVisualStyleBackColor = true;
             this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
-            // 
-            // iconButton2
-            // 
-            this.iconButton2.FlatAppearance.BorderSize = 0;
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.Code;
-            this.iconButton2.IconColor = System.Drawing.Color.Black;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.IconSize = 30;
-            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.Location = new System.Drawing.Point(13, 456);
-            this.iconButton2.Margin = new System.Windows.Forms.Padding(4);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(232, 42);
-            this.iconButton2.TabIndex = 4;
-            this.iconButton2.Text = "Quản Lý Xe ";
-            this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton2.UseVisualStyleBackColor = true;
-            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
             // 
             // iconButton1
             // 
@@ -270,7 +332,7 @@
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 30;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.iconButton1.Location = new System.Drawing.Point(13, 356);
+            this.iconButton1.Location = new System.Drawing.Point(15, 356);
             this.iconButton1.Margin = new System.Windows.Forms.Padding(4);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Size = new System.Drawing.Size(232, 42);
@@ -280,25 +342,6 @@
             this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton1.UseVisualStyleBackColor = true;
             this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click_1);
-            // 
-            // cCirclePB1
-            // 
-            this.cCirclePB1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.cCirclePB1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.cCirclePB1.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.cCirclePB1.BorderColor2 = System.Drawing.Color.HotPink;
-            this.cCirclePB1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.cCirclePB1.BorderSize = 2;
-            this.cCirclePB1.GradientAngle = 50F;
-            this.cCirclePB1.Image = ((System.Drawing.Image)(resources.GetObject("cCirclePB1.Image")));
-            this.cCirclePB1.Location = new System.Drawing.Point(16, 54);
-            this.cCirclePB1.Margin = new System.Windows.Forms.Padding(4);
-            this.cCirclePB1.Name = "cCirclePB1";
-            this.cCirclePB1.Size = new System.Drawing.Size(133, 133);
-            this.cCirclePB1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.cCirclePB1.TabIndex = 3;
-            this.cCirclePB1.TabStop = false;
-            this.cCirclePB1.Click += new System.EventHandler(this.cCirclePB1_Click);
             // 
             // btnMenu
             // 
@@ -391,62 +434,66 @@
             this.panelContainer.TabIndex = 3;
             this.panelContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint_1);
             // 
-            // iconButton5
+            // iconButton7
             // 
-            this.iconButton5.FlatAppearance.BorderSize = 0;
-            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton5.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.PeopleGroup;
-            this.iconButton5.IconColor = System.Drawing.Color.Black;
-            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton5.IconSize = 30;
-            this.iconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton5.Location = new System.Drawing.Point(13, 606);
-            this.iconButton5.Margin = new System.Windows.Forms.Padding(4);
-            this.iconButton5.Name = "iconButton5";
-            this.iconButton5.Size = new System.Drawing.Size(232, 42);
-            this.iconButton5.TabIndex = 12;
-            this.iconButton5.Text = "Quản Lý Nhân Viên ";
-            this.iconButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton5.UseVisualStyleBackColor = true;
-            this.iconButton5.Click += new System.EventHandler(this.iconButton5_Click);
+            this.iconButton7.FlatAppearance.BorderSize = 0;
+            this.iconButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton7.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton7.IconChar = FontAwesome.Sharp.IconChar.Atom;
+            this.iconButton7.IconColor = System.Drawing.Color.Black;
+            this.iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton7.IconSize = 30;
+            this.iconButton7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton7.Location = new System.Drawing.Point(13, 706);
+            this.iconButton7.Margin = new System.Windows.Forms.Padding(4);
+            this.iconButton7.Name = "iconButton7";
+            this.iconButton7.Size = new System.Drawing.Size(232, 42);
+            this.iconButton7.TabIndex = 15;
+            this.iconButton7.Text = "Admin";
+            this.iconButton7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton7.UseVisualStyleBackColor = true;
+            this.iconButton7.Click += new System.EventHandler(this.iconButton7_Click);
             // 
-            // iconButton8
+            // cCirclePB1
             // 
-            this.iconButton8.FlatAppearance.BorderSize = 0;
-            this.iconButton8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton8.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton8.IconChar = FontAwesome.Sharp.IconChar.Person;
-            this.iconButton8.IconColor = System.Drawing.Color.Black;
-            this.iconButton8.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton8.IconSize = 30;
-            this.iconButton8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton8.Location = new System.Drawing.Point(13, 556);
-            this.iconButton8.Margin = new System.Windows.Forms.Padding(4);
-            this.iconButton8.Name = "iconButton8";
-            this.iconButton8.Size = new System.Drawing.Size(238, 42);
-            this.iconButton8.TabIndex = 14;
-            this.iconButton8.Tag = "Quản Lý Khách Hàng";
-            this.iconButton8.Text = "Quản Lý Khách Hàng";
-            this.iconButton8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton8.UseVisualStyleBackColor = true;
-            this.iconButton8.Click += new System.EventHandler(this.iconButton8_Click);
+            this.cCirclePB1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.cCirclePB1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.cCirclePB1.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.cCirclePB1.BorderColor2 = System.Drawing.Color.HotPink;
+            this.cCirclePB1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.cCirclePB1.BorderSize = 2;
+            this.cCirclePB1.GradientAngle = 50F;
+            this.cCirclePB1.Image = ((System.Drawing.Image)(resources.GetObject("cCirclePB1.Image")));
+            this.cCirclePB1.Location = new System.Drawing.Point(16, 54);
+            this.cCirclePB1.Margin = new System.Windows.Forms.Padding(4);
+            this.cCirclePB1.Name = "cCirclePB1";
+            this.cCirclePB1.Size = new System.Drawing.Size(133, 133);
+            this.cCirclePB1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.cCirclePB1.TabIndex = 3;
+            this.cCirclePB1.TabStop = false;
+            this.cCirclePB1.Click += new System.EventHandler(this.cCirclePB1_Click);
             // 
-            // iconButton9
+            // iconButton10
             // 
-            this.iconButton9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton9.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton9.IconChar = FontAwesome.Sharp.IconChar.Redo;
-            this.iconButton9.IconColor = System.Drawing.Color.Black;
-            this.iconButton9.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton9.IconSize = 25;
-            this.iconButton9.Location = new System.Drawing.Point(183, 208);
-            this.iconButton9.Name = "iconButton9";
-            this.iconButton9.Size = new System.Drawing.Size(40, 30);
-            this.iconButton9.TabIndex = 0;
-            this.iconButton9.UseVisualStyleBackColor = true;
-            this.iconButton9.Click += new System.EventHandler(this.iconButton9_Click);
+            this.iconButton10.FlatAppearance.BorderSize = 0;
+            this.iconButton10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton10.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton10.IconChar = FontAwesome.Sharp.IconChar.MoneyBillTransfer;
+            this.iconButton10.IconColor = System.Drawing.Color.Black;
+            this.iconButton10.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton10.IconSize = 30;
+            this.iconButton10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton10.Location = new System.Drawing.Point(16, 606);
+            this.iconButton10.Margin = new System.Windows.Forms.Padding(4);
+            this.iconButton10.Name = "iconButton10";
+            this.iconButton10.Size = new System.Drawing.Size(232, 42);
+            this.iconButton10.TabIndex = 16;
+            this.iconButton10.Text = "Nạp Tiền Cho Khách";
+            this.iconButton10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton10.UseVisualStyleBackColor = true;
+            this.iconButton10.Click += new System.EventHandler(this.iconButton10_Click);
             // 
             // FMain
             // 
@@ -469,8 +516,8 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.cCirclePB1)).EndInit();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.cCirclePB1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -500,5 +547,7 @@
         private FontAwesome.Sharp.IconButton iconButton8;
         private FontAwesome.Sharp.IconButton iconButton5;
         private FontAwesome.Sharp.IconButton iconButton9;
+        private FontAwesome.Sharp.IconButton iconButton7;
+        private FontAwesome.Sharp.IconButton iconButton10;
     }
 }

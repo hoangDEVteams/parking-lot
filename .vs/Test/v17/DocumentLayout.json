@@ -1,186 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\",
+  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\btx.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\btx.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|d:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\qlbaithuexe\\parking-lot\\test\\btx.context.tt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\btx.context.tt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|d:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\qlbaithuexe\\parking-lot\\test\\btx.edmx.diagram||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\btx.edmx.diagram||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\views\\fcustomerinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fcustomerinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\views\\fpenalties.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fpenalties.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|d:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\qlbaithuexe\\parking-lot\\test\\views\\fpenalties.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fpenalties.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\views\\fpenalties.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fpenalties.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|d:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\qlbaithuexe\\parking-lot\\test\\views\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\views\\frentals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\frentals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\views\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\views\\frentals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\frentals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\momopayment\\momocallbacklistener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\momopayment\\momocallbacklistener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\momopayment\\momoconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\momopayment\\momoconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\momopayment\\momopayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\momopayment\\momopayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\controller\\ctrl_wallet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\controller\\ctrl_wallet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\momopayment\\callbackhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\momopayment\\callbackhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\views\\ftopup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\ftopup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\views\\ftopup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\ftopup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\resource\\cpass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\resource\\cpass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\resource\\cultils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\resource\\cultils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\views\\fcustomerinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fcustomerinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\controller\\ctrl_account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\controller\\ctrl_account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\views\\fcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\views\\frentaldetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\frentaldetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\views\\frentaldetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\frentaldetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\views\\fcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|c:\\users\\user\\desktop\\wanna\\parking-lot\\test\\views\\fcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\views\\fcar_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fcar_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|c:\\users\\user\\desktop\\wanna\\parking-lot\\test\\controller\\ctrl_account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\controller\\ctrl_account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\views\\fcar_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fcar_admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|c:\\users\\user\\desktop\\wanna\\parking-lot\\test\\views\\fregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\controller\\ctrl_vehicles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\controller\\ctrl_vehicles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|c:\\users\\user\\desktop\\wanna\\parking-lot\\test\\views\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|c:\\users\\user\\desktop\\wanna\\parking-lot\\test\\views\\fregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\views\\fverify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fverify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|c:\\users\\user\\desktop\\wanna\\parking-lot\\test\\views\\fcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\views\\frentingdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\frentingdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|c:\\users\\user\\desktop\\wanna\\parking-lot\\test\\views\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\controller\\ctrl_rental.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\controller\\ctrl_rental.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\views\\frentingdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\frentingdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\views\\fcar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fcar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\views\\fcar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fcar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\views\\ffillinforvehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\ffillinforvehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\views\\fwithdraw.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fwithdraw.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\views\\ftopup.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\ftopup.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\controller\\ctrl_penaltiesdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\controller\\ctrl_penaltiesdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\controller\\ctrl_rentaldetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\controller\\ctrl_rentaldetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\controller\\ctrl_penalties.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\controller\\ctrl_penalties.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\views\\fwithdraw.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\views\\fwithdraw.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\test\\app.manifest||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\app.manifest||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|c:\\users\\user\\desktop\\wanna\\parking-lot\\test\\addon\\crentalresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A1B7F5F-3EB4-4ED8-A9B4-B2515C56CDD5}|Test\\Test.csproj|solutionrelative:test\\addon\\crentalresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -190,11 +42,29 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 34,
+          "SelectedChildIndex": 10,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FMain.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FMain.cs",
+              "RelativeDocumentMoniker": "Test\\Views\\FMain.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FMain.cs",
+              "RelativeToolTip": "Test\\Views\\FMain.cs",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAswIkAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T13:41:10.956Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",
@@ -210,564 +80,103 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BTX.edmx.diagram",
-              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\BTX.edmx.diagram",
-              "RelativeDocumentMoniker": "Test\\BTX.edmx.diagram",
-              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\BTX.edmx.diagram",
-              "RelativeToolTip": "Test\\BTX.edmx.diagram",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-12-03T15:27:18.477Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BTX.Context.tt",
-              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\BTX.Context.tt",
-              "RelativeDocumentMoniker": "Test\\BTX.Context.tt",
-              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\BTX.Context.tt",
-              "RelativeToolTip": "Test\\BTX.Context.tt",
-              "ViewState": "AgIAAHACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-12-03T15:27:02.761Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cdbdee54-b399-484b-b763-db2c3393d646}"
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FRegister.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FRegister.cs",
+              "RelativeDocumentMoniker": "Test\\Views\\FRegister.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FRegister.cs",
+              "RelativeToolTip": "Test\\Views\\FRegister.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAqwC4AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T13:58:02.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FCustomer.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FCustomer.cs",
+              "RelativeDocumentMoniker": "Test\\Views\\FCustomer.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FCustomer.cs",
+              "RelativeToolTip": "Test\\Views\\FCustomer.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAUwJkAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T13:57:18.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FRegister.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FRegister.cs",
+              "RelativeDocumentMoniker": "Test\\Views\\FRegister.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FRegister.cs [Design]",
+              "RelativeToolTip": "Test\\Views\\FRegister.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T13:57:58.675Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Ctrl_Account.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Controller\\Ctrl_Account.cs",
+              "RelativeDocumentMoniker": "Test\\Controller\\Ctrl_Account.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Controller\\Ctrl_Account.cs",
+              "RelativeToolTip": "Test\\Controller\\Ctrl_Account.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T13:57:41.169Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "FPenalties.cs [Design]",
-              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FPenalties.cs",
-              "RelativeDocumentMoniker": "Test\\Views\\FPenalties.cs",
-              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FPenalties.cs [Design]",
-              "RelativeToolTip": "Test\\Views\\FPenalties.cs [Design]",
+              "Title": "FCustomer.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FCustomer.cs",
+              "RelativeDocumentMoniker": "Test\\Views\\FCustomer.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FCustomer.cs [Design]",
+              "RelativeToolTip": "Test\\Views\\FCustomer.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T15:12:12.569Z",
+              "WhenOpened": "2024-12-04T13:57:14.006Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "FMain.cs",
-              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FMain.cs",
-              "RelativeDocumentMoniker": "Test\\Views\\FMain.cs",
-              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FMain.cs",
-              "RelativeToolTip": "Test\\Views\\FMain.cs",
-              "ViewState": "AgIAABIBAAAAAAAAAAAqwBwBAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T17:57:41.706Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FRentals.cs [Design]",
-              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FRentals.cs",
-              "RelativeDocumentMoniker": "Test\\Views\\FRentals.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FRentals.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T07:44:28.522Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "FRentals.cs",
-              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FRentals.cs",
-              "RelativeDocumentMoniker": "Test\\Views\\FRentals.cs",
-              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FRentals.cs",
-              "RelativeToolTip": "Test\\Views\\FRentals.cs",
-              "ViewState": "AgIAAHMAAAAAAAAAAAAiwA4BAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T07:44:35.948Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "FMain.cs [Design]",
-              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FMain.cs",
-              "RelativeDocumentMoniker": "Test\\Views\\FMain.cs",
-              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FMain.cs [Design]",
-              "RelativeToolTip": "Test\\Views\\FMain.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T17:06:43.449Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "MomoCallbackListener.cs",
-              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\MomoPayment\\MomoCallbackListener.cs",
-              "RelativeDocumentMoniker": "Test\\MomoPayment\\MomoCallbackListener.cs",
-              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\MomoPayment\\MomoCallbackListener.cs",
-              "RelativeToolTip": "Test\\MomoPayment\\MomoCallbackListener.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwEgAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T06:15:58.327Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "MomoConfig.cs",
-              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\MomoPayment\\MomoConfig.cs",
-              "RelativeDocumentMoniker": "Test\\MomoPayment\\MomoConfig.cs",
-              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\MomoPayment\\MomoConfig.cs",
-              "RelativeToolTip": "Test\\MomoPayment\\MomoConfig.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T06:15:06.389Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "MomoPayment.cs",
-              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\MomoPayment\\MomoPayment.cs",
-              "RelativeDocumentMoniker": "Test\\MomoPayment\\MomoPayment.cs",
-              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\MomoPayment\\MomoPayment.cs",
-              "RelativeToolTip": "Test\\MomoPayment\\MomoPayment.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAUwB4AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T06:18:39.704Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Ctrl_Wallet.cs",
-              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Controller\\Ctrl_Wallet.cs",
-              "RelativeDocumentMoniker": "Test\\Controller\\Ctrl_Wallet.cs",
-              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Controller\\Ctrl_Wallet.cs",
-              "RelativeToolTip": "Test\\Controller\\Ctrl_Wallet.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAxwBQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T08:24:28.468Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "CallbackHandler.cs",
-              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\MomoPayment\\CallbackHandler.cs",
-              "RelativeDocumentMoniker": "Test\\MomoPayment\\CallbackHandler.cs",
-              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\MomoPayment\\CallbackHandler.cs",
-              "RelativeToolTip": "Test\\MomoPayment\\CallbackHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T19:26:06.835Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "FTopUp.cs",
-              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FTopUp.cs",
-              "RelativeDocumentMoniker": "Test\\Views\\FTopUp.cs",
-              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FTopUp.cs",
-              "RelativeToolTip": "Test\\Views\\FTopUp.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAswGQAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T17:06:28.809Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "FTopUp.cs [Design]",
-              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FTopUp.cs",
-              "RelativeDocumentMoniker": "Test\\Views\\FTopUp.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FTopUp.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T16:25:18.91Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "CPass.cs",
-              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Resource\\CPass.cs",
-              "RelativeDocumentMoniker": "Test\\Resource\\CPass.cs",
-              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Resource\\CPass.cs",
-              "RelativeToolTip": "Test\\Resource\\CPass.cs",
+              "Title": "CRentalResult.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\AddOn\\CRentalResult.cs",
+              "RelativeDocumentMoniker": "Test\\AddOn\\CRentalResult.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\AddOn\\CRentalResult.cs",
+              "RelativeToolTip": "Test\\AddOn\\CRentalResult.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T08:38:34.419Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "CUltils.cs",
-              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Resource\\CUltils.cs",
-              "RelativeDocumentMoniker": "Test\\Resource\\CUltils.cs",
-              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Resource\\CUltils.cs",
-              "RelativeToolTip": "Test\\Resource\\CUltils.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T08:39:36.66Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "FCustomerInfo.cs [Design]",
-              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FCustomerInfo.cs",
-              "RelativeDocumentMoniker": "Test\\Views\\FCustomerInfo.cs",
-              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FCustomerInfo.cs [Design]",
-              "RelativeToolTip": "Test\\Views\\FCustomerInfo.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T18:00:01.058Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "FCustomer.cs [Design]",
-              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FCustomer.cs",
-              "RelativeDocumentMoniker": "Test\\Views\\FCustomer.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FCustomer.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T17:56:19.547Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Ctrl_Account.cs",
-              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Controller\\Ctrl_Account.cs",
-              "RelativeDocumentMoniker": "Test\\Controller\\Ctrl_Account.cs",
-              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Controller\\Ctrl_Account.cs",
-              "RelativeToolTip": "Test\\Controller\\Ctrl_Account.cs",
-              "ViewState": "AgIAAKMAAAAAAAAAAAAwwLkAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T19:05:10.799Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "FRentalDetails.cs [Design]",
-              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FRentalDetails.cs",
-              "RelativeDocumentMoniker": "Test\\Views\\FRentalDetails.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FRentalDetails.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T06:36:34.218Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "FRentalDetails.cs",
-              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FRentalDetails.cs",
-              "RelativeDocumentMoniker": "Test\\Views\\FRentalDetails.cs",
-              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FRentalDetails.cs",
-              "RelativeToolTip": "Test\\Views\\FRentalDetails.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAkwDIAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T09:27:21.759Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "FCustomer.cs",
-              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FCustomer.cs",
-              "RelativeDocumentMoniker": "Test\\Views\\FCustomer.cs",
-              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FCustomer.cs",
-              "RelativeToolTip": "Test\\Views\\FCustomer.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAGcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T17:56:21.121Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BTX.edmx [Diagram1]",
-              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\BTX.edmx",
-              "RelativeDocumentMoniker": "Test\\BTX.edmx",
-              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\BTX.edmx [Diagram1]",
-              "RelativeToolTip": "Test\\BTX.edmx [Diagram1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
-              "WhenOpened": "2024-12-02T16:54:45.623Z",
-              "EditorCaption": " [Diagram1]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "FCar_Admin.cs",
-              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FCar_Admin.cs",
-              "RelativeDocumentMoniker": "Test\\Views\\FCar_Admin.cs",
-              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FCar_Admin.cs",
-              "RelativeToolTip": "Test\\Views\\FCar_Admin.cs",
-              "ViewState": "AgIAAAMCAAAAAAAAAAD4vyoCAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T07:44:54.024Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "FCar_Admin.cs [Design]",
-              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FCar_Admin.cs",
-              "RelativeDocumentMoniker": "Test\\Views\\FCar_Admin.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FCar_Admin.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T07:44:52.743Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FCustomerInfo.cs",
-              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FCustomerInfo.cs",
-              "RelativeDocumentMoniker": "Test\\Views\\FCustomerInfo.cs",
-              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FCustomerInfo.cs",
-              "RelativeToolTip": "Test\\Views\\FCustomerInfo.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAmwCEAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T18:00:03.274Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "CTrl_Vehicles.cs",
-              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Controller\\CTrl_Vehicles.cs",
-              "RelativeDocumentMoniker": "Test\\Controller\\CTrl_Vehicles.cs",
-              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Controller\\CTrl_Vehicles.cs",
-              "RelativeToolTip": "Test\\Controller\\CTrl_Vehicles.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAIAwwGgAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T17:12:44.628Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "App.config",
-              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\App.config",
-              "RelativeDocumentMoniker": "Test\\App.config",
-              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\App.config",
-              "RelativeToolTip": "Test\\App.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAABNAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-12-01T02:54:20.001Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "FVerify.cs [Design]",
-              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FVerify.cs",
-              "RelativeDocumentMoniker": "Test\\Views\\FVerify.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FVerify.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T13:37:06.624Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "FRentingDetails.cs",
-              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FRentingDetails.cs",
-              "RelativeDocumentMoniker": "Test\\Views\\FRentingDetails.cs",
-              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FRentingDetails.cs",
-              "RelativeToolTip": "Test\\Views\\FRentingDetails.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAgwC4AAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T11:42:30.17Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "Ctrl_Rental.cs",
-              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Controller\\Ctrl_Rental.cs",
-              "RelativeDocumentMoniker": "Test\\Controller\\Ctrl_Rental.cs",
-              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Controller\\Ctrl_Rental.cs",
-              "RelativeToolTip": "Test\\Controller\\Ctrl_Rental.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAswDkAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T11:54:18.049Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "FRentingDetails.cs [Design]",
-              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FRentingDetails.cs",
-              "RelativeDocumentMoniker": "Test\\Views\\FRentingDetails.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FRentingDetails.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T11:40:56.304Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "FCar.cs",
-              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FCar.cs",
-              "RelativeDocumentMoniker": "Test\\Views\\FCar.cs",
-              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FCar.cs",
-              "RelativeToolTip": "Test\\Views\\FCar.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAgwCYAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T08:24:58.429Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "FCar.cs [Design]",
-              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FCar.cs",
-              "RelativeDocumentMoniker": "Test\\Views\\FCar.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FCar.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T08:22:28.673Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FPenalties.cs",
-              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FPenalties.cs",
-              "RelativeDocumentMoniker": "Test\\Views\\FPenalties.cs",
-              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FPenalties.cs",
-              "RelativeToolTip": "Test\\Views\\FPenalties.cs",
-              "ViewState": "AgIAAGIAAAAAAAAAAAAcwG8AAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T08:31:18.016Z",
+              "WhenOpened": "2024-12-04T13:49:33.22Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "FPenalties.Designer.cs",
-              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FPenalties.Designer.cs",
-              "RelativeDocumentMoniker": "Test\\Views\\FPenalties.Designer.cs",
-              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FPenalties.Designer.cs",
-              "RelativeToolTip": "Test\\Views\\FPenalties.Designer.cs",
-              "ViewState": "AgIAAP8AAAAAAAAAAAASwA4BAAAPAAAAAAAAAA==",
+              "Title": "FMain.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FMain.cs",
+              "RelativeDocumentMoniker": "Test\\Views\\FMain.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\wanna\\parking-lot\\Test\\Views\\FMain.cs [Design]",
+              "RelativeToolTip": "Test\\Views\\FMain.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T08:31:51.19Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "Ctrl_PenaltiesDetail.cs",
-              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Controller\\Ctrl_PenaltiesDetail.cs",
-              "RelativeDocumentMoniker": "Test\\Controller\\Ctrl_PenaltiesDetail.cs",
-              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Controller\\Ctrl_PenaltiesDetail.cs",
-              "RelativeToolTip": "Test\\Controller\\Ctrl_PenaltiesDetail.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T08:37:02.703Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "FTopUp.Designer.cs",
-              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FTopUp.Designer.cs",
-              "RelativeDocumentMoniker": "Test\\Views\\FTopUp.Designer.cs",
-              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FTopUp.Designer.cs",
-              "RelativeToolTip": "Test\\Views\\FTopUp.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T17:36:20.085Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "FWithDraw.cs [Design]",
-              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FWithDraw.cs",
-              "RelativeDocumentMoniker": "Test\\Views\\FWithDraw.cs",
-              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FWithDraw.cs [Design]",
-              "RelativeToolTip": "Test\\Views\\FWithDraw.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T16:25:28.897Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "FWithDraw.cs",
-              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FWithDraw.cs",
-              "RelativeDocumentMoniker": "Test\\Views\\FWithDraw.cs",
-              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FWithDraw.cs",
-              "RelativeToolTip": "Test\\Views\\FWithDraw.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAApwBIAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T17:03:49.326Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "FFillInforVehicle.cs [Design]",
-              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FFillInforVehicle.cs",
-              "RelativeDocumentMoniker": "Test\\Views\\FFillInforVehicle.cs",
-              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Views\\FFillInforVehicle.cs [Design]",
-              "RelativeToolTip": "Test\\Views\\FFillInforVehicle.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T05:41:24.384Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Program.cs",
-              "RelativeDocumentMoniker": "Test\\Program.cs",
-              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Program.cs",
-              "RelativeToolTip": "Test\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T09:44:03.92Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "Ctrl_Penalties.cs",
-              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Controller\\Ctrl_Penalties.cs",
-              "RelativeDocumentMoniker": "Test\\Controller\\Ctrl_Penalties.cs",
-              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Controller\\Ctrl_Penalties.cs",
-              "RelativeToolTip": "Test\\Controller\\Ctrl_Penalties.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAcwBQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T13:53:00.715Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "app.manifest",
-              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\app.manifest",
-              "RelativeDocumentMoniker": "Test\\app.manifest",
-              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\app.manifest",
-              "RelativeToolTip": "Test\\app.manifest",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001203|",
-              "WhenOpened": "2024-12-01T02:54:18.303Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "Ctrl_RentalDetails.cs",
-              "DocumentMoniker": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Controller\\Ctrl_RentalDetails.cs",
-              "RelativeDocumentMoniker": "Test\\Controller\\Ctrl_RentalDetails.cs",
-              "ToolTip": "D:\\school\\h\u01B0\u1EDBng \u0111\u1ED1i t\u01B0\u1EE3ng\\QLBaiThueXe\\parking-lot\\Test\\Controller\\Ctrl_RentalDetails.cs",
-              "RelativeToolTip": "Test\\Controller\\Ctrl_RentalDetails.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T11:52:04.338Z"
+              "WhenOpened": "2024-12-04T13:41:06.254Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

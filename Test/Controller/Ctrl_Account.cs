@@ -6,11 +6,69 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using Test.AddOn;
 
 namespace Test.Controller
 {
     internal class Ctrl_Account
+
+        
     {
+        public static List<object> GetAccounts()
+        {
+            var acc = CUltils.db.Accounts
+                .Select(a => new
+                {
+                    a.IDAcc,
+                    a.Username,
+                    a.Email,
+                    a.Role,
+                    a.Status,
+                    a.IDUser
+                })
+                .ToList();
+
+            return acc.Cast<object>().ToList();
+        }
+        public static List<AddOn.CDTOAccount> GetAccountsByUS(string username)
+        {
+            var acc = CUltils.db.Accounts
+            .Where(a => a.Username == username)
+            .Select(a => new CDTOAccount
+            {
+                IDAcc = a.IDAcc,
+                Username = a.Username,
+                Email = a.Email,
+                Role = a.Role,
+                Status = a.Status
+            })
+            .ToList();
+
+            return acc;
+        }
+
+        public static string Login(string username, string password)
+        {
+            var account = CUltils.db.Accounts.SingleOrDefault(a => a.Username == username);
+            if (account == null)
+            {
+                return "Tài khoản không tồn tại.";
+            }
+
+            if (account.Status == "InActive")
+            {
+                return "Tài khoản chưa được kích hoạt.";
+            }
+
+            string hashedPassword = CPass.HashPasswordWithSalt(password, account.Salt);
+            if (account.Password != hashedPassword)
+            {
+                return "Mật khẩu không chính xác.";
+            }
+
+            return "Đăng nhập thành công!";
+        }
         public static string RegisterAccount(string username, string password, string email, string salt)
         {
             var existingUser = CUltils.db.Accounts.SingleOrDefault(a => a.Username == username);
@@ -44,7 +102,7 @@ namespace Test.Controller
                 return $"Lỗi khi lưu vào cơ sở dữ liệu: {ex.Message}";
             }
         }
-        private static void CreateWalletForAccount(int accountId)
+        public static void CreateWalletForAccount(int accountId)
         {
             var wallet = new Wallet
             {
@@ -101,6 +159,56 @@ namespace Test.Controller
                 return "Lỗi: " + ex.Message;
             }
         }
+        public static string ChangeRole(int IDAcc, string role)
+        {
+            try
+            {
+                var account = CUltils.db.Accounts.SingleOrDefault(a => a.IDAcc == IDAcc);
+
+                if (account != null)
+                {
+                    account.Role = role;
+                    CUltils.db.SaveChanges();
+                    return "Success";
+                }
+                else
+                {
+                    return "Tài khoản không tồn tại.";
+                }
+            }
+            catch (Exception ex)
+            {
+                return "Lỗi: " + ex.Message;
+            }
+        }
+        public static void SendPasswordEmail(string recipientEmail, string password, string username, string name)
+        {
+            string senderEmail = "hhbakery5@gmail.com";
+            string senderPassword = "vscw ldrh vdfk xgml"; 
+
+            try
+            {
+                SmtpClient smtpClient = new SmtpClient("smtp.gmail.com")
+                {
+                    Port = 587,
+                    Credentials = new NetworkCredential(senderEmail, senderPassword),
+                    EnableSsl = true,
+                };
+
+                MailMessage mailMessage = new MailMessage(senderEmail, recipientEmail)
+                {
+                    Subject = "Thông tin tài khoản của bạn",
+                    Body = $"Chào bạn, {name} \n\nTài khoản của bạn đã được tạo thành công. Tài khoản của bạn là: [{username}]. Mật khẩu của bạn là: [{password}]. \nLưu ý: Vui lòng thay đổi mật khẩu ngay sau khi đăng nhập."
+                };
+
+                smtpClient.Send(mailMessage);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Lỗi khi gửi email: {ex.Message}");
+            }
+        }
+
         public static void SendVerificationEmail(string recipientEmail, string verificationCode)
         {
             string senderEmail = "hhbakery5@gmail.com"; 
@@ -132,14 +240,12 @@ namespace Test.Controller
         {
             try
             {
-                // Lấy thông tin tài khoản từ username
                 var account = CUltils.db.Accounts.SingleOrDefault(a => a.Username == username);
                 if (account == null)
                 {
                     return "Tài khoản không tồn tại.";
                 }
 
-                // Tìm UserID lớn nhất
                 var maxUserId = CUltils.db.Users
                     .OrderByDescending(u => u.IDUser)
                     .Select(u => u.IDUser)
@@ -147,7 +253,6 @@ namespace Test.Controller
 
                 string newUserId = GenerateNewId(maxUserId, "U");
 
-                // Tạo User mới
                 var newUser = new User
                 {
                     IDUser = newUserId,
@@ -208,7 +313,7 @@ namespace Test.Controller
                 var user = CUltils.db.Users.SingleOrDefault(u => u.IDUser == userId);
                 if (user == null)
                 {
-                    return "User không tồn tại.";
+                    return "User not exist!";
                 }
                 var maxCustomerId = CUltils.db.Customers
                     .OrderByDescending(c => c.IDCustomer)
@@ -221,7 +326,7 @@ namespace Test.Controller
                 {
                     IDCustomer = newCustomerId,
                     IDUser = userId, 
-                    MembershipLevel = "Normal",
+                    MembershipLevel = "Bronze",
                     Points = 0
                 };
 

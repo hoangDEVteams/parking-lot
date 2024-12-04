@@ -48,6 +48,8 @@ namespace Test.Views
             iconButton6.Tag = "Sign Out";
             iconButton5.Tag = "Quản Lý Nhân Viên";
             iconButton8.Tag = "Quản Lý Khách Hàng";
+            iconButton7.Tag = "Admin";
+            iconButton10.Tag = "Nạp Tiền Cho Khách";
             panel3.MouseDown += panel2_MouseDown;
             panel3.MouseMove += panel2_MouseMove;
             panel3.MouseUp += panel2_MouseUp;
@@ -113,6 +115,37 @@ namespace Test.Views
             Moneyy();
             MomoCallbackListener.GetUsername(username);
             ActivateListerner();
+            LoadFormIntoPanel(new FCar());
+            var accList = Ctrl_Account.GetAccountsByUS(username);
+
+            if (accList != null && accList.Count > 0)
+            {
+                var acc = accList.First(); 
+
+                if (acc.Role == "Admin")
+                {
+                    
+
+                }
+                else if (acc.Role == "Khách Hàng")
+                {
+                    iconButton7.Visible = false;
+                    iconButton5.Visible = false;
+
+                    iconButton2.Visible = false;
+                    iconButton3.Visible = false;
+                    iconButton8.Visible = false;
+                    iconButton10.Visible = false;
+
+                }
+                else if (acc.Role == "Employee")
+                {
+                    iconButton7.Visible = false;
+                    iconButton5.Visible = false;
+
+
+                }
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -264,6 +297,7 @@ namespace Test.Views
                 iconButton4.Width = 60;
                 iconButton5.Width = 60;
                 iconButton8.Width = 60;
+                iconButton7.Width = 60;
                 btnMenu.Dock = DockStyle.Top;
                 foreach (Button menuButton in panelMenu.Controls.OfType<Button>())
                 {
@@ -289,6 +323,7 @@ namespace Test.Views
                 iconButton4.Width = 220;
                 iconButton5.Width = 220;
                 iconButton8.Width = 220;
+                iconButton7.Width = 220;
                 btnTopUp.Visible = true;
                 btnWithDraw.Visible = true;
                 btnTopUp.Text = "Top Up";
@@ -378,13 +413,25 @@ namespace Test.Views
 
         private void iconButton5_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void iconButton8_Click(object sender, EventArgs e)
         {
             FCustomer fCustomer = new FCustomer();
             LoadFormIntoPanel(fCustomer);
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            FAdmin form = new FAdmin();
+            LoadFormIntoPanel(form);
+        }
+
+        private void iconButton10_Click(object sender, EventArgs e)
+        {
+            FTopUpForCus fTopUpForCus = new FTopUpForCus();
+            LoadFormIntoPanel(fTopUpForCus);
         }
     }
 

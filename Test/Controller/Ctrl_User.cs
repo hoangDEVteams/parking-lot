@@ -9,6 +9,138 @@ namespace Test.Controller
 {
     internal class Ctrl_User
     {
+        private static string GenerateNextID(string currentMaxID)
+        {
+            if (string.IsNullOrEmpty(currentMaxID))
+            {
+                return "NV001";
+            }
+
+            string prefix = currentMaxID.Substring(0, 2); 
+            int number = int.Parse(currentMaxID.Substring(2));
+
+            number++;
+            return $"{prefix}{number:D3}";
+        }
+        public static void UpdateSalaryForEmp(decimal salary, string IDUser)
+        {
+            var em = CUltils.db.Employees.SingleOrDefault(e => e.IDUser == IDUser);
+            if (em != null)
+            {
+                em.salary = salary;
+                CUltils.db.SaveChanges();
+            }
+        }
+        public static void UpdateRoleUserEm(int IDAcc, string position)
+        {
+            var user = CUltils.db.Users.Include("Employees").SingleOrDefault(u => u.IDAcc == IDAcc);
+            if (user != null)
+            {
+                user.UserType = "Nhân Viên";
+
+                string idUser = user.IDUser;
+
+                Employee emp = user.Employees.FirstOrDefault();
+                if (emp != null)
+                {
+                    emp.Position = position;
+                }
+                else
+                {
+                    string maxID = CUltils.db.Employees
+                        .OrderByDescending(e => e.IDEmployee)
+                        .Select(e => e.IDEmployee)
+                        .FirstOrDefault();
+
+                    string newID = GenerateNextID(maxID);
+
+                    emp = new Employee
+                    {
+                        IDEmployee = newID, 
+                        IDUser = idUser,   
+                        DateHired = DateTime.Now,
+                        Position = position 
+                    };
+
+                    user.Employees.Add(emp);
+                }
+
+                CUltils.db.SaveChanges();
+            }
+            else
+            {
+                throw new Exception($"Không tìm thấy user với IDAcc: {IDAcc}");
+            }
+        }
+        public static void UpdateRoleUserCus(int IDAcc)
+        {
+            var user = CUltils.db.Users.SingleOrDefault(u => u.IDAcc == IDAcc);
+            if (user != null)
+            {
+                user.UserType = "Khách Hàng";
+                CUltils.db.SaveChanges();
+            }
+        }
+        public static void UpdateRoleUserAD(int IDAcc)
+        {
+            var user = CUltils.db.Users.SingleOrDefault(u => u.IDAcc == IDAcc);
+            if (user != null)
+            {
+                user.UserType = "Admin";
+                CUltils.db.SaveChanges();
+            }
+        }
+        public List<object> GetUserByIDAcc(int IDAcc)
+        {
+            var users = CUltils.db.Users
+                .Where(u => u.Accounts.Any(a => a.IDAcc == IDAcc))  
+                .Select(u => new
+                {
+                    Money = CUltils.db.Wallets
+                                    .Where(w => w.IDAcc == IDAcc) 
+                                    .Select(w => w.Money)
+                                    .FirstOrDefault(), 
+                    u.IDUser,
+                    u.Name,
+                    u.Gender,
+                    u.birth,
+                    u.PhoneNumber,
+                    u.BankNumber,
+                    u.Address,
+                    u.IdentityCard
+                })
+                .ToList();
+
+            return users.Cast<object>().ToList();
+        }
+
+        public List<object> SearchUserByName(string name)
+        {
+            try
+            {
+                var users = CUltils.db.Users.Include("Customers")
+                    .Where(u => u.Name.ToLower().Contains(name.ToLower()))
+                    .Select(u => new
+                    {
+                        IDCustomer = u.Customers.FirstOrDefault().IDCustomer,
+                        u.IDUser,
+                        u.Name,
+                        u.Gender,
+                        u.PhoneNumber,
+                        u.Address,
+                        u.IdentityCard
+                    })
+                    .ToList();
+
+                return users.Cast<object>().ToList();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Có lỗi xảy ra khi tìm kiếm: {ex.Message}");
+                return new List<object>();
+            }
+        }
+
         public List<object> UserData()
         {
             var users = CUltils.db.Users.Include("Customers")
