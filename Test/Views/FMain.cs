@@ -127,7 +127,7 @@ namespace Test.Views
                     
 
                 }
-                else if (acc.Role == "Khách Hàng")
+                else if (acc.Role == "Customer")
                 {
                     iconButton7.Visible = false;
                     iconButton5.Visible = false;
@@ -298,6 +298,7 @@ namespace Test.Views
                 iconButton5.Width = 60;
                 iconButton8.Width = 60;
                 iconButton7.Width = 60;
+                iconButton10.Width = 60;
                 btnMenu.Dock = DockStyle.Top;
                 foreach (Button menuButton in panelMenu.Controls.OfType<Button>())
                 {
@@ -324,6 +325,8 @@ namespace Test.Views
                 iconButton5.Width = 220;
                 iconButton8.Width = 220;
                 iconButton7.Width = 220;
+                iconButton10.Width = 220;
+
                 btnTopUp.Visible = true;
                 btnWithDraw.Visible = true;
                 btnTopUp.Text = "Top Up";
