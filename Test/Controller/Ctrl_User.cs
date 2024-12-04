@@ -216,5 +216,100 @@ namespace Test.Controller
 
             throw new Exception("Không thể tạo ID mới do định dạng không hợp lệ.");
         }
+
+        //TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST 
+        public string taoIDNV()
+        {
+            var ID = CUltils.db.Users
+                .Select(u => u.IDUser)
+                .OrderByDescending(id => id)
+                .FirstOrDefault();
+
+            if (string.IsNullOrEmpty(ID))
+            {
+                return "U001";
+            }
+
+            string numericPart = ID.StartsWith("U") ? ID.Substring(1) : ID;
+            int number;
+
+            if (int.TryParse(numericPart, out number))
+            {
+                number++;
+                return "U" + number.ToString("D3");
+            }
+
+            throw new Exception("ID người dùng không hợp lệ.");
+        }
+  
+        public void DeleteUserAndRelatedData(string userID)
+        {
+            try
+            {
+                // Lấy đối tượng liên quan từ database
+                var user = CUltils.db.Users.SingleOrDefault(u => u.IDUser == userID);
+                if (user == null)
+                {
+                    MessageBox.Show("Không tìm thấy người dùng!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                var account = CUltils.db.Accounts.SingleOrDefault(a => a.IDUser == userID);
+                var employee = CUltils.db.Employees.SingleOrDefault(e => e.IDUser == userID);
+
+                // Xóa từng đối tượng nếu tồn tại
+                if (account != null) CUltils.db.Accounts.Remove(account);
+                if (employee != null) CUltils.db.Employees.Remove(employee);
+                CUltils.db.Users.Remove(user);
+
+                // Lưu thay đổi vào database
+                CUltils.db.SaveChanges();
+                MessageBox.Show("Xóa dữ liệu thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Đã xảy ra lỗi: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        public void UpdateEmployeeInfoAndRole(User updatedUser, Employee updatedEmployee, string newRole)
+        {
+            try
+            {
+                // Cập nhật thông tin trong bảng Users
+                var nd = CUltils.db.Users.SingleOrDefault(u => u.IDUser == updatedUser.IDUser);
+                if (nd != null)
+                {
+                    nd.Name = updatedUser.Name;
+                    nd.PhoneNumber = updatedUser.PhoneNumber;
+                    nd.Address = updatedUser.Address;
+                    nd.BankNumber = updatedUser.BankNumber;
+                    nd.Gender = updatedUser.Gender;
+                    nd.birth = updatedUser.birth; // Cập nhật ngày sinh
+                }
+
+                // Cập nhật thông tin trong bảng Employees
+                var nv = CUltils.db.Employees.SingleOrDefault(e => e.IDEmployee == updatedEmployee.IDEmployee);
+                if (nv != null)
+                {
+                    nv.Position = updatedEmployee.Position;
+                    nv.DateHired = updatedEmployee.DateHired;
+                }
+
+                // Cập nhật Role trong bảng Accounts
+                var acc = CUltils.db.Accounts.SingleOrDefault(a => a.IDUser == updatedUser.IDUser);
+                if (acc != null)
+                {
+                    acc.Role = newRole;
+                }
+
+                // Lưu thay đổi vào database
+                CUltils.db.SaveChanges();
+                MessageBox.Show("Cập nhật thông tin thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Đã xảy ra lỗi khi cập nhật: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

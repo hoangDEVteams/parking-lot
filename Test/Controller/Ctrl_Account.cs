@@ -341,6 +341,41 @@ namespace Test.Controller
                 return $"Lỗi khi tạo Customer: {ex.Message}";
             }
         }
+        public string GenerateRandomPassword()
+        {
+
+            var random = new Random();
+            var length = 8;
+            const string validChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+            var password = new StringBuilder();
+            for (int i = 0; i < length; i++)
+            {
+                password.Append(validChars[random.Next(validChars.Length)]);
+            }
+            return password.ToString();
+        }
+        public string GenerateRandomVerificationCode()
+        {
+
+            Random random = new Random();
+            string verificationCode = random.Next(100000, 999999).ToString();
+
+            return verificationCode;
+        }
+        public int taoACCNV()
+        {
+            var maxID = CUltils.db.Accounts
+                .Select(a => a.IDAcc)
+                .OrderByDescending(id => id)
+                .FirstOrDefault();
+
+            if (maxID == 0)
+            {
+                return 1;
+            }
+
+            return maxID + 1;
+        }
         private static string GenerateNewId(string currentId, string prefix)
         {
             if (string.IsNullOrEmpty(currentId))

@@ -42,14 +42,14 @@
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -84,6 +84,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.groupBox3.Controls.Add(this.groupBox4);
             this.groupBox3.Controls.Add(this.dtgvUserVehicle);
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -130,6 +131,7 @@
             // 
             // groupBox7
             // 
+            this.groupBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.groupBox7.Controls.Add(this.dtgvRentalData);
             this.groupBox7.Controls.Add(this.groupBox8);
             this.groupBox7.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -175,6 +177,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.groupBox2.Controls.Add(this.dtgvUser);
             this.groupBox2.Controls.Add(this.groupBox6);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -220,6 +223,7 @@
             // 
             // groupBox5
             // 
+            this.groupBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.groupBox5.Controls.Add(this.label3);
             this.groupBox5.Controls.Add(this.label2);
             this.groupBox5.Controls.Add(this.label6);
@@ -234,6 +238,27 @@
             this.groupBox5.Size = new System.Drawing.Size(326, 1022);
             this.groupBox5.TabIndex = 1;
             this.groupBox5.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(3, 866);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(289, 115);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "2.Thanh toán\r\nNhấn vào user đó sẽ có thông tin \r\nxuất hiện ở bảng 2. Chọn vào phi" +
+    "ếu \r\nthuê có trạng thái \"Renting\" sau đó \r\nchọn checkout";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(3, 820);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(319, 46);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "1.Tạo hóa đơn thuê\r\nChọn vào user ở bảng 1 và nhấn Create ";
             // 
             // label6
             // 
@@ -312,27 +337,6 @@
             this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton1.UseVisualStyleBackColor = false;
             this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 820);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(319, 46);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "1.Tạo hóa đơn thuê\r\nChọn vào user ở bảng 1 và nhấn Create ";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(3, 866);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(289, 115);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "2.Thanh toán\r\nNhấn vào user đó sẽ có thông tin \r\nxuất hiện ở bảng 2. Chọn vào phi" +
-    "ếu \r\nthuê có trạng thái \"Renting\" sau đó \r\nchọn checkout";
             // 
             // FRentals
             // 

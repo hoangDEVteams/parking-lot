@@ -407,6 +407,7 @@
             this.lblCusPay.TabIndex = 12;
             this.lblCusPay.Text = "1.000$";
             this.lblCusPay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblCusPay.Click += new System.EventHandler(this.lblCusPay_Click);
             // 
             // label35
             // 

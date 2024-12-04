@@ -104,7 +104,7 @@ namespace Test.Views
 
             decimal totalPay = ((decimal)rentPrice * (int)rentalDays + CalculateTotalPenalties());
             lblTotalPay.Text = totalPay + "";
-            decimal customerPay = 200000;
+            decimal customerPay = 20000000;
             lblCusPay.Text = customerPay + "";
             lblChange.Text = (customerPay - totalPay) + "";
         }
@@ -186,6 +186,11 @@ namespace Test.Views
         }
 
         private void lblTotalPenalty_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblCusPay_Click(object sender, EventArgs e)
         {
 
         }

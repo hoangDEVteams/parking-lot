@@ -54,7 +54,6 @@ namespace Test.Controller
 
             try
             {
-                // Lấy IDRental lớn nhất hiện tại và tăng lên 1
                 var maxRentalId = CUltils.db.Rentals
                     .OrderByDescending(r => r.IDRental)
                     .Select(r => r.IDRental)
@@ -63,14 +62,12 @@ namespace Test.Controller
                 int newRentalIdNumber = maxRentalId != null ? int.Parse(maxRentalId.Substring(1)) + 1 : 1;
                 string newRentalId = "R" + newRentalIdNumber.ToString("D3");
 
-                // Lấy thông tin xe dựa trên biển số
                 var vehicle = CUltils.db.Vehicles.FirstOrDefault(v => v.LicensePlate == vehiclePlate);
                 if (vehicle == null)
                 {
                     throw new Exception("Vehicle not found.");
                 }
 
-                // Kiểm tra trạng thái xe
                 if (vehicle.Status != "Available")
                 {
                     throw new Exception("Vehicle is not available for rental.");
@@ -78,7 +75,6 @@ namespace Test.Controller
 
                 decimal rentPrice = vehicle.price;
 
-                // Tạo hóa đơn mới
                 var rental = new Rental
                 {
                     IDRental = newRentalId,
@@ -103,7 +99,8 @@ namespace Test.Controller
                     IDRental = newRentalId,
                     LicensePlate = vehiclePlate,
                     RentalDays = rentalDays,
-                    RentPrice = rentPrice
+                    RentPrice = rentPrice,
+                    price = 0
                 };
                 CUltils.db.RentalDetails.Add(rentalDetail);
 

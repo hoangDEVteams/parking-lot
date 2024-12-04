@@ -83,31 +83,38 @@ namespace Test.Views
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
-        {
-            int idPenalty = Convert.ToInt32(txtIDPen.Text);
-            var penalty = CUltils.db.Penalties.FirstOrDefault(p => p.IDPenalty == idPenalty);
+        {   
+            try
+            {
+                int idPenalty = Convert.ToInt32(txtIDPen.Text);
+                var penalty = CUltils.db.Penalties.FirstOrDefault(p => p.IDPenalty == idPenalty);
+
+                var penaltyDetail = CUltils.db.PenaltyDetails.FirstOrDefault(pd => pd.IDPenalty == idPenalty);
+
+                if (penalty != null && penaltyDetail != null)
+                {
+                    string employeeId = cbEmployee.SelectedValue.ToString();
+                    string customerId = cbCustomer.SelectedValue.ToString();
+
+                    var employee = CUltils.db.Employees.FirstOrDefault(u => u.IDEmployee == employeeId);
+                    var customer = CUltils.db.Customers.FirstOrDefault(c => c.IDCustomer == customerId);
+                    penalty.PenaltyDate = DTPen.Value;
+                    penaltyDetail.Reason = txtReason.Text;
+                    penaltyDetail.price = Convert.ToDecimal(txtPrice.Text, System.Globalization.CultureInfo.InvariantCulture);
+
+                    CUltils.db.SaveChanges();
+                    MessageBox.Show("Update sucsess");
+                    loadData();
+                }
+                else
+                {
+                    MessageBox.Show("No Penalty");
+                }
+            }
+            catch {
+                MessageBox.Show("Error!");
+            }
             
-            var penaltyDetail = CUltils.db.PenaltyDetails.FirstOrDefault(pd => pd.IDPenalty == idPenalty);
-
-            if (penalty != null && penaltyDetail != null)
-            {
-                string employeeId = cbEmployee.SelectedValue.ToString();
-                string customerId = cbCustomer.SelectedValue.ToString();
-
-                var employee = CUltils.db.Employees.FirstOrDefault(u => u.IDEmployee == employeeId);
-                var customer = CUltils.db.Customers.FirstOrDefault(c => c.IDCustomer == customerId);
-                penalty.PenaltyDate = DTPen.Value;
-                penaltyDetail.Reason = txtReason.Text;
-                penaltyDetail.price = Convert.ToDecimal(txtPrice.Text, System.Globalization.CultureInfo.InvariantCulture);
-
-                CUltils.db.SaveChanges();
-                MessageBox.Show("Update sucsess");
-                loadData();
-            }
-            else
-            {
-                MessageBox.Show("No Penalty");
-            }
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -139,50 +146,58 @@ namespace Test.Views
 
         private void btnCreate_Click(object sender, EventArgs e)
         {
-            string reason = txtReason.Text;
-            decimal price = Convert.ToDecimal(txtPrice.Text, System.Globalization.CultureInfo.InvariantCulture);
-            DateTime penaltyDate = DTPen.Value; 
-            string idemployee = cbEmployee.SelectedValue.ToString();
-            string idcustomer = cbCustomer.SelectedValue.ToString();
-
-            // Kiểm tra thông tin đã nhập có hợp lệ không
-            if (string.IsNullOrEmpty(reason) || price <= 0 || string.IsNullOrEmpty(idemployee) || string.IsNullOrEmpty(idcustomer))
-            {
-                MessageBox.Show("Vui lòng nhập đầy đủ thông tin.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
             try
             {
-                // Tạo một đối tượng Penalty mới và lưu vào cơ sở dữ liệu
-                var newPenalty = new Penalty
+                string reason = txtReason.Text;
+                decimal price = Convert.ToDecimal(txtPrice.Text, System.Globalization.CultureInfo.InvariantCulture);
+                DateTime penaltyDate = DTPen.Value;
+                string idemployee = cbEmployee.SelectedValue.ToString();
+                string idcustomer = cbCustomer.SelectedValue.ToString();
+                // Kiểm tra thông tin đã nhập có hợp lệ không
+                if (string.IsNullOrEmpty(reason) || price <= 0 || string.IsNullOrEmpty(idemployee) || string.IsNullOrEmpty(idcustomer))
                 {
-                    PenaltyDate = penaltyDate,
-                    IDCustomer = idcustomer,
-                    IDEmployee = idemployee,
-                };
+                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
 
-                // Tạo PenaltyDetail mới
-                var newPenaltyDetail = new PenaltyDetail
+                try
                 {
-                    IDPenalty = newPenalty.IDPenalty,
-                    Reason = reason,
-                    price = price
-                };
+                    // Tạo một đối tượng Penalty mới và lưu vào cơ sở dữ liệu
+                    var newPenalty = new Penalty
+                    {
+                        PenaltyDate = penaltyDate,
+                        IDCustomer = idcustomer,
+                        IDEmployee = idemployee,
+                    };
 
-                CUltils.db.Penalties.Add(newPenalty);
-                CUltils.db.PenaltyDetails.Add(newPenaltyDetail);
-                CUltils.db.SaveChanges(); 
+                    // Tạo PenaltyDetail mới
+                    var newPenaltyDetail = new PenaltyDetail
+                    {
+                        IDPenalty = newPenalty.IDPenalty,
+                        Reason = reason,
+                        price = price
+                    };
 
-                // Thông báo tạo mới thành công
-                MessageBox.Show("Tạo hình phạt thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    CUltils.db.Penalties.Add(newPenalty);
+                    CUltils.db.PenaltyDetails.Add(newPenaltyDetail);
+                    CUltils.db.SaveChanges();
 
-                loadData();
+                    // Thông báo tạo mới thành công
+                    MessageBox.Show("Tạo hình phạt thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    loadData();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Lỗi khi tạo hình phạt: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            catch (Exception ex)
+            catch
             {
-                MessageBox.Show($"Lỗi khi tạo hình phạt: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please insert enough information!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+
+            
         }
 
         private void btnClear_Click(object sender, EventArgs e)

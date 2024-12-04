@@ -364,8 +364,33 @@ namespace Test.Views
 
         private void iconButton4_Click(object sender, EventArgs e)
         {
-            FPenalties form = new FPenalties(username); // Gọi form mấy ông muốn nhảy qua 
-            LoadFormIntoPanel(form);
+            var accList = Ctrl_Account.GetAccountsByUS(username);
+
+            if (accList != null && accList.Count > 0)
+            {
+                var acc = accList.First();
+
+                if (acc.Role == "Admin")
+                {
+                    FPen_Admin form = new FPen_Admin();
+                    LoadFormIntoPanel(form);
+
+                }
+                else if (acc.Role == "Customer")
+                {
+
+                    FPenalties form = new FPenalties(username);
+                    LoadFormIntoPanel(form);
+                }
+                else if (acc.Role == "Employee")
+                {
+
+                    FPen_Admin form = new FPen_Admin();
+                    LoadFormIntoPanel(form);
+
+                }
+            }
+            
         }
         private void LoadFormIntoPanel(Form form) //LOad Form Ở đây, Giải thích thôi chứ không cần đụng vào đây !
         {
@@ -416,7 +441,8 @@ namespace Test.Views
 
         private void iconButton5_Click(object sender, EventArgs e)
         {
-            
+            FEmpoyees form = new FEmpoyees();
+            LoadFormIntoPanel(form);
         }
 
         private void iconButton8_Click(object sender, EventArgs e)

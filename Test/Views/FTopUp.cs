@@ -38,7 +38,6 @@ namespace Test.Views
             int IDAcc = Ctrl_Account.GetIDAcc(username);
             string result = await MomoPayment.MomoPayment.CreatePaymentRequest(amount, IDAcc);
 
-            MessageBox.Show(result, "Payment Result");
             try
             {
                 var json = Newtonsoft.Json.Linq.JObject.Parse(result);
@@ -75,7 +74,6 @@ namespace Test.Views
             int IDAcc = Ctrl_Account.GetIDAcc(username);
             string result = await MomoPayment.MomoPayment.CreatePaymentRequest(amount, IDAcc);
 
-            MessageBox.Show(result, "Payment Result");
             try
             {
                 var json = Newtonsoft.Json.Linq.JObject.Parse(result);
@@ -107,7 +105,6 @@ namespace Test.Views
             int IDAcc = Ctrl_Account.GetIDAcc(username);
             string result = await MomoPayment.MomoPayment.CreatePaymentRequest(amount, IDAcc);
 
-            MessageBox.Show(result, "Payment Result");
             try
             {
                 var json = Newtonsoft.Json.Linq.JObject.Parse(result);
