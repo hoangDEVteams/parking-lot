@@ -41,16 +41,17 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.txtIDPen = new System.Windows.Forms.RichTextBox();
-            this.txtReason = new System.Windows.Forms.RichTextBox();
-            this.txtPrice = new System.Windows.Forms.RichTextBox();
-            this.cbCustomer = new System.Windows.Forms.ComboBox();
-            this.cbEmployee = new System.Windows.Forms.ComboBox();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.DTPen = new System.Windows.Forms.DateTimePicker();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.cbEmployee = new System.Windows.Forms.ComboBox();
+            this.cbCustomer = new System.Windows.Forms.ComboBox();
+            this.txtPrice = new System.Windows.Forms.RichTextBox();
+            this.txtReason = new System.Windows.Forms.RichTextBox();
+            this.txtIDPen = new System.Windows.Forms.RichTextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnCreate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgridPenalties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
@@ -100,7 +101,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(4, 601);
+            this.label6.Location = new System.Drawing.Point(4, 629);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(57, 20);
             this.label6.TabIndex = 10;
@@ -110,7 +111,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(5, 549);
+            this.label5.Location = new System.Drawing.Point(4, 568);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(78, 20);
             this.label5.TabIndex = 10;
@@ -170,8 +171,9 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.button3);
+            this.panel2.Controls.Add(this.btnClear);
+            this.panel2.Controls.Add(this.btnDelete);
+            this.panel2.Controls.Add(this.btnUpdate);
             this.panel2.Controls.Add(this.DTPen);
             this.panel2.Controls.Add(this.cbEmployee);
             this.panel2.Controls.Add(this.cbCustomer);
@@ -192,6 +194,93 @@
             this.panel2.Size = new System.Drawing.Size(461, 788);
             this.panel2.TabIndex = 10;
             // 
+            // btnClear
+            // 
+            this.btnClear.BackColor = System.Drawing.Color.White;
+            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.ForeColor = System.Drawing.Color.Black;
+            this.btnClear.Location = new System.Drawing.Point(9, 710);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(133, 60);
+            this.btnClear.TabIndex = 12;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.BackColor = System.Drawing.Color.Red;
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.ForeColor = System.Drawing.Color.White;
+            this.btnDelete.Location = new System.Drawing.Point(166, 710);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(133, 60);
+            this.btnDelete.TabIndex = 12;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.BackColor = System.Drawing.Color.Gold;
+            this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.ForeColor = System.Drawing.Color.Black;
+            this.btnUpdate.Location = new System.Drawing.Point(323, 710);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(133, 60);
+            this.btnUpdate.TabIndex = 12;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
+            // DTPen
+            // 
+            this.DTPen.Location = new System.Drawing.Point(127, 501);
+            this.DTPen.Name = "DTPen";
+            this.DTPen.Size = new System.Drawing.Size(300, 22);
+            this.DTPen.TabIndex = 13;
+            // 
+            // cbEmployee
+            // 
+            this.cbEmployee.FormattingEnabled = true;
+            this.cbEmployee.Location = new System.Drawing.Point(127, 440);
+            this.cbEmployee.Name = "cbEmployee";
+            this.cbEmployee.Size = new System.Drawing.Size(300, 24);
+            this.cbEmployee.TabIndex = 12;
+            // 
+            // cbCustomer
+            // 
+            this.cbCustomer.FormattingEnabled = true;
+            this.cbCustomer.Location = new System.Drawing.Point(127, 386);
+            this.cbCustomer.Name = "cbCustomer";
+            this.cbCustomer.Size = new System.Drawing.Size(300, 24);
+            this.cbCustomer.TabIndex = 12;
+            // 
+            // txtPrice
+            // 
+            this.txtPrice.Location = new System.Drawing.Point(127, 621);
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.Size = new System.Drawing.Size(300, 28);
+            this.txtPrice.TabIndex = 11;
+            this.txtPrice.Text = "";
+            // 
+            // txtReason
+            // 
+            this.txtReason.Location = new System.Drawing.Point(127, 541);
+            this.txtReason.Name = "txtReason";
+            this.txtReason.Size = new System.Drawing.Size(300, 47);
+            this.txtReason.TabIndex = 11;
+            this.txtReason.Text = "";
+            // 
+            // txtIDPen
+            // 
+            this.txtIDPen.Enabled = false;
+            this.txtIDPen.Location = new System.Drawing.Point(127, 325);
+            this.txtIDPen.Name = "txtIDPen";
+            this.txtIDPen.Size = new System.Drawing.Size(300, 28);
+            this.txtIDPen.TabIndex = 11;
+            this.txtIDPen.Text = "";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
@@ -202,90 +291,18 @@
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
-            // txtIDPen
+            // btnCreate
             // 
-            this.txtIDPen.Location = new System.Drawing.Point(127, 325);
-            this.txtIDPen.Name = "txtIDPen";
-            this.txtIDPen.Size = new System.Drawing.Size(300, 28);
-            this.txtIDPen.TabIndex = 11;
-            this.txtIDPen.Text = "";
-            // 
-            // txtReason
-            // 
-            this.txtReason.Location = new System.Drawing.Point(127, 541);
-            this.txtReason.Name = "txtReason";
-            this.txtReason.Size = new System.Drawing.Size(300, 28);
-            this.txtReason.TabIndex = 11;
-            this.txtReason.Text = "";
-            // 
-            // txtPrice
-            // 
-            this.txtPrice.Location = new System.Drawing.Point(127, 593);
-            this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(300, 28);
-            this.txtPrice.TabIndex = 11;
-            this.txtPrice.Text = "";
-            // 
-            // cbCustomer
-            // 
-            this.cbCustomer.FormattingEnabled = true;
-            this.cbCustomer.Location = new System.Drawing.Point(127, 386);
-            this.cbCustomer.Name = "cbCustomer";
-            this.cbCustomer.Size = new System.Drawing.Size(300, 24);
-            this.cbCustomer.TabIndex = 12;
-            // 
-            // cbEmployee
-            // 
-            this.cbEmployee.FormattingEnabled = true;
-            this.cbEmployee.Location = new System.Drawing.Point(127, 440);
-            this.cbEmployee.Name = "cbEmployee";
-            this.cbEmployee.Size = new System.Drawing.Size(300, 24);
-            this.cbEmployee.TabIndex = 12;
-            // 
-            // DTPen
-            // 
-            this.DTPen.Location = new System.Drawing.Point(127, 501);
-            this.DTPen.Name = "DTPen";
-            this.DTPen.Size = new System.Drawing.Size(300, 22);
-            this.DTPen.TabIndex = 13;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.Gold;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(294, 710);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(133, 60);
-            this.button3.TabIndex = 12;
-            this.button3.Text = "Update";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Red;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(51, 710);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(133, 60);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Delete";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.Lime;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.Transparent;
-            this.button4.Location = new System.Drawing.Point(878, 175);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(133, 60);
-            this.button4.TabIndex = 12;
-            this.button4.Text = "+ Create";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnCreate.BackColor = System.Drawing.Color.Lime;
+            this.btnCreate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCreate.ForeColor = System.Drawing.Color.Transparent;
+            this.btnCreate.Location = new System.Drawing.Point(878, 175);
+            this.btnCreate.Name = "btnCreate";
+            this.btnCreate.Size = new System.Drawing.Size(133, 60);
+            this.btnCreate.TabIndex = 12;
+            this.btnCreate.Text = "+ Create";
+            this.btnCreate.UseVisualStyleBackColor = false;
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
             // FPen_Admin
             // 
@@ -293,7 +310,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1715, 1043);
             this.Controls.Add(this.cbYear);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.btnCreate);
             this.Controls.Add(this.dtgridPenalties);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
@@ -332,8 +349,9 @@
         private System.Windows.Forms.DateTimePicker DTPen;
         private System.Windows.Forms.ComboBox cbEmployee;
         private System.Windows.Forms.ComboBox cbCustomer;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnCreate;
+        private System.Windows.Forms.Button btnClear;
     }
 }
