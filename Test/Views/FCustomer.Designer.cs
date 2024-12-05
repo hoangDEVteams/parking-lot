@@ -99,6 +99,7 @@
             this.btnXoa.TabIndex = 17;
             this.btnXoa.Text = "DELETE";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Visible = false;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnThem
@@ -205,6 +206,7 @@
             this.txtTenKH.Size = new System.Drawing.Size(303, 34);
             this.txtTenKH.TabIndex = 9;
             this.txtTenKH.TextChanged += new System.EventHandler(this.txtTenKH_TextChanged);
+            this.txtTenKH.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTenKH_KeyPress);
             // 
             // label9
             // 

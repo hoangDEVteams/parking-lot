@@ -54,12 +54,13 @@ namespace Test.Controller
                 if (customer != null)
                 {
                     var user = CUltils.db.Users.SingleOrDefault(u => u.IDUser == customer.IDUser);
-
+                    var idacc = CUltils.db.Accounts.SingleOrDefault(a => a.IDUser == customer.IDUser);
                     CUltils.db.Customers.Remove(customer);
 
                     if (user != null)
                     {
                         CUltils.db.Users.Remove(user);
+                        CUltils.db.Accounts.Remove(idacc);
                     }
 
                     CUltils.db.SaveChanges();
@@ -75,7 +76,15 @@ namespace Test.Controller
                 throw new Exception($"Lỗi khi xóa khách hàng: {ex.Message}");
             }
         }
-
+        public static string GetIDCusByIDUser(string IDUser)
+        {
+            var cus = CUltils.db.Customers.SingleOrDefault(a => a.IDUser == IDUser);
+            if (cus != null)
+            {
+                return cus.IDCustomer;
+            }
+            return null;
+        }
         public void UpdateCustomer(string idCustomer, User updatedUser)
         {
             var customer = CUltils.db.Customers.SingleOrDefault(c => c.IDCustomer == idCustomer);

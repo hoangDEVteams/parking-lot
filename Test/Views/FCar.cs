@@ -9,17 +9,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Test.Controller;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Test.Views
 {
+    
     public partial class FCar : Form
     {
+        private string IDUser;
         CTrl_Vehicles ctrVehicles = new CTrl_Vehicles();
         Ctrl_VehicleTypes ctrvehicleType = new Ctrl_VehicleTypes();
         V_VehicleData viewVehicle = new V_VehicleData();
-        public FCar()
+        public FCar(string iDUser)
         {
             InitializeComponent();
+            IDUser = iDUser;
         }
         private void cbColor_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -208,10 +212,46 @@ namespace Test.Views
         {
 
         }
-
+        private string customerIDPublic;
         private void btnCarRental_Click_1(object sender, EventArgs e)
         {
+            Ctrl_Customer ctrl_Customer = new Ctrl_Customer();
+            if (dtgridVehicles.SelectedRows.Count > 0)
+            {
 
+                DataGridViewRow selectedRow = dtgridVehicles.SelectedRows[0];
+
+                string rentalId = selectedRow.Cells["ID"].Value.ToString();
+                string rentalDate = DateTime.Now.ToString("yyyy-MM-dd");
+                string licensePlate = selectedRow.Cells["LicensePlate"].Value.ToString();
+                decimal rentPrice = (decimal)selectedRow.Cells["price"].Value;
+                string status = "Renting";
+                string currentEmployeeId = "NV001";
+                string rentDay = Microsoft.VisualBasic.Interaction.InputBox(
+                "Nhập số ngày thuê xe: ");
+
+
+                if (int.TryParse(rentDay, out int rentalDays) && rentalDays > 0)
+                {
+
+                    string customerId = Ctrl_Customer.GetIDCusByIDUser(IDUser);
+                    MessageBox.Show(customerId);
+                    customerIDPublic = customerId;
+                }
+                else
+                {
+                    MessageBox.Show("Vui lòng nhập số ngày thuê hợp lệ!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+                FRentingDetails newForm = new FRentingDetails(rentalId, rentalDate, licensePlate, rentPrice, rentalDays, customerIDPublic);
+                Ctrl_Rental ctrl_Rental = new Ctrl_Rental();
+                var result = ctrl_Rental.CreateRental(customerIDPublic, licensePlate, status, currentEmployeeId, rentalDays);
+                newForm.Show();
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn một dòng trước khi thực hiện thuê xe.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)

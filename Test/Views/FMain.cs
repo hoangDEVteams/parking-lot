@@ -115,7 +115,8 @@ namespace Test.Views
             Moneyy();
             MomoCallbackListener.GetUsername(username);
             ActivateListerner();
-            LoadFormIntoPanel(new FCar());
+            string IDUser = Ctrl_Account.GetUserID(username);
+            LoadFormIntoPanel(new FCar(IDUser));
             var accList = Ctrl_Account.GetAccountsByUS(username);
 
             if (accList != null && accList.Count > 0)
@@ -413,8 +414,8 @@ namespace Test.Views
 
         private void iconButton1_Click_1(object sender, EventArgs e) // Ơr đây là nút nhảy qua form của mấy ông
         {
-            FCar form = new FCar(); // Gọi form mấy ông muốn nhảy qua 
-            LoadFormIntoPanel(form);
+            string IDUser = Ctrl_Account.GetUserID(username);
+            LoadFormIntoPanel(new FCar(IDUser));
         }
 
         private void label2_Click(object sender, EventArgs e)

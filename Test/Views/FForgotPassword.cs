@@ -30,7 +30,7 @@ namespace Test.Views
         private void button3_Click(object sender, EventArgs e)
         {
             string input = txtEmailOrUser.Text.Trim();
-
+            selectedUsername = input;
             if (string.IsNullOrWhiteSpace(input))
             {
                 MessageBox.Show("Vui lòng nhập Email hoặc Tên đăng nhập.");
@@ -129,7 +129,7 @@ namespace Test.Views
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string enteredCode = textBox1.Text.Trim();
+            string enteredCode = textBox1.Text;
 
             if (string.IsNullOrWhiteSpace(enteredCode))
             {

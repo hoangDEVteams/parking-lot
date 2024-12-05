@@ -164,7 +164,7 @@ namespace Test.Views
                     Email = email,
                     Username = username,
                     Password = hashPassword,
-                    Role = "Khách Hàng",
+                    Role = "Customer",
                     Status = "Active",
                     Salt = salt
                 };
@@ -247,7 +247,6 @@ namespace Test.Views
         private void dtgridDSKH_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
             DataGridViewRow row = dtgridDSKH.Rows[e.RowIndex];
-
             txtMaKH.Text = row.Cells["IDCustomer"].Value.ToString();
             txtTenKH.Text = row.Cells["Name"].Value.ToString();
             txtSDT.Text = row.Cells["PhoneNumber"].Value.ToString();
@@ -255,7 +254,10 @@ namespace Test.Views
             txtCMND.Text = row.Cells["IdentityCard"].Value.ToString();
             txtTKNH.Text = row.Cells["BankNumber"].Value.ToString();
             string gender = row.Cells["Gender"].Value.ToString();
-
+            if (row.Cells["birth"].Value != null && DateTime.TryParse(row.Cells["birth"].Value.ToString(), out DateTime birthDate))
+            {
+                dateTimePicker1.Value = birthDate;
+            }
             if (gender == "Male")
             {
                 rdNam.Checked = true;
@@ -427,6 +429,14 @@ namespace Test.Views
         private void groupBox2_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtTenKH_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }
