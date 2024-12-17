@@ -125,6 +125,8 @@
       <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
     </Reference>
     <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Windows.Forms.DataVisualization.Design" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -166,6 +168,7 @@
       <DependentUpon>BTX.edmx</DependentUpon>
     </Compile>
     <Compile Include="Controller\Ctrl_Account.cs" />
+    <Compile Include="Controller\Ctrl_Chart.cs" />
     <Compile Include="Controller\Ctrl_Customer.cs" />
     <Compile Include="Controller\Ctrl_Employees.cs" />
     <Compile Include="Controller\Ctrl_Penalties.cs" />
@@ -176,6 +179,7 @@
     <Compile Include="Controller\CTrl_Vehicles.cs" />
     <Compile Include="Controller\Ctrl_VehicleTypes.cs" />
     <Compile Include="Controller\Ctrl_Wallet.cs" />
+    <Compile Include="Controller\Ctrl_ReportChart.cs" />
     <Compile Include="Customer.cs">
       <DependentUpon>BTX.tt</DependentUpon>
     </Compile>
@@ -362,6 +366,12 @@
     <Compile Include="Views\FRentingDetails.Designer.cs">
       <DependentUpon>FRentingDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\FReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FReport.Designer.cs">
+      <DependentUpon>FReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\FResetPass.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -468,6 +478,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FRentingDetails.resx">
       <DependentUpon>FRentingDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FReport.resx">
+      <DependentUpon>FReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FResetPass.resx">
       <DependentUpon>FResetPass.cs</DependentUpon>

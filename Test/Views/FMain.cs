@@ -50,6 +50,7 @@ namespace Test.Views
             iconButton8.Tag = "Quản Lý Khách Hàng";
             iconButton7.Tag = "Admin";
             iconButton10.Tag = "Nạp Tiền Cho Khách";
+            iconButton11.Tag = "Báo Cáo";
             panel3.MouseDown += panel2_MouseDown;
             panel3.MouseMove += panel2_MouseMove;
             panel3.MouseUp += panel2_MouseUp;
@@ -137,6 +138,7 @@ namespace Test.Views
                     iconButton3.Visible = false;
                     iconButton8.Visible = false;
                     iconButton10.Visible = false;
+                    iconButton11.Visible = false;
 
                 }
                 else if (acc.Role == "Employee")
@@ -300,6 +302,7 @@ namespace Test.Views
                 iconButton8.Width = 60;
                 iconButton7.Width = 60;
                 iconButton10.Width = 60;
+                iconButton11.Width = 60;
                 btnMenu.Dock = DockStyle.Top;
                 foreach (Button menuButton in panelMenu.Controls.OfType<Button>())
                 {
@@ -327,6 +330,7 @@ namespace Test.Views
                 iconButton8.Width = 220;
                 iconButton7.Width = 220;
                 iconButton10.Width = 220;
+                iconButton11.Width = 220;
 
                 btnTopUp.Visible = true;
                 btnWithDraw.Visible = true;
@@ -462,6 +466,12 @@ namespace Test.Views
         {
             FTopUpForCus fTopUpForCus = new FTopUpForCus();
             LoadFormIntoPanel(fTopUpForCus);
+        }
+
+        private void iconButton11_Click(object sender, EventArgs e)
+        {
+            FReport form = new FReport();
+            LoadFormIntoPanel(form);
         }
     }
 

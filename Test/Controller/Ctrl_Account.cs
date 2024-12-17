@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 using Test.AddOn;
+using System.IO;
 
 namespace Test.Controller
 {
@@ -30,6 +31,23 @@ namespace Test.Controller
                 .ToList();
 
             return acc.Cast<object>().ToList();
+        }
+        public static List<object> GetADAccount()
+        {
+            var acc = CUltils.db.Accounts
+                .Where(a => a.Role == "Admin" || a.Role == "Employee")
+                .Select(a => new
+                {
+                    a.IDAcc,
+                    a.Username,
+                    a.Email,
+                    a.Role,
+                    a.Status,
+                    a.IDUser
+                })
+                .ToList();
+
+            return acc.Select(a => (object)a).ToList();
         }
         public static List<AddOn.CDTOAccount> GetAccountsByUS(string username)
         {
@@ -82,7 +100,7 @@ namespace Test.Controller
                 Username = username,
                 Password = password, 
                 Email = email,
-                Role = "KH", 
+                Role = "Customer", 
                 Status = "InActive", 
                 Salt = salt,
             };
@@ -208,6 +226,48 @@ namespace Test.Controller
                 Console.WriteLine($"Lỗi khi gửi email: {ex.Message}");
             }
         }
+        public static void SendReportEmailWithImage(string recipientEmail, string imagePath, string subject, string body, string senderEmail, string senderPassword)
+        {
+            try
+            {
+                // Khởi tạo SmtpClient và cấu hình
+                SmtpClient smtpClient = new SmtpClient("smtp.gmail.com")
+                {
+                    Port = 587,
+                    Credentials = new NetworkCredential(senderEmail, senderPassword),
+                    EnableSsl = true,
+                };
+
+                // Tạo đối tượng mail
+                MailMessage mailMessage = new MailMessage(senderEmail, recipientEmail)
+                {
+                    Subject = subject,
+                    Body = body,
+                    IsBodyHtml = true  // Nếu bạn muốn gửi dưới dạng HTML
+                };
+
+                // Kiểm tra xem tệp ảnh có tồn tại không
+                if (File.Exists(imagePath))
+                {
+                    // Tạo attachment từ file ảnh
+                    Attachment attachment = new Attachment(imagePath);
+                    mailMessage.Attachments.Add(attachment);
+                }
+                else
+                {
+                    Console.WriteLine("Tệp ảnh không tồn tại.");
+                    return;
+                }
+
+                // Gửi email
+                smtpClient.Send(mailMessage);
+                Console.WriteLine("Email đã được gửi thành công.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Lỗi khi gửi email: {ex.Message}");
+            }
+        }
 
         public static void SendVerificationEmail(string recipientEmail, string verificationCode)
         {
@@ -236,6 +296,70 @@ namespace Test.Controller
                 Console.WriteLine($"Lỗi khi gửi email: {ex.Message}");
             }
         }
+        public static void SendEmailWithAttachment(string recipientEmail, string chartPath)
+        {
+            string senderEmail = "hhbakery5@gmail.com";
+            string senderPassword = "vscw ldrh vdfk xgml";
+
+            try
+            {
+                SmtpClient smtpClient = new SmtpClient("smtp.gmail.com")
+                {
+                    Port = 587,
+                    Credentials = new NetworkCredential(senderEmail, senderPassword),
+                    EnableSsl = true,
+                };
+
+                MailMessage mailMessage = new MailMessage(senderEmail, recipientEmail)
+                {
+                    Subject = "Thống Kê Doanh Thu 3 Tháng Gần Nhất",
+                    Body = "Vui lòng xem biểu đồ doanh thu trong file đính kèm."
+                };
+
+                mailMessage.Attachments.Add(new Attachment(chartPath));
+                smtpClient.Send(mailMessage);
+
+                Console.WriteLine("Email đã được gửi thành công.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Lỗi khi gửi email: {ex.Message}");
+            }
+        }
+
+        public static void SendEmailWithChart(string recipientEmail, string chartFilePath)
+        {
+            string senderEmail = "hhbakery5@gmail.com";
+            string senderPassword = "vscw ldrh vdfk xgml"; 
+
+            try
+            {
+                SmtpClient smtpClient = new SmtpClient("smtp.gmail.com")
+                {
+                    Port = 587,
+                    Credentials = new NetworkCredential(senderEmail, senderPassword),
+                    EnableSsl = true,
+                };
+
+                MailMessage mailMessage = new MailMessage(senderEmail, recipientEmail)
+                {
+                    Subject = "Báo cáo dữ liệu",
+                    Body = "Dưới đây là biểu đồ thống kê dữ liệu của bạn.",
+                    IsBodyHtml = true
+                };
+
+                // Đính kèm biểu đồ
+                Attachment chartAttachment = new Attachment(chartFilePath);
+                mailMessage.Attachments.Add(chartAttachment);
+
+                smtpClient.Send(mailMessage);
+                Console.WriteLine("Email đã được gửi thành công.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Lỗi khi gửi email: {ex.Message}");
+            }
+        }
         public static string CreateUser(string username)
         {
             try
@@ -256,13 +380,13 @@ namespace Test.Controller
                 var newUser = new User
                 {
                     IDUser = newUserId,
-                    Name = "test",
-                    Gender = "test",
-                    PhoneNumber = "123456789",
-                    Address = "POLOLOPO",
-                    IdentityCard = "123456789",
-                    BankNumber = "123456789",
-                    UserType = "KH",
+                    Name = " ",
+                    Gender = " ",
+                    PhoneNumber = " ",
+                    Address = " ",
+                    IdentityCard = " ",
+                    BankNumber = " ",
+                    UserType = "Customer",
                     IDAcc = account.IDAcc,
                     birth = DateTime.Now
                 };

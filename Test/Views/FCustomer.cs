@@ -166,7 +166,8 @@ namespace Test.Views
                     Password = hashPassword,
                     Role = "Customer",
                     Status = "Active",
-                    Salt = salt
+                    Salt = salt,
+                    VerificationCodeExpiration = DateTime.Now
                 };
 
                 CUltils.db.Accounts.Add(newAccount);
@@ -433,10 +434,10 @@ namespace Test.Views
 
         private void txtTenKH_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
-            {
-                e.Handled = true;
-            }
+            //if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
+            //{
+            //    e.Handled = true;
+            //}
         }
     }
 }

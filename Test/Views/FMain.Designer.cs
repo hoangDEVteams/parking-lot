@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FMain));
             this.label1 = new System.Windows.Forms.Label();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.iconButton10 = new FontAwesome.Sharp.IconButton();
+            this.iconButton7 = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.iconButton9 = new FontAwesome.Sharp.IconButton();
             this.iconButton5 = new FontAwesome.Sharp.IconButton();
@@ -51,9 +53,8 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
             this.panelContainer = new System.Windows.Forms.Panel();
-            this.iconButton7 = new FontAwesome.Sharp.IconButton();
+            this.iconButton11 = new FontAwesome.Sharp.IconButton();
             this.cCirclePB1 = new Test.AddOn.CCirclePB();
-            this.iconButton10 = new FontAwesome.Sharp.IconButton();
             this.panelMenu.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -76,6 +77,7 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.White;
+            this.panelMenu.Controls.Add(this.iconButton11);
             this.panelMenu.Controls.Add(this.iconButton10);
             this.panelMenu.Controls.Add(this.iconButton7);
             this.panelMenu.Controls.Add(this.iconButton2);
@@ -99,6 +101,48 @@
             this.panelMenu.Size = new System.Drawing.Size(273, 1102);
             this.panelMenu.TabIndex = 1;
             this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // iconButton10
+            // 
+            this.iconButton10.FlatAppearance.BorderSize = 0;
+            this.iconButton10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton10.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton10.IconChar = FontAwesome.Sharp.IconChar.MoneyBillTransfer;
+            this.iconButton10.IconColor = System.Drawing.Color.Black;
+            this.iconButton10.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton10.IconSize = 30;
+            this.iconButton10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton10.Location = new System.Drawing.Point(16, 606);
+            this.iconButton10.Margin = new System.Windows.Forms.Padding(4);
+            this.iconButton10.Name = "iconButton10";
+            this.iconButton10.Size = new System.Drawing.Size(232, 42);
+            this.iconButton10.TabIndex = 16;
+            this.iconButton10.Text = "Nạp Tiền Cho Khách";
+            this.iconButton10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton10.UseVisualStyleBackColor = true;
+            this.iconButton10.Click += new System.EventHandler(this.iconButton10_Click);
+            // 
+            // iconButton7
+            // 
+            this.iconButton7.FlatAppearance.BorderSize = 0;
+            this.iconButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton7.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton7.IconChar = FontAwesome.Sharp.IconChar.Atom;
+            this.iconButton7.IconColor = System.Drawing.Color.Black;
+            this.iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton7.IconSize = 30;
+            this.iconButton7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton7.Location = new System.Drawing.Point(16, 756);
+            this.iconButton7.Margin = new System.Windows.Forms.Padding(4);
+            this.iconButton7.Name = "iconButton7";
+            this.iconButton7.Size = new System.Drawing.Size(232, 42);
+            this.iconButton7.TabIndex = 15;
+            this.iconButton7.Text = "Admin";
+            this.iconButton7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton7.UseVisualStyleBackColor = true;
+            this.iconButton7.Click += new System.EventHandler(this.iconButton7_Click);
             // 
             // iconButton2
             // 
@@ -146,7 +190,7 @@
             this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton5.IconSize = 30;
             this.iconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton5.Location = new System.Drawing.Point(15, 656);
+            this.iconButton5.Location = new System.Drawing.Point(16, 706);
             this.iconButton5.Margin = new System.Windows.Forms.Padding(4);
             this.iconButton5.Name = "iconButton5";
             this.iconButton5.Size = new System.Drawing.Size(232, 42);
@@ -434,26 +478,26 @@
             this.panelContainer.TabIndex = 3;
             this.panelContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint_1);
             // 
-            // iconButton7
+            // iconButton11
             // 
-            this.iconButton7.FlatAppearance.BorderSize = 0;
-            this.iconButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton7.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton7.IconChar = FontAwesome.Sharp.IconChar.Atom;
-            this.iconButton7.IconColor = System.Drawing.Color.Black;
-            this.iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton7.IconSize = 30;
-            this.iconButton7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton7.Location = new System.Drawing.Point(13, 706);
-            this.iconButton7.Margin = new System.Windows.Forms.Padding(4);
-            this.iconButton7.Name = "iconButton7";
-            this.iconButton7.Size = new System.Drawing.Size(232, 42);
-            this.iconButton7.TabIndex = 15;
-            this.iconButton7.Text = "Admin";
-            this.iconButton7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton7.UseVisualStyleBackColor = true;
-            this.iconButton7.Click += new System.EventHandler(this.iconButton7_Click);
+            this.iconButton11.FlatAppearance.BorderSize = 0;
+            this.iconButton11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton11.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton11.IconChar = FontAwesome.Sharp.IconChar.Database;
+            this.iconButton11.IconColor = System.Drawing.Color.Black;
+            this.iconButton11.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton11.IconSize = 30;
+            this.iconButton11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton11.Location = new System.Drawing.Point(16, 656);
+            this.iconButton11.Margin = new System.Windows.Forms.Padding(4);
+            this.iconButton11.Name = "iconButton11";
+            this.iconButton11.Size = new System.Drawing.Size(232, 42);
+            this.iconButton11.TabIndex = 17;
+            this.iconButton11.Text = "Report";
+            this.iconButton11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton11.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton11.UseVisualStyleBackColor = true;
+            this.iconButton11.Click += new System.EventHandler(this.iconButton11_Click);
             // 
             // cCirclePB1
             // 
@@ -473,27 +517,6 @@
             this.cCirclePB1.TabIndex = 3;
             this.cCirclePB1.TabStop = false;
             this.cCirclePB1.Click += new System.EventHandler(this.cCirclePB1_Click);
-            // 
-            // iconButton10
-            // 
-            this.iconButton10.FlatAppearance.BorderSize = 0;
-            this.iconButton10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton10.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton10.IconChar = FontAwesome.Sharp.IconChar.MoneyBillTransfer;
-            this.iconButton10.IconColor = System.Drawing.Color.Black;
-            this.iconButton10.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton10.IconSize = 30;
-            this.iconButton10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton10.Location = new System.Drawing.Point(16, 606);
-            this.iconButton10.Margin = new System.Windows.Forms.Padding(4);
-            this.iconButton10.Name = "iconButton10";
-            this.iconButton10.Size = new System.Drawing.Size(232, 42);
-            this.iconButton10.TabIndex = 16;
-            this.iconButton10.Text = "Nạp Tiền Cho Khách";
-            this.iconButton10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton10.UseVisualStyleBackColor = true;
-            this.iconButton10.Click += new System.EventHandler(this.iconButton10_Click);
             // 
             // FMain
             // 
@@ -549,5 +572,6 @@
         private FontAwesome.Sharp.IconButton iconButton9;
         private FontAwesome.Sharp.IconButton iconButton7;
         private FontAwesome.Sharp.IconButton iconButton10;
+        private FontAwesome.Sharp.IconButton iconButton11;
     }
 }

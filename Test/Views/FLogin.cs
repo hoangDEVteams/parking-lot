@@ -132,5 +132,75 @@ namespace Test.Views
         {
 
         }
+
+        private void button3_Enter(object sender, EventArgs e)
+        {
+            string username = txtUserLog.Text;
+            string password = txtPassLog.Text;
+
+            if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
+            {
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin đăng nhập.");
+                return;
+            }
+
+            var account = (from a in CUltils.db.Accounts
+                           where a.Username == username
+                           select a).FirstOrDefault();
+
+            if (account == null)
+            {
+                MessageBox.Show("Tên đăng nhập không tồn tại.");
+                return;
+            }
+
+            string hashedPassword = CPass.HashPasswordWithSalt(password, account.Salt);
+            if (hashedPassword != account.Password)
+            {
+                MessageBox.Show("Mật khẩu không chính xác.");
+                return;
+            }
+            if (account.Status != "Active")
+            {
+                MessageBox.Show("Tài khoản của bạn chưa được kích hoạt.");
+                return;
+            }
+            if (checkBox2.Checked)
+            {
+                Properties.Settings.Default.Username = username;
+                Properties.Settings.Default.Password = password; 
+                Properties.Settings.Default.RememberMe = true;
+                Properties.Settings.Default.Save();
+            }
+            else
+            {
+                Properties.Settings.Default.RememberMe = false;
+                Properties.Settings.Default.Save();
+            }
+            FMain fMain = new FMain(username);
+            fMain.Show();
+            this.Hide();
+
+        }
+
+        private void FLogin_Enter(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void txtPassLog_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPassLog_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtUserLog_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

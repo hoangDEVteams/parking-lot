@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Controls;
 using System.Windows.Forms;
 using Test.Controller;
+using System.Net;
 
 namespace Test.Views
 {
@@ -158,6 +159,51 @@ namespace Test.Views
             {
                 LoadAccount();
             }
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            string chartFilePath = Ctrl_Chart.GenerateBarChart();
+
+            // Gửi email với biểu đồ đính kèm
+            Ctrl_Account.SendEmailWithChart("hoanghuanpham3@gmail.com", chartFilePath);
+        }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            string chartFilePath = Ctrl_Chart.GenerateAndSendRevenueChart();
+
+            if (!string.IsNullOrEmpty(chartFilePath))
+            {
+                Ctrl_Account.SendEmailWithAttachment("hoanghuanpham3@gmail.com", chartFilePath);
+                MessageBox.Show("Email đã được gửi thành công!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Không thể tạo biểu đồ. Vui lòng kiểm tra dữ liệu.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void iconButton4_Click(object sender, EventArgs e)
+        {
+            Ctrl_Chart chartController = new Ctrl_Chart();
+            string recipientEmail = "hoanghuanpham3@gmail.com"; // Địa chỉ email nhận
+           
+            Ctrl_Chart.GenerateAndSendUserStatisticsChart(recipientEmail);
+        }
+
+        private void iconButton5_Click(object sender, EventArgs e)
+        {
+            Ctrl_Chart chartController = new Ctrl_Chart();
+            string recipientEmail = "hoanghuanpham3@gmail.com"; // Địa chỉ email nhận
+
+            // Tạo và gửi biểu đồ
+            chartController.GenerateAndSendUserComparisonChart(recipientEmail);
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
